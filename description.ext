@@ -1,12 +1,12 @@
 class Header
 {
 	gameType =  Coop;
-	minPlayers =  1;	// minimum number of players the mission supports
-	maxPlayers = 65;	// maximum number of players the mission supports
+	minPlayers =  1;
+	maxPlayers = 65;
 };
 class CfgFunctions
 {
-	#include "C5R\functions\cfgFunctions.hpp"
+	#include "5r\functions\cfgFunctions.hpp"
 }; 
 briefing = 0;
 respawn = 3;
@@ -16,5 +16,8 @@ respawnDelay = 5;
 respawnDialog = 1;
 disabledAI=1;
 enableTeamSwitch = 0;
-enableDebugConsole[] = {"76561197965400858"}; // Cathode
+enableDebugConsole[] = {
+	"76561197965400858" // Cathode
+};
+
 #include "gcam\gcam_component.hpp"

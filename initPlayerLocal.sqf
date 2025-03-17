@@ -1,19 +1,13 @@
+#include "5r/config/setupCfg.sqf";
+
 params ["_player", "_didJIP"];
+
 // Create for players only, not HCs
 if (hasInterface) then {
-	// J9Suite whitelist
-	[[
-		"76561197965400858",	// Cathode
-		"76561198141409958",	// Max
-		"76561198993593130",	// Rx
-		"76561198153501805",	// Crow
-		"76561198108273886",	// Wast3d
-		"76561198047545378",	// Gibs
-		"76561198155238046",	// Bobi
-		"76561199088931729"		// Eclipsy
-	]] call C5R_Common_fnc_createJ9Suite;
-	call C5R_Common_fnc_fixZeus;
-	call C5R_Common_fnc_brushCutter;
+    [5r_J9_memberList] call 5r_common_fnc_createJ9Suite;
+    call 5r_common_fnc_fixZeus;
+    call 5r_common_fnc_brushCutter;
+
 	// Add ability to create empty crates to following classnames
 	[[
 		"UK3CB_BAF_LandRover_WMIK_HMG_FFR_Green_B",
@@ -24,7 +18,8 @@ if (hasInterface) then {
 		"UK3CB_BAF_Coyote_Passenger_L111A1_G",
 		"UK3CB_BAF_Coyote_Logistics_L111A1_G",
 		"UK3CB_BAF_MAN_HX58_Container_ReArm"
-	]] call C5R_Logistics_fnc_createEmptyVehicleActions;
+	]] call 5r_Logistics_fnc_createEmptyVehicleActions;
+
 	// Add ViV loading to the following classnames
 	[[
 		"B_CargoNet_01_ammo_F",
@@ -60,10 +55,16 @@ if (hasInterface) then {
 		"B_Slingload_01_Cargo_F",
 		"B_Slingload_01_Repair_F",
 		"Land_Cargo10_military_green_F"
-	]] call C5R_Logistics_fnc_createViVLoadingActions;
-	call C5R_Logistics_fnc_addRadioRelayActions; // Create Relay Container actions
-	["ace_arsenal_displayClosed", C5R_Common_fnc_fixSlingHelmetExploit] call CBA_fnc_addEventHandler;
-	enableEngineArtillery false; // Disable Artillery Computer
-	call C5R_Common_fnc_movePlayerToSpawn; // Move player to spawn location when connected
-	call C5R_Common_fnc_createSpawnMarkerLocal;
+	]] call 5r_Logistics_fnc_createViVLoadingActions;
+
+    // Create Relay Container actions
+	call 5r_Logistics_fnc_addRadioRelayActions; 
+	["ace_arsenal_displayClosed", 5r_common_fnc_fixSlingHelmetExploit] call CBA_fnc_addEventHandler;
+
+    // Disable Artillery Computer
+	enableEngineArtillery false;
+
+	// Move player to spawn location when connected
+	call 5r_common_fnc_movePlayerToSpawn;
+	call 5r_common_fnc_createSpawnMarkerLocal;
 };

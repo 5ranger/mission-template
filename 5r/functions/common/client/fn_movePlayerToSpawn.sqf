@@ -1,0 +1,1 @@
+player setPosATL (getPosATL 5r_spawn);

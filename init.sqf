@@ -1,1 +1,2 @@
-#include "SSS.sqf"; // Simplex spawn arrays
+// Simplex spawn arrays
+#include "5r/config/vehicleCfg.sqf";

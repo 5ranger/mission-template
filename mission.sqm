@@ -9512,7 +9512,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="{_x setUnitLoadout (C5R_loadouts get ""loadoutVehicleCrew"");_x disableAI ""MOVE"";} forEach crew _this;";
+											value="{_x setUnitLoadout (5r_loadouts get ""loadoutVehicleCrew"");_x disableAI ""MOVE"";} forEach crew _this;";
 										};
 									};
 								};
@@ -9805,7 +9805,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="{_x setUnitLoadout (C5R_loadouts get ""loadoutHeliPilot"");} forEach crew _this;";
+											value="{_x setUnitLoadout (5r_loadouts get ""loadoutHeliPilot"");} forEach crew _this;";
 										};
 									};
 								};
@@ -10182,7 +10182,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="{_x setUnitLoadout (C5R_loadouts get ""loadoutHeliPilot"");} forEach crew _this;";
+											value="{_x setUnitLoadout (5r_loadouts get ""loadoutHeliPilot"");} forEach crew _this;";
 										};
 									};
 								};
@@ -10624,7 +10624,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="{_x setUnitLoadout (C5R_loadouts get ""loadoutRifleman"");} forEach crew _this;";
+											value="{_x setUnitLoadout (5r_loadouts get ""loadoutRifleman"");} forEach crew _this;";
 										};
 									};
 								};
@@ -10892,7 +10892,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="{_x setUnitLoadout (C5R_loadouts get ""loadoutRifleman"");} forEach crew _this;";
+											value="{_x setUnitLoadout (5r_loadouts get ""loadoutRifleman"");} forEach crew _this;";
 										};
 									};
 								};
@@ -11160,7 +11160,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="{_x setUnitLoadout (C5R_loadouts get ""loadoutHeliPilot"");} forEach crew _this;";
+											value="{_x setUnitLoadout (5r_loadouts get ""loadoutHeliPilot"");} forEach crew _this;";
 										};
 									};
 								};
@@ -11525,7 +11525,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[C5R_SSSGroundWoodlandArray, C5R_SSSGroundSandArray, C5R_SSSGroundWinterArray, C5R_SSSNavyArray, C5R_SSSSuppliesArray]";
+											value="[5r_SSSGroundWoodlandArray, 5r_SSSGroundSandArray, 5r_SSSGroundWinterArray, 5r_SSSNavyArray, 5r_SSSSuppliesArray]";
 										};
 									};
 								};
@@ -11590,7 +11590,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[_this,""mil_destroy_noShadow""] call C5R_Common_fnc_attachMarkerGlobal;";
+											value="[_this,""mil_destroy_noShadow""] call 5r_common_fnc_attachMarkerGlobal;";
 										};
 									};
 								};
@@ -11858,7 +11858,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[C5R_SSSGroundWoodlandArray, C5R_SSSGroundSandArray, C5R_SSSGroundWinterArray, C5R_SSSNavyArray, C5R_SSSSuppliesArray]";
+											value="[5r_SSSGroundWoodlandArray, 5r_SSSGroundSandArray, 5r_SSSGroundWinterArray, 5r_SSSNavyArray, 5r_SSSSuppliesArray]";
 										};
 									};
 								};
@@ -11923,7 +11923,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[_this,""mil_destroy_noShadow""] call C5R_Common_fnc_attachMarkerGlobal;";
+											value="[_this,""mil_destroy_noShadow""] call 5r_common_fnc_attachMarkerGlobal;";
 										};
 									};
 								};
@@ -12204,7 +12204,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[C5R_SSSGroundWoodlandArray, C5R_SSSGroundSandArray, C5R_SSSGroundWinterArray, C5R_SSSNavyArray, C5R_SSSSuppliesArray]";
+											value="[5r_SSSGroundWoodlandArray, 5r_SSSGroundSandArray, 5r_SSSGroundWinterArray, 5r_SSSNavyArray, 5r_SSSSuppliesArray]";
 										};
 									};
 								};
@@ -12800,7 +12800,7 @@ class Mission
 							flags=6;
 							class Attributes
 							{
-								init="{_x setUnitLoadout (C5R_loadouts get ""loadoutHeliPilot"");} forEach crew _this;";
+								init="{_x setUnitLoadout (5r_loadouts get ""loadoutHeliPilot"");} forEach crew _this;";
 								reportOwnPosition=1;
 							};
 							id=330;
@@ -12834,7 +12834,7 @@ class Mission
 							flags=6;
 							class Attributes
 							{
-								init="{_x setUnitLoadout (C5R_loadouts get ""loadoutRifleman"");} forEach crew _this;";
+								init="{_x setUnitLoadout (5r_loadouts get ""loadoutRifleman"");} forEach crew _this;";
 							};
 							id=345;
 							type="UK3CB_BAF_LandRover_Soft_Green_A";
@@ -12867,7 +12867,7 @@ class Mission
 							flags=6;
 							class Attributes
 							{
-								init="{_x setUnitLoadout (C5R_loadouts get ""loadoutRifleman"");} forEach crew _this;";
+								init="{_x setUnitLoadout (5r_loadouts get ""loadoutRifleman"");} forEach crew _this;";
 							};
 							id=351;
 							type="UK3CB_BAF_MAN_HX58_Transport_Green";
@@ -12900,7 +12900,7 @@ class Mission
 							flags=6;
 							class Attributes
 							{
-								init="{_x setUnitLoadout (C5R_loadouts get ""loadoutHeliPilot"");} forEach crew _this;";
+								init="{_x setUnitLoadout (5r_loadouts get ""loadoutHeliPilot"");} forEach crew _this;";
 							};
 							id=323;
 							type="UK3CB_BAF_Merlin_HC3_32";
@@ -13143,7 +13143,7 @@ class Mission
 							flags=6;
 							class Attributes
 							{
-								init="{_x setUnitLoadout (C5R_loadouts get ""loadoutHeliPilot"");} forEach crew _this;";
+								init="{_x setUnitLoadout (5r_loadouts get ""loadoutHeliPilot"");} forEach crew _this;";
 							};
 							id=1474;
 							type="UK3CB_BAF_Chinook_HC2_cargo";
@@ -13650,7 +13650,7 @@ class Mission
 							class Attributes
 							{
 								fuel=0;
-								init="{_x setUnitLoadout (C5R_loadouts get ""loadoutVehicleCrew"");_x disableAI ""MOVE"";} forEach crew _this;";
+								init="{_x setUnitLoadout (5r_loadouts get ""loadoutVehicleCrew"");_x disableAI ""MOVE"";} forEach crew _this;";
 							};
 							id=3294;
 							type="rhsusf_m109_usarmy";
@@ -13736,7 +13736,7 @@ class Mission
 							class Attributes
 							{
 								fuel=0;
-								init="{_x setUnitLoadout (C5R_loadouts get ""loadoutVehicleCrew"");_x disableAI ""MOVE"";} forEach crew _this;";
+								init="{_x setUnitLoadout (5r_loadouts get ""loadoutVehicleCrew"");_x disableAI ""MOVE"";} forEach crew _this;";
 							};
 							id=3306;
 							type="rhsusf_m109_usarmy";
@@ -13822,7 +13822,7 @@ class Mission
 							class Attributes
 							{
 								fuel=0;
-								init="{_x setUnitLoadout (C5R_loadouts get ""loadoutVehicleCrew"");_x disableAI ""MOVE"";} forEach crew _this;";
+								init="{_x setUnitLoadout (5r_loadouts get ""loadoutVehicleCrew"");_x disableAI ""MOVE"";} forEach crew _this;";
 							};
 							id=3311;
 							type="rhsusf_m109_usarmy";
@@ -13917,7 +13917,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""C5R_allArsenals"") then {C5R_allArsenals = [];}; " \n " C5R_allArsenals pushBack this; " \n "};";
+								init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""5r_allArsenals"") then {5r_allArsenals = [];}; " \n " 5r_allArsenals pushBack this; " \n "};";
 								name="playerarsenal_1";
 								disableSimulation=1;
 							};
@@ -14030,7 +14030,7 @@ class Mission
 					angle=5.2359862;
 					class Attributes
 					{
-						name="C5R_spawn";
+						name="5r_spawn";
 						sizeA=2.5;
 						sizeB=2.5;
 						sizeC=2;
@@ -14209,7 +14209,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[C5R_SSSGroundWoodlandArray, C5R_SSSGroundSandArray, C5R_SSSGroundWinterArray, C5R_SSSSuppliesArray]";
+											value="[5r_SSSGroundWoodlandArray, 5r_SSSGroundSandArray, 5r_SSSGroundWinterArray, 5r_SSSSuppliesArray]";
 										};
 									};
 								};
@@ -14435,7 +14435,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[C5R_SSSAirArray, C5R_SSSGroundWoodlandArray, C5R_SSSGroundSandArray, C5R_SSSGroundWinterArray, C5R_SSSNavyArray, C5R_SSSSuppliesArray]";
+											value="[5r_SSSAirArray, 5r_SSSGroundWoodlandArray, 5r_SSSGroundSandArray, 5r_SSSGroundWinterArray, 5r_SSSNavyArray, 5r_SSSSuppliesArray]";
 										};
 									};
 								};
@@ -14722,7 +14722,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[C5R_SSSNavyArray, C5R_SSSSuppliesArray]";
+											value="[5r_SSSNavyArray, 5r_SSSSuppliesArray]";
 										};
 									};
 								};
@@ -15070,7 +15070,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""C5R_allArsenals"") then {C5R_allArsenals = [];}; " \n " C5R_allArsenals pushBack this; " \n "};";
+						init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""5r_allArsenals"") then {5r_allArsenals = [];}; " \n " 5r_allArsenals pushBack this; " \n "};";
 						name="playerarsenal_2";
 						disableSimulation=1;
 					};
@@ -15163,7 +15163,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""C5R_allArsenals"") then {C5R_allArsenals = [];}; " \n " C5R_allArsenals pushBack this; " \n "};";
+						init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""5r_allArsenals"") then {5r_allArsenals = [];}; " \n " 5r_allArsenals pushBack this; " \n "};";
 						name="playerarsenal_3";
 						disableSimulation=1;
 					};
@@ -15256,7 +15256,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""C5R_allArsenals"") then {C5R_allArsenals = [];}; " \n " C5R_allArsenals pushBack this; " \n "};";
+						init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""5r_allArsenals"") then {5r_allArsenals = [];}; " \n " 5r_allArsenals pushBack this; " \n "};";
 						name="playerarsenal_4";
 						disableSimulation=1;
 					};
@@ -15349,7 +15349,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""C5R_allArsenals"") then {C5R_allArsenals = [];}; " \n " C5R_allArsenals pushBack this; " \n "};";
+						init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""5r_allArsenals"") then {5r_allArsenals = [];}; " \n " 5r_allArsenals pushBack this; " \n "};";
 						name="playerarsenal_5";
 						disableSimulation=1;
 					};
@@ -15442,7 +15442,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""C5R_allArsenals"") then {C5R_allArsenals = [];}; " \n " C5R_allArsenals pushBack this; " \n "};";
+						init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""5r_allArsenals"") then {5r_allArsenals = [];}; " \n " 5r_allArsenals pushBack this; " \n "};";
 						name="playerarsenal_6";
 						disableSimulation=1;
 					};
@@ -15535,7 +15535,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""C5R_allArsenals"") then {C5R_allArsenals = [];}; " \n " C5R_allArsenals pushBack this; " \n "};";
+						init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""5r_allArsenals"") then {5r_allArsenals = [];}; " \n " 5r_allArsenals pushBack this; " \n "};";
 						name="playerarsenal_7";
 						disableSimulation=1;
 					};
@@ -15627,7 +15627,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""C5R_allArsenals"") then {C5R_allArsenals = [];}; " \n " C5R_allArsenals pushBack this; " \n "};";
+						init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""5r_allArsenals"") then {5r_allArsenals = [];}; " \n " 5r_allArsenals pushBack this; " \n "};";
 						name="playerarsenal_9";
 						disableSimulation=1;
 					};
@@ -15872,7 +15872,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[C5R_SSSGroundWoodlandArray, C5R_SSSGroundSandArray, C5R_SSSGroundWinterArray, C5R_SSSSuppliesArray]";
+									value="[5r_SSSGroundWoodlandArray, 5r_SSSGroundSandArray, 5r_SSSGroundWinterArray, 5r_SSSSuppliesArray]";
 								};
 							};
 						};
@@ -18433,7 +18433,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[C5R_SSSGroundWoodlandArray, C5R_SSSGroundSandArray, C5R_SSSGroundWinterArray, C5R_SSSSuppliesArray]";
+									value="[5r_SSSGroundWoodlandArray, 5r_SSSGroundSandArray, 5r_SSSGroundWinterArray, 5r_SSSSuppliesArray]";
 								};
 							};
 						};
@@ -18701,7 +18701,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[C5R_SSSGroundWoodlandArray, C5R_SSSGroundSandArray, C5R_SSSGroundWinterArray, C5R_SSSSuppliesArray]";
+									value="[5r_SSSGroundWoodlandArray, 5r_SSSGroundSandArray, 5r_SSSGroundWinterArray, 5r_SSSSuppliesArray]";
 								};
 							};
 						};
@@ -18969,7 +18969,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[C5R_SSSGroundWoodlandArray, C5R_SSSGroundSandArray, C5R_SSSGroundWinterArray, C5R_SSSSuppliesArray]";
+									value="[5r_SSSGroundWoodlandArray, 5r_SSSGroundSandArray, 5r_SSSGroundWinterArray, 5r_SSSSuppliesArray]";
 								};
 							};
 						};
@@ -19237,7 +19237,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[C5R_SSSGroundWoodlandArray, C5R_SSSGroundSandArray, C5R_SSSGroundWinterArray, C5R_SSSSuppliesArray]";
+									value="[5r_SSSGroundWoodlandArray, 5r_SSSGroundSandArray, 5r_SSSGroundWinterArray, 5r_SSSSuppliesArray]";
 								};
 							};
 						};
@@ -19505,7 +19505,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[C5R_SSSGroundWoodlandArray, C5R_SSSGroundSandArray, C5R_SSSGroundWinterArray, C5R_SSSSuppliesArray]";
+									value="[5r_SSSGroundWoodlandArray, 5r_SSSGroundSandArray, 5r_SSSGroundWinterArray, 5r_SSSSuppliesArray]";
 								};
 							};
 						};
@@ -21224,7 +21224,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""C5R_allArsenals"") then {C5R_allArsenals = [];}; " \n " C5R_allArsenals pushBack this; " \n "};";
+						init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""5r_allArsenals"") then {5r_allArsenals = [];}; " \n " 5r_allArsenals pushBack this; " \n "};";
 						name="playerarsenal_10";
 						disableSimulation=1;
 					};
@@ -21606,7 +21606,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[C5R_SSSAirArray, C5R_SSSGroundWoodlandArray, C5R_SSSGroundSandArray, C5R_SSSGroundWinterArray, C5R_SSSNavyArray, C5R_SSSSuppliesArray]";
+									value="[5r_SSSAirArray, 5r_SSSGroundWoodlandArray, 5r_SSSGroundSandArray, 5r_SSSGroundWinterArray, 5r_SSSNavyArray, 5r_SSSSuppliesArray]";
 								};
 							};
 						};
@@ -21809,7 +21809,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[C5R_SSSAirArray, C5R_SSSGroundWoodlandArray, C5R_SSSGroundSandArray, C5R_SSSGroundWinterArray, C5R_SSSNavyArray, C5R_SSSSuppliesArray]";
+									value="[5r_SSSAirArray, 5r_SSSGroundWoodlandArray, 5r_SSSGroundSandArray, 5r_SSSGroundWinterArray, 5r_SSSNavyArray, 5r_SSSSuppliesArray]";
 								};
 							};
 						};

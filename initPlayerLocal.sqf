@@ -10,7 +10,8 @@ if (hasInterface) then {
 		"76561198108273886",	// Wast3d
 		"76561198047545378",	// Gibs
 		"76561198155238046",	// Bobi
-		"76561199088931729"		// Eclipsy
+		"76561199088931729",	// Eclipsy
+		"76561198082623259"		// Mann
 	]] call C5R_Common_fnc_createJ9Suite;
 	call C5R_Common_fnc_fixZeus;
 	call C5R_Common_fnc_brushCutter;

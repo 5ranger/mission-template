@@ -32,6 +32,7 @@ _ctrl ctrlCommit 0;
 		_ctrl2 ctrlSetTextColor [0.9, 0.9, 0.9, 1];
 		_ctrl2 ctrlSetBackgroundColor [0.1, 0.1, 0.1, 0.9];
 		_ctrl2 ctrlAddEventHandler ["MouseButtonClick", {
+ 			showChat false;
 			execVM "gcam\gcam.sqf"; 
 		}];
 	_ctrl2 ctrlCommit 0;

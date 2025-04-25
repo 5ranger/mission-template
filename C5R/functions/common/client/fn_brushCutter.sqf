@@ -3,7 +3,7 @@ _action = ["C5R_cutterAction","Cut closest vegetation","",{
 	C5R_isChoppingLocal = true;
 	_obj spawn {
 		while {C5R_isChoppingLocal} do {
-			playSound3D [getMissionPath "sfx\chop.ogg",_this];
+			playSound3D [getMissionPath "C5R\sfx\chop.ogg",_this];
 			sleep 1;
 		};
 	};

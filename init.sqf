@@ -1,1 +1,0 @@
-#include "SSS.sqf"; // Simplex spawn arrays

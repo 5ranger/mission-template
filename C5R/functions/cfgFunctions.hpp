@@ -1,4 +1,16 @@
-class C5R_itemCfg
+class C5R_Config
+{
+	class config 
+	{
+		file = "C5R\functions\config";
+		class itemCfg {
+			preInit	= 1;
+		};
+		class SSS {
+			preInit	= 1;
+		};
+	};
+};class C5R_itemCfg
 {
 	class server 
 	{

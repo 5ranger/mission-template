@@ -11,7 +11,7 @@ _action = ["C5R_cutterAction","Cut closest vegetation","",{
 		C5R_isChoppingLocal = false;
 		_obj = _this select 0 select 0;
 		_obj setdamage [1,true,player,player];
-		_obj spawn { sleep 3; hideObjectGlobal _this};
+		_obj spawn {sleep 3; _this remoteExec ["hideObjectGlobal",2] };
 	}, {C5R_isChoppingLocal = false;}, "Cutting vegetation..."] call ace_common_fnc_progressBar;
 	},{
 		_choptgt = nearestTerrainObjects [player, ["Bush","Tree","Small Tree"], 4, true, true] select 0;

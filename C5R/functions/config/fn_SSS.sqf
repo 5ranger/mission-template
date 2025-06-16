@@ -774,7 +774,7 @@ C5R_SSSSuppliesArray =
    clearItemCargoGlobal _this;
    clearBackpackCargoGlobal _this;
    [_this, -1] call ace_cargo_fnc_setSize;  
-   [_this, C5R_allArsenalItems, true] call ace_arsenal_fnc_initBox;
+   [_this, C5R_arsenalItems, true] call ace_arsenal_fnc_initBox;
    _this addEventHandler ["Killed", {[_this select 0, true] call ace_arsenal_fnc_removeBox; deleteVehicle _this select 0;}];
   },[],4]
  ]],  

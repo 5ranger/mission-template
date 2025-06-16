@@ -28,7 +28,10 @@ C5R_SSSAirArray =
    ["UK3CB_BAF_Wildcat_AH1_6_Generic","",{
     ["fillJAC",_this,true] call C5R_ItemCfg_fnc_initInventory; 
    },[],1], 
-   ["RHS_AH64D","",{
+   ["UK3CB_BAF_Apache_AH1_Generic","BAF Apache AH1",{
+    ["fillJAC",_this,true] call C5R_ItemCfg_fnc_initInventory; 
+   },[],1], 
+  ["RHS_AH64D","RHS Apache AH-64",{
     ["fillJAC",_this,true] call C5R_ItemCfg_fnc_initInventory; 
    },[],1] 
   ]] 
@@ -798,12 +801,6 @@ C5R_SSSSuppliesArray =
    _this addMagazineCargoGlobal ["UK3CB_BAF_6Rnd_30mm_L21A1_HE",9];
    [_this, 4] call ace_cargo_fnc_setSize; 
   },[],4],
-  ["FL_parts_SpareParts","",{
-   [_this,1] call ace_cargo_fnc_setSize;
-  },[],1], 
-  ["FL_parts_SparePartsLarge","",{
-   [_this,4] call ace_cargo_fnc_setSize;
-  },[],4], 
   ["ACE_Wheel","",{},[],1], 
   ["ACE_Track","",{},[],2], 
   ["C_IDAP_supplyCrate_F","Wheel pack 8x",{ 

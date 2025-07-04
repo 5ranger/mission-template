@@ -451,7 +451,7 @@ C5R_SSSGroundSandArray =
       ["UK3CB_BAF_FV432_Mk3_RWS_Sand","",{ 
       ["fillSection",_this,true] call C5R_ItemCfg_fnc_initInventory; 
       [{_this getVariable "C5R_fillInventoryComplete" == true}, {
-        _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3];
+        _this addMagazineCargoGlobal ["UK3CB_BAF_127_100Rnd",4];
       },_this,10,{diag_log format ["[C5R_SSS] Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
       _this setFuel 0.33; 
       ["ACE_Track", _this] call ace_cargo_fnc_loadItem; 

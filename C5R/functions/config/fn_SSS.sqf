@@ -8,27 +8,33 @@ C5R_SSSAirArray =
   ["#Transport",[ 
    ["RHS_MELB_MH6M","",{
     ["fillJAC",_this,true] call C5R_ItemCfg_fnc_initInventory; 
+    _this remoteExec ["DAPS_fnc_Nemesis",2];
    },[],1], 
    ["UK3CB_BAF_Wildcat_AH1_TRN_8A","",{
     ["fillJAC",_this,true] call C5R_ItemCfg_fnc_initInventory; 
+    _this remoteExec ["DAPS_fnc_Nemesis",2];
    },[],1], 
    ["UK3CB_BAF_Merlin_HC3_32","",{
     [_this, 4] call ace_cargo_fnc_setSpace;
     ["fillJAC",_this,true] call C5R_ItemCfg_fnc_initInventory; 
+    _this remoteExec ["DAPS_fnc_Nemesis",2];
    },[],1], 
    ["UK3CB_BAF_Chinook_HC2_cargo","",{
     ["fillJAC",_this,true] call C5R_ItemCfg_fnc_initInventory; 
+    _this remoteExec ["DAPS_fnc_Nemesis",2];
    },[],1] 
   ]], 
   ["#Attack",[ 
    ["RHS_MELB_AH6M","",{
     [_this, 2] call ace_cargo_fnc_setSpace; 
     ["fillJAC",_this,true] call C5R_ItemCfg_fnc_initInventory; 
+    _this remoteExec ["DAPS_fnc_Nemesis",2];
    },[],1], 
    ["UK3CB_BAF_Wildcat_AH1_6_Generic","",{
     ["fillJAC",_this,true] call C5R_ItemCfg_fnc_initInventory; 
+    _this remoteExec ["DAPS_fnc_Nemesis",2];
    },[],1], 
-   ["UK3CB_BAF_Apache_AH1_Generic","BAF Apache AH1",{
+   ["UK3CB_BAF_Apache_AH1_JS","BAF Apache AH1",{
     ["fillJAC",_this,true] call C5R_ItemCfg_fnc_initInventory; 
    },[],1], 
   ["RHS_AH64D","RHS Apache AH-64",{
@@ -46,6 +52,14 @@ C5R_SSSAirArray =
     [_this, 150] call ace_cargo_fnc_setSpace; 
     ["fillJAC",_this,true] call C5R_ItemCfg_fnc_initInventory; 
    },[],1]
+  ]],
+  ["#Attack",[ 
+   ["F_35C","",{
+    ["fillJAC",_this,true] call C5R_ItemCfg_fnc_initInventory; 
+   },[],1], 
+  ["F_35C_S","",{
+    ["fillJAC",_this,true] call C5R_ItemCfg_fnc_initInventory; 
+   },[],1] 
   ]] 
  ]],
  ["B_helicrew_F","Heli Crewman",{ 
@@ -235,6 +249,7 @@ C5R_SSSGroundWoodlandArray =
    ["fillSection",_this,true] call C5R_ItemCfg_fnc_initInventory; 
    [{_this getVariable "C5R_fillInventoryComplete" == true}, {
     _this addMagazineCargoGlobal ["UK3CB_BAF_127_100Rnd",6]; 
+    _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",5];
    },_this,10,{diag_log format ["[C5R_SSS] Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
    _this setFuel 0.33; 
   },[],22] 
@@ -243,8 +258,8 @@ C5R_SSSGroundWoodlandArray =
   ["UK3CB_BAF_LandRover_WMIK_HMG_FFR_Green_B","",{ 
    ["fillTeam",_this,true] call C5R_ItemCfg_fnc_initInventory; 
    [{_this getVariable "C5R_fillInventoryComplete" == true}, {
-    _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3]; 
     _this addMagazineCargoGlobal ["UK3CB_BAF_127_100Rnd",3];
+    _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",4]; 
     _this addItemCargoGlobal ["ACE_Fortify",1];
    },_this,10,{diag_log format ["[C5R_SSS] Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
    [_this] remoteExec ["C5R_Common_fnc_attachRespawnActions", 0, true];
@@ -319,6 +334,7 @@ C5R_SSSGroundWoodlandArray =
   ["UK3CB_BAF_Coyote_Logistics_L111A1_G","",{ 
    ["fillTeam",_this,true] call C5R_ItemCfg_fnc_initInventory;
    [{_this getVariable "C5R_fillInventoryComplete" == true}, {
+    _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3];
     _this addMagazineCargoGlobal ["UK3CB_BAF_127_100Rnd",6];
     _this addItemCargoGlobal ["ACE_Fortify",1];
    },_this,10,{diag_log format ["[C5R_SSS] Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute; 
@@ -328,6 +344,7 @@ C5R_SSSGroundWoodlandArray =
   ["UK3CB_BAF_Coyote_Passenger_L111A1_G",["","","With Repair"],{ 
    ["fillTeam",_this,true] call C5R_ItemCfg_fnc_initInventory; 
    [{_this getVariable "C5R_fillInventoryComplete" == true}, {
+    _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3];
     _this addMagazineCargoGlobal ["UK3CB_BAF_127_100Rnd",6];
     _this addItemCargoGlobal ["ACE_Fortify",1];
    },_this,10,{diag_log format ["[C5R_SSS] Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
@@ -479,13 +496,14 @@ C5R_SSSGroundSandArray =
    ["fillTeam",_this,true] call C5R_ItemCfg_fnc_initInventory; 
    [{_this getVariable "C5R_fillInventoryComplete" == true}, {
     _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3]; 
-   _this addMagazineCargoGlobal ["UK3CB_BAF_127_100Rnd",3]; 
+    _this addMagazineCargoGlobal ["UK3CB_BAF_127_100Rnd",3]; 
    },_this,10,{diag_log format ["[C5R_SSS] Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
    _this setFuel 0.33; 
   },[],12], 
   ["UK3CB_BAF_LandRover_WMIK_Milan_FFR_Sand_A","",{ 
    ["fillTeam",_this,true] call C5R_ItemCfg_fnc_initInventory; 
    [{_this getVariable "C5R_fillInventoryComplete" == true}, {
+    _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3];
     _this addMagazineCargoGlobal ["UK3CB_BAF_1Rnd_Milan", 2];
    },_this,10,{diag_log format ["[C5R_SSS] Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
    _this setFuel 0.33; 
@@ -501,6 +519,7 @@ C5R_SSSGroundSandArray =
   ["UK3CB_BAF_Coyote_Passenger_L111A1_D","",{ 
    ["fillSection",_this,true] call C5R_ItemCfg_fnc_initInventory; 
    [{_this getVariable "C5R_fillInventoryComplete" == true}, {
+    _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",4];
     _this addMagazineCargoGlobal ["UK3CB_BAF_127_100Rnd",6];
    },_this,10,{diag_log format ["[C5R_SSS] Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
    _this setFuel 0.33; 
@@ -587,6 +606,7 @@ C5R_SSSGroundSandArray =
   ["UK3CB_BAF_Coyote_Logistics_L111A1_D","",{ 
    ["fillTeam",_this,true] call C5R_ItemCfg_fnc_initInventory; 
    [{_this getVariable "C5R_fillInventoryComplete" == true}, {
+    _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3];
     _this addMagazineCargoGlobal ["UK3CB_BAF_127_100Rnd",6];
     _this addItemCargoGlobal ["ACE_Fortify",1]; 
    },_this,10,{diag_log format ["[C5R_SSS] Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
@@ -596,6 +616,7 @@ C5R_SSSGroundSandArray =
   ["UK3CB_BAF_Coyote_Passenger_L111A1_D",["","","With Repair"],{ 
    ["fillTeam",_this,true] call C5R_ItemCfg_fnc_initInventory; 
    [{_this getVariable "C5R_fillInventoryComplete" == true}, {
+    _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3];
     _this addMagazineCargoGlobal ["UK3CB_BAF_127_100Rnd",6]; 
     _this addItemCargoGlobal ["ACE_Fortify",1]; 
    },_this,10,{diag_log format ["[C5R_SSS] Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
@@ -892,7 +913,7 @@ C5R_SSSNavyArray =
  ["#Assault Boats",[
   ["rhsusf_mkvsoc","",{
    ["fillSection",_this,true] call C5R_ItemCfg_fnc_initInventory;
-  },[],100],
+  },[],100]/*,
   ["EF_B_CombatBoat_HMG_MJTF_Wdl","",{
    [_this,["MJTF",1],["armor_front",1,"armor_mid",1,"armor_rear",1,"mg2_turret_armor",1,"mg3_turret_armor",1,"mg4_turret_armor",1,"mg5_turret_armor",1]] call BIS_fnc_initVehicle;
    ["fillSection",_this,true] call C5R_ItemCfg_fnc_initInventory;
@@ -905,6 +926,6 @@ C5R_SSSNavyArray =
  ["#Transport Craft",[
   ["EF_B_LCC_MJTF_Wdl","",{
    ["fillSection",_this,true] call C5R_ItemCfg_fnc_initInventory;
-  },[],1]
+  },[],1000]*/
  ]]
 ]];

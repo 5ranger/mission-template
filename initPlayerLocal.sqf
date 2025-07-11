@@ -1,6 +1,8 @@
 params ["_player", "_didJIP"];
 // Create for players only, not HCs
 if (hasInterface) then {
+	// Disable AI calculations on player machines
+	setMissionOptions createHashMapFromArray [["AIThinkOnlyLocal", true]];
 	// J9Suite whitelist
 	[[
 		"76561197965400858",	// Cathode

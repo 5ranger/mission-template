@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2425;
+		nextID=2439;
 	};
 	class Camera
 	{
-		pos[]={213.56004,70.25489,-129.51602};
-		dir[]={0.0072832783,-0.48468116,0.87466782};
-		up[]={0.0040358305,0.87469107,0.48466727};
-		aside[]={0.99997258,9.8692908e-08,-0.0083266906};
+		pos[]={33.055294,21.776894,365.37994};
+		dir[]={-0.18624057,-0.69006699,0.69937259};
+		up[]={-0.17757411,0.72374552,0.66682827};
+		aside[]={0.96632397,-1.4901161e-08,0.25732881};
 	};
 };
 binarizationWanted=0;
@@ -52,7 +52,6 @@ addons[]=
 	"A3_Weapons_F_Ammoboxes",
 	"ace_cargo",
 	"A3_Structures_F_Mil_Helipads",
-	"DRC_custom_billboards",
 	"A3_Props_F_Enoch_Military_Camps",
 	"A3_Characters_F_Common",
 	"A3_Structures_F_Mil_Cargo",
@@ -78,7 +77,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=36;
+		items=35;
 		class Item0
 		{
 			className="tfw_radios_rf3080";
@@ -227,95 +226,90 @@ class AddonsMetaData
 		};
 		class Item21
 		{
-			className="DRC_custom_billboards";
-			name="DRC_custom_billboards";
-		};
-		class Item22
-		{
 			className="A3_Props_F_Enoch";
 			name="Arma 3 Contact Platform - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item23
+		class Item22
 		{
 			className="rhsusf_c_fmtv";
 			name="FMTV Trucks";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item24
+		class Item23
 		{
 			className="CUP_WarfareBuildings";
 			name="CUP_WarfareBuildings";
 		};
-		class Item25
+		class Item24
 		{
 			className="CUP_StandaloneTerrains_Core_Faction";
 			name="CUP_StandaloneTerrains_Core_Faction";
 		};
-		class Item26
+		class Item25
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item27
+		class Item26
 		{
 			className="A3_Structures_F_Exp";
 			name="Arma 3 Apex - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item28
+		class Item27
 		{
 			className="CUP_CAMisc";
 			name="CUP_CAMisc";
 		};
-		class Item29
+		class Item28
 		{
 			className="A3_Props_F_Orange";
 			name="Arma 3 Orange - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item30
+		class Item29
 		{
 			className="A3_Structures_F_Ind";
 			name="Arma 3 - Industrial Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item31
+		class Item30
 		{
 			className="A3_Signs_F";
 			name="Arma 3 - Signs";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item32
+		class Item31
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item33
+		class Item32
 		{
 			className="A3_Structures_F_Orange";
 			name="Arma 3 Orange - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item34
+		class Item33
 		{
 			className="A3_Misc_F";
 			name="Arma 3 - 3D Aids and Helpers";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item35
+		class Item34
 		{
 			className="A3_Structures_F_Enoch_Military";
 			name="Arma 3 Contact Platform - Military Buildings and Structures";
@@ -14189,7 +14183,7 @@ class Mission
 					name="Vehicle and crate ""Arsenal""";
 					class Entities
 					{
-						items=18;
+						items=15;
 						class Item0
 						{
 							dataType="Logic";
@@ -14388,36 +14382,6 @@ class Mission
 						};
 						class Item3
 						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={397,6.5249996,216.99998};
-							};
-							side="Empty";
-							flags=4;
-							class Attributes
-							{
-							};
-							id=717;
-							type="motorpool";
-						};
-						class Item4
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={433,6.5249996,216.99998};
-							};
-							side="Empty";
-							flags=4;
-							class Attributes
-							{
-							};
-							id=725;
-							type="heloairfield";
-						};
-						class Item5
-						{
 							dataType="Logic";
 							class PositionInfo
 							{
@@ -14587,7 +14551,7 @@ class Mission
 								nAttributes=12;
 							};
 						};
-						class Item6
+						class Item4
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -14597,7 +14561,7 @@ class Mission
 							id=730;
 							type="sss_common_moduleTerminal";
 						};
-						class Item7
+						class Item5
 						{
 							dataType="Comment";
 							class PositionInfo
@@ -14608,7 +14572,7 @@ class Mission
 							description="This acts as a Vehicle arsenal for Rotary, Fixed-wing, Ground Vehicles as well as Logistics Point" \n "At least one of these should always be placed." \n "Billboard can safely be deleted." \n "" \n "Replaces preplaced 5R air/logi vehicles. Can either replace ""helipad/logi"" area or be included in a larger Logi section area together with section arsenal" \n "Note that vehicles will spawn facing the same direction as the Logistic station module!";
 							id=800;
 						};
-						class Item8
+						class Item6
 						{
 							dataType="Comment";
 							class PositionInfo
@@ -14619,7 +14583,7 @@ class Mission
 							description="This acts as a vehicle/object arsenal for ground vehicles and supplies" \n "At least two copies of this should always be placed to prevent congestion/delays at mission start." \n "Billboard can safely be deleted." \n "" \n "Replaces preplaced 5R vehicles . Can either replace ""motor pool"" area or be included  in a larger section area together with section arsenal. " \n "Note that vehicles will spawn facing the same direction as the Logistic station module!";
 							id=801;
 						};
-						class Item9
+						class Item7
 						{
 							dataType="Object";
 							class PositionInfo
@@ -14635,7 +14599,7 @@ class Mission
 							id=999;
 							type="Land_HelipadSquare_F";
 						};
-						class Item10
+						class Item8
 						{
 							dataType="Object";
 							class PositionInfo
@@ -14669,7 +14633,7 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item11
+						class Item9
 						{
 							dataType="Object";
 							class PositionInfo
@@ -14703,7 +14667,7 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item12
+						class Item10
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -14874,7 +14838,7 @@ class Mission
 								nAttributes=12;
 							};
 						};
-						class Item13
+						class Item11
 						{
 							dataType="Logic";
 							class PositionInfo
@@ -14884,7 +14848,7 @@ class Mission
 							id=3277;
 							type="sss_common_moduleTerminal";
 						};
-						class Item14
+						class Item12
 						{
 							dataType="Comment";
 							class PositionInfo
@@ -14895,7 +14859,7 @@ class Mission
 							description="This acts as a Vehicle arsenal for Naval Vehicles as well as Logistics Point" \n "Feel free to remove this if not a naval-themed operation." \n "Billboard can safely be deleted." \n "" \n "Note that vehicles will spawn facing the same direction as the Logistic station module!";
 							id=3278;
 						};
-						class Item15
+						class Item13
 						{
 							dataType="Object";
 							class PositionInfo
@@ -14911,7 +14875,7 @@ class Mission
 							id=3279;
 							type="Land_HelipadSquare_F";
 						};
-						class Item16
+						class Item14
 						{
 							dataType="Object";
 							class PositionInfo
@@ -14947,28 +14911,13 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item17
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={464.80371,6.5249996,216};
-							};
-							side="Empty";
-							flags=4;
-							class Attributes
-							{
-							};
-							id=3281;
-							type="boatramps";
-						};
 					};
 					id=1128;
-					atlOffset=-0.0060434341;
+					atlOffset=-0.012086868;
 				};
 			};
 			id=0;
-			atlOffset=-0.042084217;
+			atlOffset=-0.045105934;
 		};
 		class Item1
 		{
@@ -24523,6 +24472,7 @@ class Mission
 					position[]={22,5,384.5};
 					class Attributes
 					{
+						condition="{ " \n "    (_x isKindOf ""Man"" && {side _x getFriend west >= 0.6}) || " \n "    ( " \n "        (_x isKindOf ""LandVehicle"") && " \n "        {count (crew _x select {side _x getFriend west >= 0.6}) > 0} " \n "    ) " \n "} count thisList > 0";
 						onActivation="{_x animate [""Door_1_rot"", 1, false];_x animate [""Door_2_rot"", 1, false];} forEach (synchronizedObjects thisTrigger); ";
 						onDeactivation="{_x animate [""Door_1_rot"", 0, false];_x animate [""Door_2_rot"", 0, false];} forEach (synchronizedObjects thisTrigger); ";
 						sizeA=8;
@@ -24574,7 +24524,7 @@ class Mission
 						position[]={22,5,381};
 					};
 					title="OPTIONAL Automatic Gate";
-					description="Works for most gates, and supports multiple gates per trigger. Sync trigger with gates." \n "" \n "Can be copied." \n "" \n "Useful script for adapting it to non-standard gates and buildings:" \n "animationNames cursorObject;";
+					description="Opens for players and AI that are friendly with WEST. Works for most gates, and supports multiple gates per trigger. Sync trigger with gates." \n "" \n "Can be copied." \n "" \n "Useful script for adapting it to non-standard gates and buildings:" \n "animationNames cursorObject;";
 					id=1830;
 				};
 				class Item3
@@ -24583,7 +24533,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={22,6.0374999,385};
-						angles[]={0,3.1415925,0};
+						angles[]={0,3.1415927,0};
 					};
 					side="Empty";
 					flags=5;
@@ -24592,6 +24542,23 @@ class Mission
 					};
 					id=1831;
 					type="Land_Net_Fence_Gate_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=1;
+					};
 				};
 			};
 			id=1815;

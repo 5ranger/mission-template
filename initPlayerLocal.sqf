@@ -40,6 +40,7 @@ if (hasInterface) then {
 		"UK3CB_BAF_Box_WpsLaunch_ILAW",
 		"UK3CB_BAF_Box_WpsLaunch_NLAW",
 		"UK3CB_BAF_Box_WpsLaunch_Javelin",
+		"Box_NATO_Wps_F",
 		"Box_NATO_WpsLaunch_F",
 		"Box_NATO_WpsSpecial_F",
 		"Box_NATO_Equip_F",
@@ -69,4 +70,8 @@ if (hasInterface) then {
 	enableEngineArtillery false; // Disable Artillery Computer
 	call C5R_Common_fnc_movePlayerToSpawn; // Move player to spawn location when connected
 	call C5R_Common_fnc_createSpawnMarkerLocal;
+	// Disconnect UAV on death
+	player addEventHandler ["Killed", {
+		player connectTerminalToUAV objNull;
+	}];
 };

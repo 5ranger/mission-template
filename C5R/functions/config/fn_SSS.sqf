@@ -36,9 +36,11 @@ C5R_SSSAirArray =
    },[],1], 
    ["UK3CB_BAF_Apache_AH1_JS","BAF Apache AH1",{
     ["fillJAC",_this,true] call C5R_ItemCfg_fnc_initInventory; 
+    _this remoteExec ["DAPS_fnc_Nemesis",2];
    },[],1], 
   ["RHS_AH64D","RHS Apache AH-64",{
     ["fillJAC",_this,true] call C5R_ItemCfg_fnc_initInventory; 
+    _this remoteExec ["DAPS_fnc_Nemesis",2];
    },[],1] 
   ]] 
  ]], 
@@ -810,7 +812,7 @@ C5R_SSSSuppliesArray =
   },[],5], 
   ["UK3CB_BAF_Box_L7A2_Ammo","",{},[],2], 
   ["UK3CB_BAF_Box_L111A1_Ammo","",{},[],2],
-  ["UK3CB_BAF_Box_Warrior_Ammo","",{
+  /*["UK3CB_BAF_Box_Warrior_Ammo","",{
    clearWeaponCargoGlobal _this;   
    clearMagazineCargoGlobal _this;   
    clearItemCargoGlobal _this;
@@ -821,8 +823,10 @@ C5R_SSSSuppliesArray =
    _this addMagazineCargoGlobal ["UK3CB_BAF_6Rnd_30mm_L21A1_APDS",9];
    _this addMagazineCargoGlobal ["UK3CB_BAF_6Rnd_30mm_L21A1_HE",9];
    [_this, 4] call ace_cargo_fnc_setSize; 
-  },[],4],
-  ["ACE_Wheel","",{},[],1], 
+  },[],4],*/
+  ["ACE_Wheel","",{
+    _this spawn {sleep 1; _this setDamage 0};
+  },[],1], 
   ["ACE_Track","",{},[],2], 
   ["C_IDAP_supplyCrate_F","Wheel pack 8x",{ 
    clearWeaponCargoGlobal _this;   
@@ -883,7 +887,9 @@ C5R_SSSSuppliesArray =
   ["UK3CB_BAF_Box_L111A1","",{},[],2], 
   ["UK3CB_BAF_Box_L111A1_Ammo","",{},[],2], 
   ["UK3CB_BAF_Static_L16_Deployed","",{},[],2], 
-  ["UK3CB_BAF_Box_L16","",{},[],2], 
+  ["UK3CB_BAF_Box_L16","",{
+    _this addItemCargoGlobal ["ACE_artilleryTable",1];
+  },[],2], 
   ["UK3CB_BAF_Box_L16_Ammo_HE",["","","17rnd"],{},[],2], 
   ["UK3CB_BAF_Box_L16_Ammo_Smoke",["","","17rnd"],{},[],2], 
   ["UK3CB_BAF_Box_L16_Ammo_Illumination",["","","17rnd"],{},[],2], 

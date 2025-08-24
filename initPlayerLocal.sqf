@@ -17,7 +17,7 @@ if (hasInterface) then {
 	]] call C5R_Common_fnc_createJ9Suite;
 	call C5R_Common_fnc_fixZeus;
 	call C5R_Common_fnc_brushCutter;
-	// Add ability to create empty crates to following classnames
+	// Add ability to create empty crates to following vehicle classnames
 	[[
 		"UK3CB_BAF_LandRover_WMIK_HMG_FFR_Green_B",
 		"UK3CB_BAF_LandRover_WMIK_HMG_FFR_Sand_A",
@@ -28,7 +28,7 @@ if (hasInterface) then {
 		"UK3CB_BAF_Coyote_Logistics_L111A1_G",
 		"UK3CB_BAF_MAN_HX58_Container_ReArm"
 	]] call C5R_Logistics_fnc_createEmptyVehicleActions;
-	// Add ViV loading to the following classnames
+	// Add ViV loading to the following crate classnames
 	[[
 		"B_CargoNet_01_ammo_F",
 		"UK3CB_BAF_Box_556_Ammo",

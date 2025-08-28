@@ -3,6 +3,7 @@ call C5R_itemCfg_fnc_initArsenals; // Create arsenals and default loadouts from 
 call C5R_Common_fnc_freezeLayer; // Used by in training missions to create large amounts of dummy AI, essentially mannequins
 call C5R_Common_fnc_dynamicSimulation; // Postpone dynamic simulation to let AI settle in positions
 // Register ACE Fortify objects 
+// [side,budget,[[classname, cost, category], [classname, cost, category]]] call ace_fortify_fnc_registerObjects;		
 [west, 360, [ 
 	["Land_BagFence_Short_F", 6, "Tan"], 
 	["Land_BagFence_Long_F", 10, "Tan"], 

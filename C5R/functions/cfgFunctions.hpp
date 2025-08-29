@@ -32,6 +32,7 @@ class C5R_Common
 		class fixSlingHelmetExploit {};
 		class fixZeus {};
 		class movePlayerToSpawn {};
+		class respawnObjectsEH {};
 	};
 	class server 
 	{

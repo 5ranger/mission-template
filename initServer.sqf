@@ -11,10 +11,12 @@ call C5R_Common_fnc_dynamicSimulation; // Postpone dynamic simulation to let AI 
 	["UK3CB_Nest", 40, "Tan"], 
 	["Land_BagBunker_01_small_green_F", 50, "Tan"], 
 	["Land_BagBunker_Large_F", 100, "Tan"], 
+	["Land_MedicalTent_01_MTP_closed_F",30, "Tan"],
 	["Land_BagFence_01_short_green_F", 6, "Woodland"], 
 	["Land_BagFence_01_long_green_F", 10, "Woodland"], 
 	["Land_BagFence_01_round_green_F", 10, "Woodland"], 
 	["UK3CB_Nest_Jun", 40, "Woodland"], 
 	["Land_BagBunker_01_small_green_F", 50, "Woodland"], 
-	["Land_BagBunker_01_large_green_F", 100, "Woodland"]
+	["Land_BagBunker_01_large_green_F", 100, "Woodland"],
+	["Land_MedicalTent_01_wdl_closed_F",30, "Woodland"]
 ]] call ace_fortify_fnc_registerObjects;

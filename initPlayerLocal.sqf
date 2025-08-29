@@ -70,6 +70,11 @@ if (hasInterface) then {
 	enableEngineArtillery false; // Disable Artillery Computer
 	call C5R_Common_fnc_movePlayerToSpawn; // Move player to spawn location when connected
 	call C5R_Common_fnc_createSpawnMarkerLocal;
+	//ACE Fortify respawn objects. Objects also needs to be in ACE Fortify array (initServer.sqf)
+	[[
+		"Land_MedicalTent_01_MTP_closed_F", 
+		"Land_MedicalTent_01_wdl_closed_F"
+	]] call C5R_Common_fnc_respawnObjectsEH;
 	// Disconnect UAV on death
 	player addEventHandler ["Killed", {
 		player connectTerminalToUAV objNull;

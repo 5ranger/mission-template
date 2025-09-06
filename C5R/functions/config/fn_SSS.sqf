@@ -65,7 +65,7 @@ C5R_SSSAirArray =
   ]] 
  ]],
  ["B_helicrew_F","Heli Crewman",{ 
-  _this setUnitLoadout (getUnitLoadout loadoutHeliCrew);
+  _this setUnitLoadout (C5R_loadouts get loadoutHeliCrew);
   _this setSkill 1; 
  },[],1] 
 ]];
@@ -365,7 +365,15 @@ C5R_SSSGroundWoodlandArray =
    _this setVariable ["ace_repair_canRepair", 1, true];
    [_this] remoteExec ["C5R_Common_fnc_attachRespawnActions", 0, true];
    [_this, 15] call ace_cargo_fnc_setSpace;
-  },[],22] 
+  },[],22], 
+  ["B_T_UGV_01_olive_F","",{ 
+   clearWeaponCargoGlobal _this;
+   clearMagazineCargoGlobal _this;
+   clearItemCargoGlobal _this;
+   clearBackpackCargoGlobal _this;
+   [_this,0] remoteExec ["setMaxLoad",2];
+   [_this, 2] call ace_cargo_fnc_setSpace; 
+  },[],10]
  ]],
  ["rhsusf_m109_usarmy","",{
   [_this,["standard",1],["IFF_Panels_Hide",1,"showCanisters",0,"showCamonetTurret",0,"showAmmobox",0,"showCamonetHull",0]] call BIS_fnc_initVehicle;
@@ -648,7 +656,15 @@ C5R_SSSGroundSandArray =
    _this setVariable ["ace_repair_canRepair", 1, true];
    [_this] remoteExec ["C5R_Common_fnc_attachRespawnActions", 0, true];
    [_this, 15] call ace_cargo_fnc_setSpace;
-  },[],22] 
+  },[],22], 
+  ["B_UGV_01_F","",{ 
+   clearWeaponCargoGlobal _this;
+   clearMagazineCargoGlobal _this;
+   clearItemCargoGlobal _this;
+   clearBackpackCargoGlobal _this;
+   [_this,0] remoteExec ["setMaxLoad",2];
+   [_this, 2] call ace_cargo_fnc_setSpace; 
+  },[],10]
  ]],
   ["rhsusf_m109d_usarmy","",{
   [_this,["Desert",1],["IFF_Panels_Hide",0,"showCanisters",0,"showCamonetTurret",0,"showAmmobox",0,"showCamonetHull",0]] call BIS_fnc_initVehicle;
@@ -657,7 +673,7 @@ C5R_SSSGroundSandArray =
   ["ACE_Track", _this] call ace_cargo_fnc_loadItem;  
   },[],36],
  ["B_crew_F","Vehicle Crewman",{ 
-   _this setUnitLoadout (getUnitLoadout loadoutVehicleCrew);
+   _this setUnitLoadout (C5R_loadouts get loadoutVehicleCrew);
    _this setSkill 1; 
   },[],1] 
 ]];
@@ -901,6 +917,7 @@ C5R_SSSSuppliesArray =
    clearMagazineCargoGlobal _this;
    clearItemCargoGlobal _this;
    clearBackpackCargoGlobal _this;
+   [_this,0] remoteExec ["setMaxLoad",2];
    [_this, 50] call ace_cargo_fnc_setSpace;   
    [_this, -1] call ace_cargo_fnc_setSize;   
  },[],28] 

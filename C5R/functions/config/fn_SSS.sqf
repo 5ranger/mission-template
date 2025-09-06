@@ -256,7 +256,29 @@ C5R_SSSGroundWoodlandArray =
    _this setFuel 0.33; 
   },[],22] 
  ]], 
- ["#Logistic Support Vehicles (LSV) (LSS)",[ 
+ ["#Logistic Support Vehicles (LSV) (ELS)",[
+  ["#Demining",[
+   ["UK3CB_BAF_LandRover_Panama_Green_A","",{ 
+    [_this,	["Green",1], ["CamoNetMain_Hide",0,"AirIntakeSnorkel_Hide",0,"Mudguards_Hide",0]] call BIS_fnc_initVehicle;
+    clearWeaponCargoGlobal _this; 
+    clearBackpackCargoGlobal _this; 
+    clearMagazineCargoGlobal _this; 
+    clearItemCargoGlobal _this;
+    _this addItemCargoGlobal ["ACE_Fortify",1]; 
+    _this setFuel 0.50; 
+   },[],12],
+   ["rhsusf_stryker_m1132_m2_wd","",{ 
+   ["fillTeam",_this,true] call C5R_ItemCfg_fnc_initInventory; 
+   [{_this getVariable "C5R_fillInventoryComplete" == true}, {
+    _this addItemCargoGlobal ["ACE_Fortify",1];
+   },_this,10,{diag_log format ["[C5R_SSS] Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
+   _this setFuel 0.50; 
+   ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;   
+   ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;   
+   ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;   
+   ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem; 
+  },[],30] 
+  ]],  
   ["UK3CB_BAF_LandRover_WMIK_HMG_FFR_Green_B","",{ 
    ["fillTeam",_this,true] call C5R_ItemCfg_fnc_initInventory; 
    [{_this getVariable "C5R_fillInventoryComplete" == true}, {
@@ -286,7 +308,7 @@ C5R_SSSGroundWoodlandArray =
    [_this, 2] call ace_cargo_fnc_setSpace;
    _this setFuel 0.50; 
   },[],32], 
-  ["B_T_Truck_01_flatbed_F","",{ 
+  ["UK3CB_BAF_MAN_HX58_Cargo_Green_A","",{ 
    ["fillTeam",_this,true] call C5R_ItemCfg_fnc_initInventory; 
    [{_this getVariable "C5R_fillInventoryComplete" == true}, {
     _this addItemCargoGlobal ["ACE_Fortify",1];
@@ -294,8 +316,8 @@ C5R_SSSGroundWoodlandArray =
    [_this, 2] call ace_cargo_fnc_setSpace;
    _this setFuel 0.50; 
   },[],32], 
-  ["rhsusf_M1083A1P2_B_M2_WD_fmtv_usarmy","",{ 
-   [_this,	nil,["hide_ogpkover",0,"hide_ogpknet",1,"hide_ogpkbust",0,"hide_cover",0,"hide_spare",0,"hide_scaffold",0,"hide_bench",0]] call BIS_fnc_initVehicle;
+  ["UK3CB_BAF_MAN_HX58_Transport_Green","",{ 
+   [_this, ["Green",1], ["ClanLogo_Hide",1]] call BIS_fnc_initVehicle;
    ["fillSection",_this,true] call C5R_ItemCfg_fnc_initInventory; 
    [{_this getVariable "C5R_fillInventoryComplete" == true}, {
     _this addItemCargoGlobal ["ACE_Fortify",1];
@@ -321,18 +343,7 @@ C5R_SSSGroundWoodlandArray =
    },_this,10,{diag_log format ["[C5R_SSS] Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
    _this setFuel 0.50; 
    ["ACE_Track", _this] call ace_cargo_fnc_loadItem; 
-  },[],24], 
-  ["rhsusf_stryker_m1132_m2_wd","",{ 
-   ["fillTeam",_this,true] call C5R_ItemCfg_fnc_initInventory; 
-   [{_this getVariable "C5R_fillInventoryComplete" == true}, {
-    _this addItemCargoGlobal ["ACE_Fortify",1];
-   },_this,10,{diag_log format ["[C5R_SSS] Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
-   _this setFuel 0.50; 
-   ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;   
-   ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;   
-   ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;   
-   ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem; 
-  },[],30], 
+  },[],24],  
   ["UK3CB_BAF_Coyote_Logistics_L111A1_G","",{ 
    ["fillTeam",_this,true] call C5R_ItemCfg_fnc_initInventory;
    [{_this getVariable "C5R_fillInventoryComplete" == true}, {
@@ -527,7 +538,30 @@ C5R_SSSGroundSandArray =
    _this setFuel 0.33; 
   },[],22] 
  ]], 
- ["#Logistic Support Vehicles (LSV) (LSS)",[ 
+ ["#Logistic Support Vehicles (LSV) (ELS)",[
+  ["#Demining",[
+   ["UK3CB_BAF_LandRover_Panama_Sand_A","",{ 
+    [_this,	["Green",1], ["CamoNetMain_Hide",0,"AirIntakeSnorkel_Hide",0,"Mudguards_Hide",0]] call BIS_fnc_initVehicle;
+    clearWeaponCargoGlobal _this; 
+    clearBackpackCargoGlobal _this; 
+    clearMagazineCargoGlobal _this; 
+    clearItemCargoGlobal _this;
+    _this addItemCargoGlobal ["ACE_Fortify",1]; 
+    _this setFuel 0.50; 
+   },[],12],
+   ["rhsusf_stryker_m1132_m2_d","",{ 
+    [_this, ["Tan",1], ["SMP",1,"SMP_L",1,"SMP_R",1,"hide_SMP",0,"Hide_CIP",1,"Dispenser_Fold",0,"Hatch_Commander",0,"Hatch_Front",0,"Hatch_Left",0,"Hatch_Right",0,"Ramp",0,"Hide_Antenna_1",0,"Hide_Antenna_2",0,"Hide_Antenna_3",0,"Hide_DEK",0,"Hide_DUKE",0,"Hide_ExDiff",0,"Hide_FCans",0,"Hide_WCans",0,"Hide_GPS",0,"Hide_PioKit",0,"Hide_StgBar",0,"Hide_STORM",0,"Hide_SuspCov",0,"Hide_Towbar",0,"Extend_Mirrors",0,"Hatch_Driver",0]] call BIS_fnc_initVehicle; 
+    ["fillTeam",_this,true] call C5R_ItemCfg_fnc_initInventory; 
+    [{_this getVariable "C5R_fillInventoryComplete" == true}, {
+     _this addItemCargoGlobal ["ACE_Fortify",1]; 
+    },_this,10,{diag_log format ["[C5R_SSS] Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
+    _this setFuel 0.50; 
+    ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;   
+    ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;   
+    ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;   
+    ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem; 
+   },[],30] 
+  ]], 
   ["UK3CB_BAF_LandRover_WMIK_HMG_FFR_Sand_A","",{ 
    ["fillTeam",_this,true] call C5R_ItemCfg_fnc_initInventory; 
    [{_this getVariable "C5R_fillInventoryComplete" == true}, {
@@ -549,7 +583,7 @@ C5R_SSSGroundSandArray =
    _this setFuel 0.50; 
   },[],32], 
   ["rhsusf_M978A4_BKIT_usarmy_d","",{ 
-   [_this, nil, ["hide_ogpkover",0,"hide_ogpknet",1,"hide_ogpkbust",0,"hide_spare",0,"FlagPole_pos",0]] call BIS_fnc_initVehicle;
+   [_this, ["Sand",1], ["ClanLogo_Hide",1]] call BIS_fnc_initVehicle;
    ["fillTeam",_this,true] call C5R_ItemCfg_fnc_initInventory; 
    [{_this getVariable "C5R_fillInventoryComplete" == true}, {
     _this addItemCargoGlobal ["ACE_Fortify",1]; 
@@ -557,7 +591,7 @@ C5R_SSSGroundSandArray =
    [_this, 2] call ace_cargo_fnc_setSpace;
    _this setFuel 0.50; 
   },[],32],  
-  ["B_Truck_01_flatbed_F","",{ 
+  ["UK3CB_BAF_MAN_HX58_Cargo_Sand_A","",{ 
    ["fillTeam",_this,true] call C5R_ItemCfg_fnc_initInventory; 
    [{_this getVariable "C5R_fillInventoryComplete" == true}, {
     _this addItemCargoGlobal ["ACE_Fortify",1]; 
@@ -565,8 +599,8 @@ C5R_SSSGroundSandArray =
    [_this, 2] call ace_cargo_fnc_setSpace;
    _this setFuel 0.50; 
   },[],32], 
-  ["rhsusf_M1083A1P2_B_M2_D_fmtv_usarmy","",{ 
-   [_this, nil,["hide_ogpkover",0,"hide_ogpknet",1,"hide_ogpkbust",0,"hide_cover",0,"hide_spare",0,"hide_scaffold",0,"hide_bench",0]] call BIS_fnc_initVehicle;
+  ["UK3CB_BAF_MAN_HX58_Transport_Sand","",{ 
+   [_this, ["Sand",1], ["ClanLogo_Hide",1]] call BIS_fnc_initVehicle;
    ["fillSection",_this,true] call C5R_ItemCfg_fnc_initInventory; 
    [{_this getVariable "C5R_fillInventoryComplete" == true}, {
     _this addItemCargoGlobal ["ACE_Fortify",1]; 
@@ -593,18 +627,6 @@ C5R_SSSGroundSandArray =
    _this setFuel 0.50; 
    ["ACE_Track", _this] call ace_cargo_fnc_loadItem; 
   },[],24], 
-  ["rhsusf_stryker_m1132_m2_d","",{ 
-   [_this, ["Tan",1], ["SMP",1,"SMP_L",1,"SMP_R",1,"hide_SMP",0,"Hide_CIP",1,"Dispenser_Fold",0,"Hatch_Commander",0,"Hatch_Front",0,"Hatch_Left",0,"Hatch_Right",0,"Ramp",0,"Hide_Antenna_1",0,"Hide_Antenna_2",0,"Hide_Antenna_3",0,"Hide_DEK",0,"Hide_DUKE",0,"Hide_ExDiff",0,"Hide_FCans",0,"Hide_WCans",0,"Hide_GPS",0,"Hide_PioKit",0,"Hide_StgBar",0,"Hide_STORM",0,"Hide_SuspCov",0,"Hide_Towbar",0,"Extend_Mirrors",0,"Hatch_Driver",0]] call BIS_fnc_initVehicle; 
-   ["fillTeam",_this,true] call C5R_ItemCfg_fnc_initInventory; 
-   [{_this getVariable "C5R_fillInventoryComplete" == true}, {
-    _this addItemCargoGlobal ["ACE_Fortify",1]; 
-   },_this,10,{diag_log format ["[C5R_SSS] Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
-   _this setFuel 0.50; 
-   ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;   
-   ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;   
-   ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;   
-   ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem; 
-  },[],30], 
   ["UK3CB_BAF_Coyote_Logistics_L111A1_D","",{ 
    ["fillTeam",_this,true] call C5R_ItemCfg_fnc_initInventory; 
    [{_this getVariable "C5R_fillInventoryComplete" == true}, {
@@ -791,7 +813,7 @@ C5R_SSSSuppliesArray =
   ["Box_NATO_Equip_F","Night Box",{
    ["resupplyNight",_this,true] call C5R_ItemCfg_fnc_initInventory;  
   },[],3],
-  ["CargoNet_01_box_F","Field Arsenal (LSS USE ONLY, not loadable)",{
+  ["CargoNet_01_box_F","Field Arsenal (ELS USE ONLY, not loadable)",{
    clearWeaponCargoGlobal _this;
    clearMagazineCargoGlobal _this;
    clearItemCargoGlobal _this;
@@ -812,6 +834,7 @@ C5R_SSSSuppliesArray =
   },[],5], 
   ["UK3CB_BAF_Box_L7A2_Ammo","",{},[],2], 
   ["UK3CB_BAF_Box_L111A1_Ammo","",{},[],2],
+  ["UK3CB_BAF_Box_Milan_Ammo","",{},[],2],
   /*["UK3CB_BAF_Box_Warrior_Ammo","",{
    clearWeaponCargoGlobal _this;   
    clearMagazineCargoGlobal _this;   

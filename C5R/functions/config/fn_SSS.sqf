@@ -260,6 +260,7 @@ C5R_SSSGroundWoodlandArray =
   ["#Demining",[
    ["UK3CB_BAF_LandRover_Panama_Green_A","",{ 
     [_this,	["Green",1], ["CamoNetMain_Hide",0,"AirIntakeSnorkel_Hide",0,"Mudguards_Hide",0]] call BIS_fnc_initVehicle;
+    createVehicleCrew _this;
     clearWeaponCargoGlobal _this; 
     clearBackpackCargoGlobal _this; 
     clearMagazineCargoGlobal _this; 
@@ -367,6 +368,7 @@ C5R_SSSGroundWoodlandArray =
    [_this, 15] call ace_cargo_fnc_setSpace;
   },[],22], 
   ["B_T_UGV_01_olive_F","",{ 
+   createVehicleCrew _this;
    clearWeaponCargoGlobal _this;
    clearMagazineCargoGlobal _this;
    clearItemCargoGlobal _this;
@@ -550,6 +552,7 @@ C5R_SSSGroundSandArray =
   ["#Demining",[
    ["UK3CB_BAF_LandRover_Panama_Sand_A","",{ 
     [_this,	["Green",1], ["CamoNetMain_Hide",0,"AirIntakeSnorkel_Hide",0,"Mudguards_Hide",0]] call BIS_fnc_initVehicle;
+    createVehicleCrew _this;
     clearWeaponCargoGlobal _this; 
     clearBackpackCargoGlobal _this; 
     clearMagazineCargoGlobal _this; 
@@ -658,6 +661,7 @@ C5R_SSSGroundSandArray =
    [_this, 15] call ace_cargo_fnc_setSpace;
   },[],22], 
   ["B_UGV_01_F","",{ 
+   createVehicleCrew _this;
    clearWeaponCargoGlobal _this;
    clearMagazineCargoGlobal _this;
    clearItemCargoGlobal _this;

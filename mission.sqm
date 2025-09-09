@@ -8,7 +8,7 @@ class EditorData
 	toggles=549;
 	class ItemIDProvider
 	{
-		nextID=3624;
+		nextID=3696;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2481;
+		nextID=2509;
 	};
 	class Camera
 	{
-		pos[]={205.60753,163.72961,-121.74423};
-		dir[]={0.012243203,-0.51649904,0.85630327};
-		up[]={0.0073846867,0.85626793,0.51647532};
-		aside[]={0.99997586,5.556758e-07,-0.014298516};
+		pos[]={87.633492,48.984592,-29.009315};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -31,6 +31,7 @@ sourceName="git-mission-template";
 addons[]=
 {
 	"tfw_radios_rf3080",
+	"pook_SAM_Base",
 	"A3_Modules_F_Curator_Curator",
 	"A3_Characters_F",
 	"A3_Weapons_F",
@@ -60,6 +61,7 @@ addons[]=
 	"rhsusf_c_fmtv",
 	"CUP_WarfareBuildings",
 	"CUP_StandaloneTerrains_Core_Faction",
+	"acm_mission",
 	"A3_Structures_F_Mil_Fortification",
 	"A3_Structures_F_Walls",
 	"A3_Structures_F_Exp_Walls_Pipe",
@@ -79,7 +81,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=36;
+		items=38;
 		class Item0
 		{
 			className="tfw_radios_rf3080";
@@ -88,237 +90,248 @@ class AddonsMetaData
 		};
 		class Item1
 		{
+			className="pook_SAM_Base";
+			name="pook_SAM_Base";
+		};
+		class Item2
+		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item2
+		class Item3
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item3
+		class Item4
 		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item4
+		class Item5
 		{
 			className="UK3CB_BAF_Equipment_Uniforms";
 			name="3CB BAF Equipment - Uniforms";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item5
+		class Item6
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item6
+		class Item7
 		{
 			className="UK3CB_BAF_Vehicles_Weapons";
 			name="3CB BAF Vehicles - Weapons";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item7
+		class Item8
 		{
 			className="sss_common";
 			name="common";
 			author="Simplex Team";
 			url="https://github.com/SceptreOfficial/Simplex-Support-Services";
 		};
-		class Item8
+		class Item9
 		{
 			className="sss_artillery";
 			name="artillery";
 			author="Simplex Team";
 			url="https://github.com/SceptreOfficial/Simplex-Support-Services";
 		};
-		class Item9
+		class Item10
 		{
 			className="sss_transport";
 			name="transport";
 			author="Simplex Team";
 			url="https://github.com/SceptreOfficial/Simplex-Support-Services";
 		};
-		class Item10
+		class Item11
 		{
 			className="sss_logistics";
 			name="logistics";
 			author="Simplex Team";
 			url="https://github.com/SceptreOfficial/Simplex-Support-Services";
 		};
-		class Item11
+		class Item12
 		{
 			className="rhsusf_c_troops";
 			name="RHSUSF Infantry & Equipment";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item12
+		class Item13
 		{
 			className="UK3CB_BAF_Vehicles_Hercules";
 			name="3CB BAF Vehicles - Hercules";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item13
+		class Item14
 		{
 			className="UK3CB_BAF_Vehicles_LandRover";
 			name="3CB BAF Vehicles - Land Rover";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item14
+		class Item15
 		{
 			className="UK3CB_BAF_Vehicles_MAN";
 			name="3CB BAF Vehicles - MAN Truck";
 			author="AUTHOR_3CB";
 			url="www.3commandobrigade.com";
 		};
-		class Item15
+		class Item16
 		{
 			className="UK3CB_BAF_Vehicles_Merlin";
 			name="3CB BAF Vehicles - Merlin";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item16
+		class Item17
 		{
 			className="UK3CB_BAF_Vehicles_Chinook";
 			name="3CB BAF Vehicles - Chinook";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item17
+		class Item18
 		{
 			className="UK3CB_BAF_Vehicles_MQ9_Reaper";
 			name="3CB BAF Vehicles - MQ-9 Reaper";
 			author="AUTHOR_3CB";
 			url="www.3commandobrigade.com";
 		};
-		class Item18
+		class Item19
 		{
 			className="rhsusf_c_m109";
 			name="M109A6 SPH";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item19
+		class Item20
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item20
+		class Item21
 		{
 			className="A3_Ui_F";
 			name="Arma 3 - User Interface";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item21
+		class Item22
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item22
+		class Item23
 		{
 			className="ace_cargo";
 			name="ACE3 - Cargo";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item23
+		class Item24
 		{
 			className="A3_Props_F_Enoch";
 			name="Arma 3 Contact Platform - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item24
+		class Item25
 		{
 			className="rhsusf_c_fmtv";
 			name="FMTV Trucks";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item25
+		class Item26
 		{
 			className="CUP_WarfareBuildings";
 			name="CUP_WarfareBuildings";
 		};
-		class Item26
+		class Item27
 		{
 			className="CUP_StandaloneTerrains_Core_Faction";
 			name="CUP_StandaloneTerrains_Core_Faction";
 		};
-		class Item27
+		class Item28
+		{
+			className="ACM_mission";
+			name="ACM - Mission";
+			author="Blue";
+		};
+		class Item29
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item28
+		class Item30
 		{
 			className="A3_Structures_F_Exp";
 			name="Arma 3 Apex - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item29
+		class Item31
 		{
 			className="CUP_CAMisc";
 			name="CUP_CAMisc";
 		};
-		class Item30
+		class Item32
 		{
 			className="A3_Props_F_Orange";
 			name="Arma 3 Orange - Decorative and Mission Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item31
+		class Item33
 		{
 			className="A3_Structures_F_Ind";
 			name="Arma 3 - Industrial Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item32
+		class Item34
 		{
 			className="A3_Signs_F";
 			name="Arma 3 - Signs";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item33
+		class Item35
 		{
 			className="A3_Structures_F_Orange";
 			name="Arma 3 Orange - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item34
+		class Item36
 		{
 			className="A3_Misc_F";
 			name="Arma 3 - 3D Aids and Helpers";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item35
+		class Item37
 		{
 			className="A3_Structures_F_Enoch_Military";
 			name="Arma 3 Contact Platform - Military Buildings and Structures";
@@ -351,9 +364,6 @@ class ScenarioData
 {
 	author="Cathode";
 	wreckRemovalMaxTime=3600;
-};
-class CustomAttributes
-{
 };
 class Mission
 {
@@ -1880,6 +1890,7 @@ class Mission
 										rank="CAPTAIN";
 										name="p0ic";
 										description="C Coy OC@0";
+										isPlayer=1;
 										isPlayable=1;
 										class Inventory
 										{
@@ -9716,7 +9727,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[""23#5#202582914031478"",""16#3#202431913597964"",""29#5#2024319135915499"",""14#76#2024718215921201"",""88#2#20244605426557"",""42#79#2024718215937763"",""99#2#2025129204259767"",""10#3#2025129204259768"",""55#2#2024101421554885""]";
+											value="[""56#4#202599143516538"",""16#3#202431913597964"",""29#5#2024319135915499"",""14#76#2024718215921201"",""88#2#20244605426557"",""42#79#2024718215937763"",""99#2#2025129204259767"",""10#3#2025129204259768"",""55#2#2024101421554885""]";
 										};
 									};
 								};
@@ -10171,7 +10182,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[""23#5#202582914031478"",""16#3#202431913597964"",""29#5#2024319135915499"",""14#76#2024718215921201"",""88#2#20244605426557"",""42#79#2024718215937763"",""99#2#2025129204259767"",""10#3#2025129204259768"",""55#2#2024101421554885""]";
+											value="[""56#4#202599143516538"",""16#3#202431913597964"",""29#5#2024319135915499"",""14#76#2024718215921201"",""88#2#20244605426557"",""42#79#2024718215937763"",""99#2#2025129204259767"",""10#3#2025129204259768"",""55#2#2024101421554885""]";
 										};
 									};
 								};
@@ -10548,7 +10559,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[""23#5#202582914031478"",""16#3#202431913597964"",""29#5#2024319135915499"",""14#76#2024718215921201"",""88#2#20244605426557"",""42#79#2024718215937763"",""99#2#2025129204259767"",""10#3#2025129204259768"",""55#2#2024101421554885""]";
+											value="[""56#4#202599143516538"",""16#3#202431913597964"",""29#5#2024319135915499"",""14#76#2024718215921201"",""88#2#20244605426557"",""42#79#2024718215937763"",""99#2#2025129204259767"",""10#3#2025129204259768"",""55#2#2024101421554885""]";
 										};
 									};
 								};
@@ -10724,7 +10735,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[""23#5#202582914031478"",""16#3#202431913597964"",""29#5#2024319135915499"",""14#76#2024718215921201"",""88#2#20244605426557"",""42#79#2024718215937763"",""99#2#2025129204259767"",""10#3#2025129204259768"",""55#2#2024101421554885""]";
+											value="[""56#4#202599143516538"",""16#3#202431913597964"",""29#5#2024319135915499"",""14#76#2024718215921201"",""88#2#20244605426557"",""42#79#2024718215937763"",""99#2#2025129204259767"",""10#3#2025129204259768"",""55#2#2024101421554885""]";
 										};
 									};
 								};
@@ -10992,7 +11003,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[""23#5#202582914031478"",""16#3#202431913597964"",""29#5#2024319135915499"",""14#76#2024718215921201"",""88#2#20244605426557"",""42#79#2024718215937763"",""99#2#2025129204259767"",""10#3#2025129204259768"",""55#2#2024101421554885""]";
+											value="[""56#4#202599143516538"",""16#3#202431913597964"",""29#5#2024319135915499"",""14#76#2024718215921201"",""88#2#20244605426557"",""42#79#2024718215937763"",""99#2#2025129204259767"",""10#3#2025129204259768"",""55#2#2024101421554885""]";
 										};
 									};
 								};
@@ -11260,7 +11271,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[""23#5#202582914031478"",""16#3#202431913597964"",""29#5#2024319135915499"",""14#76#2024718215921201"",""88#2#20244605426557"",""42#79#2024718215937763"",""99#2#2025129204259767"",""10#3#2025129204259768"",""55#2#2024101421554885""]";
+											value="[""56#4#202599143516538"",""16#3#202431913597964"",""29#5#2024319135915499"",""14#76#2024718215921201"",""88#2#20244605426557"",""42#79#2024718215937763"",""99#2#2025129204259767"",""10#3#2025129204259768"",""55#2#2024101421554885""]";
 										};
 									};
 								};
@@ -11703,7 +11714,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[""23#5#202582914031478"",""16#3#202431913597964"",""29#5#2024319135915499"",""14#76#2024718215921201"",""88#2#20244605426557"",""42#79#2024718215937763"",""99#2#2025129204259767"",""10#3#2025129204259768"",""55#2#2024101421554885""]";
+											value="[""56#4#202599143516538"",""16#3#202431913597964"",""29#5#2024319135915499"",""14#76#2024718215921201"",""88#2#20244605426557"",""42#79#2024718215937763"",""99#2#2025129204259767"",""10#3#2025129204259768"",""55#2#2024101421554885""]";
 										};
 									};
 								};
@@ -12036,7 +12047,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[""23#5#202582914031478"",""16#3#202431913597964"",""29#5#2024319135915499"",""14#76#2024718215921201"",""88#2#20244605426557"",""42#79#2024718215937763"",""99#2#2025129204259767"",""10#3#2025129204259768"",""55#2#2024101421554885""]";
+											value="[""56#4#202599143516538"",""16#3#202431913597964"",""29#5#2024319135915499"",""14#76#2024718215921201"",""88#2#20244605426557"",""42#79#2024718215937763"",""99#2#2025129204259767"",""10#3#2025129204259768"",""55#2#2024101421554885""]";
 										};
 									};
 								};
@@ -12382,7 +12393,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[""23#5#202582914031478"",""16#3#202431913597964"",""29#5#2024319135915499"",""14#76#2024718215921201"",""88#2#20244605426557"",""42#79#2024718215937763"",""99#2#2025129204259767"",""10#3#2025129204259768"",""55#2#2024101421554885""]";
+											value="[""56#4#202599143516538"",""16#3#202431913597964"",""29#5#2024319135915499"",""14#76#2024718215921201"",""88#2#20244605426557"",""42#79#2024718215937763"",""99#2#2025129204259767"",""10#3#2025129204259768"",""55#2#2024101421554885""]";
 										};
 									};
 								};
@@ -14134,7 +14145,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[""23#5#202582914031478"",""16#3#202431913597964"",""29#5#2024319135915499"",""14#76#2024718215921201"",""88#2#20244605426557"",""42#79#2024718215937763"",""99#2#2025129204259767"",""10#3#2025129204259768"",""55#2#2024101421554885""]";
+											value="[""56#4#202599143516538"",""16#3#202431913597964"",""29#5#2024319135915499"",""14#76#2024718215921201"",""88#2#20244605426557"",""42#79#2024718215937763"",""99#2#2025129204259767"",""10#3#2025129204259768"",""55#2#2024101421554885""]";
 										};
 									};
 								};
@@ -15261,32 +15272,31 @@ class Mission
 			name="OPTIONAL Medical Buildings";
 			class Entities
 			{
-				items=4;
+				items=7;
 				class Item0
 				{
 					dataType="Comment";
 					class PositionInfo
 					{
-						position[]={20.000031,5,327};
+						position[]={24.809999,5,327.91199};
 					};
-					title="OPTIONAL Auto-heal buildings";
-					description="All are identical in functionality. Use the one that fits best, or change it to any object of your choice." \n "Simply does a ACE full heal on any player that enters the trigger area. Trigger is handled locally on each players machine. " \n "The trigger will always be centered on the object with rotation taken into account." \n "It will not move with the building after mission init, for example in zeus." \n "" \n "Trigger radius ( ""3, 3"" in meters in the example below) will likely need to be tweaked if you choose to change the building. You can place a trigger manually to measure out the radii needed for your building" \n "_heal setTriggerArea [3, 3, (this getDir), false]; ";
-					id=146;
+					title="OPTIONAL Full-heal buildings";
+					description="Object + module. All are identical in functionality. Use the one that fits best, or change it to any object of your choice.";
+					id=3681;
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={15,5.6999998,321};
+						position[]={20,5.6999998,322};
 					};
 					side="Empty";
 					flags=5;
 					class Attributes
 					{
-						init="_heal = createTrigger [""EmptyDetector"",(getPosATL this), false];" \n "_heal setTriggerArea [1.2, 1.2, (getDir this), false]; " \n "_heal setTriggerActivation [""ANYPLAYER"", ""PRESENT"", true]; " \n "_heal setTriggerStatements [""call{player in thislist};"", ""player call ace_medical_treatment_fnc_fullHealLocal; if (name (thislist select 0) == name player) then {hint 'You have been fully healed'};"",""""];";
 					};
-					id=147;
+					id=3682;
 					type="Land_Medevac_house_V1_F";
 					class CustomAttributes
 					{
@@ -15311,18 +15321,17 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={22,7.1598816,338};
+						position[]={26.809998,7.1598816,338.91199};
 					};
 					side="Empty";
 					flags=4;
 					class Attributes
 					{
 						lock="LOCKED";
-						init="_heal = createTrigger [""EmptyDetector"",(getPosATL this), false];" \n "_heal setTriggerArea [5, 9, (getDir this), false]; " \n "_heal setTriggerActivation [""ANYPLAYER"", ""PRESENT"", true]; " \n "_heal setTriggerStatements [""call{player in thislist};"", ""player call ace_medical_treatment_fnc_fullHealLocal; if (name (thislist select 0) == name player) then {hint 'You have been fully healed'};"",""""];";
 						disableSimulation=1;
 						dynamicSimulation=1;
 					};
-					id=148;
+					id=3683;
 					type="rhsusf_M1085A1P2_B_WD_Medical_fmtv_usarmy";
 					class CustomAttributes
 					{
@@ -15373,17 +15382,15 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={26.000031,4.7520652,321};
+						position[]={31,4.6520653,322};
 					};
 					side="Empty";
 					flags=4;
 					class Attributes
 					{
-						init="_heal = createTrigger [""EmptyDetector"",(getPosATL this), false]; " \n "_heal setTriggerArea [5, 3, (getDir this), false];  " \n "_heal setTriggerActivation [""ANYPLAYER"", ""PRESENT"", true];  " \n "_heal setTriggerStatements [""this"", ""player call ace_medical_treatment_fnc_fullHealLocal; if (name (thislist select 0) == name player) then {hint 'You have been fully healed'};"",""""];";
 					};
-					id=149;
+					id=3684;
 					type="CDF_WarfareBFieldhHospital";
-					atlOffset=0.099999905;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -15402,9 +15409,128 @@ class Mission
 						nAttributes=1;
 					};
 				};
+				class Item4
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={31,5,317};
+					};
+					id=3680;
+					type="ACM_mission_Eden_FullHealFacility";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ACM_mission_Eden_FullHealFacility_InteractionDistance";
+							expression="_this setVariable ['InteractionDistance',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=5;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ACM_mission_Eden_FullHealFacility_InteractionPosition";
+							expression="_this setVariable ['InteractionPosition',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="[0,0,2]";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item5
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={20,5,318};
+					};
+					id=3685;
+					type="ACM_mission_Eden_FullHealFacility";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ACM_mission_Eden_FullHealFacility_InteractionDistance";
+							expression="_this setVariable ['InteractionDistance',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=5;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ACM_mission_Eden_FullHealFacility_InteractionPosition";
+							expression="_this setVariable ['InteractionPosition',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="[0,2,1]";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item6
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={27,5,335};
+					};
+					id=3686;
+					type="ACM_mission_Eden_FullHealFacility";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ACM_mission_Eden_FullHealFacility_InteractionDistance";
+							expression="_this setVariable ['InteractionDistance',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=5;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ACM_mission_Eden_FullHealFacility_InteractionPosition";
+							expression="_this setVariable ['InteractionPosition',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="[0,-3.5,-0.5]";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
 			};
 			id=145;
-			atlOffset=0.050000191;
 		};
 		class Item3
 		{
@@ -15412,7 +15538,7 @@ class Mission
 			name="OPTIONAL Example Base";
 			class Entities
 			{
-				items=191;
+				items=192;
 				class Item0
 				{
 					dataType="Object";
@@ -23383,9 +23509,49 @@ class Mission
 						nAttributes=1;
 					};
 				};
+				class Item191
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={419.84445,5,705.2395};
+					};
+					id=3695;
+					type="ACM_mission_Eden_FullHealFacility";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ACM_mission_Eden_FullHealFacility_InteractionDistance";
+							expression="_this setVariable ['InteractionDistance',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=5;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ACM_mission_Eden_FullHealFacility_InteractionPosition";
+							expression="_this setVariable ['InteractionPosition',_value,true];";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="[0,2,1]";
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
 			};
 			id=1122;
-			atlOffset=6.1035156e-05;
+			atlOffset=3.0517578e-05;
 		};
 		class Item4
 		{
@@ -25153,11 +25319,11 @@ class Mission
 	{
 		class LinkIDProvider
 		{
-			nextID=125;
+			nextID=129;
 		};
 		class Links
 		{
-			items=125;
+			items=129;
 			class Item0
 			{
 				linkID=0;
@@ -26403,6 +26569,46 @@ class Mission
 				linkID=124;
 				item0=3586;
 				item1=201;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item125
+			{
+				linkID=125;
+				item0=3680;
+				item1=3684;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item126
+			{
+				linkID=126;
+				item0=3685;
+				item1=3682;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item127
+			{
+				linkID=127;
+				item0=3686;
+				item1=3683;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item128
+			{
+				linkID=128;
+				item0=3695;
+				item1=1129;
 				class CustomData
 				{
 					type="Sync";

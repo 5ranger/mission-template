@@ -945,14 +945,7 @@ C5R_SSSSuppliesArray =
   [_this, 0] call ace_cargo_fnc_setSpace;   
   [_this, -1] call ace_cargo_fnc_setSize;
  },[],28],
- ["B_Slingload_01_Cargo_F","Bridge Pack",{
-   clearWeaponCargoGlobal _this;
-   clearMagazineCargoGlobal _this;
-   clearItemCargoGlobal _this;
-   clearBackpackCargoGlobal _this;
-   [_this,0] remoteExec ["setMaxLoad",2];
-   [_this, 0] call ace_cargo_fnc_setSpace;   
-   [_this, -1] call ace_cargo_fnc_setSize;
+ ["B_Slingload_01_Cargo_F",["Bridge Pack (DO NOT SLINGLOAD/AIRDROP)","","Takes 5 seconds to spawn"],{
    _this call C5R_Common_fnc_pontoonBridgeCreateObject;   
  },[],28] 
 ]];

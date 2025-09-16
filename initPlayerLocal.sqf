@@ -79,4 +79,7 @@ if (hasInterface) then {
 	player addEventHandler ["Killed", {
 		player connectTerminalToUAV objNull;
 	}];
+	[[ 
+		"rhs_pontoon_end_static"
+	]] call C5R_Common_fnc_pontoonBridgeObjectEH;
 };

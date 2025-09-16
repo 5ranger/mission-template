@@ -131,28 +131,28 @@ C5R_SSSGroundWoodlandArray =
     ]],
     ["#Boxer",[
       ["adfrc_boxer_apc","",{
-      [_this,nil,["towshackles",1,"towcable",1,"towbar",1,"storagebins",0,"leftstorage",1,"rightstorage",1,"tools",1,"duke",1,"nethull",0]] call BIS_fnc_initVehicle;
-      _this remoteExec ["DAPS_fnc_APSTrophyMV",2];
-      ["fillSection",_this,true] call C5R_ItemCfg_fnc_initInventory;
-      _this setFuel 0.45; 
-      ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;
-      ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;
+       [_this,nil,["towshackles",1,"towcable",1,"towbar",1,"storagebins",0,"leftstorage",1,"rightstorage",1,"tools",1,"duke",1,"nethull",0]] call BIS_fnc_initVehicle;
+       _this remoteExec ["DAPS_fnc_APSTrophyMV",2];
+       ["fillSection",_this,true] call C5R_ItemCfg_fnc_initInventory;
+       _this setFuel 0.45; 
+       ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;
+       ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;
       },[],30],
       ["adfrc_boxer_crv_late","",{
-      [_this,nil,["leftstorage",1,"rightstorage",1,"tools",1,"towbar",1,"towshackles",1,"towcable",1,"duke",1,"storagebins",0,"nethull",0,"netturret",0,"netgun",0]] call BIS_fnc_initVehicle;
-      _this remoteExec ["DAPS_fnc_APSTrophyMV",2];
-      ["fillSection",_this,true] call C5R_ItemCfg_fnc_initInventory;
-      _this setFuel 0.45; 
-      ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;
-      ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;
+       [_this,nil,["leftstorage",1,"rightstorage",1,"tools",1,"towbar",1,"towshackles",1,"towcable",1,"duke",1,"storagebins",0,"nethull",0,"netturret",0,"netgun",0]] call BIS_fnc_initVehicle;
+       _this remoteExec ["DAPS_fnc_APSTrophyMV",2];
+       ["fillSection",_this,true] call C5R_ItemCfg_fnc_initInventory;
+       _this setFuel 0.45; 
+       ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;
+       ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;
       },[],30],
-       ["adfrc_boxer_crv_b2","",{
-      [_this,nil,["towbar",0,"towshackles",1,"towcable",1,"duke",1,"netturret",0,"netgun",0]] call BIS_fnc_initVehicle;
-      _this remoteExec ["DAPS_fnc_APSTrophyMV",2];
-      ["fillSection",_this,true] call C5R_ItemCfg_fnc_initInventory;
-      _this setFuel 0.45; 
-      ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;
-      ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;
+      ["adfrc_boxer_crv_b2","",{
+       [_this,nil,["towbar",0,"towshackles",1,"towcable",1,"duke",1,"netturret",0,"netgun",0]] call BIS_fnc_initVehicle;
+       _this remoteExec ["DAPS_fnc_APSTrophyMV",2];
+       ["fillSection",_this,true] call C5R_ItemCfg_fnc_initInventory;
+       _this setFuel 0.45; 
+       ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;
+       ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;
       },[],30]
     ]],
     ["#CVR",[
@@ -278,7 +278,7 @@ C5R_SSSGroundWoodlandArray =
    ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;   
    ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;   
    ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem; 
-  },[],30] 
+  },[],30]
   ]],  
   ["UK3CB_BAF_LandRover_WMIK_HMG_FFR_Green_B","",{ 
    ["fillTeam",_this,true] call C5R_ItemCfg_fnc_initInventory; 
@@ -944,6 +944,16 @@ C5R_SSSSuppliesArray =
  ["Land_Cargo10_military_green_F",["Radio Relay Container","","Indestructible. Needs to be deployed. 25km range"],{
   [_this, 0] call ace_cargo_fnc_setSpace;   
   [_this, -1] call ace_cargo_fnc_setSize;
+ },[],28],
+ ["B_Slingload_01_Cargo_F","Bridge Pack",{
+   clearWeaponCargoGlobal _this;
+   clearMagazineCargoGlobal _this;
+   clearItemCargoGlobal _this;
+   clearBackpackCargoGlobal _this;
+   [_this,0] remoteExec ["setMaxLoad",2];
+   [_this, 0] call ace_cargo_fnc_setSpace;   
+   [_this, -1] call ace_cargo_fnc_setSize;
+   _this call C5R_Common_fnc_pontoonBridgeCreateObject;   
  },[],28] 
 ]];
 

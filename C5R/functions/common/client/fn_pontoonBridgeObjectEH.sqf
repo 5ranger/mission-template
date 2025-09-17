@@ -1,7 +1,7 @@
 _pontoonObject = "rhs_pontoon_end_static";
 ["acex_fortify_objectPlaced", {
 	params ["_player","_side","_obj"];
-	if ((typeOf _obj) in _thisArgs) then {
+	if (((typeOf _obj) in _thisArgs) && (_player == player)) then {
 		// Check for reqisite item 
 		private _nearby = nearestObjects [_obj, ["B_Slingload_01_Cargo_F"], 20];
         private _matches = _nearby select { _x getVariable ["C5R_bridgeObj", false] };
@@ -24,7 +24,7 @@ _pontoonObject = "rhs_pontoon_end_static";
 // When removed, recreate requisite item and remove all subpieces 
 ["acex_fortify_objectDeleted", {
 	params ["_player","_side","_obj"];
-	if ((typeOf _obj) in _thisArgs) then {
+	if (((typeOf _obj) in _thisArgs) && (_player == player)) then {
 		_crate = createVehicle ["B_Slingload_01_Cargo_F", (_player getRelPos [8,180]), [], 0, "NONE"];
 		[_crate] call C5R_Common_fnc_pontoonBridgeCreateObject; 
 		{deleteVehicle _x;} forEach (_obj getVariable "C5R_bridgeChildren");

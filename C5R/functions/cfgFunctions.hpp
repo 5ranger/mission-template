@@ -32,6 +32,8 @@ class C5R_Common
 		class fixSlingHelmetExploit {};
 		class fixZeus {};
 		class movePlayerToSpawn {};
+		class pontoonBridgeAttachActions {};
+		class pontoonBridgeObjectEH {};
 		class respawnObjectsEH {};
 	};
 	class server 
@@ -42,6 +44,7 @@ class C5R_Common
 		class freezeLayer {};
 		class respawnAdd {};
 		class respawnRemove {};
+		class pontoonBridgeCreateObject {};
 	};
 };
 class C5R_Logistics

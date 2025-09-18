@@ -42,5 +42,6 @@ call C5R_Common_fnc_dynamicSimulation; // Postpone dynamic simulation to let AI 
 	["Wire",12, "Misc"],
 	["Land_fort_artillery_nest", 150, "Misc"],
 	["Land_fort_artillery_nest_EP1", 150, "Misc"],
+	["rhs_pontoon_end_static",0, "Misc"],
 	["Land_PortableLight_double_F", 5, "Misc"]
 ]] call ace_fortify_fnc_registerObjects;

@@ -26,7 +26,8 @@ call C5R_Common_fnc_dynamicSimulation; // Postpone dynamic simulation to let AI 
 	["Land_HBarrierWall_corner_F", 50, "H-Barrier - Tan"], 
 	["Land_HBarrierWall4_F", 50, "H-Barrier - Tan"],
 	["Land_HBarrierWall6_F", 100, "H-Barrier - Tan"], 
-	["Land_HBarrierTower_F", 150, "H-Barrier - Tan"],
+	["Land_HBarrierTower_F", 120, "H-Barrier - Tan"],
+	["Land_Fort_Watchtower_EP1", 150, "H-Barrier - Tan"],
 
 	["Land_HBarrier_01_line_1_green_F", 12, "H-Barrier - Woodland"], 
 	["Land_HBarrier_01_line_3_green_F", 18, "H-Barrier - Woodland"], 
@@ -35,12 +36,16 @@ call C5R_Common_fnc_dynamicSimulation; // Postpone dynamic simulation to let AI 
 	["Land_HBarrier_01_wall_corner_green_F", 50, "H-Barrier - Woodland"], 
 	["Land_HBarrier_01_wall_4_green_F", 50, "H-Barrier - Woodland"],
 	["Land_HBarrier_01_wall_6_green_F", 100, "H-Barrier - Woodland"], 
-	["Land_HBarrier_01_big_tower_green_F", 150, "H-Barrier - Woodland"],
+	["Land_HBarrier_01_big_tower_green_F", 120, "H-Barrier - Woodland"],
+	["Land_HBarrier_01_tower_green_F", 150, "H-Barrier - Woodland"],
+	
 
 	["Land_MedicalTent_01_wdl_closed_F", 50, "Misc"],
 	["Land_MedicalTent_01_MTP_closed_F", 50, "Misc"],
 	["Wire",12, "Misc"],
 	["Land_fort_artillery_nest", 150, "Misc"],
 	["Land_fort_artillery_nest_EP1", 150, "Misc"],
-	["Land_PortableLight_double_F", 5, "Misc"]
+	["Land_PortableLight_double_F", 5, "Misc"],
+	["PARACHUTE_TARGET", 0, "Misc"],
+	["Land_HelipadSquare_F", 0, "Misc"]
 ]] call ace_fortify_fnc_registerObjects;

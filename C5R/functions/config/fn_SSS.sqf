@@ -803,6 +803,10 @@ C5R_SSSSuppliesArray =
    ["resupplydemo",_this,true] call C5R_ItemCfg_fnc_initInventory;  
    [_this, 2] call ace_cargo_fnc_setSize;  
   },[],2], 
+  ["Box_NATO_AmmoOrd_F",["M6 Light Mortar Ammo Crate","@resupply",""],{ 
+   ["resupply60mm",_this,true] call C5R_ItemCfg_fnc_initInventory;  
+   [_this, 2] call ace_cargo_fnc_setSize;  
+  },[],2], 
   ["UK3CB_BAF_Box_WpsLaunch_ILAW","",{},[],2],  
   ["UK3CB_BAF_Box_WpsLaunch_NLAW",["NLAW Crate","","5x NLAW"],{
    clearWeaponCargoGlobal _this;
@@ -832,6 +836,9 @@ C5R_SSSSuppliesArray =
   },[],2], 
   ["Box_NATO_Equip_F","Night Box",{
    ["resupplyNight",_this,true] call C5R_ItemCfg_fnc_initInventory;  
+  },[],3],
+  ["Box_NATO_Equip_F","Toolbox",{
+   ["resupplyToolbox",_this,true] call C5R_ItemCfg_fnc_initInventory;  
   },[],3],
   ["CargoNet_01_box_F","Field Arsenal (ELS USE ONLY, not loadable)",{
    clearWeaponCargoGlobal _this;

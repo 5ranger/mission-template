@@ -97,7 +97,7 @@ C5R_SSSGroundWoodlandArray =
   },[],16]  
 ]], 
  ["#Combat Vehicles (CV) (KRH)",[ 
-  /*["#Challenger 2",[
+  ["#Challenger 2",[
       ["qav_challenger2","FV4034 Challenger 2 (Standard)",{
       [_this,["oliveblack",1],["camonethull",0,"camonetturret",0,"hull_lab1",0,"hull_lab2",0,"hull_lab3",0,"hull_lab4",0,"hull_lab5",0,"hull_lab6",0,"hull_lab7",1,"hull_lab8",0,"iffpanels",0,"hulltowcable",1,"hulltowshackles",1,"towshackles",1,"fueldrums",1,"showext_fpe",1,"firstaid",1,"wirewheel",1,"hulljerrys",1,"sparetracks",1]] call BIS_fnc_initVehicle;
       _this remoteExec ["DAPS_fnc_APSIronFist",2];
@@ -128,7 +128,7 @@ C5R_SSSGroundWoodlandArray =
       _this setFuel 0.60;
       ["ACE_Track", _this] call ace_cargo_fnc_loadItem;  
       },[],36]
-    ]],*/
+    ]],
     /*["#Boxer",[
       ["adfrc_boxer_apc","",{
       [_this,nil,["towshackles",1,"towcable",1,"towbar",1,"storagebins",0,"leftstorage",1,"rightstorage",1,"tools",1,"duke",1,"nethull",0]] call BIS_fnc_initVehicle;
@@ -414,7 +414,7 @@ C5R_SSSGroundSandArray =
   },[],16] 
  ]], 
  ["#Combat Vehicles (CV) (RAC)",[ 
-  /*["#Challenger 2",[
+  ["#Challenger 2",[
       ["qav_challenger2","FV4034 Challenger 2 (Standard)",{
       [_this,["olivetan",1],["camonethull",0,"camonetturret",0,"hull_lab1",0,"hull_lab2",0,"hull_lab3",0,"hull_lab4",0,"hull_lab5",0,"hull_lab6",0,"hull_lab7",0,"hull_lab8",1,"iffpanels",0,"hulltowcable",1,"hulltowshackles",1,"towshackles",1,"fueldrums",1,"showext_fpe",1,"firstaid",1,"wirewheel",1,"hulljerrys",1,"sparetracks",1]] call BIS_fnc_initVehicle;
       _this remoteExec ["DAPS_fnc_APSIronFist",2];
@@ -445,7 +445,7 @@ C5R_SSSGroundSandArray =
       _this setFuel 0.60;
       ["ACE_Track", _this] call ace_cargo_fnc_loadItem;  
       },[],36]
-    ]],*/
+    ]],
     ["#CVR",[
       ["cwr3_b_uk_fv107","FV107 Scimitar",{ 
       [_this,["Desert",1],true] call BIS_fnc_initVehicle;
@@ -684,7 +684,7 @@ C5R_SSSGroundSandArray =
 C5R_SSSGroundWinterArray = 
 ["#Ground - Winter",[
  ["#Combat Vehicles (CV) (RAC)",[ 
-  /*["#Challenger 2",[
+  ["#Challenger 2",[
       ["qav_challenger2","FV4034 Challenger 2 (Standard)",{
       [_this,["olive",1],["camonethull",0,"camonetturret",0,"hull_lab1",0,"hull_lab2",0,"hull_lab3",0,"hull_lab4",0,"hull_lab5",0,"hull_lab6",0,"hull_lab7",1,"hull_lab8",0,"iffpanels",0,"hulltowcable",1,"hulltowshackles",1,"towshackles",1,"fueldrums",1,"showext_fpe",1,"firstaid",1,"wirewheel",1,"hulljerrys",1,"sparetracks",1]] call BIS_fnc_initVehicle;
       _this remoteExec ["DAPS_fnc_APSIronFist",2];
@@ -715,7 +715,7 @@ C5R_SSSGroundWinterArray =
       _this setFuel 0.60;
       ["ACE_Track", _this] call ace_cargo_fnc_loadItem;  
       },[],36]
-    ]],*/
+    ]],
     ["#CVR",[
       ["cwr3_b_uk_fv107","FV107 Scimitar",{ 
       [_this,["Winter",1],true] call BIS_fnc_initVehicle;

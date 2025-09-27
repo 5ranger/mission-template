@@ -200,7 +200,7 @@ C5R_SSSGroundWoodlandArray =
       ["UK3CB_BAF_FV432_Mk3_RWS_Green","",{ 
       ["fillSection",_this,true] call C5R_ItemCfg_fnc_initInventory; 
       [{_this getVariable "C5R_fillInventoryComplete" == true}, {
-        _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3]; 
+        _this addMagazineCargoGlobal ["UK3CB_BAF_127_100Rnd",4]; 
       },_this,10,{diag_log format ["[C5R_SSS] Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
       _this setFuel 0.33;
       ["ACE_Track", _this] call ace_cargo_fnc_loadItem; 
@@ -291,7 +291,7 @@ C5R_SSSGroundWoodlandArray =
    _this setFuel 0.33; 
   },[],12], 
   ["rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_wd","",{ 
-   [_this, ["rhs_woodland",1], ["hide_ogpkover",0,"hide_ogpknet",1,"hide_ogpkbust",0,"hide_spare",0,"FlagPole_pos",0]] call BIS_fnc_initVehicle;
+   [_this, ["rhs_woodland",1], ["hide_ogpkover",0,"hide_ogpknet",1,"hide_ogpkst",0,"hide_spare",0,"FlagPole_pos",0]] call BIS_fnc_initVehicle;
    ["fillTeam",_this,true] call C5R_ItemCfg_fnc_initInventory; 
    [{_this getVariable "C5R_fillInventoryComplete" == true}, {
     _this addItemCargoGlobal ["ACE_Fortify",1];
@@ -339,7 +339,7 @@ C5R_SSSGroundWoodlandArray =
   ["UK3CB_BAF_FV432_Mk3_RWS_Green","",{ 
    ["fillSection",_this,true] call C5R_ItemCfg_fnc_initInventory; 
    [{_this getVariable "C5R_fillInventoryComplete" == true}, {
-    _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3];
+    _this addMagazineCargoGlobal ["UK3CB_BAF_127_100Rnd",4];
     _this addItemCargoGlobal ["ACE_Fortify",1]; 
    },_this,10,{diag_log format ["[C5R_SSS] Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
    _this setFuel 0.50; 
@@ -384,7 +384,7 @@ C5R_SSSGroundWoodlandArray =
   ["ACE_Track", _this] call ace_cargo_fnc_loadItem;  
   },[],36],
  ["B_crew_F","Vehicle Crewman",{ 
-   _this setUnitLoadout (getUnitLoadout loadoutVehicleCrew) 
+   _this setUnitLoadout (C5R_loadouts get loadoutVehicleCrew) 
   },[],1] 
 ]];
 C5R_SSSGroundSandArray = 
@@ -632,7 +632,7 @@ C5R_SSSGroundSandArray =
   ["UK3CB_BAF_FV432_Mk3_RWS_Sand","",{ 
    ["fillSection",_this,true] call C5R_ItemCfg_fnc_initInventory; 
    [{_this getVariable "C5R_fillInventoryComplete" == true}, {
-    _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3];
+    _this addMagazineCargoGlobal ["UK3CB_BAF_127_100Rnd",4];
     _this addItemCargoGlobal ["ACE_Fortify",1]; 
    },_this,10,{diag_log format ["[C5R_SSS] Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
    _this setFuel 0.50; 
@@ -955,7 +955,7 @@ C5R_SSSSuppliesArray =
 ]];
 
 C5R_SSSNavyArray = 
-["#Navy",[
+["#Navy",[ 
  ["#Raiding Craft",[
   ["UK3CB_BAF_RHIB_HMG","",{
    ["fillSection",_this,true] call C5R_ItemCfg_fnc_initInventory;

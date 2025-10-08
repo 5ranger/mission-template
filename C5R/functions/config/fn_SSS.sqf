@@ -90,40 +90,30 @@ C5R_SSSGroundWoodlandArray =
     _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3]; 
    },_this,10,{diag_log format ["[C5R_SSS] Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute; 
    _this setFuel 0.33; 
-  },[],16], 
+  },[],16]/*, 
   ["blx_ridgback_HMG_W","",{ 
    ["fillPlt",_this,true] call C5R_ItemCfg_fnc_initInventory;  
    _this setFuel 0.33; 
-  },[],16]  
+  },[],16]*/  
 ]], 
- ["#Combat Vehicles (CV) (KRH)",[ 
+ ["#Combat Vehicles (CV) (RAC)",[ 
   ["#Challenger 2",[
-      ["qav_challenger2","FV4034 Challenger 2 (Standard)",{
-      [_this,["oliveblack",1],["camonethull",0,"camonetturret",0,"hull_lab1",0,"hull_lab2",0,"hull_lab3",0,"hull_lab4",0,"hull_lab5",0,"hull_lab6",0,"hull_lab7",1,"hull_lab8",0,"iffpanels",0,"hulltowcable",1,"hulltowshackles",1,"towshackles",1,"fueldrums",1,"showext_fpe",1,"firstaid",1,"wirewheel",1,"hulljerrys",1,"sparetracks",1]] call BIS_fnc_initVehicle;
+      ["qav_challenger2","FV4034 Challenger 2",{
+      [_this,["olive",1],["camonethull",1,"camonetturret",1,"hull_lab1",0,"hull_lab2",0,"hull_lab3",0,"hull_lab4",0,"hull_lab5",0,"hull_lab6",0,"hull_lab7",0,"hull_lab8",0,"iffpanels",0,"hulltowcable",1,"hulltowshackles",0,"towshackles",0,"fueldrums",1,"showext_fpe",1,"firstaid",0,"wirewheel",1,"hulljerrys",1,"sparetracks",1]] call BIS_fnc_initVehicle;
       _this remoteExec ["DAPS_fnc_APSIronFist",2];
       ["fillAFV",_this,true] call C5R_ItemCfg_fnc_initInventory;
       [{_this getVariable "C5R_fillInventoryComplete" == true}, {
-        _this addMagazineCargoGlobal ["UK3CB_BAF_762_800Rnd_T",4];
+        
       },_this,10,{diag_log format ["[C5R_SSS] Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
       _this setFuel 0.60;
       ["ACE_Track", _this] call ace_cargo_fnc_loadItem;  
       },[],36],
-      ["qav_challenger2","FV4034 Challenger 2 (Get Jinxed)",{
-      [_this,["oliveblack",1],["camonethull",0,"camonetturret",0,"hull_lab1",1,"hull_lab2",0,"hull_lab3",0,"hull_lab4",0,"hull_lab5",0,"hull_lab6",0,"hull_lab7",0,"hull_lab8",0,"iffpanels",0,"hulltowcable",1,"hulltowshackles",1,"towshackles",1,"fueldrums",1,"showext_fpe",1,"firstaid",1,"wirewheel",1,"hulljerrys",1,"sparetracks",1]] call BIS_fnc_initVehicle;
+      ["qav_challenger2_e","FV4034 Challenger 2E",{
+      [_this,["olive",1],["towbar",0,"frontskirt",0,"camonethull",1,"camonetturret",1,"hull_lab1",0,"hull_lab2",0,"hull_lab3",0,"hull_lab4",0,"hull_lab5",0,"hull_lab6",0,"hull_lab7",0,"hull_lab8",0,"iffpanels",0,"hulltowcable",1,"hulltowshackles",0,"towshackles",0,"fueldrums",1,"showext_fpe",1,"firstaid",0,"wirewheel",1,"hulljerrys",1,"sparetracks",1]] call BIS_fnc_initVehicle;
       _this remoteExec ["DAPS_fnc_APSIronFist",2];
       ["fillAFV",_this,true] call C5R_ItemCfg_fnc_initInventory;
       [{_this getVariable "C5R_fillInventoryComplete" == true}, {
-        _this addMagazineCargoGlobal ["UK3CB_BAF_762_800Rnd_T",4];
-      },_this,10,{diag_log format ["[C5R_SSS] Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
-      _this setFuel 0.60;
-      ["ACE_Track", _this] call ace_cargo_fnc_loadItem;  
-      },[],36],
-      ["qav_challenger2","FV4034 Challenger 2 (Anvil)",{
-      [_this,["oliveblack",1],["camonethull",0,"camonetturret",0,"hull_lab1",0,"hull_lab2",0,"hull_lab3",1,"hull_lab4",0,"hull_lab5",0,"hull_lab6",0,"hull_lab7",0,"hull_lab8",0,"iffpanels",0,"hulltowcable",1,"hulltowshackles",1,"towshackles",1,"fueldrums",1,"showext_fpe",1,"firstaid",1,"wirewheel",1,"hulljerrys",1,"sparetracks",1]] call BIS_fnc_initVehicle;
-      _this remoteExec ["DAPS_fnc_APSIronFist",2];
-      ["fillAFV",_this,true] call C5R_ItemCfg_fnc_initInventory;
-      [{_this getVariable "C5R_fillInventoryComplete" == true}, {
-        _this addMagazineCargoGlobal ["UK3CB_BAF_762_800Rnd_T",4];
+        
       },_this,10,{diag_log format ["[C5R_SSS] Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
       _this setFuel 0.60;
       ["ACE_Track", _this] call ace_cargo_fnc_loadItem;  
@@ -155,7 +145,7 @@ C5R_SSSGroundWoodlandArray =
       ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;
       },[],30]
     ]],*/
-    ["#CVR",[
+    /*["#CVR",[
       ["cwr3_b_uk_fv107","FV107 Scimitar",{ 
       [_this,["Olive",1],true] call BIS_fnc_initVehicle;
       ["fillAFV",_this,true] call C5R_ItemCfg_fnc_initInventory;
@@ -173,20 +163,20 @@ C5R_SSSGroundWoodlandArray =
       _this setFuel 0.33;
       ["ACE_Track", _this] call ace_cargo_fnc_loadItem;
       },[],16]
-    ]],
+    ]],*/
     ["#Anti-Air",[
       ["B_T_APC_Tracked_01_AA_F","",{
       [_this,["Olive",1],["showCamonetTurret",0,"showCamonetHull",0,"showBags",1]] call BIS_fnc_initVehicle;
       ["fillAFV",_this,true] call C5R_ItemCfg_fnc_initInventory;
       _this setFuel 0.33;
       ["ACE_Track", _this] call ace_cargo_fnc_loadItem;
-      },[],22],
+      },[],22]/*,
       ["alvis_stormer","",{
       [_this,["Olive",1], ["showTools",1,"showCamonetHull",0,"showBags",1,"showSLATHull",0]] call BIS_fnc_initVehicle;
       ["fillAFV",_this,true] call C5R_ItemCfg_fnc_initInventory;
       _this setFuel 0.33;
       ["ACE_Track", _this] call ace_cargo_fnc_loadItem;
-      },[],16]
+      },[],16]*/
     ]],
     ["#Transport",[
       ["UK3CB_BAF_FV432_Mk3_GPMG_Green","",{ 
@@ -209,14 +199,26 @@ C5R_SSSGroundWoodlandArray =
       ["fillSection",_this,true] call C5R_ItemCfg_fnc_initInventory; 
       _this setFuel 0.33; 
       },[],28],
-      ["UK3CB_BAF_Warrior_A3_W","FV510 Warrior",{
-      [_this,["BAF_01",1],["showBags",0,"showBags2",1,"showCamonetHull",0,"showCamonetTurret",0,"showTools",1,"showSLATHull",0,"showSLATTurret",0]] call BIS_fnc_initVehicle;
+      ["UK3CB_BAF_Warrior_A3_W_Cage_Camo","FV510 Warrior",{
+      [_this,["BAF_01",1],["showBags",1,"showBags2",1,"showCamonetHull",1,"showCamonetTurret",1,"showTools",1,"showSLATHull",1,"showSLATTurret",1]] call BIS_fnc_initVehicle;
       ["fillSection",_this,true] call C5R_ItemCfg_fnc_initInventory; 
       [{_this getVariable "C5R_fillInventoryComplete" == true}, {
-        _this addMagazineCargoGlobal ["UK3CB_BAF_762_800Rnd_T",1];
-        _this addMagazineCargoGlobal ["UK3CB_BAF_6Rnd_30mm_L21A1_APDS",17];
-        _this addMagazineCargoGlobal ["UK3CB_BAF_6Rnd_30mm_L21A1_HE",17];
+        _this removeWeaponTurret ["UK3CB_BAF_L21A1_Rarden", [0]];
+        _this removeWeaponTurret ["UK3CB_BAF_L94A1_veh", [0]];
+        _this addWeaponTurret ["autocannon_40mm_CTWS", [0]];
+        _this addMagazineTurret ["60Rnd_40mm_GPR_Tracer_Red_shells",[0]];
+        _this addMagazineTurret ["60Rnd_40mm_GPR_Tracer_Red_shells",[0]];
+        _this addMagazineTurret ["40Rnd_40mm_APFSDS_Tracer_Red_shells",[0]];
+        _this addMagazineTurret ["40Rnd_40mm_APFSDS_Tracer_Red_shells",[0]];
+        _this addWeaponTurret ["ACE_LMG_coax_MAG58_mem3", [0]];
+        _this addMagazineTurret ["200Rnd_762x51_Belt_Red",[0]];
+        _this addMagazineTurret ["200Rnd_762x51_Belt_Red",[0]];
+        _this addMagazineTurret ["200Rnd_762x51_Belt_Red",[0]];
+        _this addMagazineTurret ["200Rnd_762x51_Belt_Red",[0]];
+        _this addWeaponTurret ["UK3CB_BAF_Milan_Launcher", [0]];
+        _this addMagazineTurret ["UK3CB_BAF_1Rnd_Milan",[0]];
         _this addMagazineCargoGlobal ["UK3CB_BAF_1Rnd_Milan", 2]; 
+        _this setVariable ["ace_rearm_scriptedLoadout", true, true];
       },_this,10,{diag_log format ["[C5R_SSS] Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;  
       _this setFuel 0.33; 
       ["ACE_Track", _this] call ace_cargo_fnc_loadItem;  
@@ -407,46 +409,36 @@ C5R_SSSGroundSandArray =
     _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3]; 
    },_this,10,{diag_log format ["[C5R_SSS] Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
    _this setFuel 0.33; 
-  },[],16], 
+  },[],16]/*, 
   ["blx_ridgback_HMG_D","",{ 
    ["fillPlt",_this,true] call C5R_ItemCfg_fnc_initInventory;  
    _this setFuel 0.33;    
-  },[],16] 
+  },[],16]*/
  ]], 
  ["#Combat Vehicles (CV) (RAC)",[ 
   ["#Challenger 2",[
-      ["qav_challenger2","FV4034 Challenger 2 (Standard)",{
-      [_this,["olivetan",1],["camonethull",0,"camonetturret",0,"hull_lab1",0,"hull_lab2",0,"hull_lab3",0,"hull_lab4",0,"hull_lab5",0,"hull_lab6",0,"hull_lab7",0,"hull_lab8",1,"iffpanels",0,"hulltowcable",1,"hulltowshackles",1,"towshackles",1,"fueldrums",1,"showext_fpe",1,"firstaid",1,"wirewheel",1,"hulljerrys",1,"sparetracks",1]] call BIS_fnc_initVehicle;
+      ["qav_challenger2","FV4034 Challenger 2",{
+      [_this,["natoarid",1],["camonethull",1,"camonetturret",1,"hull_lab1",0,"hull_lab2",0,"hull_lab3",0,"hull_lab4",0,"hull_lab5",0,"hull_lab6",0,"hull_lab7",0,"hull_lab8",0,"iffpanels",0,"hulltowcable",1,"hulltowshackles",0,"towshackles",0,"fueldrums",1,"showext_fpe",1,"firstaid",0,"wirewheel",1,"hulljerrys",1,"sparetracks",1]] call BIS_fnc_initVehicle;
       _this remoteExec ["DAPS_fnc_APSIronFist",2];
       ["fillAFV",_this,true] call C5R_ItemCfg_fnc_initInventory;
       [{_this getVariable "C5R_fillInventoryComplete" == true}, {
-        _this addMagazineCargoGlobal ["UK3CB_BAF_762_800Rnd_T",4];
+       
       },_this,10,{diag_log format ["[C5R_SSS] Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
       _this setFuel 0.60;
       ["ACE_Track", _this] call ace_cargo_fnc_loadItem;  
       },[],36],
-      ["qav_challenger2","FV4034 Challenger 2 (Get Jinxed)",{
-      [_this,["olivetan",1],["camonethull",0,"camonetturret",0,"hull_lab1",0,"hull_lab2",1,"hull_lab3",0,"hull_lab4",0,"hull_lab5",0,"hull_lab6",0,"hull_lab7",0,"hull_lab8",0,"iffpanels",0,"hulltowcable",1,"hulltowshackles",1,"towshackles",1,"fueldrums",1,"showext_fpe",1,"firstaid",1,"wirewheel",1,"hulljerrys",1,"sparetracks",1]] call BIS_fnc_initVehicle;
+       ["qav_B_challenger2_e","FV4034 Challenger 2E",{
+      [_this,["natoarid",1],["towbar",0,"frontskirt",0,"camonethull",1,"camonetturret",1,"hull_lab1",0,"hull_lab2",0,"hull_lab3",0,"hull_lab4",0,"hull_lab5",0,"hull_lab6",0,"hull_lab7",0,"hull_lab8",0,"iffpanels",0,"hulltowcable",1,"hulltowshackles",0,"towshackles",0,"fueldrums",1,"showext_fpe",1,"firstaid",0,"wirewheel",1,"hulljerrys",1,"sparetracks",1]] call BIS_fnc_initVehicle;
       _this remoteExec ["DAPS_fnc_APSIronFist",2];
       ["fillAFV",_this,true] call C5R_ItemCfg_fnc_initInventory;
       [{_this getVariable "C5R_fillInventoryComplete" == true}, {
-        _this addMagazineCargoGlobal ["UK3CB_BAF_762_800Rnd_T",4];
-      },_this,10,{diag_log format ["[C5R_SSS] Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
-      _this setFuel 0.60;
-      ["ACE_Track", _this] call ace_cargo_fnc_loadItem;  
-      },[],36],
-       ["qav_challenger2","FV4034 Challenger 2 (Anvil)",{
-      [_this,["olivetan",1],["camonethull",0,"camonetturret",0,"hull_lab1",0,"hull_lab2",0,"hull_lab3",0,"hull_lab4",1,"hull_lab5",0,"hull_lab6",0,"hull_lab7",0,"hull_lab8",0,"iffpanels",0,"hulltowcable",1,"hulltowshackles",1,"towshackles",1,"fueldrums",1,"showext_fpe",1,"firstaid",1,"wirewheel",1,"hulljerrys",1,"sparetracks",1]] call BIS_fnc_initVehicle;
-      _this remoteExec ["DAPS_fnc_APSIronFist",2];
-      ["fillAFV",_this,true] call C5R_ItemCfg_fnc_initInventory;
-      [{_this getVariable "C5R_fillInventoryComplete" == true}, {
-        _this addMagazineCargoGlobal ["UK3CB_BAF_762_800Rnd_T",4];
+       
       },_this,10,{diag_log format ["[C5R_SSS] Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
       _this setFuel 0.60;
       ["ACE_Track", _this] call ace_cargo_fnc_loadItem;  
       },[],36]
     ]],
-    ["#CVR",[
+    /*["#CVR",[
       ["cwr3_b_uk_fv107","FV107 Scimitar",{ 
       [_this,["Desert",1],true] call BIS_fnc_initVehicle;
       ["fillAFV",_this,true] call C5R_ItemCfg_fnc_initInventory;
@@ -464,20 +456,20 @@ C5R_SSSGroundSandArray =
       _this setFuel 0.33; 
       ["ACE_Track", _this] call ace_cargo_fnc_loadItem;
       },[],16]
-    ]],
+    ]],*/
     ["#Anti-Air",[
       ["B_T_APC_Tracked_01_AA_F","",{
       [_this,["Sand",1],["showCamonetTurret",0,"showCamonetHull",0,"showBags",1]] call BIS_fnc_initVehicle;
       ["fillAFV",_this,true] call C5R_ItemCfg_fnc_initInventory;
       _this setFuel 0.33;
       ["ACE_Track", _this] call ace_cargo_fnc_loadItem;
-      },[],22],
+      },[],22]/*,
       ["alvis_stormer","",{
       [_this,["Desert",1], ["showTools",1,"showCamonetHull",0,"showBags",1,"showSLATHull",0]] call BIS_fnc_initVehicle;
       ["fillAFV",_this,true] call C5R_ItemCfg_fnc_initInventory;
       _this setFuel 0.33; 
       ["ACE_Track", _this] call ace_cargo_fnc_loadItem;
-      },[],16]
+      },[],16]*/
     ]],
     ["#Transport",[
       ["UK3CB_BAF_FV432_Mk3_GPMG_Sand","",{ 
@@ -500,14 +492,26 @@ C5R_SSSGroundSandArray =
       ["fillSection",_this,true] call C5R_ItemCfg_fnc_initInventory; 
       _this setFuel 0.33; 
       },[],28],
-      ["UK3CB_BAF_Warrior_A3_D","FV510 Warrior",{
-      [_this,["BAF_02",1],["showBags",0,"showBags2",1,"showCamonetHull",0,"showCamonetTurret",0,"showTools",1,"showSLATHull",0,"showSLATTurret",0]] call BIS_fnc_initVehicle;
+      ["UK3CB_BAF_Warrior_A3_D_Cage_Camo","FV510 Warrior",{
+      [_this,["BAF_02",1],["showBags",1,"showBags2",1,"showCamonetHull",1,"showCamonetTurret",1,"showTools",1,"showSLATHull",1,"showSLATTurret",1]] call BIS_fnc_initVehicle;
       ["fillSection",_this,true] call C5R_ItemCfg_fnc_initInventory; 
       [{_this getVariable "C5R_fillInventoryComplete" == true}, {
-        _this addMagazineCargoGlobal ["UK3CB_BAF_762_800Rnd_T",1];
-        _this addMagazineCargoGlobal ["UK3CB_BAF_6Rnd_30mm_L21A1_APDS",17];
-        _this addMagazineCargoGlobal ["UK3CB_BAF_6Rnd_30mm_L21A1_HE",17];
-        _this addMagazineCargoGlobal ["UK3CB_BAF_1Rnd_Milan", 2]; 
+        _this removeWeaponTurret ["UK3CB_BAF_L21A1_Rarden", [0]];
+        _this removeWeaponTurret ["UK3CB_BAF_L94A1_veh", [0]];
+        _this addWeaponTurret ["autocannon_40mm_CTWS", [0]];
+        _this addMagazineTurret ["60Rnd_40mm_GPR_Tracer_Red_shells",[0]];
+        _this addMagazineTurret ["60Rnd_40mm_GPR_Tracer_Red_shells",[0]];
+        _this addMagazineTurret ["40Rnd_40mm_APFSDS_Tracer_Red_shells",[0]];
+        _this addMagazineTurret ["40Rnd_40mm_APFSDS_Tracer_Red_shells",[0]];
+        _this addWeaponTurret ["ACE_LMG_coax_MAG58_mem3", [0]];
+        _this addMagazineTurret ["200Rnd_762x51_Belt_Red",[0]];
+        _this addMagazineTurret ["200Rnd_762x51_Belt_Red",[0]];
+        _this addMagazineTurret ["200Rnd_762x51_Belt_Red",[0]];
+        _this addMagazineTurret ["200Rnd_762x51_Belt_Red",[0]];
+        _this addWeaponTurret ["UK3CB_BAF_Milan_Launcher", [0]];
+        _this addMagazineTurret ["UK3CB_BAF_1Rnd_Milan",[0]];
+        _this addMagazineCargoGlobal ["UK3CB_BAF_1Rnd_Milan", 2];
+        _this setVariable ["ace_rearm_scriptedLoadout", true, true]; 
       },_this,10,{diag_log format ["[C5R_SSS] Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;  
       _this setFuel 0.33; 
       ["ACE_Track", _this] call ace_cargo_fnc_loadItem;  
@@ -680,84 +684,6 @@ C5R_SSSGroundSandArray =
    _this setUnitLoadout (C5R_loadouts get loadoutVehicleCrew);
    _this setSkill 1; 
   },[],1] 
-]];
-C5R_SSSGroundWinterArray = 
-["#Ground - Winter",[
- ["#Combat Vehicles (CV) (RAC)",[ 
-  ["#Challenger 2",[
-      ["qav_challenger2","FV4034 Challenger 2 (Standard)",{
-      [_this,["olive",1],["camonethull",0,"camonetturret",0,"hull_lab1",0,"hull_lab2",0,"hull_lab3",0,"hull_lab4",0,"hull_lab5",0,"hull_lab6",0,"hull_lab7",1,"hull_lab8",0,"iffpanels",0,"hulltowcable",1,"hulltowshackles",1,"towshackles",1,"fueldrums",1,"showext_fpe",1,"firstaid",1,"wirewheel",1,"hulljerrys",1,"sparetracks",1]] call BIS_fnc_initVehicle;
-      _this remoteExec ["DAPS_fnc_APSIronFist",2];
-      ["fillAFV",_this,true] call C5R_ItemCfg_fnc_initInventory;
-      [{_this getVariable "C5R_fillInventoryComplete" == true}, {
-        _this addMagazineCargoGlobal ["UK3CB_BAF_762_800Rnd_T",4];
-      },_this,10,{diag_log format ["[C5R_SSS] Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
-      _this setFuel 0.60;
-      ["ACE_Track", _this] call ace_cargo_fnc_loadItem;  
-      },[],36],
-      ["qav_challenger2","FV4034 Challenger 2 (Get Jinxed)",{
-      [_this,["olive",1],["camonethull",0,"camonetturret",0,"hull_lab1",1,"hull_lab2",0,"hull_lab3",0,"hull_lab4",0,"hull_lab5",0,"hull_lab6",0,"hull_lab7",0,"hull_lab8",0,"iffpanels",0,"hulltowcable",1,"hulltowshackles",1,"towshackles",1,"fueldrums",1,"showext_fpe",1,"firstaid",1,"wirewheel",1,"hulljerrys",1,"sparetracks",1]] call BIS_fnc_initVehicle;
-      _this remoteExec ["DAPS_fnc_APSIronFist",2];
-      ["fillAFV",_this,true] call C5R_ItemCfg_fnc_initInventory;
-      [{_this getVariable "C5R_fillInventoryComplete" == true}, {
-        _this addMagazineCargoGlobal ["UK3CB_BAF_762_800Rnd_T",4];
-      },_this,10,{diag_log format ["[C5R_SSS] Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
-      _this setFuel 0.60;
-      ["ACE_Track", _this] call ace_cargo_fnc_loadItem;  
-      },[],36],
-       ["qav_challenger2","FV4034 Challenger 2 (Anvil)",{
-      [_this,["olive",1],["camonethull",0,"camonetturret",0,"hull_lab1",0,"hull_lab2",0,"hull_lab3",1,"hull_lab4",0,"hull_lab5",0,"hull_lab6",0,"hull_lab7",0,"hull_lab8",0,"iffpanels",0,"hulltowcable",1,"hulltowshackles",1,"towshackles",1,"fueldrums",1,"showext_fpe",1,"firstaid",1,"wirewheel",1,"hulljerrys",1,"sparetracks",1]] call BIS_fnc_initVehicle;
-      _this remoteExec ["DAPS_fnc_APSIronFist",2];
-      ["fillAFV",_this,true] call C5R_ItemCfg_fnc_initInventory;
-      [{_this getVariable "C5R_fillInventoryComplete" == true}, {
-        _this addMagazineCargoGlobal ["UK3CB_BAF_762_800Rnd_T",4];
-      },_this,10,{diag_log format ["[C5R_SSS] Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
-      _this setFuel 0.60;
-      ["ACE_Track", _this] call ace_cargo_fnc_loadItem;  
-      },[],36]
-    ]],
-    ["#CVR",[
-      ["cwr3_b_uk_fv107","FV107 Scimitar",{ 
-      [_this,["Winter",1],true] call BIS_fnc_initVehicle;
-      ["fillAFV",_this,true] call C5R_ItemCfg_fnc_initInventory;
-      [{_this getVariable "C5R_fillInventoryComplete" == true}, {
-        _this addMagazineCargoGlobal ["UK3CB_BAF_762_800Rnd_T",1];
-        _this addMagazineCargoGlobal ["UK3CB_BAF_6Rnd_30mm_L21A1_APDS",17];
-        _this addMagazineCargoGlobal ["UK3CB_BAF_6Rnd_30mm_L21A1_HE",17];
-      },_this,10,{diag_log format ["[C5R_SSS] Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
-      _this setFuel 0.33; 
-      ["ACE_Track", _this] call ace_cargo_fnc_loadItem;
-      },[],22],
-      ["alvis_striker","",{
-      [_this,["Winter",1], ["showTools",1,"showCamonetHull",0,"showBags",1,"showSLATHull",0]] call BIS_fnc_initVehicle;
-      ["fillAFV",_this,true] call C5R_ItemCfg_fnc_initInventory;
-      _this setFuel 0.33; 
-      ["ACE_Track", _this] call ace_cargo_fnc_loadItem;
-      },[],16]
-    ]],
-    ["#Anti-Air",[
-      ["alvis_stormer","",{
-      [_this,["Winter",1], ["showTools",1,"showCamonetHull",0,"showBags",1,"showSLATHull",0]] call BIS_fnc_initVehicle;
-      ["fillAFV",_this,true] call C5R_ItemCfg_fnc_initInventory;
-      _this setFuel 0.33; 
-      ["ACE_Track", _this] call ace_cargo_fnc_loadItem;
-      },[],16]
-    ]],
-    ["#Transport",[
-      ["UK3CB_BAF_Warrior_A3_WI","FV510 Warrior",{
-      [_this,["BAF_03",1],["showBags",0,"showBags2",1,"showCamonetHull",0,"showCamonetTurret",0,"showTools",1,"showSLATHull",0,"showSLATTurret",0]] call BIS_fnc_initVehicle;
-      ["fillSection",_this,true] call C5R_ItemCfg_fnc_initInventory; 
-      [{_this getVariable "C5R_fillInventoryComplete" == true}, {
-        _this addMagazineCargoGlobal ["UK3CB_BAF_762_800Rnd_T",1];
-        _this addMagazineCargoGlobal ["UK3CB_BAF_6Rnd_30mm_L21A1_APDS",17];
-        _this addMagazineCargoGlobal ["UK3CB_BAF_6Rnd_30mm_L21A1_HE",17];
-        _this addMagazineCargoGlobal ["UK3CB_BAF_1Rnd_Milan", 2]; 
-      },_this,10,{diag_log format ["[C5R_SSS] Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;  
-      _this setFuel 0.33; 
-      ["ACE_Track", _this] call ace_cargo_fnc_loadItem;  
-      },[],28]
-    ]]
- ]]
 ]];
 
 //////////////////////////////////////////////

@@ -51,9 +51,6 @@ An Arma 3 template for the 5 RANGER community, providing essential assets and fu
 ## Integration
 Place the contents of the downloaded PBO into your mission root.
 
-## Signing / Keys
-The `keys/5r_main.bikey` public key is included for server verification. Server admins should place it into their server `keys` directory. The private key must remain secret.
-
 ## CI/CD
 Integration and Deployment is managed through HEMTT and the `.github/workflows/hemtt.yml`. \
 Any tags will automatically build, release and upload the mod to GitHub.

@@ -34,6 +34,6 @@ jobs:
               with:
                   files: .hemttout/release/addons/5r_mission_template.pbo
                   token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
-                  repository: 5ranger/5RANGER-Equipment
+                  repository: 5ranger/mission-template
                   body_path: CHANGELOG.md
                   make_latest: "true"

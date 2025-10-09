@@ -1,0 +1,9 @@
+# Prevent HEMTT output and releases from being committed
+.hemttout/
+releases/
+
+# VSCode settings
+.vscode/
+
+# Changelog file
+CHANGELOG.md

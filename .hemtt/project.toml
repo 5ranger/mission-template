@@ -1,0 +1,15 @@
+name = "mission-template"
+prefix = "5r"
+mainprefix = "z"
+
+[properties]
+description = "mission-template"
+author = "Deadly"
+
+[version]
+path = "addons/script_version.hpp"
+git_hash = 4
+
+[files]
+exclude = []
+include = []

@@ -1,1 +1,0 @@
-player setPosATL (getPosATL C5R_spawn);

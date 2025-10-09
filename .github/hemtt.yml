@@ -1,0 +1,39 @@
+name: Build
+
+on: [push]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: Setup HEMTT
+              uses: arma-actions/hemtt@v1
+            - name: Initialize Changelog
+              run: |
+                echo "Changelog" > CHANGELOG.md
+                echo "============================" >> CHANGELOG.md
+                echo "Generated on $(date)" >> CHANGELOG.md
+#                echo "List of recent commits:" >> CHANGELOG.md
+#                git log -10 --pretty=format:"- %h %s (%an, %ad)" --date=short >> CHANGELOG.md
+            - name: Generate Changelog
+              uses: janheinrichmerker/action-github-changelog-generator@v2.3
+              with:
+                  token: ${{ secrets.CUSTOM_GITHUB_TOKEN }} 
+                  output: CHANGELOG.md
+            - name: Run HEMTT build
+              run: hemtt release
+            - name: Upload Artifact
+              uses: actions/upload-artifact@v4
+              with:
+                  name: mission_template.VR.pbo
+                  path: .hemttout/release/addons/5r_mission_template.pbo
+            - name: Upload Release
+              uses: softprops/action-gh-release@v2
+              if: github.ref_type == 'tag'
+              with:
+                  files: .hemttout/release/addons/5r_mission_template.pbo
+                  token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
+                  repository: 5ranger/5RANGER-Equipment
+                  body_path: CHANGELOG.md
+                  make_latest: "true"

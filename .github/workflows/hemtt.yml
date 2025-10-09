@@ -23,16 +23,19 @@ jobs:
                   output: CHANGELOG.md
             - name: Run HEMTT build
               run: hemtt release
+            - name: Rename PBO
+              run: mv .hemttout/release/addons/5r_mission_template.pbo .hemttout/release/addons/5r_mission_template.VR.pbo &&
+                   ln -s 5r_mission_template.VR.pbo .hemttout/release/addons/5r_mission_template.pbo
             - name: Upload Artifact
               uses: actions/upload-artifact@v4
               with:
                   name: mission_template.VR.pbo
-                  path: .hemttout/release/addons/5r_mission_template.pbo
+                  path: .hemttout/release/addons/5r_mission_template.VR.pbo
             - name: Upload Release
               uses: softprops/action-gh-release@v2
               if: github.ref_type == 'tag'
               with:
-                  files: .hemttout/release/addons/5r_mission_template.pbo
+                  files: .hemttout/release/addons/5r_mission_template.VR.pbo
                   token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
                   repository: 5ranger/mission-template
                   body_path: CHANGELOG.md

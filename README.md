@@ -4,14 +4,14 @@
 
 # mission-template
 
-Main mission template for the 5 RANGER Arma 3 unit.
+Main mission templates for the 5 RANGER Arma 3 unit.
 
 [GitHub](https://https://github.com/5ranger/mission-template/)
 
 </div>
 
 ## Overview
-An Arma 3 template for the 5 RANGER community, providing essential assets and functions for mission makers, gameplay and immersion.
+Arma 3 mission templates for the 5 RANGER community, providing essential assets and functions for mission makers, gameplay and immersion.
 
 ## Features
 - **ACE3 Integration**: Pre-configured ACE3 medical, interaction, and logistics systems for immersive gameplay.

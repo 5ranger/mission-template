@@ -1,0 +1,1 @@
+../mission_template.VR/initPlayerLocal.sqf

@@ -8,7 +8,7 @@ class EditorData
 	toggles=549;
 	class ItemIDProvider
 	{
-		nextID=3696;
+		nextID=3702;
 	};
 	class MarkerIDProvider
 	{
@@ -16,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2509;
+		nextID=2523;
 	};
 	class Camera
 	{
-		pos[]={87.633492,48.984592,-29.009315};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={126.92278,27.171204,26.257683};
+		dir[]={-0.018113898,-0.86570865,0.50033569};
+		up[]={-0.031322476,0.50049067,0.86516732};
+		aside[]={0.99940258,6.4573396e-07,0.036184318};
 	};
 };
 binarizationWanted=0;
-sourceName="git-mission-template";
+sourceName="mission_template";
 addons[]=
 {
 	"tfw_radios_rf3080",
@@ -428,7 +428,7 @@ class Mission
 					name="Slots";
 					class Entities
 					{
-						items=20;
+						items=21;
 						class Item0
 						{
 							dataType="Logic";
@@ -492,7 +492,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={129,5.0014391,39.049999};
+										position[]={130,5.0014391,39.049999};
 									};
 									side="West";
 									flags=6;
@@ -589,7 +589,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={129,5.0014391,37.049953};
+										position[]={130,5.0014391,37.049953};
 									};
 									side="West";
 									flags=4;
@@ -686,7 +686,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={129,5.0014391,35.049953};
+										position[]={130,5.0014391,35.049953};
 									};
 									side="West";
 									flags=4;
@@ -783,7 +783,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={129,5.0014391,33.049953};
+										position[]={130,5.0014391,33.049953};
 									};
 									side="West";
 									flags=4;
@@ -880,7 +880,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={129,5.0014391,31.049953};
+										position[]={130,5.0014391,31.049953};
 									};
 									side="West";
 									flags=4;
@@ -977,7 +977,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={129,5.0014391,29.049953};
+										position[]={130,5.0014391,29.049953};
 									};
 									side="West";
 									flags=4;
@@ -1074,7 +1074,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={129,5.0014391,27.049953};
+										position[]={130,5.0014391,27.049953};
 									};
 									side="West";
 									flags=4;
@@ -1171,7 +1171,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={129,5.0014391,25.049953};
+										position[]={130,5.0014391,25.049953};
 									};
 									side="West";
 									flags=4;
@@ -1268,7 +1268,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={129,5.0014391,23.049953};
+										position[]={130,5.0014391,23.049953};
 									};
 									side="West";
 									flags=4;
@@ -1365,7 +1365,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={129,5.0014391,21.049953};
+										position[]={130,5.0014391,21.049953};
 									};
 									side="West";
 									flags=4;
@@ -1462,7 +1462,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={129,5.0014391,19.049995};
+										position[]={130,5.0014391,19.049995};
 									};
 									side="West";
 									flags=4;
@@ -1559,7 +1559,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={129,5.0014391,17.049995};
+										position[]={130,5.0014391,17.049995};
 									};
 									side="West";
 									flags=4;
@@ -1656,7 +1656,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={129,5.0014391,15.049996};
+										position[]={130,5.0014391,15.049996};
 									};
 									side="West";
 									flags=4;
@@ -1753,7 +1753,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={129,5.0014391,13.049996};
+										position[]={130,5.0014391,13.049996};
 									};
 									side="West";
 									flags=4;
@@ -7188,7 +7188,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={117,5.0014391,37.049999};
+										position[]={119,5.0014391,39.049999};
 									};
 									side="West";
 									flags=7;
@@ -7339,7 +7339,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={117,5.0014391,39.049999};
+										position[]={119,5.0014391,37.049999};
 									};
 									side="West";
 									flags=5;
@@ -7475,7 +7475,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={117,5.0014391,33.049999};
+										position[]={119,5.0014391,33.049999};
 									};
 									side="West";
 									flags=5;
@@ -7586,7 +7586,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={117,5.0014391,35.049999};
+										position[]={119,5.0014391,35.049999};
 									};
 									side="West";
 									flags=5;
@@ -7722,7 +7722,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={117,5.0014391,31.049999};
+										position[]={119,5.0014391,31.049999};
 									};
 									side="West";
 									flags=5;
@@ -7889,15 +7889,15 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={120,5.0014391,37.049999};
+										position[]={116,5.0014391,39.049999};
 									};
 									side="West";
 									flags=7;
 									class Attributes
 									{
 										rank="SERGEANT";
-										name="p51ic";
-										description="Sect Comd@5-1";
+										name="p31ic";
+										description="Sect Comd@3-1";
 										isPlayable=1;
 										class Inventory
 										{
@@ -8000,13 +8000,13 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={120,5.0014391,39.049999};
+										position[]={116,5.0014391,37.049999};
 									};
 									side="West";
 									flags=5;
 									class Attributes
 									{
-										name="p51gunner_1";
+										name="p31gunner_1";
 										description="Gunner";
 										isPlayable=1;
 										class Inventory
@@ -8097,13 +8097,13 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={120,5.0014391,35.049999};
+										position[]={116,5.0014391,35.049999};
 									};
 									side="West";
 									flags=4;
 									class Attributes
 									{
-										name="p51assgunner_1";
+										name="p31assgunner_1";
 										description="Assistant Gunner/Medic";
 										isPlayable=1;
 										class Inventory
@@ -8207,13 +8207,13 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={120,5.0014391,32.049999};
+										position[]={116,5.0014391,32.049999};
 									};
 									side="West";
 									flags=5;
 									class Attributes
 									{
-										name="p51gunner_2";
+										name="p31gunner_2";
 										description="Gunner";
 										isPlayable=1;
 										class Inventory
@@ -8304,15 +8304,15 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={120,5.0014391,30.049999};
+										position[]={116,5.0014391,30.049999};
 									};
 									side="West";
 									flags=5;
 									class Attributes
 									{
 										rank="CORPORAL";
-										init="[west, this, ""5-1 2IC""] call BIS_fnc_addRespawnPosition;";
-										name="p512ic";
+										init="[west, this, ""3-1 2IC""] call BIS_fnc_addRespawnPosition;";
+										name="p312ic";
 										description="Sect 2IC";
 										isPlayable=1;
 										class Inventory
@@ -8403,13 +8403,13 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={119.98801,5.0014391,28.138996};
+										position[]={115.988,5.0014391,28.139};
 									};
 									side="West";
 									flags=4;
 									class Attributes
 									{
-										name="p51assgunner_2";
+										name="p31assgunner_2";
 										description="Assistant Gunner";
 										isPlayable=1;
 										class Inventory
@@ -8531,7 +8531,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={123,5.0014391,37.049999};
+										position[]={124,5.0014391,37.049999};
 									};
 									side="West";
 									flags=7;
@@ -8656,7 +8656,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={123,5.0014391,39.049999};
+										position[]={124,5.0014391,39.049999};
 									};
 									side="West";
 									flags=5;
@@ -8810,7 +8810,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={126,5.0014391,37.049999};
+										position[]={127,5.0014391,37.049999};
 									};
 									side="West";
 									flags=7;
@@ -8935,7 +8935,7 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={126,5.0014391,39.049999};
+										position[]={127,5.0014391,39.049999};
 									};
 									side="West";
 									flags=5;
@@ -9112,6 +9112,690 @@ class Mission
 							isPlayable=1;
 							id=3578;
 							type="HeadlessClient_F";
+						};
+						class Item20
+						{
+							dataType="Group";
+							side="West";
+							class Entities
+							{
+								items=5;
+								class Item0
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={121,5.0014391,39.049999};
+									};
+									side="West";
+									flags=7;
+									class Attributes
+									{
+										health=0.22936408;
+										rank="CORPORAL";
+										name="p42ic";
+										description="Sect Comd@4-1";
+										isPlayable=1;
+										class Inventory
+										{
+											class uniform
+											{
+												typeName="UK3CB_BAF_U_CombatUniform_MTP";
+												isBackpack=0;
+											};
+											map="ItemMap";
+											watch="ItemWatch";
+										};
+									};
+									id=3697;
+									type="B_Soldier_TL_F";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="ace_isEngineer";
+											expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=2;
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										class Attribute2
+										{
+											property="ace_isEOD";
+											expression="_this setVariable ['ACE_isEOD', _value, true]";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										class Attribute3
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										class Attribute4
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0.97000003;
+												};
+											};
+										};
+										class Attribute5
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male11ENG";
+												};
+											};
+										};
+										class Attribute6
+										{
+											property="ace_advanced_fatigue_performanceFactor";
+											expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=1;
+												};
+											};
+										};
+										class Attribute7
+										{
+											property="sss_key";
+											expression="if (_value isNotEqualTo '') then {_this setVariable ['sss_key', _value, true]};";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="";
+												};
+											};
+										};
+										class Attribute8
+										{
+											property="enableStamina";
+											expression="_this enablestamina _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=9;
+									};
+								};
+								class Item1
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={121,5.0014391,37.049999};
+									};
+									side="West";
+									flags=5;
+									class Attributes
+									{
+										name="p42sapper_1";
+										description="Supply/Fixer";
+										isPlayable=1;
+										class Inventory
+										{
+											class uniform
+											{
+												typeName="UK3CB_BAF_U_CombatUniform_MTP";
+												isBackpack=0;
+											};
+											map="ItemMap";
+											watch="ItemWatch";
+										};
+									};
+									id=3698;
+									type="B_crew_F";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="ace_isEngineer";
+											expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=2;
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										class Attribute2
+										{
+											property="ace_isEOD";
+											expression="_this setVariable ['ACE_isEOD', _value, true]";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										class Attribute3
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										class Attribute4
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0.94999999;
+												};
+											};
+										};
+										class Attribute5
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male09ENG";
+												};
+											};
+										};
+										class Attribute6
+										{
+											property="ace_advanced_fatigue_performanceFactor";
+											expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=1;
+												};
+											};
+										};
+										class Attribute7
+										{
+											property="enableStamina";
+											expression="_this enablestamina _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=8;
+									};
+								};
+								class Item2
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={121,5.0014391,33.049999};
+									};
+									side="West";
+									flags=5;
+									class Attributes
+									{
+										rank="CORPORAL";
+										name="p422ic";
+										description="Sect 2IC";
+										isPlayable=1;
+										class Inventory
+										{
+											class uniform
+											{
+												typeName="UK3CB_BAF_U_CombatUniform_MTP";
+												isBackpack=0;
+											};
+											map="ItemMap";
+											watch="ItemWatch";
+										};
+									};
+									id=3699;
+									type="B_Soldier_SL_F";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male05ENG";
+												};
+											};
+										};
+										class Attribute2
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=1.03;
+												};
+											};
+										};
+										class Attribute3
+										{
+											property="sss_key";
+											expression="if (_value isNotEqualTo '') then {_this setVariable ['sss_key', _value, true]};";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="";
+												};
+											};
+										};
+										class Attribute4
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										class Attribute5
+										{
+											property="enableStamina";
+											expression="_this enablestamina _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=6;
+									};
+								};
+								class Item3
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={121,5.0014391,35.049999};
+									};
+									side="West";
+									flags=5;
+									class Attributes
+									{
+										name="p42sapper";
+										description="Supply/Fixer";
+										isPlayable=1;
+										class Inventory
+										{
+											class uniform
+											{
+												typeName="UK3CB_BAF_U_CombatUniform_MTP";
+												isBackpack=0;
+											};
+											map="ItemMap";
+											watch="ItemWatch";
+										};
+									};
+									id=3700;
+									type="B_crew_F";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="ace_isEngineer";
+											expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=2;
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										class Attribute2
+										{
+											property="ace_isEOD";
+											expression="_this setVariable ['ACE_isEOD', _value, true]";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										class Attribute3
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										class Attribute4
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0.94999999;
+												};
+											};
+										};
+										class Attribute5
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male09ENG";
+												};
+											};
+										};
+										class Attribute6
+										{
+											property="ace_advanced_fatigue_performanceFactor";
+											expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=1;
+												};
+											};
+										};
+										class Attribute7
+										{
+											property="enableStamina";
+											expression="_this enablestamina _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=8;
+									};
+								};
+								class Item4
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={121,5.0014391,31.049999};
+									};
+									side="West";
+									flags=5;
+									class Attributes
+									{
+										name="p42sapper_2";
+										description="Supply/Fixer";
+										isPlayable=1;
+										class Inventory
+										{
+											class uniform
+											{
+												typeName="UK3CB_BAF_U_CombatUniform_MTP";
+												isBackpack=0;
+											};
+											map="ItemMap";
+											watch="ItemWatch";
+										};
+									};
+									id=3701;
+									type="B_crew_F";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="ace_isEngineer";
+											expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=2;
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										class Attribute2
+										{
+											property="ace_isEOD";
+											expression="_this setVariable ['ACE_isEOD', _value, true]";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										class Attribute3
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										class Attribute4
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=0.94999999;
+												};
+											};
+										};
+										class Attribute5
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male09ENG";
+												};
+											};
+										};
+										class Attribute6
+										{
+											property="ace_advanced_fatigue_performanceFactor";
+											expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=1;
+												};
+											};
+										};
+										class Attribute7
+										{
+											property="enableStamina";
+											expression="_this enablestamina _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=8;
+									};
+								};
+							};
+							class Attributes
+							{
+								init="if (isServer) then {this setGroupIdGlobal [""4-1""];};";
+							};
+							id=3696;
 						};
 					};
 					id=4;
@@ -25319,11 +26003,11 @@ class Mission
 	{
 		class LinkIDProvider
 		{
-			nextID=129;
+			nextID=135;
 		};
 		class Links
 		{
-			items=129;
+			items=135;
 			class Item0
 			{
 				linkID=0;
@@ -26609,6 +27293,66 @@ class Mission
 				linkID=128;
 				item0=3695;
 				item1=1129;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item129
+			{
+				linkID=129;
+				item0=3552;
+				item1=66;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item130
+			{
+				linkID=130;
+				item0=3697;
+				item1=66;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item131
+			{
+				linkID=131;
+				item0=3698;
+				item1=66;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item132
+			{
+				linkID=132;
+				item0=3699;
+				item1=66;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item133
+			{
+				linkID=133;
+				item0=3700;
+				item1=66;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item134
+			{
+				linkID=134;
+				item0=3701;
+				item1=66;
 				class CustomData
 				{
 					type="Sync";

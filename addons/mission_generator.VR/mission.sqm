@@ -8,22 +8,22 @@ class EditorData
 	toggles=549;
 	class ItemIDProvider
 	{
-		nextID=205;
+		nextID=207;
 	};
 	class LayerIndexProvider
 	{
-		nextID=32;
+		nextID=35;
 	};
 	class Camera
 	{
-		pos[]={4350.6812,14.803599,6606.8979};
-		dir[]={-0.26680371,-0.56523889,0.78059};
-		up[]={-0.18281348,0.82492733,0.53485906};
-		aside[]={0.94625318,-1.4901161e-08,0.32342696};
+		pos[]={4350,30,6604};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,0};
 	};
 };
 binarizationWanted=0;
-sourceName="git-mission-generator";
+sourceName="mission_generator";
 addons[]=
 {
 	"A3_Characters_F",
@@ -60,7 +60,6 @@ addons[]=
 	"UK3CB_BAF_Vehicles_Weapons",
 	"UK3CB_BAF_Weapons_SmallArms",
 	"A3_Weapons_F_Mark",
-	"krh_addons_equipment",
 	"ace_flashlights",
 	"A3_Weapons_F_Items",
 	"ace_arsenal",
@@ -88,7 +87,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=53;
+		items=52;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -299,142 +298,137 @@ class AddonsMetaData
 		};
 		class Item32
 		{
-			className="krh_addons_equipment";
-			name="krh_addons_equipment";
-		};
-		class Item33
-		{
 			className="ace_flashlights";
 			name="ACE3 - Flashlights";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item34
+		class Item33
 		{
 			className="ace_arsenal";
 			name="ACE3 - Arsenal";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item35
+		class Item34
 		{
 			className="UK3CB_BAF_Weapons_L131A1";
 			name="3CB BAF Weapons - L131A1";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item36
+		class Item35
 		{
 			className="rhsusf_c_troops";
 			name="RHSUSF Infantry & Equipment";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item37
+		class Item36
 		{
 			className="ace_compat_rhs_usf3";
 			name="ACE3 - RHS USAF Compatibility";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item38
+		class Item37
 		{
 			className="ace_grenades";
 			name="ACE3 - Grenades";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item39
+		class Item38
 		{
 			className="ace_minedetector";
 			name="ACE3 - Mine Detector";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item40
+		class Item39
 		{
 			className="ace_tagging";
 			name="ACE3 - Tagging";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item41
+		class Item40
 		{
 			className="ace_logistics_wirecutter";
 			name="ACE3 - Logistics Wire Cutter";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item42
+		class Item41
 		{
 			className="rhs_c_weapons";
 			name="AFRF Weapons Pack";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item43
+		class Item42
 		{
 			className="ace_compat_rhs_afrf3_explosives";
 			name="ACE3 - RHS AFRF Compatibility - Explosives";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item44
+		class Item43
 		{
 			className="ace_vector";
 			name="ACE3 - Vector";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item45
+		class Item44
 		{
 			className="ace_attach";
 			name="ACE3 - Attach";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item46
+		class Item45
 		{
 			className="ace_chemlights";
 			name="ACE3 - Chemlights";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item47
+		class Item46
 		{
 			className="AMP_Breaching_Charge";
 			name="bcdw - main";
 			author="Ampersand";
 		};
-		class Item48
+		class Item47
 		{
 			className="ace_microdagr";
 			name="ACE3 - MicroDAGR";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item49
+		class Item48
 		{
 			className="UK3CB_BAF_Weapons_L7";
 			name="3CB BAF Weapons - L7";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item50
+		class Item49
 		{
 			className="ace_field_rations";
 			name="ACE3 - Field Rations";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item51
+		class Item50
 		{
 			className="ace_hearing";
 			name="ACE3 - Hearing";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item52
+		class Item51
 		{
 			className="UK3CB_BAF_Weapons_L129";
 			name="3CB BAF Weapons - L129";
@@ -514,7 +508,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=11;
+		items=10;
 		class Item0
 		{
 			dataType="Group";
@@ -571,7 +565,7 @@ class Mission
 			name="CrateLayer";
 			class Entities
 			{
-				items=12;
+				items=14;
 				class Item0
 				{
 					dataType="Object";
@@ -1221,7 +1215,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[[[[],[]],[[""ACE_M14""],[10]],[[""ACE_rope3"",""ACE_rope6"",""ACE_rope12"",""ACE_rope15"",""ACE_rope18"",""ACE_rope27"",""ACE_rope36"",""ACE_wirecutter"",""ACE_SpraypaintBlack"",""ACE_SpraypaintRed"",""ACE_SpraypaintGreen"",""ACE_SpraypaintBlue"",""ACE_SpraypaintYellow"",""ACE_SpraypaintWhite"",""ACE_EntrenchingTool"",""ACE_DefusalKit"",""ACE_Fortify"",""ToolKit""],[2,4,2,2,2,2,2,4,2,2,2,2,2,2,8,4,2,2]],[[],[]]],false]";
+									value="[[[[],[]],[[""ACE_M14""],[10]],[[""ACE_rope3"",""ACE_rope6"",""ACE_rope12"",""ACE_rope15"",""ACE_rope18"",""ACE_rope27"",""ACE_rope36"",""ACE_wirecutter"",""ACE_SpraypaintBlack"",""ACE_SpraypaintRed"",""ACE_SpraypaintGreen"",""ACE_SpraypaintBlue"",""ACE_SpraypaintYellow"",""ACE_SpraypaintWhite"",""ACE_EntrenchingTool"",""ACE_DefusalKit"",""ACE_Fortify"",""ToolKit""],[2,4,2,2,2,2,2,4,2,2,2,2,2,2,5,4,8,2]],[[],[]]],false]";
 								};
 							};
 						};
@@ -1282,6 +1276,102 @@ class Mission
 								{
 									singleType="STRING";
 									value="[[[[],[]],[[""UK3CB_BAF_1Rnd_60mm_Mo_Shells"",""UK3CB_BAF_1Rnd_60mm_Mo_Flare_White"",""UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White""],[24,10,10]],[[""UK3CB_BAF_M6_RangeTable""],[1]],[[],[]]],false]";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="hideObject";
+							expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+				class Item12
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4342,5,6631};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						init="if isServer then " \n "{" \n "this addMagazineCargo [""ACM_Inhaler_Penthrox"",30];" \n "this addMagazineCargo [""ACM_Paracetamol"",20];" \n "};";
+						name="resupplymedic";
+						disableSimulation=1;
+					};
+					id=155;
+					type="ACM_MedicalSupplyCrate_Advanced";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ammoBox";
+							expression="[_this,_value] call bis_fnc_initAmmoBox;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="[[[[],[]],[[""ACM_Paracetamol"",""ACM_AmmoniaInhalant"",""ACM_Inhaler_Penthrox"",""ACM_OxygenTank_425"",""Chemlight_green"",""Chemlight_red"",""Chemlight_yellow"",""ACE_Chemlight_HiYellow""],[8,8,8,2,10,10,10,10]],[[""ACM_PressureBandage"",""ACM_EmergencyTraumaDressing"",""ACM_ElasticWrap"",""ACE_tourniquet"",""ACM_IGel"",""ACM_ACCUVAC"",""ACM_NPA"",""ACM_CricKit"",""ACM_Stethoscope"",""ACM_ChestSeal"",""ACM_BVM"",""ACM_NCDKit"",""ACM_PulseOximeter"",""ACM_ThoracostomyKit"",""ACM_ChestTubeKit"",""ACM_AED"",""ACM_PressureCuff"",""ACM_IV_16g"",""ACM_IV_14g"",""ACM_Syringe_1"",""ACM_Syringe_3"",""ACM_Syringe_5"",""ACM_Syringe_10"",""ACM_IO_FAST"",""ACM_IO_EZ"",""ACM_Vial_Epinephrine"",""ACM_Vial_Esmolol"",""ACM_Vial_TXA"",""ACM_Vial_Amiodarone"",""ACM_Vial_Atropine"",""ACM_BloodBag_ON_1000"",""ACM_BloodBag_ON_500"",""ACE_plasmaIV"",""ACE_plasmaIV_500"",""ACE_salineIV"",""ACE_salineIV_500"",""ACM_Vial_CalciumChloride"",""ACE_morphine"",""ACM_Vial_Morphine"",""ACM_Vial_Ketamine"",""ACM_Vial_Fentanyl"",""ACM_Vial_Lidocaine"",""ACM_Vial_Ondansetron"",""ACM_Lozenge_Fentanyl"",""ACM_SAMSplint"",""ACM_Spray_Naloxone"",""ACE_surgicalKit"",""ACE_bodyBag"",""ACE_suture"",""ACE_WaterBottle"",""ACM_Autoinjector_ATNA"",""ACM_Autoinjector_Midazolam"",""ACM_Vial_Adenosine""],[100,75,50,20,25,3,25,10,3,20,3,10,5,5,10,3,3,25,25,10,10,10,10,25,25,20,10,20,20,10,15,15,15,15,15,25,10,10,25,20,20,10,20,10,10,10,3,5,50,10,10,10,10]],[[],[]]],false]";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item13
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4334,5.8924227,6629};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						init="if isServer then " \n "{" \n "this addMagazineCargo [""ACM_Inhaler_Penthrox"",3];" \n "this addMagazineCargo [""ACM_Paracetamol"",2];" \n "};";
+						name="fillFST";
+						disableSimulation=1;
+					};
+					id=206;
+					type="B_supplyCrate_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ammoBox";
+							expression="[_this,_value] call bis_fnc_initAmmoBox;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="[[[[""UK3CB_BAF_AT4_CS_AT_Launcher""],[1]],[[""SmokeShell"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"",""rhs_mag_m67"",""rhs_mag_M433_HEDP"",""UK3CB_BAF_762_100Rnd"",""UK3CB_BAF_762_L42A1_20Rnd_T"",""AMP_Breaching_Charge_Mag""],[3,6,2,3,2,2,2]],[[""ACE_splint"",""ACE_epinephrine"",""ACE_adenosine"",""ACE_CableTie"",""ACE_salineIV"",""ACE_salineIV_500"",""ACE_Canteen"",""ACE_wirecutter"",""ACE_WaterBottle"",""ACE_tourniquet"",""ACE_plasmaIV"",""ACE_plasmaIV_500"",""ACM_IGel"",""ACM_NPA"",""ACM_SuctionBag"",""ACM_ChestSeal"",""ACM_PulseOximeter"",""ACM_PocketBVM"",""ACM_PressureBandage"",""ACM_EmergencyTraumaDressing"",""ACM_ElasticWrap"",""ACM_SAMSplint"",""ACM_IV_16g"",""ACM_IO_FAST"",""ACM_IO_EZ"",""ACM_Syringe_10"",""ACM_Syringe_5"",""ACM_Syringe_3"",""ACM_Syringe_1"",""ACM_Vial_Morphine"",""ACM_Vial_Ketamine"",""ACM_Vial_TXA"",""ACM_Vial_Amiodarone"",""ACM_Vial_Ondansetron"",""ACM_Vial_CalciumChloride"",""ACM_Spray_Naloxone"",""ACM_BloodBag_ON_1000"",""ACM_BloodBag_ON_500""],[1,3,1,5,2,4,1,1,2,5,2,4,3,4,2,3,1,1,30,10,10,3,5,3,3,1,1,1,1,3,3,3,3,3,5,3,3,5]],[[],[]]],false]";
 								};
 							};
 						};
@@ -7482,41 +7572,6 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4342,5,6631};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				init="if isServer then " \n "{" \n "this addMagazineCargo [""ACM_Inhaler_Penthrox"",30];" \n "this addMagazineCargo [""ACM_Paracetamol"",20];" \n "};";
-				name="resupplymedic";
-				disableSimulation=1;
-			};
-			id=155;
-			type="ACM_MedicalSupplyCrate_Advanced";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="[[[[],[]],[[""ACM_Paracetamol"",""ACM_AmmoniaInhalant"",""ACM_Inhaler_Penthrox"",""ACM_OxygenTank_425"",""Chemlight_green"",""Chemlight_red"",""Chemlight_yellow"",""ACE_Chemlight_HiYellow""],[8,8,8,2,10,10,10,10]],[[""ACM_PressureBandage"",""ACM_EmergencyTraumaDressing"",""ACM_ElasticWrap"",""ACE_tourniquet"",""ACM_IGel"",""ACM_ACCUVAC"",""ACM_NPA"",""ACM_CricKit"",""ACM_Stethoscope"",""ACM_ChestSeal"",""ACM_BVM"",""ACM_NCDKit"",""ACM_PulseOximeter"",""ACM_ThoracostomyKit"",""ACM_ChestTubeKit"",""ACM_AED"",""ACM_PressureCuff"",""ACM_IV_16g"",""ACM_IV_14g"",""ACM_Syringe_1"",""ACM_Syringe_3"",""ACM_Syringe_5"",""ACM_Syringe_10"",""ACM_IO_FAST"",""ACM_IO_EZ"",""ACM_Vial_Epinephrine"",""ACM_Vial_Esmolol"",""ACM_Vial_TXA"",""ACM_Vial_Amiodarone"",""ACM_Vial_Atropine"",""ACM_BloodBag_ON_1000"",""ACM_BloodBag_ON_500"",""ACE_plasmaIV"",""ACE_plasmaIV_500"",""ACE_salineIV"",""ACE_salineIV_500"",""ACM_Vial_CalciumChloride"",""ACE_morphine"",""ACM_Vial_Morphine"",""ACM_Vial_Ketamine"",""ACM_Vial_Fentanyl"",""ACM_Vial_Lidocaine"",""ACM_Vial_Ondansetron"",""ACM_Lozenge_Fentanyl"",""ACM_SAMSplint"",""ACM_Spray_Naloxone"",""ACE_surgicalKit"",""ACE_bodyBag"",""ACE_suture"",""ACE_WaterBottle"",""ACM_Autoinjector_ATNA"",""ACM_Autoinjector_Midazolam"",""ACM_Vial_Adenosine""],[100,75,50,20,25,3,25,10,3,20,3,10,5,5,10,3,3,25,25,10,10,10,10,25,25,20,10,20,20,10,15,15,15,15,15,25,10,10,25,20,20,10,20,10,10,10,3,5,50,10,10,10,10]],[[],[]]],false]";
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item9
-		{
-			dataType="Object";
-			class PositionInfo
-			{
 				position[]={4362,5.3815289,6635};
 				angles[]={0,1.5707964,0};
 			};
@@ -7560,7 +7615,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item10
+		class Item9
 		{
 			dataType="Group";
 			side="West";

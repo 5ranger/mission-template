@@ -22,6 +22,8 @@ class x5r_common
 		class createSpawnMarkerLocal {};
 		class fixSlingHelmetExploit {};
 		class movePlayerToSpawn {};
+		class pontoonBridgeAttachActions {};
+		class pontoonBridgeObjectEH {};
 		class respawnObjectsEH {};
 		class brushCutter {};
 		class suckNuts {};
@@ -34,7 +36,7 @@ class x5r_common
 		class freezeLayer {};
 		class addRespawn {};
 		class removeRespawn {};
-		
+		class pontoonBridgeCreateObject {};		
 	};
 };
 class x5r_logistics

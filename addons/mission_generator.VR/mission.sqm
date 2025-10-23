@@ -8,18 +8,18 @@ class EditorData
 	toggles=549;
 	class ItemIDProvider
 	{
-		nextID=207;
+		nextID=208;
 	};
 	class LayerIndexProvider
 	{
-		nextID=35;
+		nextID=39;
 	};
 	class Camera
 	{
-		pos[]={4350,30,6604};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,0};
+		pos[]={4350.0732,20.488363,6601.563};
+		dir[]={0.0025974959,-0.51679271,0.85616881};
+		up[]={0.0015679155,0.85608524,0.51682025};
+		aside[]={1.0000421,3.5679022e-07,-0.0030376089};
 	};
 };
 binarizationWanted=0;
@@ -1335,17 +1335,17 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4334,5.8924227,6629};
+						position[]={4336,5.8924227,6629};
 					};
 					side="Empty";
 					flags=4;
 					class Attributes
 					{
-						init="if isServer then " \n "{" \n "this addMagazineCargo [""ACM_Inhaler_Penthrox"",3];" \n "this addMagazineCargo [""ACM_Paracetamol"",2];" \n "};";
+						init="if isServer then " \n "{" \n "this addMagazineCargo [""ACM_Inhaler_Penthrox"",6];" \n "this addMagazineCargo [""ACM_Paracetamol"",4];" \n "};";
 						name="fillFST";
 						disableSimulation=1;
 					};
-					id=206;
+					id=207;
 					type="B_supplyCrate_F";
 					class CustomAttributes
 					{
@@ -1371,7 +1371,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[[[[""UK3CB_BAF_AT4_CS_AT_Launcher""],[1]],[[""SmokeShell"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"",""rhs_mag_m67"",""rhs_mag_M433_HEDP"",""UK3CB_BAF_762_100Rnd"",""UK3CB_BAF_762_L42A1_20Rnd_T"",""AMP_Breaching_Charge_Mag""],[3,6,2,3,2,2,2]],[[""ACE_splint"",""ACE_epinephrine"",""ACE_adenosine"",""ACE_CableTie"",""ACE_salineIV"",""ACE_salineIV_500"",""ACE_Canteen"",""ACE_wirecutter"",""ACE_WaterBottle"",""ACE_tourniquet"",""ACE_plasmaIV"",""ACE_plasmaIV_500"",""ACM_IGel"",""ACM_NPA"",""ACM_SuctionBag"",""ACM_ChestSeal"",""ACM_PulseOximeter"",""ACM_PocketBVM"",""ACM_PressureBandage"",""ACM_EmergencyTraumaDressing"",""ACM_ElasticWrap"",""ACM_SAMSplint"",""ACM_IV_16g"",""ACM_IO_FAST"",""ACM_IO_EZ"",""ACM_Syringe_10"",""ACM_Syringe_5"",""ACM_Syringe_3"",""ACM_Syringe_1"",""ACM_Vial_Morphine"",""ACM_Vial_Ketamine"",""ACM_Vial_TXA"",""ACM_Vial_Amiodarone"",""ACM_Vial_Ondansetron"",""ACM_Vial_CalciumChloride"",""ACM_Spray_Naloxone"",""ACM_BloodBag_ON_1000"",""ACM_BloodBag_ON_500""],[1,3,1,5,2,4,1,1,2,5,2,4,3,4,2,3,1,1,30,10,10,3,5,3,3,1,1,1,1,3,3,3,3,3,5,3,3,5]],[[],[]]],false]";
+									value="[[[[],[]],[[""SmokeShell"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"",""rhs_mag_m67"",""rhs_mag_M433_HEDP"",""UK3CB_BAF_762_100Rnd"",""UK3CB_BAF_762_L42A1_20Rnd_T"",""AMP_Breaching_Charge_Mag"",""ACE_HuntIR_M203"",""rhs_mag_m713_Red"",""rhs_mag_m714_White"",""rhs_mag_m715_Green""],[5,10,4,6,6,4,4,5,3,4,2]],[[""ACE_splint"",""ACE_epinephrine"",""ACE_adenosine"",""ACE_CableTie"",""ACE_salineIV"",""ACE_salineIV_500"",""ACE_Canteen"",""ACE_wirecutter"",""ACE_WaterBottle"",""ACE_tourniquet"",""ACE_plasmaIV"",""ACE_plasmaIV_500"",""ACM_IGel"",""ACM_NPA"",""ACM_SuctionBag"",""ACM_ChestSeal"",""ACM_PulseOximeter"",""ACM_PocketBVM"",""ACM_PressureBandage"",""ACM_EmergencyTraumaDressing"",""ACM_ElasticWrap"",""ACM_SAMSplint"",""ACM_IV_16g"",""ACM_IO_FAST"",""ACM_IO_EZ"",""ACM_Syringe_10"",""ACM_Syringe_5"",""ACM_Syringe_3"",""ACM_Syringe_1"",""ACM_Vial_Morphine"",""ACM_Vial_Ketamine"",""ACM_Vial_TXA"",""ACM_Vial_Amiodarone"",""ACM_Vial_Ondansetron"",""ACM_Vial_CalciumChloride"",""ACM_Spray_Naloxone"",""ACM_BloodBag_ON_1000"",""ACM_BloodBag_ON_500""],[2,5,2,10,4,8,1,1,2,10,4,8,5,8,3,5,2,2,20,10,20,5,10,6,6,1,1,1,1,5,5,5,5,5,10,5,5,6]],[[],[]]],false]";
 								};
 							};
 						};
@@ -1490,7 +1490,7 @@ class Mission
 										singleType="ARRAY";
 										class value
 										{
-											items=754;
+											items=673;
 											class Item0
 											{
 												class data
@@ -5728,7 +5728,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_21";
+													value="UK3CB_BAF_U_CrewmanCoveralls_RTR";
 												};
 											};
 											class Item530
@@ -5736,7 +5736,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_22";
+													value="rhs_mag_m662_red";
 												};
 											};
 											class Item531
@@ -5744,7 +5744,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_21_Alt";
+													value="rhsusf_acc_ACOG_RMR";
 												};
 											};
 											class Item532
@@ -5752,7 +5752,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_22_Alt";
+													value="rhsusf_acc_ACOG_wd";
 												};
 											};
 											class Item533
@@ -5760,7 +5760,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_21_ESS";
+													value="rhsusf_acc_ACOG_d";
 												};
 											};
 											class Item534
@@ -5768,7 +5768,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_22_ESS";
+													value="5r_headgear_virtus_K";
 												};
 											};
 											class Item535
@@ -5776,7 +5776,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_21_ARD";
+													value="UK3CB_BAF_U_CombatUniform_MTP";
 												};
 											};
 											class Item536
@@ -5784,7 +5784,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_22_ARD";
+													value="UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve";
 												};
 											};
 											class Item537
@@ -5792,7 +5792,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_21_Alt_ARD";
+													value="5r_backpacks_camel";
 												};
 											};
 											class Item538
@@ -5800,7 +5800,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_22_Alt_ARD";
+													value="5r_backpacks_daysack";
 												};
 											};
 											class Item539
@@ -5808,7 +5808,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_21_ESS_ARD";
+													value="B_AssaultPack_mcamo";
 												};
 											};
 											class Item540
@@ -5816,7 +5816,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_21_ESS_ARD_Clean";
+													value="B_Kitbag_mcamo";
 												};
 											};
 											class Item541
@@ -5824,7 +5824,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_22_ESS_ARD_Clean";
+													value="rhsusf_shemagh_gogg_tan";
 												};
 											};
 											class Item542
@@ -5832,7 +5832,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_22_ESS_ARD";
+													value="rhsusf_shemagh2_gogg_tan";
 												};
 											};
 											class Item543
@@ -5840,7 +5840,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="UK3CB_BAF_U_CrewmanCoveralls_RTR";
+													value="rhsusf_ANPVS_14";
 												};
 											};
 											class Item544
@@ -5848,7 +5848,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Beret_KRH";
+													value="UK3CB_BAF_HMNVS";
 												};
 											};
 											class Item545
@@ -5856,7 +5856,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Beret_KRH_PRR";
+													value="5r_vests_virtus_E";
 												};
 											};
 											class Item546
@@ -5864,7 +5864,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Beret_KRH_PRR_Over";
+													value="5r_vests_virtus_E";
 												};
 											};
 											class Item547
@@ -5872,7 +5872,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Beret_RANGER";
+													value="5r_vests_virtus_E";
 												};
 											};
 											class Item548
@@ -5880,7 +5880,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Beret_RANGER_PRR";
+													value="5r_vests_virtus_E";
 												};
 											};
 											class Item549
@@ -5888,7 +5888,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Beret_RANGER_PRR_Over";
+													value="5r_vests_virtus_E";
 												};
 											};
 											class Item550
@@ -5896,7 +5896,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="rhs_mag_m662_red";
+													value="5r_vests_virtus_E";
 												};
 											};
 											class Item551
@@ -5904,7 +5904,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="rhsusf_acc_ACOG_RMR";
+													value="5r_vests_virtus_E";
 												};
 											};
 											class Item552
@@ -5912,7 +5912,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="rhsusf_acc_ACOG_wd";
+													value="UK3CB_BAF_H_Beret_AAC";
 												};
 											};
 											class Item553
@@ -5920,7 +5920,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="rhsusf_acc_ACOG_d";
+													value="UK3CB_BAF_H_Beret_AAC_PRR";
 												};
 											};
 											class Item554
@@ -5928,7 +5928,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_21_WINT";
+													value="UK3CB_BAF_H_Beret_AAC_Over";
 												};
 											};
 											class Item555
@@ -5936,7 +5936,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_22_WINT";
+													value="rhsusf_ihadss";
 												};
 											};
 											class Item556
@@ -5944,7 +5944,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_21_Alt_WINT";
+													value="Tier1_SIG_MCX_115_Virtus";
 												};
 											};
 											class Item557
@@ -5952,7 +5952,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_22_Alt_WINT";
+													value="Tier1_SIG_MCX_115_Virtus_Black";
 												};
 											};
 											class Item558
@@ -5960,7 +5960,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_21_ESS_WINT";
+													value="Tier1_SIG_MCX_115_Virtus_Desert";
 												};
 											};
 											class Item559
@@ -5968,7 +5968,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_22_ESS_WINT";
+													value="Tier1_SIG_MCX_115_Virtus_FDE";
 												};
 											};
 											class Item560
@@ -5976,7 +5976,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5r_headgear_virtus_K";
+													value="Tier1_SR16_Carbine_Mod2_LMT_Black";
 												};
 											};
 											class Item561
@@ -5984,7 +5984,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="UK3CB_BAF_U_CombatUniform_MTP";
+													value="Tier1_SR16_CQB_Mod2_LMT_Black";
 												};
 											};
 											class Item562
@@ -5992,7 +5992,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="UK3CB_BAF_U_CombatUniform_MTP_ShortSleeve";
+													value="Tier1_SR16_CQB_Mod2_LMT_FDE";
 												};
 											};
 											class Item563
@@ -6000,7 +6000,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5r_backpacks_camel";
+													value="UK3CB_BAF_H_Boonie_MTP";
 												};
 											};
 											class Item564
@@ -6008,7 +6008,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5r_backpacks_daysack";
+													value="UK3CB_BAF_H_Boonie_MTP_PRR";
 												};
 											};
 											class Item565
@@ -6016,7 +6016,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="B_AssaultPack_mcamo";
+													value="5r_headgear_virtus_D";
 												};
 											};
 											class Item566
@@ -6024,7 +6024,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="B_Kitbag_mcamo";
+													value="5r_headgear_virtus_J";
 												};
 											};
 											class Item567
@@ -6032,7 +6032,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="rhsusf_shemagh_gogg_tan";
+													value="5r_headgear_virtus_I";
 												};
 											};
 											class Item568
@@ -6040,7 +6040,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="rhsusf_shemagh2_gogg_tan";
+													value="5r_headgear_virtus_F";
 												};
 											};
 											class Item569
@@ -6048,7 +6048,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="rhsusf_ANPVS_14";
+													value="5r_headgear_virtus_B";
 												};
 											};
 											class Item570
@@ -6056,7 +6056,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="UK3CB_BAF_HMNVS";
+													value="5r_headgear_virtus_C";
 												};
 											};
 											class Item571
@@ -6064,7 +6064,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5r_vests_virtus_E";
+													value="5r_headgear_virtus_H";
 												};
 											};
 											class Item572
@@ -6072,7 +6072,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5r_vests_virtus_E";
+													value="5r_headgear_virtus_G";
 												};
 											};
 											class Item573
@@ -6080,7 +6080,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5r_vests_virtus_E";
+													value="5r_headgear_virtus_A";
 												};
 											};
 											class Item574
@@ -6088,7 +6088,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5r_vests_virtus_E";
+													value="5r_headgear_virtus_M";
 												};
 											};
 											class Item575
@@ -6096,7 +6096,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5r_vests_virtus_E";
+													value="5r_headgear_virtus_E";
 												};
 											};
 											class Item576
@@ -6104,7 +6104,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5r_vests_virtus_E";
+													value="5r_headgear_virtus_L";
 												};
 											};
 											class Item577
@@ -6112,7 +6112,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5r_vests_virtus_E";
+													value="5r_headgear_virtus_N";
 												};
 											};
 											class Item578
@@ -6120,7 +6120,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="UK3CB_BAF_H_Beret_AAC";
+													value="5r_vests_virtus_G";
 												};
 											};
 											class Item579
@@ -6128,7 +6128,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="UK3CB_BAF_H_Beret_AAC_PRR";
+													value="5r_vests_virtus_F";
 												};
 											};
 											class Item580
@@ -6136,7 +6136,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="UK3CB_BAF_H_Beret_AAC_Over";
+													value="5r_vests_virtus_D_np";
 												};
 											};
 											class Item581
@@ -6144,7 +6144,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_27_ESS_WINT";
+													value="5r_vests_virtus_D";
 												};
 											};
 											class Item582
@@ -6152,7 +6152,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_26_ESS_WINT";
+													value="5r_vests_virtus_D_tbl_np";
 												};
 											};
 											class Item583
@@ -6160,7 +6160,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_25_ESS_WINT";
+													value="5r_vests_virtus_D_tbl";
 												};
 											};
 											class Item584
@@ -6168,7 +6168,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_24_ESS_WINT";
+													value="5r_vests_virtus_C_np";
 												};
 											};
 											class Item585
@@ -6176,7 +6176,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_23_ESS_WINT";
+													value="5r_vests_virtus_C";
 												};
 											};
 											class Item586
@@ -6184,7 +6184,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="rhsusf_cvc_winter_krh_ess";
+													value="5r_vests_virtus_C_tbl_np";
 												};
 											};
 											class Item587
@@ -6192,7 +6192,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_27_Alt_WINT";
+													value="5r_vests_virtus_C_tbl";
 												};
 											};
 											class Item588
@@ -6200,7 +6200,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_26_Alt_WINT";
+													value="5r_vests_virtus_B_np";
 												};
 											};
 											class Item589
@@ -6208,7 +6208,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_25_Alt_WINT";
+													value="5r_vests_virtus_B";
 												};
 											};
 											class Item590
@@ -6216,7 +6216,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_24_Alt_WINT";
+													value="5r_vests_virtus_B_tbl_np";
 												};
 											};
 											class Item591
@@ -6224,7 +6224,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_23_Alt_WINT";
+													value="5r_vests_virtus_B_tbl";
 												};
 											};
 											class Item592
@@ -6232,7 +6232,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="rhsusf_cvc_winter_alt_krh_helmet";
+													value="5r_vests_virtus_A_np";
 												};
 											};
 											class Item593
@@ -6240,7 +6240,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_27_WINT";
+													value="5r_vests_virtus_A";
 												};
 											};
 											class Item594
@@ -6248,7 +6248,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_26_WINT";
+													value="5r_vests_virtus_A_tbl";
 												};
 											};
 											class Item595
@@ -6256,7 +6256,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_24_WINT";
+													value="5r_vests_virtus_A_tbl_np";
 												};
 											};
 											class Item596
@@ -6264,7 +6264,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_23_WINT";
+													value="AMP_Breaching_Charge_Mag";
 												};
 											};
 											class Item597
@@ -6272,7 +6272,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_25_WINT";
+													value="rhs_mag_30Rnd_556x45_M855A1_Stanag";
 												};
 											};
 											class Item598
@@ -6280,7 +6280,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="rhsusf_cvc_winter_krh_helmet";
+													value="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
 												};
 											};
 											class Item599
@@ -6288,7 +6288,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_27_ESS_ARD_Clean";
+													value="B_UGV_02_Demining_backpack_F";
 												};
 											};
 											class Item600
@@ -6296,7 +6296,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_27_ESS_ARD";
+													value="B_UAV_06_backpack_F";
 												};
 											};
 											class Item601
@@ -6304,7 +6304,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_26_ESS_ARD";
+													value="tfw_rf3080Item";
 												};
 											};
 											class Item602
@@ -6312,7 +6312,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_26_ESS_ARD_Clean";
+													value="UK3CB_BAF_H_Beret_RAMC";
 												};
 											};
 											class Item603
@@ -6320,7 +6320,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_25_ESS_ARD_Clean";
+													value="UK3CB_BAF_H_Beret_RAMC_PRR";
 												};
 											};
 											class Item604
@@ -6328,7 +6328,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_25_ESS_ARD";
+													value="UK3CB_BAF_H_Beret_RAMC_Officer";
 												};
 											};
 											class Item605
@@ -6336,7 +6336,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_24_ESS_ARD";
+													value="UK3CB_BAF_H_Beret_RAMC_PRR_Over";
 												};
 											};
 											class Item606
@@ -6344,7 +6344,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_24_ESS_ARD_Clean";
+													value="UK3CB_BAF_H_Beret_RAMC_Officer_PRR";
 												};
 											};
 											class Item607
@@ -6352,7 +6352,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_23_ESS_ARD_Clean";
+													value="UK3CB_BAF_H_Beret_RAMC_Officer_PRR_Over";
 												};
 											};
 											class Item608
@@ -6360,7 +6360,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_23_ESS_ARD";
+													value="UK3CB_BAF_H_Beret_REng";
 												};
 											};
 											class Item609
@@ -6368,7 +6368,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_27_Alt_ARD";
+													value="UK3CB_BAF_H_Beret_REng_PRR";
 												};
 											};
 											class Item610
@@ -6376,7 +6376,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_26_Alt_ARD";
+													value="UK3CB_BAF_H_Beret_REng_PRR_Over";
 												};
 											};
 											class Item611
@@ -6384,7 +6384,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_25_Alt_ARD";
+													value="UK3CB_BAF_M6";
 												};
 											};
 											class Item612
@@ -6392,7 +6392,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_24_Alt_ARD";
+													value="UK3CB_BAF_1Rnd_60mm_Mo_Flare_White";
 												};
 											};
 											class Item613
@@ -6400,7 +6400,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_23_Alt_ARD";
+													value="UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White";
 												};
 											};
 											class Item614
@@ -6408,7 +6408,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_27_ARD";
+													value="UK3CB_BAF_1Rnd_60mm_Mo_Shells";
 												};
 											};
 											class Item615
@@ -6416,7 +6416,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_26_ARD";
+													value="UK3CB_BAF_M6_RangeTable";
 												};
 											};
 											class Item616
@@ -6424,7 +6424,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_25_ARD";
+													value="ACM_IV_14g";
 												};
 											};
 											class Item617
@@ -6432,7 +6432,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_24_ARD";
+													value="ACM_IV_16g";
 												};
 											};
 											class Item618
@@ -6440,7 +6440,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_23_ARD";
+													value="ACM_ACCUVAC";
 												};
 											};
 											class Item619
@@ -6448,7 +6448,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_27_ESS";
+													value="ACM_Vial_Adenosine";
 												};
 											};
 											class Item620
@@ -6456,7 +6456,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_26_ESS";
+													value="ACM_Vial_Amiodarone";
 												};
 											};
 											class Item621
@@ -6464,7 +6464,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_25_ESS";
+													value="ACM_AmmoniaInhalant";
 												};
 											};
 											class Item622
@@ -6472,7 +6472,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_24_ESS";
+													value="ACM_Autoinjector_ATNA";
 												};
 											};
 											class Item623
@@ -6480,7 +6480,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_23_ESS";
+													value="ACM_Vial_Atropine";
 												};
 											};
 											class Item624
@@ -6488,7 +6488,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_27_Alt";
+													value="ACM_BVM";
 												};
 											};
 											class Item625
@@ -6496,7 +6496,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_26_Alt";
+													value="ACM_AED";
 												};
 											};
 											class Item626
@@ -6504,7 +6504,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_25_Alt";
+													value="ACM_BloodBag_ON_1000";
 												};
 											};
 											class Item627
@@ -6512,7 +6512,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_24_Alt";
+													value="ACM_BloodBag_ON_500";
 												};
 											};
 											class Item628
@@ -6520,7 +6520,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_23_Alt";
+													value="ACM_BloodBag_ON_250";
 												};
 											};
 											class Item629
@@ -6528,7 +6528,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_27";
+													value="ACM_Vial_CalciumChloride";
 												};
 											};
 											class Item630
@@ -6536,7 +6536,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_26";
+													value="ACM_ChestSeal";
 												};
 											};
 											class Item631
@@ -6544,7 +6544,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_25";
+													value="ACM_ChestTubeKit";
 												};
 											};
 											class Item632
@@ -6552,7 +6552,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_24";
+													value="ACM_CricKit";
 												};
 											};
 											class Item633
@@ -6560,7 +6560,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5R_Tank_Helmet_23";
+													value="ACM_ElasticWrap";
 												};
 											};
 											class Item634
@@ -6568,7 +6568,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="rhsusf_cvc_green_alt_krh_helmet";
+													value="ACM_SuctionBag";
 												};
 											};
 											class Item635
@@ -6576,7 +6576,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="rhsusf_cvc_green_krh_helmet";
+													value="ACM_EmergencyTraumaDressing";
 												};
 											};
 											class Item636
@@ -6584,7 +6584,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="rhsusf_cvc_green_krh_ess";
+													value="ACM_Vial_Epinephrine";
 												};
 											};
 											class Item637
@@ -6592,7 +6592,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="rhsusf_cvc_krh_helmet";
+													value="ACM_Vial_Esmolol";
 												};
 											};
 											class Item638
@@ -6600,7 +6600,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="rhsusf_cvc_alt_krh_helmet";
+													value="ACM_IO_EZ";
 												};
 											};
 											class Item639
@@ -6608,7 +6608,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="rhsusf_cvc_krh_ess";
+													value="ACM_IO_FAST";
 												};
 											};
 											class Item640
@@ -6616,7 +6616,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="rhsusf_ihadss";
+													value="ACM_Vial_Fentanyl";
 												};
 											};
 											class Item641
@@ -6624,7 +6624,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="Tier1_SIG_MCX_115_Virtus";
+													value="ACM_FieldBloodTransfusionKit_250";
 												};
 											};
 											class Item642
@@ -6632,7 +6632,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="Tier1_SIG_MCX_115_Virtus_Black";
+													value="ACM_FieldBloodTransfusionKit_500";
 												};
 											};
 											class Item643
@@ -6640,7 +6640,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="Tier1_SIG_MCX_115_Virtus_Desert";
+													value="ACM_GasMaskFilter";
 												};
 											};
 											class Item644
@@ -6648,7 +6648,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="Tier1_SIG_MCX_115_Virtus_FDE";
+													value="ACM_GuedelTube";
 												};
 											};
 											class Item645
@@ -6656,7 +6656,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="Tier1_SR16_Carbine_Mod2_LMT_Black";
+													value="ACM_IGel";
 												};
 											};
 											class Item646
@@ -6664,7 +6664,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="Tier1_SR16_CQB_Mod2_LMT_Black";
+													value="ACM_Vial_Ketamine";
 												};
 											};
 											class Item647
@@ -6672,7 +6672,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="Tier1_SR16_CQB_Mod2_LMT_FDE";
+													value="ACM_Vial_Lidocaine";
 												};
 											};
 											class Item648
@@ -6680,7 +6680,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="UK3CB_BAF_H_Boonie_MTP";
+													value="ACM_Autoinjector_Midazolam";
 												};
 											};
 											class Item649
@@ -6688,7 +6688,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="UK3CB_BAF_H_Boonie_MTP_PRR";
+													value="ACM_Vial_Morphine";
 												};
 											};
 											class Item650
@@ -6696,7 +6696,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5r_headgear_virtus_D";
+													value="ACM_Spray_Naloxone";
 												};
 											};
 											class Item651
@@ -6704,7 +6704,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5r_headgear_virtus_J";
+													value="ACM_NCDKit";
 												};
 											};
 											class Item652
@@ -6712,7 +6712,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5r_headgear_virtus_I";
+													value="ACM_NPA";
 												};
 											};
 											class Item653
@@ -6720,7 +6720,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5r_headgear_virtus_F";
+													value="ACM_Vial_Ondansetron";
 												};
 											};
 											class Item654
@@ -6728,7 +6728,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5r_headgear_virtus_B";
+													value="ACM_Paracetamol";
 												};
 											};
 											class Item655
@@ -6736,7 +6736,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5r_headgear_virtus_C";
+													value="ACM_Inhaler_Penthrox";
 												};
 											};
 											class Item656
@@ -6744,7 +6744,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5r_headgear_virtus_H";
+													value="ACM_PocketBVM";
 												};
 											};
 											class Item657
@@ -6752,7 +6752,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5r_headgear_virtus_G";
+													value="ACM_OxygenTank_425";
 												};
 											};
 											class Item658
@@ -6760,7 +6760,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5r_headgear_virtus_A";
+													value="ACM_PressureBandage";
 												};
 											};
 											class Item659
@@ -6768,7 +6768,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5r_headgear_virtus_M";
+													value="ACM_PressureCuff";
 												};
 											};
 											class Item660
@@ -6776,7 +6776,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5r_headgear_virtus_E";
+													value="ACM_PulseOximeter";
 												};
 											};
 											class Item661
@@ -6784,7 +6784,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5r_headgear_virtus_L";
+													value="ACM_SAMSplint";
 												};
 											};
 											class Item662
@@ -6792,7 +6792,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5r_headgear_virtus_N";
+													value="ACM_Stethoscope";
 												};
 											};
 											class Item663
@@ -6800,7 +6800,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5r_vests_virtus_G";
+													value="ACM_Syringe_10";
 												};
 											};
 											class Item664
@@ -6808,7 +6808,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5r_vests_virtus_F";
+													value="ACM_Syringe_1";
 												};
 											};
 											class Item665
@@ -6816,7 +6816,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5r_vests_virtus_D_np";
+													value="ACM_Syringe_3";
 												};
 											};
 											class Item666
@@ -6824,7 +6824,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5r_vests_virtus_D";
+													value="ACM_Syringe_5";
 												};
 											};
 											class Item667
@@ -6832,7 +6832,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5r_vests_virtus_D_tbl_np";
+													value="ACM_ThoracostomyKit";
 												};
 											};
 											class Item668
@@ -6840,7 +6840,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5r_vests_virtus_D_tbl";
+													value="ACM_Vial_TXA";
 												};
 											};
 											class Item669
@@ -6848,7 +6848,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5r_vests_virtus_C_np";
+													value="5r_backpacks_daysack_m";
 												};
 											};
 											class Item670
@@ -6856,7 +6856,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5r_vests_virtus_C";
+													value="5r_backpacks_daysack_mic";
 												};
 											};
 											class Item671
@@ -6864,7 +6864,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5r_vests_virtus_C_tbl_np";
+													value="5r_backpacks_daysack_p";
 												};
 											};
 											class Item672
@@ -6872,655 +6872,7 @@ class Mission
 												class data
 												{
 													singleType="STRING";
-													value="5r_vests_virtus_C_tbl";
-												};
-											};
-											class Item673
-											{
-												class data
-												{
-													singleType="STRING";
-													value="5r_vests_virtus_B_np";
-												};
-											};
-											class Item674
-											{
-												class data
-												{
-													singleType="STRING";
-													value="5r_vests_virtus_B";
-												};
-											};
-											class Item675
-											{
-												class data
-												{
-													singleType="STRING";
-													value="5r_vests_virtus_B_tbl_np";
-												};
-											};
-											class Item676
-											{
-												class data
-												{
-													singleType="STRING";
-													value="5r_vests_virtus_B_tbl";
-												};
-											};
-											class Item677
-											{
-												class data
-												{
-													singleType="STRING";
-													value="5r_vests_virtus_A_np";
-												};
-											};
-											class Item678
-											{
-												class data
-												{
-													singleType="STRING";
-													value="5r_vests_virtus_A";
-												};
-											};
-											class Item679
-											{
-												class data
-												{
-													singleType="STRING";
-													value="5r_vests_virtus_A_tbl";
-												};
-											};
-											class Item680
-											{
-												class data
-												{
-													singleType="STRING";
-													value="5r_vests_virtus_A_tbl_np";
-												};
-											};
-											class Item681
-											{
-												class data
-												{
-													singleType="STRING";
-													value="AMP_Breaching_Charge_Mag";
-												};
-											};
-											class Item682
-											{
-												class data
-												{
-													singleType="STRING";
-													value="rhs_mag_30Rnd_556x45_M855A1_Stanag";
-												};
-											};
-											class Item683
-											{
-												class data
-												{
-													singleType="STRING";
-													value="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
-												};
-											};
-											class Item684
-											{
-												class data
-												{
-													singleType="STRING";
-													value="B_UGV_02_Demining_backpack_F";
-												};
-											};
-											class Item685
-											{
-												class data
-												{
-													singleType="STRING";
-													value="B_UAV_06_backpack_F";
-												};
-											};
-											class Item686
-											{
-												class data
-												{
-													singleType="STRING";
-													value="tfw_rf3080Item";
-												};
-											};
-											class Item687
-											{
-												class data
-												{
-													singleType="STRING";
-													value="UK3CB_BAF_H_Beret_RAMC";
-												};
-											};
-											class Item688
-											{
-												class data
-												{
-													singleType="STRING";
-													value="UK3CB_BAF_H_Beret_RAMC_PRR";
-												};
-											};
-											class Item689
-											{
-												class data
-												{
-													singleType="STRING";
-													value="UK3CB_BAF_H_Beret_RAMC_Officer";
-												};
-											};
-											class Item690
-											{
-												class data
-												{
-													singleType="STRING";
-													value="UK3CB_BAF_H_Beret_RAMC_PRR_Over";
-												};
-											};
-											class Item691
-											{
-												class data
-												{
-													singleType="STRING";
-													value="UK3CB_BAF_H_Beret_RAMC_Officer_PRR";
-												};
-											};
-											class Item692
-											{
-												class data
-												{
-													singleType="STRING";
-													value="UK3CB_BAF_H_Beret_RAMC_Officer_PRR_Over";
-												};
-											};
-											class Item693
-											{
-												class data
-												{
-													singleType="STRING";
-													value="UK3CB_BAF_H_Beret_REng";
-												};
-											};
-											class Item694
-											{
-												class data
-												{
-													singleType="STRING";
-													value="UK3CB_BAF_H_Beret_REng_PRR";
-												};
-											};
-											class Item695
-											{
-												class data
-												{
-													singleType="STRING";
-													value="UK3CB_BAF_H_Beret_REng_PRR_Over";
-												};
-											};
-											class Item696
-											{
-												class data
-												{
-													singleType="STRING";
-													value="UK3CB_BAF_M6";
-												};
-											};
-											class Item697
-											{
-												class data
-												{
-													singleType="STRING";
-													value="UK3CB_BAF_1Rnd_60mm_Mo_Flare_White";
-												};
-											};
-											class Item698
-											{
-												class data
-												{
-													singleType="STRING";
-													value="UK3CB_BAF_1Rnd_60mm_Mo_Smoke_White";
-												};
-											};
-											class Item699
-											{
-												class data
-												{
-													singleType="STRING";
-													value="UK3CB_BAF_1Rnd_60mm_Mo_Shells";
-												};
-											};
-											class Item700
-											{
-												class data
-												{
-													singleType="STRING";
-													value="UK3CB_BAF_M6_RangeTable";
-												};
-											};
-											class Item701
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_IV_14g";
-												};
-											};
-											class Item702
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_IV_16g";
-												};
-											};
-											class Item703
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_ACCUVAC";
-												};
-											};
-											class Item704
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_Vial_Adenosine";
-												};
-											};
-											class Item705
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_Vial_Amiodarone";
-												};
-											};
-											class Item706
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_AmmoniaInhalant";
-												};
-											};
-											class Item707
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_Autoinjector_ATNA";
-												};
-											};
-											class Item708
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_Vial_Atropine";
-												};
-											};
-											class Item709
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_BVM";
-												};
-											};
-											class Item710
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_AED";
-												};
-											};
-											class Item711
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_BloodBag_ON_1000";
-												};
-											};
-											class Item712
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_BloodBag_ON_500";
-												};
-											};
-											class Item713
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_BloodBag_ON_250";
-												};
-											};
-											class Item714
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_Vial_CalciumChloride";
-												};
-											};
-											class Item715
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_ChestSeal";
-												};
-											};
-											class Item716
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_ChestTubeKit";
-												};
-											};
-											class Item717
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_CricKit";
-												};
-											};
-											class Item718
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_ElasticWrap";
-												};
-											};
-											class Item719
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_SuctionBag";
-												};
-											};
-											class Item720
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_EmergencyTraumaDressing";
-												};
-											};
-											class Item721
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_Vial_Epinephrine";
-												};
-											};
-											class Item722
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_Vial_Esmolol";
-												};
-											};
-											class Item723
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_IO_EZ";
-												};
-											};
-											class Item724
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_IO_FAST";
-												};
-											};
-											class Item725
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_Vial_Fentanyl";
-												};
-											};
-											class Item726
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_FieldBloodTransfusionKit_250";
-												};
-											};
-											class Item727
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_FieldBloodTransfusionKit_500";
-												};
-											};
-											class Item728
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_GasMaskFilter";
-												};
-											};
-											class Item729
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_GuedelTube";
-												};
-											};
-											class Item730
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_IGel";
-												};
-											};
-											class Item731
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_Vial_Ketamine";
-												};
-											};
-											class Item732
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_Vial_Lidocaine";
-												};
-											};
-											class Item733
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_Autoinjector_Midazolam";
-												};
-											};
-											class Item734
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_Vial_Morphine";
-												};
-											};
-											class Item735
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_Spray_Naloxone";
-												};
-											};
-											class Item736
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_NCDKit";
-												};
-											};
-											class Item737
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_NPA";
-												};
-											};
-											class Item738
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_Vial_Ondansetron";
-												};
-											};
-											class Item739
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_Paracetamol";
-												};
-											};
-											class Item740
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_Inhaler_Penthrox";
-												};
-											};
-											class Item741
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_PocketBVM";
-												};
-											};
-											class Item742
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_OxygenTank_425";
-												};
-											};
-											class Item743
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_PressureBandage";
-												};
-											};
-											class Item744
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_PressureCuff";
-												};
-											};
-											class Item745
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_PulseOximeter";
-												};
-											};
-											class Item746
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_SAMSplint";
-												};
-											};
-											class Item747
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_Stethoscope";
-												};
-											};
-											class Item748
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_Syringe_10";
-												};
-											};
-											class Item749
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_Syringe_1";
-												};
-											};
-											class Item750
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_Syringe_3";
-												};
-											};
-											class Item751
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_Syringe_5";
-												};
-											};
-											class Item752
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_ThoracostomyKit";
-												};
-											};
-											class Item753
-											{
-												class data
-												{
-													singleType="STRING";
-													value="ACM_Vial_TXA";
+													value="5r_backpacks_daysack_pic";
 												};
 											};
 										};

@@ -16,11 +16,11 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2523;
+		nextID=2537;
 	};
 	class Camera
 	{
-		pos[]={85.305977,30,-7.9241123};
+		pos[]={84.917892,49.041698,-24.231562};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
 		aside[]={0.99999994,0,-0};
@@ -12372,7 +12372,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[x5r_config_groundWoodlandArray, x5r_config_groundSandArray, x5r_config_groundWinterArray, x5r_config_navyArray, x5r_config_suppliesArray]";
+											value="[x5r_config_groundWoodlandArray, x5r_config_groundSandArray, x5r_config_navyArray, x5r_config_suppliesArray]";
 										};
 									};
 								};
@@ -12705,7 +12705,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[x5r_config_groundWoodlandArray, x5r_config_groundSandArray, x5r_config_groundWinterArray, x5r_config_navyArray, x5r_config_suppliesArray]";
+											value="[x5r_config_groundWoodlandArray, x5r_config_groundSandArray, x5r_config_navyArray, x5r_config_suppliesArray]";
 										};
 									};
 								};
@@ -13051,7 +13051,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[x5r_config_groundWoodlandArray, x5r_config_groundSandArray, x5r_config_groundWinterArray, x5r_config_navyArray, x5r_config_suppliesArray]";
+											value="[x5r_config_groundWoodlandArray, x5r_config_groundSandArray, x5r_config_navyArray, x5r_config_suppliesArray]";
 										};
 									};
 								};
@@ -14972,7 +14972,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[x5r_config_airArray, x5r_config_groundWoodlandArray, x5r_config_groundSandArray, x5r_config_groundWinterArray, x5r_config_navyArray, x5r_config_suppliesArray]";
+											value="[x5r_config_airArray, x5r_config_groundWoodlandArray, x5r_config_groundSandArray, x5r_config_navyArray, x5r_config_suppliesArray]";
 										};
 									};
 								};
@@ -15304,7 +15304,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[x5r_config_groundWoodlandArray, x5r_config_groundSandArray, x5r_config_groundWinterArray, x5r_config_suppliesArray]";
+											value="[x5r_config_groundWoodlandArray, x5r_config_groundSandArray, x5r_config_suppliesArray]";
 										};
 									};
 								};
@@ -15500,7 +15500,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[x5r_config_airArray, x5r_config_groundWoodlandArray, x5r_config_groundSandArray, x5r_config_groundWinterArray, x5r_config_navyArray, x5r_config_suppliesArray]";
+											value="[x5r_config_airArray, x5r_config_groundWoodlandArray, x5r_config_groundSandArray, x5r_config_navyArray, x5r_config_suppliesArray]";
 										};
 									};
 								};
@@ -17037,7 +17037,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[x5r_config_groundWoodlandArray, x5r_config_groundSandArray, x5r_config_groundWinterArray, x5r_config_suppliesArray]";
+									value="[x5r_config_groundWoodlandArray, x5r_config_groundSandArray, x5r_config_suppliesArray]";
 								};
 							};
 						};
@@ -19598,7 +19598,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[x5r_config_groundWoodlandArray, x5r_config_groundSandArray, x5r_config_groundWinterArray, x5r_config_suppliesArray]";
+									value="[x5r_config_groundWoodlandArray, x5r_config_groundSandArray, x5r_config_suppliesArray]";
 								};
 							};
 						};
@@ -19866,7 +19866,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[x5r_config_groundWoodlandArray, x5r_config_groundSandArray, x5r_config_groundWinterArray, x5r_config_suppliesArray]";
+									value="[x5r_config_groundWoodlandArray, x5r_config_groundSandArray, x5r_config_suppliesArray]";
 								};
 							};
 						};
@@ -20134,7 +20134,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[x5r_config_groundWoodlandArray, x5r_config_groundSandArray, x5r_config_groundWinterArray, x5r_config_suppliesArray]";
+									value="[x5r_config_groundWoodlandArray, x5r_config_groundSandArray, x5r_config_suppliesArray]";
 								};
 							};
 						};
@@ -20402,7 +20402,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[x5r_config_groundWoodlandArray, x5r_config_groundSandArray, x5r_config_groundWinterArray, x5r_config_suppliesArray]";
+									value="[x5r_config_groundWoodlandArray, x5r_config_groundSandArray, x5r_config_suppliesArray]";
 								};
 							};
 						};
@@ -20670,7 +20670,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[x5r_config_groundWoodlandArray, x5r_config_groundSandArray, x5r_config_groundWinterArray, x5r_config_suppliesArray]";
+									value="[x5r_config_groundWoodlandArray, x5r_config_groundSandArray, x5r_config_suppliesArray]";
 								};
 							};
 						};
@@ -22738,7 +22738,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[x5r_config_airArray, x5r_config_groundWoodlandArray, x5r_config_groundSandArray, x5r_config_groundWinterArray, x5r_config_navyArray, x5r_config_suppliesArray]";
+									value="[x5r_config_airArray, x5r_config_groundWoodlandArray, x5r_config_groundSandArray, x5r_config_navyArray, x5r_config_suppliesArray]";
 								};
 							};
 						};
@@ -22941,7 +22941,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[x5r_config_airArray, x5r_config_groundWoodlandArray, x5r_config_groundSandArray, x5r_config_groundWinterArray, x5r_config_navyArray, x5r_config_suppliesArray]";
+									value="[x5r_config_airArray, x5r_config_groundWoodlandArray, x5r_config_groundSandArray, x5r_config_navyArray, x5r_config_suppliesArray]";
 								};
 							};
 						};

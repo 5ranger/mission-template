@@ -796,6 +796,9 @@ x5r_config_suppliesArray =
   ["Land_Cargo10_military_green_F",["Radio Relay Container","","Indestructible. Needs to be deployed. 25km range"],{
     [_this, 0] call ace_cargo_fnc_setSpace;   
     [_this, -1] call ace_cargo_fnc_setSize;
+  },[],28],
+  ["B_Slingload_01_Cargo_F",["Bridge Pack (DO NOT SLINGLOAD/AIRDROP)","","Takes 5 seconds to spawn"],{
+    _this call C5R_Common_fnc_pontoonBridgeCreateObject;   
   },[],28]
 ]];
 

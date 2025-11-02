@@ -680,7 +680,7 @@ _ChangeModeTrigger =
 
 		if (_li) then { (findDisplay 5100 displayCtrl 3) ctrlSetTextColor COLORBUTTONTEXTOFF };
 
-		_o removeEventHandler ["fired", _tr_ehidx];
+		_o removeEventHandler ["Fired", _tr_ehidx];
 		_o removeEventHandler ["GetOut", _tr_ehidx2];
 	};
 };
@@ -850,7 +850,7 @@ _SelectCycleUnits =
 	{
 		if ( alive _x and !(_x isKindOf "BIS_alice_emptydoor") ) then
 		{
-			if ( vehicle _x == _x ) then
+			if ( isNull objectParent _x ) then
 			{
 				_cy_ol_g = _cy_ol_g + [_x];
 				if (_o == vehicle _x) then { _cy_n = _cy_i };
@@ -955,7 +955,7 @@ _ListObjects =
 			_tx_crewname = name _x;
 		};
 
-		lbAdd[ 50, format[ "%3%1 : %2%4", getText( configFile >> "CfgVehicles" >> (typeOf _x) >> "displayName" ), _tx_crewname, _tx_addspace, _tx_gn ] ];
+		lbAdd[ 50, format[ "%3%1 : %2%4", getText( configOf _x >> "displayName" ), _tx_crewname, _tx_addspace, _tx_gn ] ];
 
 		switch (true) do
 		{
@@ -1057,9 +1057,9 @@ _CreateGroupMarker2 =
 		};
 
 		if (_x iskindof "Animal") then
-		{ _ma_gmn setMarkerTextLocal format["gcam_%1 : 1", getText( configFile >> "CfgVehicles" >> (typeOf(vehicle _x)) >> "displayName" )] }
+		{ _ma_gmn setMarkerTextLocal format["gcam_%1 : 1", getText( configOf (vehicle _x) >> "displayName" )] }
 		else
-		{ _ma_gmn setMarkerTextLocal format["gcam_%1 : %2 : %3", getText( configFile >> "CfgVehicles" >> (typeOf(vehicle _x)) >> "displayName" ), name _x, count units group _x] };
+		{ _ma_gmn setMarkerTextLocal format["gcam_%1 : %2 : %3", getText( configOf (vehicle _x) >> "displayName" ), name _x, count units group _x] };
 
 		_ma_gmnl = _ma_gmnl + [_ma_gmn];
 	} forEach _ma_ol;
@@ -2232,7 +2232,7 @@ _ResetCamera =
 
 	if (_trg) then
 	{
-		_o_l removeEventHandler ["fired", _tr_ehidx];
+		_o_l removeEventHandler ["Fired", _tr_ehidx];
 		_o_l removeEventHandler ["GetOut", _tr_ehidx2];
 	};
 
@@ -2343,7 +2343,7 @@ _ResetCamera =
 		_tx_crewname = name _o;
 	};
 
-	if (SHOWUNITNAME) then { titleText[ format[ "%1 : %2\n%3", getText( configFile >> "CfgVehicles" >> (typeOf _o) >> "displayName" ), _tx_crewname, group _o], "plain down", _w*40 ] };
+	if (SHOWUNITNAME) then { titleText[ format[ "%1 : %2\n%3", getText( configOf _o >> "displayName" ), _tx_crewname, group _o], "plain down", _w*40 ] };
 
 	ctrlSetFocus (findDisplay 5100 displayCtrl 100);
 };
@@ -3322,7 +3322,7 @@ while {_l} do
 <t color='#8a8aff'>weaponDirection</t>: %35<br/>
 <t color='#8a8aff'>currentWeapon</t>: %36 <t color='#8a8aff'>currentMuzzle</t>: %37 <t color='#8a8aff'>currentWeaponMode</t>: %38 <t color='#8a8aff'>currentVisionMode</t>: %39<br/>
 <t color='#8a8aff'>ammo</t>: %40 <t color='#8a8aff'>someAmmo</t>: %41 <t color='#8a8aff'>reloadEnabled</t>: %42 <t color='#8a8aff'>needReload</t>: %43<br/>",
-					name _o, getText( configFile >> "CfgVehicles" >> (typeOf _o) >> "displayName" ), typeOf _o, side _o, faction _o, score _o,
+					name _o, getText( configOf _o >> "displayName" ), typeOf _o, side _o, faction _o, score _o,
 					rankId _o, rank _o, skill _o, morale _o, rating _o, simulationEnabled _o, isFormationLeader _o,
 					alive _o, lifeState _o, damage _o, handsHit _o, canStand _o,
 					unitPos _o, isWalking _o, isForcedWalk _o, isHidden _o, fleeing _o, captive _o, captiveNum _o,
@@ -3457,7 +3457,7 @@ while {_l} do
 
 			if (_trg) then
 			{
-				_o removeEventHandler ["fired", _tr_ehidx];
+				_o removeEventHandler ["Fired", _tr_ehidx];
 				_o removeEventHandler ["GetOut", _tr_ehidx2];
 			};
 

@@ -1,6 +1,6 @@
 params ["_obj"];
 
-if ((vehicleVarName player in ["p41ic","p412ic","p41sapper_1","p41sapper_2","p41sapper_3"]) || x5r_config_vehicleRespawnEnabled) then {
+if ((vehicleVarName player select [0, count "p4"] isEqualTo "p4";) || x5r_config_vehicleRespawnEnabled) then {
 	_actionAdd = ["x5r_actions_respawnAdd", "Create Respawn Position", "",
 	{ 
 		[_target] remoteExec ["x5r_common_fnc_addRespawn", 2]; 

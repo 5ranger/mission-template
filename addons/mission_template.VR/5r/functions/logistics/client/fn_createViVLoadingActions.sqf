@@ -4,7 +4,7 @@ _actionMain = ["x5r_actions_crateLoad","Load in closest vehicle (ViV)","",{
 	_carrier = (nearestObjects [_target, ["Car","Air"], 30]) select 0;
 	if (isNil "_carrier") then {hint "No vehicle found";exit;};
 	_check = _carrier canVehicleCargo _target;
-	_carrierNameStr = (getText (configFile >> "CfgVehicles" >> (typeOf _carrier) >> "displayName"));
+	_carrierNameStr = getText (configOf _carrier >> "displayName");
 	if (_check select 0) then {
 		[10, [_target,_carrier], {
 			params ["_args", "_elapsedTime", "_totalTime"];

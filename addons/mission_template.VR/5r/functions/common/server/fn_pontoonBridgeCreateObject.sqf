@@ -21,7 +21,7 @@ for "_i" from 0 to 3 do {
     _pontoon attachTo [_obj, _offset];
 };
 // Set variable for identification
-_obj setVariable ["C5R_bridgeObj", true, true];
+_obj setVariable ["x5r_bridgeObj", true, true];
 // Handle deletion
 _obj addEventHandler ["Deleted", {
 	params ["_entity"];

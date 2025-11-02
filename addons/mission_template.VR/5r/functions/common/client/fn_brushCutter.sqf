@@ -30,7 +30,7 @@ _action = ["x5r_action_cutBrush","Cut closest vegetation","",{
 		(
 			!(isObjectHidden _chopTgt) &&
 			!(isNull _chopTgt) &&
-			!(vehicle player != player)
+			(isNull objectParent player)
 		)
 	}
 ] call ace_interact_menu_fnc_createAction;

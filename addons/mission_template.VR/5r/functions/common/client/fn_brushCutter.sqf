@@ -8,11 +8,10 @@ _action = ["x5r_action_cutBrush","Cut closest vegetation","",{
 	if (!isNil "_tree" && !isObjectHidden _tree) then {
 		_matches pushback [_tree, 25,"tree"];
 	};
-	systemChat str _matches;
+	
 	_matches = [_matches, [], { player distance2D (_x select 0) }] call BIS_fnc_sortBy;
 	private _obj = _matches select 0;
-	systemChat str _matches;
-	{systemChat str (player distance2D (_x select 0))} forEach _matches;
+
 	x5r_tags_choppingLocal = true;
 	_obj select 0 spawn {
 		while {x5r_tags_choppingLocal} do {

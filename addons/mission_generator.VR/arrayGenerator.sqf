@@ -24,8 +24,8 @@ _crateArray = [];
 _br = toString [13,10];
 _copyString = 
 	"x5r_config_itemArray = " + (str _allArsenalItems) + ";" + _br + 
-	"x5r_config_loadoutMap = createHashMapFromArray " + (str _loadouts)+ ";" + _br + 
-	"x5r_config_crateMap = createHashMapFromArray " + (str _crateArray)+ ";"
+	"x5r_config_loadoutMap = createHashMapFromArray " + (str _loadouts) + ";" + _br + 
+	"x5r_config_crateMap = createHashMapFromArray " + (str _crateArray) + ";" + _br
 ;
 
 copyToClipboard _copyString;

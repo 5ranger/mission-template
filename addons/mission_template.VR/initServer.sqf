@@ -4,7 +4,7 @@ call x5r_common_fnc_freezeLayer; // Used by in training missions to create large
 call x5r_common_fnc_dynamicSimulation; // Postpone dynamic simulation to let AI settle in positions
 // Register ACE Fortify objects 
 // [side,budget,[[classname, cost, category], [classname, cost, category]]] call ace_fortify_fnc_registerObjects;		
-[west, 2000, [ 
+[west, 2500, [ 
 	["Land_BagFence_Short_F", 6, "Sandbag - Tan"], 
 	["Land_BagFence_Long_F", 10, "Sandbag - Tan"], 
 	["Land_BagFence_Round_F", 10, "Sandbag - Tan"], 
@@ -25,7 +25,7 @@ call x5r_common_fnc_dynamicSimulation; // Postpone dynamic simulation to let AI 
 	["Land_HBarrierWall_corridor_F", 30, "H-Barrier - Tan"], 
 	["Land_HBarrierWall_corner_F", 50, "H-Barrier - Tan"], 
 	["Land_HBarrierWall4_F", 50, "H-Barrier - Tan"],
-	["Land_HBarrierWall6_F", 100, "H-Barrier - Tan"], 
+	["Land_HBarrierWall6_F", 75, "H-Barrier - Tan"], 
 	["Land_HBarrierTower_F", 120, "H-Barrier - Tan"],
 	["Land_Fort_Watchtower_EP1", 150, "H-Barrier - Tan"],
 
@@ -35,7 +35,7 @@ call x5r_common_fnc_dynamicSimulation; // Postpone dynamic simulation to let AI 
 	["Land_HBarrier_01_wall_corridor_green_F", 30, "H-Barrier - Woodland"], 
 	["Land_HBarrier_01_wall_corner_green_F", 50, "H-Barrier - Woodland"], 
 	["Land_HBarrier_01_wall_4_green_F", 50, "H-Barrier - Woodland"],
-	["Land_HBarrier_01_wall_6_green_F", 100, "H-Barrier - Woodland"], 
+	["Land_HBarrier_01_wall_6_green_F", 75, "H-Barrier - Woodland"], 
 	["Land_HBarrier_01_big_tower_green_F", 120, "H-Barrier - Woodland"],
 	["Land_HBarrier_01_tower_green_F", 150, "H-Barrier - Woodland"],
 	

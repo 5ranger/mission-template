@@ -9,7 +9,7 @@ if (_uid in _spectWhitelist) then
 		waitUntil {!isNull findDisplay 12};
 		disableSerialization;
 		_ctrl = findDisplay 12 ctrlCreate ["RscStructuredText", -1];
-		_ctrl ctrlSetPosition [safezoneX + 0.51 * safezoneW, safezoneY, 0.02 * safezoneW, 0.02 * safezoneH];
+		_ctrl ctrlSetPosition [safeZoneX + 0.51 * safeZoneW, safeZoneY, 0.02 * safeZoneW, 0.02 * safeZoneH];
 		_ctrl ctrlSetStructuredText parseText "<img size='1.2' image='\A3\Ui_f\data\GUI\Rsc\RscDisplayEGSpectator\FreeSelected.paa'/>";
 		_ctrl ctrlSetTextColor [0.9, 0.9, 0.9, 1];
 		_ctrl ctrlSetBackgroundColor [0.1, 0.1, 0.1, 0.9];
@@ -27,7 +27,7 @@ _ctrl ctrlCommit 0;
 		waitUntil {!isNull findDisplay 12};
 		disableSerialization;
 		_ctrl2 = findDisplay 12 ctrlCreate ["RscStructuredText", -1];
-		_ctrl2 ctrlSetPosition [safezoneX + 0.49 * safezoneW, safezoneY, 0.02 * safezoneW, 0.02 * safezoneH];
+		_ctrl2 ctrlSetPosition [safeZoneX + 0.49 * safeZoneW, safeZoneY, 0.02 * safeZoneW, 0.02 * safeZoneH];
 		_ctrl2 ctrlSetStructuredText parseText "<img size='1.2' image='\a3\modules_f_curator\data\portraitcuratorsetcamera_ca.paa'/>";
 		_ctrl2 ctrlSetTextColor [0.9, 0.9, 0.9, 1];
 		_ctrl2 ctrlSetBackgroundColor [0.1, 0.1, 0.1, 0.9];

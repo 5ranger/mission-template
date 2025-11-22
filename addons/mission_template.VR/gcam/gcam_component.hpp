@@ -5,10 +5,10 @@
 
 #include "gcam_config.hpp"
 
-#define SafeZoneH 1920
-#define SafeZoneW 1080
-#define SafeZoneX 1080
-#define SafeZoneY 720
+#define safeZoneH 1920
+#define safeZoneW 1080
+#define safeZoneX 1080
+#define safeZoneY 720
 
 class GCam_DialogBase_Static
 {
@@ -500,7 +500,7 @@ class GCam_DialogBase_StructuredText
 
 
 #define EDITHEIGHT 0.032
-#define EDITWIDTH ((SafeZoneW - OUTFRAME*2)/4 - SPACE*3/4)
+#define EDITWIDTH ((safeZoneW - OUTFRAME*2)/4 - SPACE*3/4)
 
 class GCam_DialogBase_Edit
 {
@@ -635,16 +635,16 @@ class GCam_Dialog
 			class StructuredText_Diag : GCam_DialogBase_RscStructuredText
 			{
 				idc = 25;
-				x = 0.0 - ((SafeZoneW-1.0)/2) + OUTFRAME;
-				y = 0.0 - ((SafeZoneH-1.0)/2) + OUTFRAME + EDITHEIGHT + SPACE;
-				w = SafeZoneW - OUTFRAME*2;
-				h = (SafeZoneH) - (OUTFRAME*2 + EDITHEIGHT + SPACE );
+				x = 0.0 - ((safeZoneW-1.0)/2) + OUTFRAME;
+				y = 0.0 - ((safeZoneH-1.0)/2) + OUTFRAME + EDITHEIGHT + SPACE;
+				w = safeZoneW - OUTFRAME*2;
+				h = (safeZoneH) - (OUTFRAME*2 + EDITHEIGHT + SPACE );
 			};
 			class Edit_Command1 : GCam_DialogBase_Edit
 			{
 				idc = 55;
-				x = 0.0 - ((SafeZoneW-1.0)/2) + OUTFRAME + (EDITWIDTH + SPACE)*0;
-				y = 0.0 - ((SafeZoneH-1.0)/2) + OUTFRAME;
+				x = 0.0 - ((safeZoneW-1.0)/2) + OUTFRAME + (EDITWIDTH + SPACE)*0;
+				y = 0.0 - ((safeZoneH-1.0)/2) + OUTFRAME;
 				w = EDITWIDTH;
 				text = "";
 				onMouseMoving = "GCam_OC = _this; GCam_F = _this select 3";
@@ -654,8 +654,8 @@ class GCam_Dialog
 			class Edit_Command2 : GCam_DialogBase_Edit
 			{
 				idc = 56;
-				x = 0.0 - ((SafeZoneW-1.0)/2) + OUTFRAME + (EDITWIDTH + SPACE)*1;
-				y = 0.0 - ((SafeZoneH-1.0)/2) + OUTFRAME;
+				x = 0.0 - ((safeZoneW-1.0)/2) + OUTFRAME + (EDITWIDTH + SPACE)*1;
+				y = 0.0 - ((safeZoneH-1.0)/2) + OUTFRAME;
 				w = EDITWIDTH;
 				text = "";
 				onMouseMoving = "GCam_OC = _this; GCam_F = _this select 3";
@@ -665,8 +665,8 @@ class GCam_Dialog
 			class Edit_Command3 : GCam_DialogBase_Edit
 			{
 				idc = 57;
-				x = 0.0 - ((SafeZoneW-1.0)/2) + OUTFRAME + (EDITWIDTH + SPACE)*2;
-				y = 0.0 - ((SafeZoneH-1.0)/2) + OUTFRAME;
+				x = 0.0 - ((safeZoneW-1.0)/2) + OUTFRAME + (EDITWIDTH + SPACE)*2;
+				y = 0.0 - ((safeZoneH-1.0)/2) + OUTFRAME;
 				w = EDITWIDTH;
 				text = "";
 				onMouseMoving = "GCam_OC = _this; GCam_F = _this select 3";
@@ -676,8 +676,8 @@ class GCam_Dialog
 			class Edit_Command4 : GCam_DialogBase_Edit
 			{
 				idc = 58;
-				x = 0.0 - ((SafeZoneW-1.0)/2) + OUTFRAME + (EDITWIDTH + SPACE)*3;
-				y = 0.0 - ((SafeZoneH-1.0)/2) + OUTFRAME;
+				x = 0.0 - ((safeZoneW-1.0)/2) + OUTFRAME + (EDITWIDTH + SPACE)*3;
+				y = 0.0 - ((safeZoneH-1.0)/2) + OUTFRAME;
 				w = EDITWIDTH;
 				text = "";
 				onMouseMoving = "GCam_OC = _this; GCam_F = _this select 3";
@@ -688,16 +688,16 @@ class GCam_Dialog
 		class Background_List : GCam_DialogBase_Static
 		{
 			idc = 0;
-			x = 1.0 + ((SafeZoneW-1.0)/2) - OUTFRAME - LISTWIDTH;
-			y = 1.0 + ((SafeZoneH-1.0)/2) - OUTFRAME - LISTHEIGHT;
+			x = 1.0 + ((safeZoneW-1.0)/2) - OUTFRAME - LISTWIDTH;
+			y = 1.0 + ((safeZoneH-1.0)/2) - OUTFRAME - LISTHEIGHT;
 			w = LISTWIDTH;
 			h = LISTHEIGHT;
 		};
 		class List : GCam_DialogBase_ListBox
 		{
 			idc = 50;
-			x = 1.0 + ((SafeZoneW-1.0)/2) - OUTFRAME - LISTWIDTH;
-			y = 1.0 + ((SafeZoneH-1.0)/2) - OUTFRAME - LISTHEIGHT;
+			x = 1.0 + ((safeZoneW-1.0)/2) - OUTFRAME - LISTWIDTH;
+			y = 1.0 + ((safeZoneH-1.0)/2) - OUTFRAME - LISTHEIGHT;
 			onMouseMoving =  "GCam_OCL = _this";
 			onKeyDown = "GCam_KeyDown_List = _this";
 			onLBSelChanged = "GCam_LSC = _this";
@@ -705,16 +705,16 @@ class GCam_Dialog
 		class Combo_ListViewMode : GCam_DialogBase_Combo
 		{
 			idc = 2;
-			x = 1.0 + ((SafeZoneW-1.0)/2) - OUTFRAME - BUTTONWIDTH - SPACE - BUTTONWIDTH;
-			y = 1.0 + ((SafeZoneH-1.0)/2) - OUTFRAME - LISTHEIGHT - SPACE - BUTTONHEIGHT - SPACE - BUTTONHEIGHT;
+			x = 1.0 + ((safeZoneW-1.0)/2) - OUTFRAME - BUTTONWIDTH - SPACE - BUTTONWIDTH;
+			y = 1.0 + ((safeZoneH-1.0)/2) - OUTFRAME - LISTHEIGHT - SPACE - BUTTONHEIGHT - SPACE - BUTTONHEIGHT;
 			onMouseMoving = "GCam_OC = _this; GCam_F = _this select 3";
 			onLBSelChanged = "GCam_BId = ""vc""; GCam_B = true";
 		};
 		class Button_ListTrigger : GCam_DialogBase_Button
 		{
 			idc = 3;
-			x = 1.0 + ((SafeZoneW-1.0)/2) - OUTFRAME - BUTTONWIDTH - SPACE - BUTTONWIDTH - SPACE - BUTTONWIDTH;
-			y = 1.0 + ((SafeZoneH-1.0)/2) - OUTFRAME - LISTHEIGHT - SPACE - BUTTONHEIGHT - SPACE - BUTTONHEIGHT;
+			x = 1.0 + ((safeZoneW-1.0)/2) - OUTFRAME - BUTTONWIDTH - SPACE - BUTTONWIDTH - SPACE - BUTTONWIDTH;
+			y = 1.0 + ((safeZoneH-1.0)/2) - OUTFRAME - LISTHEIGHT - SPACE - BUTTONHEIGHT - SPACE - BUTTONHEIGHT;
 			text = "F.Trig";
 			toolTip = "Toggle Firing and Ejection Trigger (Guided missile, Designated bomb, Mortar, Cannon and Ejected unit)";
 			onMouseMoving =  "GCam_OC = _this";
@@ -723,8 +723,8 @@ class GCam_Dialog
 		class Button_ListFollow : GCam_DialogBase_Button
 		{
 			idc = 4;
-			x = 1.0 + ((SafeZoneW-1.0)/2) - OUTFRAME - BUTTONWIDTH - SPACE - BUTTONWIDTH - SPACE - BUTTONWIDTH;
-			y = 1.0 + ((SafeZoneH-1.0)/2) - OUTFRAME - LISTHEIGHT - SPACE - BUTTONHEIGHT;
+			x = 1.0 + ((safeZoneW-1.0)/2) - OUTFRAME - BUTTONWIDTH - SPACE - BUTTONWIDTH - SPACE - BUTTONWIDTH;
+			y = 1.0 + ((safeZoneH-1.0)/2) - OUTFRAME - LISTHEIGHT - SPACE - BUTTONHEIGHT;
 			text = "Follow";
 			toolTip = "Toggle Follow Mode";
 			onMouseMoving =  "GCam_OC = _this";
@@ -733,8 +733,8 @@ class GCam_Dialog
 		class Button_ListBehind : GCam_DialogBase_Button
 		{
 			idc = 5;
-			x = 1.0 + ((SafeZoneW-1.0)/2) - OUTFRAME - BUTTONWIDTH - SPACE - BUTTONWIDTH;
-			y = 1.0 + ((SafeZoneH-1.0)/2) - OUTFRAME - LISTHEIGHT - SPACE - BUTTONHEIGHT;
+			x = 1.0 + ((safeZoneW-1.0)/2) - OUTFRAME - BUTTONWIDTH - SPACE - BUTTONWIDTH;
+			y = 1.0 + ((safeZoneH-1.0)/2) - OUTFRAME - LISTHEIGHT - SPACE - BUTTONHEIGHT;
 			text = "Behind";
 			toolTip = "Toggle Behind Mode";
 			onMouseMoving =  "GCam_OC = _this";
@@ -743,8 +743,8 @@ class GCam_Dialog
 		class Button_ListFocus : GCam_DialogBase_Button
 		{
 			idc = 6;
-			x = 1.0 + ((SafeZoneW-1.0)/2) - OUTFRAME - BUTTONWIDTH;
-			y = 1.0 + ((SafeZoneH-1.0)/2) - OUTFRAME - LISTHEIGHT - SPACE - BUTTONHEIGHT;
+			x = 1.0 + ((safeZoneW-1.0)/2) - OUTFRAME - BUTTONWIDTH;
+			y = 1.0 + ((safeZoneH-1.0)/2) - OUTFRAME - LISTHEIGHT - SPACE - BUTTONHEIGHT;
 			text = "Focus";
 			toolTip = "Toggle Focus Mode";
 			onMouseMoving =  "GCam_OC = _this";
@@ -753,8 +753,8 @@ class GCam_Dialog
 		class Button_ListTimeInc : GCam_DialogBase_Button
 		{
 			idc = 8;
-			x = 1.0 + ((SafeZoneW-1.0)/2) - OUTFRAME - BUTTONWIDTH2 - SPACE - BUTTONWIDTH2;
-			y = 1.0 + ((SafeZoneH-1.0)/2) - OUTFRAME - LISTHEIGHT - SPACE - BUTTONHEIGHT - SPACE - TEXTHEIGHT - SPACE - BUTTONHEIGHT;
+			x = 1.0 + ((safeZoneW-1.0)/2) - OUTFRAME - BUTTONWIDTH2 - SPACE - BUTTONWIDTH2;
+			y = 1.0 + ((safeZoneH-1.0)/2) - OUTFRAME - LISTHEIGHT - SPACE - BUTTONHEIGHT - SPACE - TEXTHEIGHT - SPACE - BUTTONHEIGHT;
 			h = BUTTONHEIGHT/2;
 			w = BUTTONWIDTH2;
 			text = "+";
@@ -765,8 +765,8 @@ class GCam_Dialog
 		class Button_ListTimeDec : GCam_DialogBase_Button
 		{
 			idc = 9;
-			x = 1.0 + ((SafeZoneW-1.0)/2) - OUTFRAME - BUTTONWIDTH2 - SPACE - BUTTONWIDTH2;
-			y = 1.0 + ((SafeZoneH-1.0)/2) - OUTFRAME - LISTHEIGHT - SPACE - BUTTONHEIGHT - SPACE - TEXTHEIGHT - SPACE - BUTTONHEIGHT + BUTTONHEIGHT/2 + 0.001;
+			x = 1.0 + ((safeZoneW-1.0)/2) - OUTFRAME - BUTTONWIDTH2 - SPACE - BUTTONWIDTH2;
+			y = 1.0 + ((safeZoneH-1.0)/2) - OUTFRAME - LISTHEIGHT - SPACE - BUTTONHEIGHT - SPACE - TEXTHEIGHT - SPACE - BUTTONHEIGHT + BUTTONHEIGHT/2 + 0.001;
 			h = BUTTONHEIGHT/2;
 			w = BUTTONWIDTH2;
 			text = "-";
@@ -777,33 +777,33 @@ class GCam_Dialog
 		class Text_ListAccTime : GCam_DialogBase_StructuredText
 		{
 			idc = 10;
-			x = 1.0 + ((SafeZoneW-1.0)/2) - OUTFRAME - BUTTONWIDTH2 - SPACE - BUTTONWIDTH2 - TEXTWIDTH;
-			y = 1.0 + ((SafeZoneH-1.0)/2) - OUTFRAME - LISTHEIGHT - SPACE - BUTTONHEIGHT - SPACE - TEXTHEIGHT - SPACE - BUTTONHEIGHT;
+			x = 1.0 + ((safeZoneW-1.0)/2) - OUTFRAME - BUTTONWIDTH2 - SPACE - BUTTONWIDTH2 - TEXTWIDTH;
+			y = 1.0 + ((safeZoneH-1.0)/2) - OUTFRAME - LISTHEIGHT - SPACE - BUTTONHEIGHT - SPACE - TEXTHEIGHT - SPACE - BUTTONHEIGHT;
 			w = TEXTWIDTH;
 		};
 		class Background_ListHelp : GCam_DialogBase_Static
 		{
 			idc = 79;
-			x = 1.0 + ((SafeZoneW-1.0)/2) - OUTFRAME - LISTWIDTH;
-			y = 0.0 - ((SafeZoneH-1.0)/2) + OUTFRAME;
+			x = 1.0 + ((safeZoneW-1.0)/2) - OUTFRAME - LISTWIDTH;
+			y = 0.0 - ((safeZoneH-1.0)/2) + OUTFRAME;
 			colorBackground[] = {0,0,0,0};
 			w = LISTWIDTH;
-			h = SafeZoneH - (OUTFRAME*2 + LISTHEIGHT + (BUTTONHEIGHT+SPACE)*3 + SPACE);
+			h = safeZoneH - (OUTFRAME*2 + LISTHEIGHT + (BUTTONHEIGHT+SPACE)*3 + SPACE);
 		};
 		class Edit_ListHelp : GCam_DialogBase_EditMulti
 		{
 			idc = 80;
-			x = 1.0 + ((SafeZoneW-1.0)/2) - OUTFRAME - LISTWIDTH;
-			y = 0.0 - ((SafeZoneH-1.0)/2) + OUTFRAME;
-			h = SafeZoneH - (OUTFRAME*2 + LISTHEIGHT + (BUTTONHEIGHT+SPACE)*3 + SPACE);
+			x = 1.0 + ((safeZoneW-1.0)/2) - OUTFRAME - LISTWIDTH;
+			y = 0.0 - ((safeZoneH-1.0)/2) + OUTFRAME;
+			h = safeZoneH - (OUTFRAME*2 + LISTHEIGHT + (BUTTONHEIGHT+SPACE)*3 + SPACE);
 			colorText[] = {0.0,0.0,0.0,0.0};
 			onMouseMoving = "GCam_OC = _this";
 		};
 		class Button_ListHelp : GCam_DialogBase_Button
 		{
 			idc = 21;
-			x = 1.0 + ((SafeZoneW-1.0)/2) - OUTFRAME - BUTTONWIDTH2;
-			y = 1.0 + ((SafeZoneH-1.0)/2) - OUTFRAME - LISTHEIGHT - SPACE - BUTTONHEIGHT - SPACE - BUTTONHEIGHT - SPACE - BUTTONHEIGHT;
+			x = 1.0 + ((safeZoneW-1.0)/2) - OUTFRAME - BUTTONWIDTH2;
+			y = 1.0 + ((safeZoneH-1.0)/2) - OUTFRAME - LISTHEIGHT - SPACE - BUTTONHEIGHT - SPACE - BUTTONHEIGHT - SPACE - BUTTONHEIGHT;
 			h = BUTTONHEIGHT;
 			w = BUTTONWIDTH2;
 			text = "?";
@@ -814,8 +814,8 @@ class GCam_Dialog
 		class Button_MapSize : GCam_DialogBase_Button
 		{
 			idc = 22;
-			x = 0.0 - ((SafeZoneW-1.0)/2) + OUTFRAME;
-			y = 1.0 + ((SafeZoneH-1.0)/2) - OUTFRAME;
+			x = 0.0 - ((safeZoneW-1.0)/2) + OUTFRAME;
+			y = 1.0 + ((safeZoneH-1.0)/2) - OUTFRAME;
 			h = BUTTONHEIGHT;
 			w = BUTTONWIDTH2;
 			text = "<>";
@@ -827,8 +827,8 @@ class GCam_Dialog
 		class Map : GCam_DialogBase_Map
 		{
 			idc = 100;
-			x = 0.0 - ((SafeZoneW-1.0)/2) + OUTFRAME;
-			y = 1.0 + ((SafeZoneH-1.0)/2) - OUTFRAME;
+			x = 0.0 - ((safeZoneW-1.0)/2) + OUTFRAME;
+			y = 1.0 + ((safeZoneH-1.0)/2) - OUTFRAME;
 			onMouseMoving =  "GCam_OC = _this; GCam_OCM = _this";
 		};
 	};

@@ -87,7 +87,7 @@ GCam_BId = "";
 GCam_T = false;
 GCam_Trigger_Fire = false;
 GCam_Trigger_Eject = false;
-GCam_O = objnull;
+GCam_O = objNull;
 
 GCam_S = false;
 GCam_X = 0.0;
@@ -107,9 +107,9 @@ _quit = false;
 _quitchk = true;
 _w = accTime / (diag_fps * 2);
 
-_o = objnull;
-_o_l = objnull;
-_c = objnull;
+_o = objNull;
+_o_l = objNull;
+_c = objNull;
 _dr = 0.0;
 _dv = 0.0;
 _zm = INITCAMZOOM;
@@ -127,7 +127,7 @@ camUseNVG false;
 _nvg = 0;
 _cfalt = 1.0;
 
-_initobject = objnull;
+_initobject = objNull;
 _initcamview = cameraView;
 _initacctime = accTime;
 _initteamswitch = teamSwitchEnabled;
@@ -150,7 +150,7 @@ _ehid_mousebd = -1;
 _ehid_mousebu = -1;
 
 _k = [];
-_kt = diag_ticktime;
+_kt = diag_tickTime;
 _kte = 0.0;
 _kd = -1;
 _ku = 0;
@@ -194,8 +194,8 @@ _ol = [];
 _og = grpNull;
 _so_g = grpNull;
 _so_gc = false;
-_so_matchobj = objnull;
-_so_o = objnull;
+_so_matchobj = objNull;
+_so_o = objNull;
 _so_firstunit_chkd = false;
 _y = [];
 _z = [];
@@ -292,7 +292,7 @@ _tr_ehidx = -1;
 _tr_ehidx2 = -1;
 _tr_chase = false;
 
-_cm_o = objnull;
+_cm_o = objNull;
 _cm_op = [0.0,0.0,0.0];
 _cm_cp = [0.0,0.0,0.0];
 _cm_cp_r = [0.0,0.0,0.0];
@@ -387,24 +387,24 @@ _OpenList =
 	{
 		(findDisplay 5100 displayCtrl 79) ctrlSetPosition
 		[
-			1.0 + ((SafeZoneW-1.0)/2) - OUTFRAME - LISTWIDTH,
-			0.0 - ((SafeZoneH-1.0)/2) + OUTFRAME,
+			1.0 + ((safeZoneW-1.0)/2) - OUTFRAME - LISTWIDTH,
+			0.0 - ((safeZoneH-1.0)/2) + OUTFRAME,
 			LISTWIDTH,
-			SafeZoneH - (OUTFRAME*2 + LISTHEIGHT + (BUTTONHEIGHT+SPACE)*1 + SPACE)
+			safeZoneH - (OUTFRAME*2 + LISTHEIGHT + (BUTTONHEIGHT+SPACE)*1 + SPACE)
 		];
 
 		(findDisplay 5100 displayCtrl 80) ctrlSetPosition
 		[
-			1.0 + ((SafeZoneW-1.0)/2) - OUTFRAME - LISTWIDTH,
-			0.0 - ((SafeZoneH-1.0)/2) + OUTFRAME,
+			1.0 + ((safeZoneW-1.0)/2) - OUTFRAME - LISTWIDTH,
+			0.0 - ((safeZoneH-1.0)/2) + OUTFRAME,
 			LISTWIDTH,
-			SafeZoneH - (OUTFRAME*2 + LISTHEIGHT + (BUTTONHEIGHT+SPACE)*1 + SPACE)
+			safeZoneH - (OUTFRAME*2 + LISTHEIGHT + (BUTTONHEIGHT+SPACE)*1 + SPACE)
 		];
 
 		(findDisplay 5100 displayCtrl 21) ctrlSetPosition
 		[
-			1.0 + ((SafeZoneW-1.0)/2) - OUTFRAME - 0.0283,
-			1.0 + ((SafeZoneH-1.0)/2) - OUTFRAME - LISTHEIGHT - SPACE - BUTTONHEIGHT - SPACE - BUTTONHEIGHT
+			1.0 + ((safeZoneW-1.0)/2) - OUTFRAME - 0.0283,
+			1.0 + ((safeZoneH-1.0)/2) - OUTFRAME - LISTHEIGHT - SPACE - BUTTONHEIGHT - SPACE - BUTTONHEIGHT
 		];
 
 		(findDisplay 5100 displayCtrl 79) ctrlCommit 0;
@@ -431,8 +431,8 @@ _OpenList =
 
 	(findDisplay 5100 displayCtrl 100) ctrlSetPosition
 	[
-		0.0 - ((SafeZoneW-1.0)/2) + OUTFRAME,
-		1.0 + ((SafeZoneH-1.0)/2) - OUTFRAME - (_mapsize select 0),
+		0.0 - ((safeZoneW-1.0)/2) + OUTFRAME,
+		1.0 + ((safeZoneH-1.0)/2) - OUTFRAME - (_mapsize select 0),
 		(_mapsize select 0),
 		(_mapsize select 1)
 	];
@@ -440,8 +440,8 @@ _OpenList =
 
 	(findDisplay 5100 displayCtrl 22) ctrlSetPosition
 	[
-		0.0 - ((SafeZoneW-1.0)/2) + OUTFRAME + (_mapsize select 0),
-		1.0 + ((SafeZoneH-1.0)/2) - OUTFRAME - BUTTONHEIGHT
+		0.0 - ((safeZoneW-1.0)/2) + OUTFRAME + (_mapsize select 0),
+		1.0 + ((safeZoneH-1.0)/2) - OUTFRAME - BUTTONHEIGHT
 	];
 	(findDisplay 5100 displayCtrl 22) ctrlCommit 0.0;
 
@@ -503,7 +503,7 @@ _ChangeModeFollow =
 
 		if (_be) then
 		{
-			_be_odr = ((getdir _o) -90.0) * -1;
+			_be_odr = ((getDir _o) -90.0) * -1;
 			if (_be_odr >= 360.0) then { _be_odr = _be_odr - 360.0 };
 			if (_be_odr < 0.0) then { _be_odr = _be_odr + 360.0 };
 
@@ -530,7 +530,7 @@ _ChangeModeFollow =
 		_fo_camobjdis_last = sqrt((_cp_r select 0)^2 + (_cp_r select 1)^2 + ((_cp_r select 2)-_be_ofz)^2);
 		_fo_camobjdive_last = ( ((_cp_r select 2) - _be_ofz) atan2 ((sqrt((_cp_r select 0)^2 + (_cp_r select 1)^2))) ) * -1;
 
-		_fo_objdir = ((getdir _o) -90.0) * -1;
+		_fo_objdir = ((getDir _o) -90.0) * -1;
 		if (_fo_objdir >= 360.0) then { _fo_objdir = _fo_objdir - 360.0 };
 		if (_fo_objdir < 0.0) then { _fo_objdir = _fo_objdir + 360.0 };
 
@@ -590,7 +590,7 @@ _ChangeModeBehind =
 			_be_codv_t = ( ((_cp_r select 2) - _be_ofz) atan2 ((sqrt((_cp_r select 0)^2 + (_cp_r select 1)^2))) ) * -1;
 			_be_codv = _be_codv_t;
 
-			_be_odr = ((getdir _o) -90.0) * -1;
+			_be_odr = ((getDir _o) -90.0) * -1;
 			if (_be_odr >= 360.0) then { _be_odr = _be_odr - 360.0 };
 			if (_be_odr < 0.0) then { _be_odr = _be_odr + 360.0 };
 
@@ -608,7 +608,7 @@ _ChangeModeBehind =
 
 			_fo_camobjdir_rel_last = 0.0;
 
-			_fo_dir_last = ((getdir _o) -90.0) * -1;
+			_fo_dir_last = ((getDir _o) -90.0) * -1;
 		};
 	}
 	else
@@ -645,9 +645,9 @@ _ChangeModeFocus =
 
 			if (_be) then
 			{
-				_cp_r = [ cos(((getdir _o)+90)*-1) * _fo_cods, sin(((getdir _o)+90)*-1) * _fo_cods, _fo_cods_z ];
+				_cp_r = [ cos(((getDir _o)+90)*-1) * _fo_cods, sin(((getDir _o)+90)*-1) * _fo_cods, _fo_cods_z ];
 
-				_dr = ((getdir _o) -90) * -1;
+				_dr = ((getDir _o) -90) * -1;
 				if (_dr >= 360.0) then { _dr = _dr - 360.0 };
 				if (_dr < 0.0) then { _dr = _dr + 360.0 };
 			};
@@ -792,7 +792,7 @@ _SelectObjects =
 		if ( _lsc == -1 ) then
 		{
 			_so_gc = false;
-			_so_matchobj = objnull;
+			_so_matchobj = objNull;
 			{
 				if ( _og == (group _x) ) then
 				{
@@ -867,7 +867,7 @@ _SelectCycleUnits =
 				};
 			};
 		};
-	} foreach units(group _o);
+	} forEach units(group _o);
 };
 
 
@@ -916,7 +916,7 @@ _SelectCycleLeaders =
 				};
 			};
 		};
-	} foreach allUnits;
+	} forEach allUnits;
 };
 
 _tx_gn = "";
@@ -991,7 +991,7 @@ _CreateGroupMarker =
 {
 	{ deleteMarkerLocal _x } forEach _ma_mnl;
 
-	if (_o iskindof "Animal") then
+	if (_o isKindOf "Animal") then
 	{ _ma_gu = [_o] }
 	else
 	{ _ma_gu = units group _o };
@@ -1009,8 +1009,8 @@ _CreateGroupMarker =
 
 			switch (true) do
 			{
-				case ( _x iskindof "Animal" ) : { _ma_mn setMarkerColorLocal COLORICONANIMAL };
-				case ( (((crew _x) select 0) iskindof "Civilian") ) : { _ma_mn setMarkerColorLocal COLORICONCIVILIAN };
+				case ( _x isKindOf "Animal" ) : { _ma_mn setMarkerColorLocal COLORICONANIMAL };
+				case ( (((crew _x) select 0) isKindOf "Civilian") ) : { _ma_mn setMarkerColorLocal COLORICONCIVILIAN };
 				case ( ((side player) getFriend (side _x)) < 0.6 ) : { _ma_mn setMarkerColorLocal COLORICONENEMY };
 				case ( ((side player) getFriend (side _x)) >= 0.6 ) : { _ma_mn setMarkerColorLocal COLORICONFRIENDLY };
 			};
@@ -1050,13 +1050,13 @@ _CreateGroupMarker2 =
 		 _ma_gmn setMarkerColorLocal "ColorBlack";
 		switch (true) do
 		{
-			case ( _x iskindof "Animal" ) : { _ma_gmn setMarkerColorLocal COLORICONANIMAL };
-			case ( (((crew _x) select 0) iskindof "Civilian") ) : { _ma_gmn setMarkerColorLocal COLORICONCIVILIAN };
+			case ( _x isKindOf "Animal" ) : { _ma_gmn setMarkerColorLocal COLORICONANIMAL };
+			case ( (((crew _x) select 0) isKindOf "Civilian") ) : { _ma_gmn setMarkerColorLocal COLORICONCIVILIAN };
 			case ( ((side player) getFriend (side _x)) < 0.6 ) : { _ma_gmn setMarkerColorLocal COLORICONENEMY };
 			case ( ((side player) getFriend (side _x)) >= 0.6 ) : { _ma_gmn setMarkerColorLocal COLORICONFRIENDLY };
 		};
 
-		if (_x iskindof "Animal") then
+		if (_x isKindOf "Animal") then
 		{ _ma_gmn setMarkerTextLocal format["gcam_%1 : 1", getText( configOf (vehicle _x) >> "displayName" )] }
 		else
 		{ _ma_gmn setMarkerTextLocal format["gcam_%1 : %2 : %3", getText( configOf (vehicle _x) >> "displayName" ), name _x, count units group _x] };
@@ -1149,7 +1149,7 @@ _ClickSwitch =
 					_cs_hit = true;
 				};
 			};
-		} foreach _cs_ol;
+		} forEach _cs_ol;
 
 		if ( _cs_hit and ((_o != _o_l) or !(_fo)) ) then
 		{
@@ -1301,7 +1301,7 @@ _SmoothMove =
 			{
 				case (0):
 				{
-					false setCamUseTi 0;
+					false setCamUseTI 0;
 				};
 				case (1):
 				{
@@ -1310,15 +1310,15 @@ _SmoothMove =
 				case (2):
 				{
 					camUseNVG false;
-					true setCamUseTi 0;
+					true setCamUseTI 0;
 				};
 				case (3):
 				{
-					true setCamUseTi 1;
+					true setCamUseTI 1;
 				};
 				case (4):
 				{
-					true setCamUseTi 2;
+					true setCamUseTI 2;
 				};
 			};
 		};
@@ -1500,7 +1500,7 @@ _SmoothMove =
 				{
 					"gcam_o" setMarkerTypeLocal "mil_Arrow2";
 					"gcam_o" setMarkerSizeLocal [0.27, 0.27];
-					"gcam_o" setMarkerDirLocal (getdir vehicle _o);
+					"gcam_o" setMarkerDirLocal (getDir vehicle _o);
 				}
 				else
 				{
@@ -1525,7 +1525,7 @@ _SmoothMove =
 					if ((speed vehicle _x) > 4) then
 					{
 						_ma_mn setMarkerTypeLocal "mil_Arrow2";
-						_ma_mn setMarkerDirLocal (getdir vehicle _x);
+						_ma_mn setMarkerDirLocal (getDir vehicle _x);
 						_ma_mn setMarkerSizeLocal [0.27,0.27];
 					}
 					else
@@ -1547,7 +1547,7 @@ _SmoothMove =
 
 		if ( _fo and _be ) then
 		{
-			_be_odr = ((getdir _o) -90) * -1;
+			_be_odr = ((getDir _o) -90) * -1;
 			if (_be_odr >= 360.0) then { _be_odr = _be_odr - 360.0 };
 			if (_be_odr < 0.0) then { _be_odr = _be_odr + 360.0 };
 
@@ -1579,7 +1579,7 @@ _SmoothMove =
 		{
 			if ( _be ) then
 			{
-				_fc_odr = ((getdir _o) -90.0) * -1;
+				_fc_odr = ((getDir _o) -90.0) * -1;
 				if (_fc_odr >= 360.0) then { _fc_odr = _fc_odr - 360.0 };
 				if (_fc_odr < 0.0) then { _fc_odr = _fc_odr + 360.0 };
 
@@ -1720,7 +1720,7 @@ _ChaseMissile =
 	_fo_camobjdis_last = sqrt((_cp_r select 0)^2 + (_cp_r select 1)^2 + ((_cp_r select 2)-_be_ofz)^2);
 	_fo_camobjdive_last = ( ((_cp_r select 2) - _be_ofz) atan2 ((sqrt((_cp_r select 0)^2 + (_cp_r select 1)^2))) ) * -1;
 
-	_fo_objdir = ((getdir _o) -90.0) * -1;
+	_fo_objdir = ((getDir _o) -90.0) * -1;
 	if (_fo_objdir >= 360.0) then { _fo_objdir = _fo_objdir - 360.0 };
 	if (_fo_objdir < 0.0) then { _fo_objdir = _fo_objdir + 360.0 };
 
@@ -1975,7 +1975,7 @@ _ChaseMissile =
 			_cm_cods = sqrt((_cm_cp_r select 0)^2 + (_cm_cp_r select 1)^2 + (_cm_cp_r select 2)^2);
 			if ( _cm_cods > 2.0 ) then { _cm_cftn = 1.0 + (9.0/(_c distance _cm_o)) };
 
-			_cm_odr = ((getdir _cm_o) -90.0) * -1;
+			_cm_odr = ((getDir _cm_o) -90.0) * -1;
 			if (_cm_odr >= 360.0) then { _cm_odr = _cm_odr - 360.0 };
 			if (_cm_odr < 0.0) then { _cm_odr = _cm_odr + 360.0 };
 
@@ -2243,7 +2243,7 @@ _ResetCamera =
 
 	if ( _fo and _be ) then
 	{
-		_be_odr = ((getdir _o) -90.0) * -1;
+		_be_odr = ((getDir _o) -90.0) * -1;
 		if (_be_odr >= 360.0) then { _be_odr = _be_odr - 360.0 };
 		if (_be_odr < 0.0) then { _be_odr = _be_odr + 360.0 };
 
@@ -2267,7 +2267,7 @@ _ResetCamera =
 	{
 		if ( _be ) then
 		{
-			_fc_odr = ((getdir _o) -90.0) * -1;
+			_fc_odr = ((getDir _o) -90.0) * -1;
 			if (_fc_odr >= 360.0) then { _fc_odr = _fc_odr - 360.0 };
 			if (_fc_odr < 0.0) then { _fc_odr = _fc_odr + 360.0 };
 
@@ -2366,7 +2366,7 @@ if (isNil "_o") then { _o = player };
 _o_l = _o;
 _initobject = _o;
 
-_dr = ((getdir _o)-90)*-1;
+_dr = ((getDir _o)-90)*-1;
 _dv = INITCAMAGL;
 _cp_r = [ cos(_dr+180) * INITCAMDISY, sin(_dr+180) * INITCAMDISY, INITCAMDISZ ];
 _op = visiblePositionASL _o;
@@ -2867,7 +2867,7 @@ while {_l} do
 		{
 			case (0):
 			{
-				false setCamUseTi 0;
+				false setCamUseTI 0;
 			};
 			case (1):
 			{
@@ -2876,15 +2876,15 @@ while {_l} do
 			case (2):
 			{
 				camUseNVG false;
-				true setCamUseTi 0;
+				true setCamUseTI 0;
 			};
 			case (3):
 			{
-				true setCamUseTi 1;
+				true setCamUseTI 1;
 			};
 			case (4):
 			{
-				true setCamUseTi 2;
+				true setCamUseTI 2;
 			};
 		};
 	};
@@ -3465,7 +3465,7 @@ while {_l} do
 
 			titleText["","plain down",0.0];
 			camUseNVG false;
-			false setCamUseTi 0;
+			false setCamUseTI 0;
 			enableTeamSwitch _initteamswitch;
 
 			(findDisplay 46) displayRemoveEventHandler ["KeyDown", _ehid_keydown];
@@ -3558,7 +3558,7 @@ while {_l} do
 		_be_cods = sqrt((_cp_r select 0)^2 + (_cp_r select 1)^2 + ((_cp_r select 2)-_be_ofz)^2);
 		if ( _be_cods > 2.0 ) then { _be_cftn = 1.0 + (9.0/(_c distance _o)) };
 
-		_be_odr = ((getdir _o) -90.0) * -1;
+		_be_odr = ((getDir _o) -90.0) * -1;
 		if (_be_odr >= 360.0) then { _be_odr = _be_odr - 360.0 };
 		if (_be_odr < 0.0) then { _be_odr = _be_odr + 360.0 };
 

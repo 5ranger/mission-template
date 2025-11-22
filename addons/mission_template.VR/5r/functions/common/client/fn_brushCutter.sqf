@@ -2,11 +2,11 @@ _action = ["x5r_action_cutBrush","Cut closest vegetation","",{
 	private _matches = [];
 	private _bush = nearestTerrainObjects [player,["Bush"],4,true,true] select 0;
 	if (!isNil "_bush" && !isObjectHidden _bush) then {
-		_matches pushback [_bush, 8,"bush"];
+		_matches pushBack [_bush, 8,"bush"];
 	};
 	private _tree = nearestTerrainObjects [player,["Small Tree","Tree"],4,true,true] select 0;
 	if (!isNil "_tree" && !isObjectHidden _tree) then {
-		_matches pushback [_tree, 25,"tree"];
+		_matches pushBack [_tree, 25,"tree"];
 	};
 	
 	_matches = [_matches, [], { player distance2D (_x select 0) }] call BIS_fnc_sortBy;

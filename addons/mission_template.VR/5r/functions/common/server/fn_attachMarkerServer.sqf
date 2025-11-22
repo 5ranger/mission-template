@@ -7,5 +7,5 @@ _marker setMarkerTypeLocal _markerType;
 if (!(isNil _text)) then {_marker setMarkerTextLocal _text;}; 
 [_tgt,_marker,_markerType] spawn {
 	params ["_tgt","_marker","_markerType"];
-	while {markerType _marker == _markerType} do {_marker setMarkerPos getposATL _tgt; sleep 10;};
+	while {markerType _marker == _markerType} do {_marker setMarkerPos getPosATL _tgt; sleep 10;};
 };

@@ -72,4 +72,4 @@ Semantic versioning MAJOR.MINOR.PATCH is followed in `script_version.hpp`:
 
 ---
 
-For more information, visit our [website](https://5ranger.cc) or join us on Steam.
+For more information, visit our [website](https://5ranger.cc) or join us on Discord.

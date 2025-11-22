@@ -30,7 +30,6 @@ binarizationWanted=0;
 sourceName="mission_template";
 addons[]=
 {
-	"pook_SAM_Base",
 	"A3_Modules_F_Curator_Curator",
 	"A3_Characters_F",
 	"A3_Weapons_F",

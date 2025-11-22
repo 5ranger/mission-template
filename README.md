@@ -15,7 +15,7 @@ Arma 3 mission templates for the 5 RANGER community, providing essential assets 
 
 ## Features
 - **ACE3 Integration**: Pre-configured ACE3 medical, interaction, and logistics systems for immersive gameplay.
-- **Dynamic Respawn System**: Add and remove respawn positions dynamically via ACE interact menu.
+- **Dynamic Respawn System**: Add and remove respawn positions to objects dynamically via ACE interact menu.
 - **Logistics Actions**:
 	- Deploy and pack radio relays with progress bars and ACE actions.
 	- Create and load empty supply crates (ammo, weapons, fuel) at vehicle sides.
@@ -25,8 +25,7 @@ Arma 3 mission templates for the 5 RANGER community, providing essential assets 
 - **Mission Framework**:
 	- Pre-built mission structure with `description.ext`, `init.sqf`, and server/client init scripts.
 	- Example mission objects and configuration for quick setup.
-- **SFX Support**: Custom sound effects for immersive and fun mission events.
-- **Zeus & Admin Tools**: Fixes and enhancements for Zeus and admin gameplay.
+	- Mission-based generator for easily creating Arsenals and Default Loadouts for missions playing as other factions.
 
 ## Installation
 ### Manual
@@ -56,7 +55,7 @@ Integration and Deployment is managed through HEMTT and the `.github/workflows/h
 Any tags will automatically build, release and upload the mod to GitHub.
 
 ## Credits
-- **Author:** Deadly
+- **Author:** Cathode & Deadly
 - **Community:** 5 RANGER
 - **Website:** [5ranger.cc](https://5ranger.cc)
 

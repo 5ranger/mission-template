@@ -1,69 +1,57 @@
 x5r_config_airArray =  
 ["#Air",[
- ["#Rotary",[ 
-  ["#Transport",[ 
-   ["RHS_MELB_MH6M","",{
-    ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
-    _this remoteExec ["DAPS_fnc_Nemesis",2];
-   },[],1], 
-   ["UK3CB_BAF_Wildcat_AH1_TRN_8A","",{
-    ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
-    _this remoteExec ["DAPS_fnc_Nemesis",2];
-   },[],1], 
-   ["UK3CB_BAF_Merlin_HC3_32","",{
-    [_this, 4] call ace_cargo_fnc_setSpace;
-    ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
-    _this remoteExec ["DAPS_fnc_Nemesis",2];
-   },[],1], 
-   ["UK3CB_BAF_Chinook_HC2_cargo","",{
-    ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
-    _this remoteExec ["DAPS_fnc_Nemesis",2];
-   },[],1] 
+  ["#Rotary",[ 
+    ["#Transport",[ 
+      ["RHS_MELB_MH6M","",{
+        ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
+        _this remoteExec ["DAPS_fnc_Nemesis",2];
+      },[],1], 
+      ["UK3CB_BAF_Wildcat_AH1_TRN_8A","",{
+        ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
+        _this remoteExec ["DAPS_fnc_Nemesis",2];
+      },[],1], 
+      ["UK3CB_BAF_Merlin_HC3_32","",{
+        [_this, 4] call ace_cargo_fnc_setSpace;
+        ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
+        _this remoteExec ["DAPS_fnc_Nemesis",2];
+      },[],1], 
+      ["UK3CB_BAF_Chinook_HC2_cargo","",{
+        ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
+        _this remoteExec ["DAPS_fnc_Nemesis",2];
+      },[],1] 
+    ]], 
+    ["#Attack",[ 
+      ["RHS_MELB_AH6M","",{
+        [_this, 2] call ace_cargo_fnc_setSpace; 
+        ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
+        _this remoteExec ["DAPS_fnc_Nemesis",2];
+      },[],1], 
+      ["UK3CB_BAF_Wildcat_AH1_6_Generic","",{
+        ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
+        _this remoteExec ["DAPS_fnc_Nemesis",2];
+      },[],1], 
+      ["UK3CB_BAF_Apache_AH1_JS","BAF Apache AH1",{
+        ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
+        _this remoteExec ["DAPS_fnc_Nemesis",2];
+      },[],1], 
+      ["RHS_AH64D","RHS Apache AH-64",{
+        ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
+        _this remoteExec ["DAPS_fnc_Nemesis",2];
+      },[],1] 
+    ]] 
   ]], 
-  ["#Attack",[ 
-   ["RHS_MELB_AH6M","",{
-    [_this, 2] call ace_cargo_fnc_setSpace; 
-    ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
-    _this remoteExec ["DAPS_fnc_Nemesis",2];
-   },[],1], 
-   ["UK3CB_BAF_Wildcat_AH1_6_Generic","",{
-    ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
-    _this remoteExec ["DAPS_fnc_Nemesis",2];
-   },[],1], 
-   ["UK3CB_BAF_Apache_AH1_JS","BAF Apache AH1",{
-    ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
-    _this remoteExec ["DAPS_fnc_Nemesis",2];
-   },[],1], 
-  ["RHS_AH64D","RHS Apache AH-64",{
-    ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
-    _this remoteExec ["DAPS_fnc_Nemesis",2];
-   },[],1] 
-  ]] 
- ]], 
- ["#Fixed-wing",[ 
-  ["#Transport",[ 
-   ["UK3CB_BAF_Hercules_C4","",{ 
-    [_this, 32] call ace_cargo_fnc_setSpace; 
-    ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
-   },[],1],
-   ["usaf_c5","",{
-    [_this, 150] call ace_cargo_fnc_setSpace; 
-    ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
-   },[],1]
+  ["#Fixed-wing",[ 
+    ["#Transport",[ 
+      ["UK3CB_BAF_Hercules_C4","",{ 
+        [_this, 32] call ace_cargo_fnc_setSpace; 
+        ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
+      },[],1]
+    ]]
   ]],
-  ["#Attack",[ 
-   ["F_35C","",{
-    ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
-   },[],1], 
-  ["F_35C_S","",{
-    ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
-   },[],1] 
-  ]] 
- ]],
- ["B_helicrew_F","Heli Crewman",{ 
-  _this setUnitLoadout (x5r_config_loadoutMap get loadoutHeliCrew);
-  _this setSkill 1; 
- },[],1] 
+  ["B_helicrew_F","Heli Crewman",{ 
+    _this setUnitLoadout (x5r_config_loadoutMap get loadoutHeliCrew);
+    _this setSkill 1; 
+  },[],1] 
 ]];
 x5r_config_groundWoodlandArray = 
 ["#Ground - Woodland",[

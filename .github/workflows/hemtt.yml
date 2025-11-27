@@ -26,7 +26,7 @@ jobs:
             - name: Rename PBOs
               run: mv .hemttout/release/addons/5r_mission_template.pbo .hemttout/release/addons/5r_mission_template.VR.pbo &&
                    mv .hemttout/release/addons/5r_mission_training.pbo .hemttout/release/addons/5r_mission_training.dagger_island_summer.pbo &&
-                   mv .hemttout/release/addons/5r_mission_iutr_medical.pbo .hemttout/release/addons/5r_mission_iutr_medical.dagger_island_summer.pbo &&
+                   mv .hemttout/release/addons/5r_mission_iutr_medical_amb_xing.pbo .hemttout/release/addons/5r_mission_iutr_medical_amb_xing.dagger_island_summer.pbo &&
                    mv .hemttout/release/addons/5r_mission_generator.pbo .hemttout/release/addons/5r_mission_generator.VR.pbo
             - name: Upload Artifact
               uses: actions/upload-artifact@v4
@@ -41,7 +41,7 @@ jobs:
                     .hemttout/release/addons/5r_mission_template.VR.pbo 
                     .hemttout/release/addons/5r_mission_training.dagger_island_summer.pbo
                     .hemttout/release/addons/5r_mission_generator.VR.pbo
-                    .hemttout/release/addons/5r_mission_iutr_medical.dagger_island_summer.pbo
+                    .hemttout/release/addons/5r_mission_iutr_medical_amb_xing.dagger_island_summer.pbo  
                   token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
                   repository: 5ranger/mission-template
                   body_path: CHANGELOG.md

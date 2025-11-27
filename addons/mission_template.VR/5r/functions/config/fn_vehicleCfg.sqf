@@ -666,17 +666,19 @@ x5r_config_suppliesArray =
       clearWeaponCargoGlobal _this;
       clearMagazineCargoGlobal _this;
       _this addMagazineCargoGlobal ["MRAWS_HE_F", 8];
-      _this addMagazineCargoGlobal ["MRAWS_HEAT55_F", 14];
-      _this addMagazineCargoGlobal ["MRAWS_HEAT_F", 8];
+      _this addMagazineCargoGlobal ["MRAWS_HEAT55_F", 8];
+      _this addMagazineCargoGlobal ["MRAWS_HEAT_F", 6];
+      _this addMagazineCargoGlobal ["WP_MAAWS_Mag", 10];
     },[],2], 
     ["Box_NATO_WpsLaunch_F",["MAAWS Mod 1 Weapon Crate (FST)","","Weapon + 5rnds"],{
       clearWeaponCargoGlobal _this;
       clearMagazineCargoGlobal _this;
       clearBackpackCargoGlobal _this;
       _this addWeaponCargoGlobal ["launch_MRAWS_olive_F", 1];
-      _this addMagazineCargoGlobal ["MRAWS_HE_F", 1];
+      _this addMagazineCargoGlobal ["MRAWS_HE_F", 2];
       _this addMagazineCargoGlobal ["MRAWS_HEAT55_F", 2];
-      _this addMagazineCargoGlobal ["MRAWS_HEAT_F", 2];
+      _this addMagazineCargoGlobal ["MRAWS_HEAT_F", 1];
+      _this addMagazineCargoGlobal ["WP_MAAWS_Mag", 2];
       [_this, 1] call ace_cargo_fnc_setSize;
     },[],1], 
     ["Box_NATO_Equip_F","Night Box",{

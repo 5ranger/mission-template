@@ -120,14 +120,6 @@ x5r_config_groundWoodlandArray =
         _this setFuel 0.33;
         ["ACE_Track", _this] call ace_cargo_fnc_loadItem; 
       },[],24],
-      ["UK3CB_BAF_FV432_Mk3_RWS_Green","",{ 
-        ["fillSection",_this,true] call x5r_logistics_fnc_initCargo; 
-        [{_this getVariable "x5r_tags_inventoryReady" == true}, {
-          _this addMagazineCargoGlobal ["UK3CB_BAF_127_100Rnd",4]; 
-        },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
-        _this setFuel 0.33;
-        ["ACE_Track", _this] call ace_cargo_fnc_loadItem; 
-      },[],24],
       ["UK3CB_B_AAV_US_WDL","",{ 
         ["fillSection",_this,true] call x5r_logistics_fnc_initCargo; 
         _this setFuel 0.33; 
@@ -275,15 +267,6 @@ x5r_config_groundWoodlandArray =
       _this setFuel 0.50; 
       ["ACE_Track", _this] call ace_cargo_fnc_loadItem; 
     },[],24], 
-    ["UK3CB_BAF_FV432_Mk3_RWS_Green","",{ 
-      ["fillSection",_this,true] call x5r_logistics_fnc_initCargo; 
-      [{_this getVariable "x5r_tags_inventoryReady" == true}, {
-        _this addMagazineCargoGlobal ["UK3CB_BAF_127_100Rnd",4];
-        _this addItemCargoGlobal ["ACE_Fortify",1]; 
-      },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
-      _this setFuel 0.50; 
-      ["ACE_Track", _this] call ace_cargo_fnc_loadItem; 
-    },[],24],  
     ["UK3CB_BAF_Coyote_Logistics_L111A1_G","",{ 
       ["fillTeam",_this,true] call x5r_logistics_fnc_initCargo;
       [{_this getVariable "x5r_tags_inventoryReady" == true}, {
@@ -375,56 +358,48 @@ x5r_config_groundSandArray =
     ]],
     ["#Anti-Air",[
       ["B_T_APC_Tracked_01_AA_F","",{
-      [_this,["Sand",1],["showCamonetTurret",0,"showCamonetHull",0,"showBags",1]] call BIS_fnc_initVehicle;
-      ["fillAFV",_this,true] call x5r_logistics_fnc_initCargo;
-      _this setFuel 0.33;
-      ["ACE_Track", _this] call ace_cargo_fnc_loadItem;
+        [_this,["Sand",1],["showCamonetTurret",0,"showCamonetHull",0,"showBags",1]] call BIS_fnc_initVehicle;
+        ["fillAFV",_this,true] call x5r_logistics_fnc_initCargo;
+        _this setFuel 0.33;
+        ["ACE_Track", _this] call ace_cargo_fnc_loadItem;
       },[],22]
     ]],
     ["#Transport",[
       ["UK3CB_BAF_FV432_Mk3_GPMG_Sand","",{ 
-      ["fillSection",_this,true] call x5r_logistics_fnc_initCargo;
-      [{_this getVariable "x5r_tags_inventoryReady" == true}, {
-        _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3];
-      },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute; 
-      _this setFuel 0.33; 
-      ["ACE_Track", _this] call ace_cargo_fnc_loadItem; 
-      },[],24],
-      ["UK3CB_BAF_FV432_Mk3_RWS_Sand","",{ 
-      ["fillSection",_this,true] call x5r_logistics_fnc_initCargo; 
-      [{_this getVariable "x5r_tags_inventoryReady" == true}, {
-        _this addMagazineCargoGlobal ["UK3CB_BAF_127_100Rnd",4];
-      },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
-      _this setFuel 0.33; 
-      ["ACE_Track", _this] call ace_cargo_fnc_loadItem; 
+        ["fillSection",_this,true] call x5r_logistics_fnc_initCargo;
+        [{_this getVariable "x5r_tags_inventoryReady" == true}, {
+          _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3];
+        },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute; 
+        _this setFuel 0.33; 
+        ["ACE_Track", _this] call ace_cargo_fnc_loadItem; 
       },[],24],
       ["UK3CB_B_AAV_US_DES","",{
-      ["fillSection",_this,true] call x5r_logistics_fnc_initCargo; 
-      _this setFuel 0.33; 
+        ["fillSection",_this,true] call x5r_logistics_fnc_initCargo; 
+        _this setFuel 0.33; 
       },[],28],
       ["UK3CB_BAF_Warrior_A3_D_Cage_Camo","FV510 Warrior",{
-      [_this,["BAF_02",1],["showBags",1,"showBags2",1,"showCamonetHull",1,"showCamonetTurret",1,"showTools",1,"showSLATHull",1,"showSLATTurret",1]] call BIS_fnc_initVehicle;
-      ["fillSection",_this,true] call x5r_logistics_fnc_initCargo; 
-      [{_this getVariable "x5r_tags_inventoryReady" == true}, {
-        _this removeWeaponTurret ["UK3CB_BAF_L21A1_Rarden", [0]];
-        _this removeWeaponTurret ["UK3CB_BAF_L94A1_veh", [0]];
-        _this addWeaponTurret ["autocannon_40mm_CTWS", [0]];
-        _this addMagazineTurret ["60Rnd_40mm_GPR_Tracer_Red_shells",[0]];
-        _this addMagazineTurret ["60Rnd_40mm_GPR_Tracer_Red_shells",[0]];
-        _this addMagazineTurret ["40Rnd_40mm_APFSDS_Tracer_Red_shells",[0]];
-        _this addMagazineTurret ["40Rnd_40mm_APFSDS_Tracer_Red_shells",[0]];
-        _this addWeaponTurret ["ACE_LMG_coax_MAG58_mem3", [0]];
-        _this addMagazineTurret ["200Rnd_762x51_Belt_Red",[0]];
-        _this addMagazineTurret ["200Rnd_762x51_Belt_Red",[0]];
-        _this addMagazineTurret ["200Rnd_762x51_Belt_Red",[0]];
-        _this addMagazineTurret ["200Rnd_762x51_Belt_Red",[0]];
-        _this addWeaponTurret ["UK3CB_BAF_Milan_Launcher", [0]];
-        _this addMagazineTurret ["UK3CB_BAF_1Rnd_Milan",[0]];
-        _this addMagazineCargoGlobal ["UK3CB_BAF_1Rnd_Milan", 2];
-        _this setVariable ["ace_rearm_scriptedLoadout", true, true]; 
-      },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;  
-      _this setFuel 0.33; 
-      ["ACE_Track", _this] call ace_cargo_fnc_loadItem;  
+        [_this,["BAF_02",1],["showBags",1,"showBags2",1,"showCamonetHull",1,"showCamonetTurret",1,"showTools",1,"showSLATHull",1,"showSLATTurret",1]] call BIS_fnc_initVehicle;
+        ["fillSection",_this,true] call x5r_logistics_fnc_initCargo; 
+        [{_this getVariable "x5r_tags_inventoryReady" == true}, {
+          _this removeWeaponTurret ["UK3CB_BAF_L21A1_Rarden", [0]];
+          _this removeWeaponTurret ["UK3CB_BAF_L94A1_veh", [0]];
+          _this addWeaponTurret ["autocannon_40mm_CTWS", [0]];
+          _this addMagazineTurret ["60Rnd_40mm_GPR_Tracer_Red_shells",[0]];
+          _this addMagazineTurret ["60Rnd_40mm_GPR_Tracer_Red_shells",[0]];
+          _this addMagazineTurret ["40Rnd_40mm_APFSDS_Tracer_Red_shells",[0]];
+          _this addMagazineTurret ["40Rnd_40mm_APFSDS_Tracer_Red_shells",[0]];
+          _this addWeaponTurret ["ACE_LMG_coax_MAG58_mem3", [0]];
+          _this addMagazineTurret ["200Rnd_762x51_Belt_Red",[0]];
+          _this addMagazineTurret ["200Rnd_762x51_Belt_Red",[0]];
+          _this addMagazineTurret ["200Rnd_762x51_Belt_Red",[0]];
+          _this addMagazineTurret ["200Rnd_762x51_Belt_Red",[0]];
+          _this addWeaponTurret ["UK3CB_BAF_Milan_Launcher", [0]];
+          _this addMagazineTurret ["UK3CB_BAF_1Rnd_Milan",[0]];
+          _this addMagazineCargoGlobal ["UK3CB_BAF_1Rnd_Milan", 2];
+          _this setVariable ["ace_rearm_scriptedLoadout", true, true]; 
+        },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;  
+        _this setFuel 0.33; 
+        ["ACE_Track", _this] call ace_cargo_fnc_loadItem;  
       },[],28]
     ]]
   ]], 
@@ -543,15 +518,6 @@ x5r_config_groundSandArray =
         _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3]; 
         _this addItemCargoGlobal ["ACE_Fortify",1]; 
       },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute; 
-      _this setFuel 0.50; 
-      ["ACE_Track", _this] call ace_cargo_fnc_loadItem; 
-    },[],24], 
-    ["UK3CB_BAF_FV432_Mk3_RWS_Sand","",{ 
-      ["fillSection",_this,true] call x5r_logistics_fnc_initCargo; 
-      [{_this getVariable "x5r_tags_inventoryReady" == true}, {
-        _this addMagazineCargoGlobal ["UK3CB_BAF_127_100Rnd",4];
-        _this addItemCargoGlobal ["ACE_Fortify",1]; 
-      },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
       _this setFuel 0.50; 
       ["ACE_Track", _this] call ace_cargo_fnc_loadItem; 
     },[],24], 

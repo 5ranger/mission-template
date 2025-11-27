@@ -11,5 +11,7 @@ path = "addons/script_version.hpp"
 git_hash = 4
 
 [files]
-exclude = []
+exclude = [
+    "addons\training_mission_modlist.html"
+]
 include = []

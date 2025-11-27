@@ -1,0 +1,16 @@
+[binarize]
+enabled = true
+exclude = []
+
+[rapify]
+enabled = true
+exclude = [
+    "**/description.ext",
+]
+
+[files]
+exclude = []
+include = []
+
+[properties]
+iso = "14001"

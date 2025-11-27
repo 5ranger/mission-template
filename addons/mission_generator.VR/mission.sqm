@@ -8,18 +8,18 @@ class EditorData
 	toggles=549;
 	class ItemIDProvider
 	{
-		nextID=208;
+		nextID=210;
 	};
 	class LayerIndexProvider
 	{
-		nextID=41;
+		nextID=42;
 	};
 	class Camera
 	{
-		pos[]={4349.1587,13.361371,6613.1558};
-		dir[]={0.0042046751,-0.55412471,0.83248091};
-		up[]={0.0027989526,0.83241171,0.55414665};
-		aside[]={1.0000367,6.6867506e-07,-0.0050525423};
+		pos[]={4344.6143,13.361371,6609.0557};
+		dir[]={0.048321158,-0.53405643,0.84412915};
+		up[]={0.030522844,0.84542334,0.53321773};
+		aside[]={0.99841982,6.0084858e-07,-0.05715438};
 	};
 };
 binarizationWanted=0;
@@ -559,7 +559,7 @@ class Mission
 			name="CrateLayer";
 			class Entities
 			{
-				items=14;
+				items=16;
 				class Item0
 				{
 					dataType="Object";
@@ -1383,6 +1383,100 @@ class Mission
 							};
 						};
 						nAttributes=3;
+					};
+				};
+				class Item14
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4342,5.8924227,6619};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						name="resupply_l16_ill_l";
+						disableSimulation=1;
+					};
+					id=209;
+					type="UK3CB_BAF_SupplyCrate_L16_Ammo_Illumination";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ammoBox";
+							expression="[_this,_value] call bis_fnc_initAmmoBox;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="[[[[],[]],[[""UK3CB_BAF_1Rnd_81mm_Mo_IRFlare_White""],[44]],[[],[]],[[],[]]],false]";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item15
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4342,5.2840548,6621};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						name="resupply_l16_ill_s";
+						disableSimulation=1;
+					};
+					id=208;
+					type="UK3CB_BAF_Box_L16_Ammo_Illumination";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ammoBox";
+							expression="[_this,_value] call bis_fnc_initAmmoBox;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="[[[[],[]],[[""UK3CB_BAF_1Rnd_81mm_Mo_IRFlare_White""],[17]],[[],[]],[[],[]]],false]";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};

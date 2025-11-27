@@ -670,7 +670,7 @@ x5r_config_suppliesArray =
       _this addMagazineCargoGlobal ["MRAWS_HEAT_F", 6];
       _this addMagazineCargoGlobal ["WP_MAAWS_Mag", 10];
     },[],2], 
-    ["Box_NATO_WpsLaunch_F",["MAAWS Mod 1 Weapon Crate (FST)","","Weapon + 5rnds"],{
+    ["Box_NATO_WpsLaunch_F",["MAAWS Mod 1 Weapon Crate (FST)","","Weapon + 7 mixed rnds"],{
       clearWeaponCargoGlobal _this;
       clearMagazineCargoGlobal _this;
       clearBackpackCargoGlobal _this;
@@ -778,10 +778,14 @@ x5r_config_suppliesArray =
     },[],2], 
     ["UK3CB_BAF_Box_L16_Ammo_HE",["","","17rnd"],{},[],2], 
     ["UK3CB_BAF_Box_L16_Ammo_Smoke",["","","17rnd"],{},[],2], 
-    ["UK3CB_BAF_Box_L16_Ammo_Illumination",["","","17rnd"],{},[],2], 
+    ["UK3CB_BAF_Box_L16_Ammo_Illumination",["","","17rnd"],{
+      ["resupply_l16_ill_s",_this,true] call x5r_logistics_fnc_initCargo;
+    },[],2], 
     ["UK3CB_BAF_SupplyCrate_L16_Ammo_HE",["","","44rnd"],{},[],4], 
     ["UK3CB_BAF_SupplyCrate_L16_Ammo_Smoke",["","","44rnd"],{},[],4], 
-    ["UK3CB_BAF_SupplyCrate_L16_Ammo_Illumination",["","","44rnd"],{},[],4] 
+    ["UK3CB_BAF_SupplyCrate_L16_Ammo_Illumination",["","","44rnd"],{
+      ["resupply_l16_ill_l",_this,true] call x5r_logistics_fnc_initCargo;
+    },[],4] 
   ]],
   ["Land_Cargo10_military_green_F",["Radio Relay Container","","Indestructible. Needs to be deployed. 25km range"],{
     [_this, 0] call ace_cargo_fnc_setSpace;   

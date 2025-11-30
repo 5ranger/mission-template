@@ -154,6 +154,7 @@ x5r_config_groundWoodlandArray =
     ["UK3CB_BAF_LandRover_WMIK_GPMG_FFR_Green_A","",{ 
       [_this,["Green",1],["AerialFL_Hide",0,"AerialFR_Hide",0,"AirIntakeSnorkel_Hide",0,"CamoNet_Hide",1,"Gear_Hide",0,"AerialAtuL_Hide",0,"AerialAtuR_Hide",0,"Flag_Hide",0,"Mudguards_Hide",0,"SideLockers_Hide",0]] call BIS_fnc_initVehicle;
       ["fillFST",_this,true] call x5r_logistics_fnc_initCargo; 
+      [_this, 8] call ace_cargo_fnc_setSpace;
       [{_this getVariable "x5r_tags_inventoryReady" == true}, {
         _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",7]; 
       },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
@@ -162,6 +163,7 @@ x5r_config_groundWoodlandArray =
     ["UK3CB_BAF_LandRover_WMIK_HMG_FFR_Green_A","",{ 
       [_this,["Green",1],["AerialFL_Hide",0,"AirIntakeSnorkel_Hide",0,"CamoNet_Hide",1,"Gear_Hide",0,"AerialAtuL_Hide",0,"AerialAtuR_Hide",0,"AerialFR_Hide",0,"Flag_Hide",0,"Mudguards_Hide",0,"SideLockers_Hide",0]] call BIS_fnc_initVehicle;
       ["fillFST",_this,true] call x5r_logistics_fnc_initCargo; 
+      [_this, 8] call ace_cargo_fnc_setSpace;
       [{_this getVariable "x5r_tags_inventoryReady" == true}, {
         _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3]; 
         _this addMagazineCargoGlobal ["UK3CB_BAF_127_100Rnd",3]; 
@@ -170,7 +172,8 @@ x5r_config_groundWoodlandArray =
     },[],12], 
     ["UK3CB_BAF_LandRover_WMIK_Milan_FFR_Green_A","",{ 
       [_this,["Green",1],["AerialFL_Hide",0,"AerialFR_Hide",0,"AirIntakeSnorkel_Hide",0,"CamoNet_Hide",1,"Gear_Hide",0,"AerialAtuL_Hide",0,"AerialAtuR_Hide",0,"Flag_Hide",0,"Mudguards_Hide",0,"SideLockers_Hide",0]] call BIS_fnc_initVehicle;
-      ["fillFST",_this,true] call x5r_logistics_fnc_initCargo; 
+      ["fillFST",_this,true] call x5r_logistics_fnc_initCargo;
+      [_this, 8] call ace_cargo_fnc_setSpace; 
       [{_this getVariable "x5r_tags_inventoryReady" == true}, {
         _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3];
         _this addMagazineCargoGlobal ["UK3CB_BAF_1Rnd_Milan", 2];

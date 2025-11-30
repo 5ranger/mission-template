@@ -610,10 +610,15 @@ x5r_config_suppliesArray =
     ["ACE_medicalSupplyCrate_advanced","",{ 
       ["resupplymedic",_this,true] call x5r_logistics_fnc_initCargo; 
     },[],2], 
+    ["Box_NATO_Grenades_F",["Smokes Box","@resupply",""],{ 
+      ["resupply_smoke",_this,true] call x5r_logistics_fnc_initCargo;  
+      [_this, 2] call ace_cargo_fnc_setSize;  
+      [_this,750] remoteExec ["setMaxLoad",2];
+    },[],2],
     ["Box_NATO_AmmoOrd_F",["Explosives Crate","",""],{ 
       ["resupplydemo",_this,true] call x5r_logistics_fnc_initCargo;  
       [_this, 2] call ace_cargo_fnc_setSize;  
-    },[],2], 
+    },[],2],
     ["Box_NATO_AmmoOrd_F",["M6 Light Mortar Ammo Crate","@resupply",""],{ 
       ["resupply60mm",_this,true] call x5r_logistics_fnc_initCargo;  
       [_this, 2] call ace_cargo_fnc_setSize;  

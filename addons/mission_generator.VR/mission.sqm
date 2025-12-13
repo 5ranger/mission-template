@@ -8,18 +8,18 @@ class EditorData
 	toggles=549;
 	class ItemIDProvider
 	{
-		nextID=210;
+		nextID=211;
 	};
 	class LayerIndexProvider
 	{
-		nextID=42;
+		nextID=43;
 	};
 	class Camera
 	{
-		pos[]={4344.6143,13.361371,6609.0557};
-		dir[]={0.048321158,-0.53405643,0.84412915};
-		up[]={0.030522844,0.84542334,0.53321773};
-		aside[]={0.99841982,6.0084858e-07,-0.05715438};
+		pos[]={4331.0654,13.361371,6617.7402};
+		dir[]={0.88171798,-0.46443045,0.083899081};
+		up[]={0.4624024,0.88556963,0.043999918};
+		aside[]={0.094734594,1.9889922e-07,-0.99558061};
 	};
 };
 binarizationWanted=0;
@@ -559,7 +559,7 @@ class Mission
 			name="CrateLayer";
 			class Entities
 			{
-				items=16;
+				items=17;
 				class Item0
 				{
 					dataType="Object";
@@ -1460,6 +1460,53 @@ class Mission
 								{
 									singleType="STRING";
 									value="[[[[],[]],[[""UK3CB_BAF_1Rnd_81mm_Mo_IRFlare_White""],[17]],[[],[]],[[],[]]],false]";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item16
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4342,5.2840548,6617};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						name="resupply_smoke";
+						disableSimulation=1;
+					};
+					id=210;
+					type="UK3CB_BAF_Box_L16_Ammo_Illumination";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ammoBox";
+							expression="[_this,_value] call bis_fnc_initAmmoBox;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="[[[[],[]],[[""SmokeShell"",""SmokeShellYellow"",""SmokeShellGreen"",""SmokeShellRed"",""SmokeShellPurple"",""SmokeShellBlue"",""rhs_mag_m713_Red"",""rhs_mag_m714_White"",""rhs_mag_m715_Green"",""rhs_mag_m716_yellow""],[30,15,15,15,15,15,15,20,15,15]],[[],[]],[[],[]]],false]";
 								};
 							};
 						};

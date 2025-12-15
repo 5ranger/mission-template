@@ -127,21 +127,6 @@ x5r_config_groundWoodlandArray =
       ["UK3CB_BAF_Warrior_A3_W_Cage_Camo","FV510 Warrior",{
         [_this,["BAF_01",1],["showBags",1,"showBags2",1,"showCamonetHull",1,"showCamonetTurret",1,"showTools",1,"showSLATHull",1,"showSLATTurret",1]] call BIS_fnc_initVehicle;
         ["fillSection",_this,true] call x5r_logistics_fnc_initCargo;
-        _this removeWeaponTurret ["UK3CB_BAF_L21A1_Rarden", [0]];
-        _this removeWeaponTurret ["UK3CB_BAF_L94A1_veh", [0]];
-        _this addWeaponTurret ["autocannon_40mm_CTWS", [0]];
-        _this addMagazineTurret ["60Rnd_40mm_GPR_Tracer_Red_shells",[0]];
-        _this addMagazineTurret ["60Rnd_40mm_GPR_Tracer_Red_shells",[0]];
-        _this addMagazineTurret ["40Rnd_40mm_APFSDS_Tracer_Red_shells",[0]];
-        _this addMagazineTurret ["40Rnd_40mm_APFSDS_Tracer_Red_shells",[0]];
-        _this addWeaponTurret ["ACE_LMG_coax_MAG58_mem3", [0]];
-        _this addMagazineTurret ["200Rnd_762x51_Belt_Red",[0]];
-        _this addMagazineTurret ["200Rnd_762x51_Belt_Red",[0]];
-        _this addMagazineTurret ["200Rnd_762x51_Belt_Red",[0]];
-        _this addMagazineTurret ["200Rnd_762x51_Belt_Red",[0]];
-        _this addWeaponTurret ["UK3CB_BAF_Milan_Launcher", [0]];
-        _this addMagazineTurret ["UK3CB_BAF_1Rnd_Milan",[0]];
-        _this setVariable ["ace_rearm_scriptedLoadout", true, true];
         [{_this getVariable "x5r_tags_inventoryReady" == true}, {
           _this addMagazineCargoGlobal ["UK3CB_BAF_1Rnd_Milan", 2]; 
         },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;  
@@ -386,22 +371,7 @@ x5r_config_groundSandArray =
         [_this,["BAF_02",1],["showBags",1,"showBags2",1,"showCamonetHull",1,"showCamonetTurret",1,"showTools",1,"showSLATHull",1,"showSLATTurret",1]] call BIS_fnc_initVehicle;
         ["fillSection",_this,true] call x5r_logistics_fnc_initCargo; 
         [{_this getVariable "x5r_tags_inventoryReady" == true}, {
-          _this removeWeaponTurret ["UK3CB_BAF_L21A1_Rarden", [0]];
-          _this removeWeaponTurret ["UK3CB_BAF_L94A1_veh", [0]];
-          _this addWeaponTurret ["autocannon_40mm_CTWS", [0]];
-          _this addMagazineTurret ["60Rnd_40mm_GPR_Tracer_Red_shells",[0]];
-          _this addMagazineTurret ["60Rnd_40mm_GPR_Tracer_Red_shells",[0]];
-          _this addMagazineTurret ["40Rnd_40mm_APFSDS_Tracer_Red_shells",[0]];
-          _this addMagazineTurret ["40Rnd_40mm_APFSDS_Tracer_Red_shells",[0]];
-          _this addWeaponTurret ["ACE_LMG_coax_MAG58_mem3", [0]];
-          _this addMagazineTurret ["200Rnd_762x51_Belt_Red",[0]];
-          _this addMagazineTurret ["200Rnd_762x51_Belt_Red",[0]];
-          _this addMagazineTurret ["200Rnd_762x51_Belt_Red",[0]];
-          _this addMagazineTurret ["200Rnd_762x51_Belt_Red",[0]];
-          _this addWeaponTurret ["UK3CB_BAF_Milan_Launcher", [0]];
-          _this addMagazineTurret ["UK3CB_BAF_1Rnd_Milan",[0]];
           _this addMagazineCargoGlobal ["UK3CB_BAF_1Rnd_Milan", 2];
-          _this setVariable ["ace_rearm_scriptedLoadout", true, true]; 
         },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;  
         _this setFuel 0.33; 
         ["ACE_Track", _this] call ace_cargo_fnc_loadItem;  

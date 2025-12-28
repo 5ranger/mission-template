@@ -699,17 +699,14 @@ x5r_config_suppliesArray =
     ["B_Slingload_01_Repair_F","",{
       [_this, -1] call ace_cargo_fnc_setSize;   
     },[],28], 
-    ["UK3CB_BAF_MAN_HX58_Container_ReArm",["Large Vehicle Rearm","@resupply","Non-ACE vehicle ammo"],{
+    ["B_Slingload_01_Ammo_F",["Large Vehicle Rearm","@resupply","ACE Rearm + vehicle ammo"],{
       _this addItemCargoGlobal ["UK3CB_BAF_1Rnd_Milan",14];
       _this addItemCargoGlobal ["UK3CB_BAF_127_100Rnd",21];
-      _this addItemCargoGlobal ["UK3CB_BAF_762_200Rnd_T",24];
-      _this addItemCargoGlobal ["UK3CB_BAF_762_800Rnd_T",6];
-      _this addMagazineCargoGlobal ["UK3CB_BAF_6Rnd_30mm_L21A1_APDS",27];
-      _this addMagazineCargoGlobal ["UK3CB_BAF_6Rnd_30mm_L21A1_HE",27];
+      _this addItemCargoGlobal ["UK3CB_BAF_762_200Rnd",24];
       [_this, 0] call ace_cargo_fnc_setSpace;
       [_this, -1] call ace_cargo_fnc_setSize;   
     },[],28], 
-    ["UK3CB_BAF_MAN_HX58_Container_Sand",["Large Cargo Container","","Empty w/ 50 ACE Cargo"],{
+    ["B_Slingload_01_Cargo_F",["Large Cargo Container","","Empty w/ 50 ACE Cargo"],{
       clearWeaponCargoGlobal _this;
       clearMagazineCargoGlobal _this;
       clearItemCargoGlobal _this;

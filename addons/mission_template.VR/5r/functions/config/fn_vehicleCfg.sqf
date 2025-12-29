@@ -548,6 +548,7 @@ x5r_config_suppliesArray =
 ["#Supplies",[
   ["#Infantry Resupply",[ 
     ["B_CargoNet_01_ammo_F",["Infantry Resupply Crate","@resupply",""],{ 
+      _this setVariable ["ace_cargo_customname", "Infantry Resupply Crate", true];
       ["resupplycrate",_this,true] call x5r_logistics_fnc_initCargo; 
       [_this, 6] call ace_cargo_fnc_setSize;  
     },[],4], 
@@ -559,6 +560,7 @@ x5r_config_suppliesArray =
       [_this, -1] call ace_cargo_fnc_setSize;   
     },[],28], 
     ["UK3CB_BAF_Box_556_Ammo",["5.56mm Magazines Box","@resupply",""],{ 
+      _this setVariable ["ace_cargo_customname", "5.56mm Magazines Box", true];
       clearWeaponCargoGlobal _this; 
       clearMagazineCargoGlobal _this; 
       clearItemCargoGlobal _this; 
@@ -566,40 +568,53 @@ x5r_config_suppliesArray =
       _this addMagazineCargoGlobal ["rhs_mag_30Rnd_556x45_M855A1_Stanag", 10];   
     },[],2], 
     ["UK3CB_BAF_Box_40_Ammo",["40mm Grenades Box","@resupply",""],{ 
+      _this setVariable ["ace_cargo_customname", "40mm Grenades Box", true];
       ["resupply40mm",_this,true] call x5r_logistics_fnc_initCargo; 
     },[],2], 
     ["UK3CB_BAF_Box_L7A2_Ammo",["7.62mm Belts Box","@resupply",""],{
+      _this setVariable ["ace_cargo_customname", "7.62mm Belts Box", true];
       clearMagazineCargoGlobal _this;
       _this addMagazineCargoGlobal ["UK3CB_BAF_762_100Rnd", 18];
       _this addMagazineCargoGlobal ["UK3CB_BAF_762_100Rnd_T", 6];
     },[],2], 
     ["UK3CB_BAF_Box_762_Ammo",["7.62mm Magazines Box","@resupply",""],{
+      _this setVariable ["ace_cargo_customname", "7.62mm Magazines Box", true];
       clearMagazineCargoGlobal _this;
       _this addMagazineCargoGlobal ["UK3CB_BAF_762_L42A1_20Rnd_T", 28];
     },[],2], 
-    ["ACE_medicalSupplyCrate_advanced","",{ 
+    ["ACE_medicalSupplyCrate_advanced","Medical Supply Box",{ 
+      _this setVariable ["ace_cargo_customname", "Medical Supply Box", true];
       ["resupplymedic",_this,true] call x5r_logistics_fnc_initCargo; 
     },[],2], 
     ["Box_NATO_Grenades_F",["Smokes Box","@resupply",""],{ 
+      _this setVariable ["ace_cargo_customname", "Smokes Box", true];
       ["resupply_smoke",_this,true] call x5r_logistics_fnc_initCargo;  
       [_this, 2] call ace_cargo_fnc_setSize;  
       [_this,750] remoteExec ["setMaxLoad",2];
     },[],2],
     ["Box_NATO_AmmoOrd_F",["Explosives Crate","",""],{ 
+      _this setVariable ["ace_cargo_customname", "Explosives Box", true];
       ["resupplydemo",_this,true] call x5r_logistics_fnc_initCargo;  
       [_this, 2] call ace_cargo_fnc_setSize;  
     },[],2],
-    ["Box_NATO_AmmoOrd_F",["M6 Light Mortar Ammo Crate","@resupply",""],{ 
+    ["Box_NATO_AmmoOrd_F",["M6 Light Mortar Ammo Box","@resupply",""],{ 
+      _this setVariable ["ace_cargo_customname", "M6 Light Mortar Ammo Box", true];
       ["resupply60mm",_this,true] call x5r_logistics_fnc_initCargo;  
       [_this, 2] call ace_cargo_fnc_setSize;  
     },[],2], 
-    ["UK3CB_BAF_Box_WpsLaunch_ILAW","",{},[],2],  
-    ["UK3CB_BAF_Box_WpsLaunch_NLAW",["NLAW Crate","","5x NLAW"],{
+    ["UK3CB_BAF_Box_WpsLaunch_ILAW","ILAW Box",{
+      _this setVariable ["ace_cargo_customname", "ILAW Box", true];
+    },[],2],  
+    ["UK3CB_BAF_Box_WpsLaunch_NLAW",["NLAW Box","","5x NLAW"],{
+      _this setVariable ["ace_cargo_customname", "NLAW Box", true];
       clearWeaponCargoGlobal _this;
       _this addWeaponCargoGlobal ["launch_NLAW_F", 5];
     },[],2],  
-    ["UK3CB_BAF_Box_WpsLaunch_Javelin","",{},[],2],
-    ["Box_NATO_WpsLaunch_F",["FIM-92F Weapon Crate","","Weapon + 5rnds"],{
+    ["UK3CB_BAF_Box_WpsLaunch_Javelin","Javelin Box",{
+      _this setVariable ["ace_cargo_customname", "Javelin Box", true];
+    },[],2],
+    ["Box_NATO_WpsLaunch_F",["FIM-92F Weapon Box","","Weapon + 5rnds"],{
+      _this setVariable ["ace_cargo_customname", "FIM-92F Weapon Box", true];
       clearWeaponCargoGlobal _this;
       clearMagazineCargoGlobal _this;
       clearBackpackCargoGlobal _this;
@@ -607,13 +622,15 @@ x5r_config_suppliesArray =
       _this addMagazineCargoGlobal ["rhs_fim92_mag", 5];
       [_this, 1] call ace_cargo_fnc_setSize;
     },[],1], 
-    ["Box_NATO_WpsSpecial_F",["FIM-92F Ammo Crate","@resupply","13rnd"],{
+    ["Box_NATO_WpsSpecial_F",["FIM-92F Ammo Box","@resupply","13rnd"],{
+      _this setVariable ["ace_cargo_customname", "FIM-92F Ammo Box", true];
       clearWeaponCargoGlobal _this;
       clearMagazineCargoGlobal _this;
       clearItemCargoGlobal _this;
       _this addMagazineCargoGlobal ["rhs_fim92_mag", 13];
     },[],2], 
     ["Box_NATO_Wps_F",["MAAWS Ammo Box","@resupply",""],{
+      _this setVariable ["ace_cargo_customname", "MAAWS Ammo Box", true];
       clearWeaponCargoGlobal _this;
       clearMagazineCargoGlobal _this;
       _this addMagazineCargoGlobal ["MRAWS_HE_F", 8];
@@ -621,7 +638,8 @@ x5r_config_suppliesArray =
       _this addMagazineCargoGlobal ["MRAWS_HEAT_F", 6];
       _this addMagazineCargoGlobal ["WP_MAAWS_Mag", 10];
     },[],2], 
-    ["Box_NATO_WpsLaunch_F",["MAAWS Mod 1 Weapon Crate (FST)","","Weapon + 7 mixed rnds"],{
+    ["Box_NATO_WpsLaunch_F",["MAAWS Mod 1 Weapon Box (FST)","","Weapon + 7 mixed rnds"],{
+      _this setVariable ["ace_cargo_customname", "MAAWS Mod 1 Weapon Box", true];
       clearWeaponCargoGlobal _this;
       clearMagazineCargoGlobal _this;
       clearBackpackCargoGlobal _this;
@@ -633,9 +651,11 @@ x5r_config_suppliesArray =
       [_this, 1] call ace_cargo_fnc_setSize;
     },[],1], 
     ["Box_NATO_Equip_F","Night Box",{
-    ["resupplyNight",_this,true] call x5r_logistics_fnc_initCargo;  
+      _this setVariable ["ace_cargo_customname", "Night Box", true];
+      ["resupplyNight",_this,true] call x5r_logistics_fnc_initCargo;  
     },[],3],
     ["Box_NATO_Equip_F","Toolbox",{
+      _this setVariable ["ace_cargo_customname", "Toolbox", true];
       ["resupplyToolbox",_this,true] call x5r_logistics_fnc_initCargo;  
     },[],3],
     ["CargoNet_01_box_F","Field Arsenal (ELS USE ONLY, not loadable)",{
@@ -649,7 +669,8 @@ x5r_config_suppliesArray =
     },[],4]
   ]],  
   ["#Vehicle Resupply",[  
-    ["Box_NATO_AmmoVeh_F",["ACE vehicle rearm","@resupply",""],{ 
+    ["Box_NATO_AmmoVeh_F",["ACE Vehicle Rearm Crate","@resupply",""],{
+      _this setVariable ["ace_cargo_customname", "ACE Vehicle Rearm Crate", true]; 
       clearWeaponCargoGlobal _this;
       clearMagazineCargoGlobal _this;
       clearItemCargoGlobal _this;
@@ -657,14 +678,21 @@ x5r_config_suppliesArray =
       [_this,0] remoteExec ["setMaxLoad",2];
       [_this,5] call ace_cargo_fnc_setSize;
     },[],5], 
-    ["UK3CB_BAF_Box_L7A2_Ammo","",{},[],2], 
-    ["UK3CB_BAF_Box_L111A1_Ammo","",{},[],2],
-    ["UK3CB_BAF_Box_Milan_Ammo","",{},[],2],
+    ["UK3CB_BAF_Box_L7A2_Ammo","Vehicle L7A2 7.62mm Ammo Box",{
+      _this setVariable ["ace_cargo_customname", "Vehicle L7A2 7.62mm Ammo Box", true]; 
+    },[],2], 
+    ["UK3CB_BAF_Box_L111A1_Ammo","Vehicle L111A1 12.7mm Ammo Box",{
+      _this setVariable ["ace_cargo_customname", "Vehicle L111A1 12.7mm Ammo Box", true]; 
+    },[],2],
+    ["UK3CB_BAF_Box_Milan_Ammo","Vehicle Milan Ammo Box",{
+      _this setVariable ["ace_cargo_customname", "Vehicle Milan Ammo Box", true]; 
+    },[],2],
     ["ACE_Wheel","",{
       _this spawn {sleep 1; _this setDamage 0};
     },[],1], 
     ["ACE_Track","",{},[],2], 
     ["C_IDAP_supplyCrate_F","Wheel pack 8x",{ 
+      _this setVariable ["ace_cargo_customname", "Wheel pack", true];
       clearWeaponCargoGlobal _this;   
       clearMagazineCargoGlobal _this;   
       clearItemCargoGlobal _this;
@@ -681,6 +709,7 @@ x5r_config_suppliesArray =
       ["ACE_Wheel", _this, true] call ace_cargo_fnc_loadItem;   
     },[],6], 
     ["C_IDAP_supplyCrate_F","Track pack 4x",{ 
+      _this setVariable ["ace_cargo_customname", "Track pack", true];
       clearWeaponCargoGlobal _this;   
       clearMagazineCargoGlobal _this;   
       clearItemCargoGlobal _this;
@@ -695,8 +724,10 @@ x5r_config_suppliesArray =
     ["FlexibleTank_01_forest_F","",{},[],3], 
     ["B_Slingload_01_Fuel_F","",{
       [_this, 0] call ace_cargo_fnc_setSpace;
+      [_this, -1] call ace_cargo_fnc_setSize;   
     },[],28], 
     ["B_Slingload_01_Repair_F","",{
+      [_this, 0] call ace_cargo_fnc_setSpace;
       [_this, -1] call ace_cargo_fnc_setSize;   
     },[],28], 
     ["B_Slingload_01_Ammo_F",["Large Vehicle Rearm","@resupply","ACE Rearm + vehicle ammo"],{
@@ -705,41 +736,58 @@ x5r_config_suppliesArray =
       _this addItemCargoGlobal ["UK3CB_BAF_762_200Rnd",24];
       [_this, 0] call ace_cargo_fnc_setSpace;
       [_this, -1] call ace_cargo_fnc_setSize;   
-    },[],28], 
-    ["B_Slingload_01_Cargo_F",["Large Cargo Container","","Empty w/ 50 ACE Cargo"],{
-      clearWeaponCargoGlobal _this;
-      clearMagazineCargoGlobal _this;
-      clearItemCargoGlobal _this;
-      clearBackpackCargoGlobal _this;
-      [_this,0] remoteExec ["setMaxLoad",2];
-      [_this, 50] call ace_cargo_fnc_setSpace;   
-      [_this, -1] call ace_cargo_fnc_setSize;   
-    },[],28] 
+    },[],28]
   ]], 
   ["#Static Weapon Platforms",[ 
     ["UK3CB_BAF_Static_L111A1_Deployed_High","",{},[],2], 
-    ["UK3CB_BAF_Box_L111A1","",{},[],2], 
-    ["UK3CB_BAF_Box_L111A1_Ammo","",{},[],2], 
+    ["UK3CB_BAF_Box_L111A1",["L111A1 Weapon Box","","Weapon + 4mag"],{
+      _this setVariable ["ace_cargo_customname", "L111A1 Weapon Box", true]; 
+    },[],2], 
+    ["UK3CB_BAF_Box_L111A1_Ammo",["L111A1 Ammo Box","","7mag"],{
+      _this setVariable ["ace_cargo_customname", "L111A1 Ammo Box", true]; 
+    },[],2], 
     ["UK3CB_BAF_Static_L16_Deployed","",{},[],2], 
-    ["UK3CB_BAF_Box_L16","",{
+    ["UK3CB_BAF_Box_L16",["L16 Mortar Weapon Box","","Weapon + 5rnd HE"],{
+      _this setVariable ["ace_cargo_customname", "L16 Mortar Weapon Box", true];
       _this addItemCargoGlobal ["ACE_artilleryTable",1];
     },[],2], 
-    ["UK3CB_BAF_Box_L16_Ammo_HE",["","","17rnd"],{},[],2], 
-    ["UK3CB_BAF_Box_L16_Ammo_Smoke",["","","17rnd"],{},[],2], 
-    ["UK3CB_BAF_Box_L16_Ammo_Illumination",["","","17rnd"],{
+    ["UK3CB_BAF_Box_L16_Ammo_HE",["L16 Mortar HE Ammo Box","","17rnd"],{
+      _this setVariable ["ace_cargo_customname", "L16 Mortar HE Ammo Box", true];
+    },[],2], 
+    ["UK3CB_BAF_Box_L16_Ammo_Smoke",["L16 Mortar Smoke Ammo Box","","17rnd"],{
+      _this setVariable ["ace_cargo_customname", "L16 Mortar Smoke Ammo Box", true];
+    },[],2], 
+    ["UK3CB_BAF_Box_L16_Ammo_Illumination",["L16 Mortar Illumination Ammo Box","","17rnd"],{
+      _this setVariable ["ace_cargo_customname", "L16 Mortar Illumination Ammo Box", true];
       ["resupply_l16_ill_s",_this,true] call x5r_logistics_fnc_initCargo;
     },[],2], 
-    ["UK3CB_BAF_SupplyCrate_L16_Ammo_HE",["","","44rnd"],{},[],4], 
-    ["UK3CB_BAF_SupplyCrate_L16_Ammo_Smoke",["","","44rnd"],{},[],4], 
-    ["UK3CB_BAF_SupplyCrate_L16_Ammo_Illumination",["","","44rnd"],{
+    ["UK3CB_BAF_SupplyCrate_L16_Ammo_HE",["L16 Mortar HE Ammo Crate","","44rnd"],{
+      _this setVariable ["ace_cargo_customname", "L16 Mortar HE Ammo Crate", true];
+    },[],4], 
+    ["UK3CB_BAF_SupplyCrate_L16_Ammo_Smoke",["L16 Mortar Smoke Ammo Crate","","44rnd"],{
+      _this setVariable ["ace_cargo_customname", "L16 Mortar Smoke Ammo Crate", true];
+    },[],4], 
+    ["UK3CB_BAF_SupplyCrate_L16_Ammo_Illumination",["L16 Mortar Illumination Ammo Crate","","44rnd"],{
+      _this setVariable ["ace_cargo_customname", "L16 Mortar Illumination Ammo Crate", true];
       ["resupply_l16_ill_l",_this,true] call x5r_logistics_fnc_initCargo;
     },[],4] 
   ]],
+    ["B_Slingload_01_Cargo_F",["Large Empty Cargo Container","","Empty w/ 50 ACE Cargo"],{
+    clearWeaponCargoGlobal _this;
+    clearMagazineCargoGlobal _this;
+    clearItemCargoGlobal _this;
+    clearBackpackCargoGlobal _this;
+    [_this,0] remoteExec ["setMaxLoad",2];
+    [_this, 50] call ace_cargo_fnc_setSpace;   
+    [_this, -1] call ace_cargo_fnc_setSize;   
+  },[],28] 
   ["Land_Cargo10_military_green_F",["Radio Relay Container","","Indestructible. Needs to be deployed. 25km range"],{
     [_this, 0] call ace_cargo_fnc_setSpace;   
     [_this, -1] call ace_cargo_fnc_setSize;
   },[],28],
   ["B_Slingload_01_Cargo_F",["Bridge Pack (DO NOT SLINGLOAD/AIRDROP)","","Takes 5 seconds to spawn"],{
+    [_this, 0] call ace_cargo_fnc_setSpace;   
+    [_this, -1] call ace_cargo_fnc_setSize;
     _this call x5r_common_fnc_pontoonBridgeCreateObject;   
   },[],28]
 ]];

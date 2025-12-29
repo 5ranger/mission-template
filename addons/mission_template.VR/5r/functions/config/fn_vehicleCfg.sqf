@@ -776,14 +776,14 @@ x5r_config_suppliesArray =
     clearWeaponCargoGlobal _this;
     clearMagazineCargoGlobal _this;
     clearItemCargoGlobal _this;
-    clearBackpackCargoGlobal _this;
-    [_this,0] remoteExec ["setMaxLoad",2];
-    [_this, 50] call ace_cargo_fnc_setSpace;   
-    [_this, -1] call ace_cargo_fnc_setSize;   
-  },[],28] 
+    clearBackpackCargoGlobal _this; 
+    [_this,0] remoteExec ["setMaxLoad",2]; 
+    [_this, 50] call ace_cargo_fnc_setSpace; 
+    [_this, -1] call ace_cargo_fnc_setSize; 
+  },[],28], 
   ["Land_Cargo10_military_green_F",["Radio Relay Container","","Indestructible. Needs to be deployed. 25km range"],{
-    [_this, 0] call ace_cargo_fnc_setSpace;   
-    [_this, -1] call ace_cargo_fnc_setSize;
+    [_this, 0] call ace_cargo_fnc_setSpace;  
+    [_this, -1] call ace_cargo_fnc_setSize; 
   },[],28],
   ["B_Slingload_01_Cargo_F",["Bridge Pack (DO NOT SLINGLOAD/AIRDROP)","","Takes 5 seconds to spawn"],{
     [_this, 0] call ace_cargo_fnc_setSpace;   

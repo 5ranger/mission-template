@@ -24,8 +24,7 @@ if (hasInterface) then {
         "UK3CB_BAF_Coyote_Logistics_L111A1_D",
         "UK3CB_BAF_Coyote_Passenger_L111A1_D",
         "UK3CB_BAF_Coyote_Passenger_L111A1_G",
-        "UK3CB_BAF_Coyote_Logistics_L111A1_G",
-        "UK3CB_BAF_MAN_HX58_Container_ReArm"
+        "UK3CB_BAF_Coyote_Logistics_L111A1_G"
     ]] call x5r_logistics_fnc_createEmptyVehicleActions;
     // Add ViV loading to the following crate classnames
     [[
@@ -62,7 +61,18 @@ if (hasInterface) then {
         "B_Slingload_01_Fuel_F",
         "B_Slingload_01_Cargo_F",
         "B_Slingload_01_Repair_F",
-        "Land_Cargo10_military_green_F"
+        "Land_Cargo10_military_green_F",
+        "Land_Cargo10_blue_F",
+        "Land_Cargo10_brick_red_F",
+        "Land_Cargo10_cyan_F",
+        "Land_Cargo10_grey_F",
+        "Land_Cargo10_light_blue_F",
+        "Land_Cargo10_light_green_F",
+        "Land_Cargo10_orange_F",
+        "Land_Cargo10_red_F",
+        "Land_Cargo10_sand_F",
+        "Land_Cargo10_white_F",
+        "Land_Cargo10_yellow_F"
     ]] call x5r_logistics_fnc_createViVLoadingActions;
     call x5r_logistics_fnc_addRadioRelayActions; // Create Relay Container actions
     ["ace_arsenal_displayClosed", x5r_common_fnc_fixSlingHelmetExploit] call CBA_fnc_addEventHandler;

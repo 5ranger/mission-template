@@ -16,11 +16,11 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2602;
+		nextID=2618;
 	};
 	class Camera
 	{
-		pos[]={85.036156,56.276123,-36.327316};
+		pos[]={85,49.031963,-29.106167};
 		dir[]={0,-0.70710683,0.70710683};
 		up[]={0,0.70710677,0.70710677};
 		aside[]={0.99999994,0,-0};
@@ -14329,7 +14329,7 @@ class Mission
 							flags=4;
 							class Attributes
 							{
-								init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""x5r_obj_arsenalArray"") then {x5r_obj_arsenalArray = [];}; " \n " x5r_obj_arsenalArray pushBack this; " \n "};";
+								init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""x5r_obj_arsenalArray"") then {x5r_obj_arsenalArray = [];};" \n " x5r_obj_arsenalArray pushBack this; " \n " this setVariable [""x5r_tags_vivDisabled"",true,true];" \n "};";
 								name="playerarsenal_1";
 								disableSimulation=1;
 							};
@@ -15585,7 +15585,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""x5r_obj_arsenalArray"") then {x5r_obj_arsenalArray = [];}; " \n " x5r_obj_arsenalArray pushBack this; " \n "};";
+						init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""x5r_obj_arsenalArray"") then {x5r_obj_arsenalArray = [];};" \n " x5r_obj_arsenalArray pushBack this; " \n " this setVariable [""x5r_tags_vivDisabled"",true,true];" \n "};";
 						name="playerarsenal_2";
 						disableSimulation=1;
 					};
@@ -15678,7 +15678,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""x5r_obj_arsenalArray"") then {x5r_obj_arsenalArray = [];}; " \n " x5r_obj_arsenalArray pushBack this; " \n "};";
+						init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""x5r_obj_arsenalArray"") then {x5r_obj_arsenalArray = [];};" \n " x5r_obj_arsenalArray pushBack this; " \n " this setVariable [""x5r_tags_vivDisabled"",true,true];" \n "};";
 						name="playerarsenal_3";
 						disableSimulation=1;
 					};
@@ -15771,7 +15771,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""x5r_obj_arsenalArray"") then {x5r_obj_arsenalArray = [];}; " \n " x5r_obj_arsenalArray pushBack this; " \n "};";
+						init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""x5r_obj_arsenalArray"") then {x5r_obj_arsenalArray = [];};" \n " x5r_obj_arsenalArray pushBack this; " \n " this setVariable [""x5r_tags_vivDisabled"",true,true];" \n "};";
 						name="playerarsenal_4";
 						disableSimulation=1;
 					};
@@ -15864,7 +15864,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""x5r_obj_arsenalArray"") then {x5r_obj_arsenalArray = [];}; " \n " x5r_obj_arsenalArray pushBack this; " \n "};";
+						init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""x5r_obj_arsenalArray"") then {x5r_obj_arsenalArray = [];};" \n " x5r_obj_arsenalArray pushBack this; " \n " this setVariable [""x5r_tags_vivDisabled"",true,true];" \n "};";
 						name="playerarsenal_5";
 						disableSimulation=1;
 					};
@@ -15957,7 +15957,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""x5r_obj_arsenalArray"") then {x5r_obj_arsenalArray = [];}; " \n " x5r_obj_arsenalArray pushBack this; " \n "};";
+						init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""x5r_obj_arsenalArray"") then {x5r_obj_arsenalArray = [];};" \n " x5r_obj_arsenalArray pushBack this; " \n " this setVariable [""x5r_tags_vivDisabled"",true,true];" \n "};";
 						name="playerarsenal_6";
 						disableSimulation=1;
 					};
@@ -16050,7 +16050,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""x5r_obj_arsenalArray"") then {x5r_obj_arsenalArray = [];}; " \n " x5r_obj_arsenalArray pushBack this; " \n "};";
+						init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""x5r_obj_arsenalArray"") then {x5r_obj_arsenalArray = [];};" \n " x5r_obj_arsenalArray pushBack this; " \n " this setVariable [""x5r_tags_vivDisabled"",true,true];" \n "};";
 						name="playerarsenal_7";
 						disableSimulation=1;
 					};
@@ -16142,7 +16142,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""x5r_obj_arsenalArray"") then {x5r_obj_arsenalArray = [];}; " \n " x5r_obj_arsenalArray pushBack this; " \n "};";
+						init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""x5r_obj_arsenalArray"") then {x5r_obj_arsenalArray = [];};" \n " x5r_obj_arsenalArray pushBack this; " \n " this setVariable [""x5r_tags_vivDisabled"",true,true];" \n "};";
 						name="playerarsenal_9";
 						disableSimulation=1;
 					};
@@ -21707,7 +21707,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""x5r_obj_arsenalArray"") then {x5r_obj_arsenalArray = [];}; " \n " x5r_obj_arsenalArray pushBack this; " \n "};";
+						init="comment ""Adds this box to the loadout parsing system"";" \n "if (isServer) then { " \n " if (isNil ""x5r_obj_arsenalArray"") then {x5r_obj_arsenalArray = [];};" \n " x5r_obj_arsenalArray pushBack this; " \n " this setVariable [""x5r_tags_vivDisabled"",true,true];" \n "};";
 						name="playerarsenal_10";
 						disableSimulation=1;
 					};
@@ -23135,7 +23135,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={362.95264,6.0206804,755.25226};
-						angles[]={-0,3.141593,0};
+						angles[]={0,3.141593,0};
 					};
 					side="Empty";
 					flags=4;

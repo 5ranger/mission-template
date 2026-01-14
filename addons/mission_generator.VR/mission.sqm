@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=44;
+		nextID=45;
 	};
 	class Camera
 	{
-		pos[]={4350.541,12.209122,6621.2271};
-		dir[]={0.035030283,-0.68893498,0.72397619};
-		up[]={0.033295829,0.72482312,0.68812996};
-		aside[]={0.99883151,0,-0.04832942};
+		pos[]={4346.5645,12.209122,6629.4834};
+		dir[]={0.58445519,-0.73010617,0.35405973};
+		up[]={0.62445992,0.68333358,0.37829405};
+		aside[]={0.51813602,2.4912879e-08,-0.85530066};
 	};
 };
 binarizationWanted=0;
@@ -449,7 +449,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -1625,7 +1625,7 @@ class Mission
 										singleType="ARRAY";
 										class value
 										{
-											items=675;
+											items=687;
 											class Item0
 											{
 												class data
@@ -7024,6 +7024,102 @@ class Mission
 												{
 													singleType="STRING";
 													value="UK3CB_underbarrel_acc_fgrip_bipod";
+												};
+											};
+											class Item675
+											{
+												class data
+												{
+													singleType="STRING";
+													value="WP_MAAWS_Mag";
+												};
+											};
+											class Item676
+											{
+												class data
+												{
+													singleType="STRING";
+													value="MRAWS_HEAT_F";
+												};
+											};
+											class Item677
+											{
+												class data
+												{
+													singleType="STRING";
+													value="MRAWS_HEAT55_F";
+												};
+											};
+											class Item678
+											{
+												class data
+												{
+													singleType="STRING";
+													value="MRAWS_HE_F";
+												};
+											};
+											class Item679
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_fim92_mag";
+												};
+											};
+											class Item680
+											{
+												class data
+												{
+													singleType="STRING";
+													value="launch_MRAWS_olive_F";
+												};
+											};
+											class Item681
+											{
+												class data
+												{
+													singleType="STRING";
+													value="launch_MRAWS_sand_F";
+												};
+											};
+											class Item682
+											{
+												class data
+												{
+													singleType="STRING";
+													value="launch_MRAWS_green_F";
+												};
+											};
+											class Item683
+											{
+												class data
+												{
+													singleType="STRING";
+													value="launch_MRAWS_sand_rail_F";
+												};
+											};
+											class Item684
+											{
+												class data
+												{
+													singleType="STRING";
+													value="launch_MRAWS_olive_rail_F";
+												};
+											};
+											class Item685
+											{
+												class data
+												{
+													singleType="STRING";
+													value="launch_MRAWS_green_rail_F";
+												};
+											};
+											class Item686
+											{
+												class data
+												{
+													singleType="STRING";
+													value="rhs_weap_fim92";
 												};
 											};
 										};

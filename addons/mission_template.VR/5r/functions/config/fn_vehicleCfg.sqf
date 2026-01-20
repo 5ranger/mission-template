@@ -287,7 +287,12 @@ x5r_config_groundWoodlandArray =
       clearBackpackCargoGlobal _this;
       [_this,0] remoteExec ["setMaxLoad",2];
       [_this, 2] call ace_cargo_fnc_setSpace; 
-    },[],10]
+    },[],10],
+    ["UK3CB_BAF_LandRover_Amb_Green_A","",{ 
+      ["fillRAMC",_this,true] call x5r_logistics_fnc_initCargo; 
+      [{_this getVariable "x5r_tags_inventoryReady" == true}, { 
+      },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
+    },[],22]
   ]],
   ["rhsusf_m109_usarmy","",{
     [_this,["standard",1],["IFF_Panels_Hide",1,"showCanisters",0,"showCamonetTurret",0,"showAmmobox",0,"showCamonetHull",0]] call BIS_fnc_initVehicle;
@@ -531,7 +536,12 @@ x5r_config_groundSandArray =
       clearBackpackCargoGlobal _this;
       [_this,0] remoteExec ["setMaxLoad",2];
       [_this, 2] call ace_cargo_fnc_setSpace; 
-    },[],10]
+    },[],10],
+    ["UK3CB_BAF_LandRover_Amb_Sand_A","",{ 
+      ["fillRAMC",_this,true] call x5r_logistics_fnc_initCargo; 
+      [{_this getVariable "x5r_tags_inventoryReady" == true}, { 
+      },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
+    },[],22]
   ]],
   ["rhsusf_m109d_usarmy","",{
     [_this,["Desert",1],["IFF_Panels_Hide",0,"showCanisters",0,"showCamonetTurret",0,"showAmmobox",0,"showCamonetHull",0]] call BIS_fnc_initVehicle;

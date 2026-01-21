@@ -289,6 +289,10 @@ x5r_config_groundWoodlandArray =
       [_this, 2] call ace_cargo_fnc_setSpace; 
     },[],10],
     ["UK3CB_BAF_LandRover_Amb_Green_A","",{ 
+      clearWeaponCargoGlobal _this; 
+      clearBackpackCargoGlobal _this; 
+      clearMagazineCargoGlobal _this; 
+      clearItemCargoGlobal _this;
       ["fillRAMC",_this,true] call x5r_logistics_fnc_initCargo; 
       [{_this getVariable "x5r_tags_inventoryReady" == true}, { 
       },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
@@ -538,6 +542,10 @@ x5r_config_groundSandArray =
       [_this, 2] call ace_cargo_fnc_setSpace; 
     },[],10],
     ["UK3CB_BAF_LandRover_Amb_Sand_A","",{ 
+      clearWeaponCargoGlobal _this; 
+      clearBackpackCargoGlobal _this; 
+      clearMagazineCargoGlobal _this; 
+      clearItemCargoGlobal _this;
       ["fillRAMC",_this,true] call x5r_logistics_fnc_initCargo; 
       [{_this getVariable "x5r_tags_inventoryReady" == true}, { 
       },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;

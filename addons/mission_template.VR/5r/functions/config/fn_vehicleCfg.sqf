@@ -33,6 +33,11 @@ x5r_config_airArray =
       ["UK3CB_BAF_Apache_AH1_JS","BAF Apache AH1",{
         ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
         _this remoteExec ["DAPS_fnc_Nemesis",2];
+        _this addWeaponTurret ["Missile_AA_04_Plane_CAS_01_F", [0]];   
+        _this addMagazineTurret ["PylonRack_1Rnd_Missile_AA_04_F",[0]];
+        _this addWeaponTurret ["Missile_AA_04_Plane_CAS_01_F", [0]];   
+        _this addMagazineTurret ["PylonRack_1Rnd_Missile_AA_04_F",[0]];
+        _this setVariable ["ace_rearm_scriptedLoadout", true, true];
       },[],1], 
       ["RHS_AH64D","RHS Apache AH-64",{
         ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 

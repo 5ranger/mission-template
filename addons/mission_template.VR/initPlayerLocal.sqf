@@ -228,4 +228,5 @@ if (hasInterface) then {
         player connectTerminalToUAV objNull;
     }];
     call x5r_common_fnc_pontoonBridgeObjectEH;
+    call x5r_common_fnc_toggleVehSectionFlagActions;
 };

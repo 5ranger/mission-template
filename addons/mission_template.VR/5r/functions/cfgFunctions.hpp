@@ -27,6 +27,7 @@ class x5r_common
 		class respawnObjectsEH {};
 		class brushCutter {};
 		class suckNuts {};
+		class toggleVehSectionFlagActions {};
 	};
 	class server 
 	{

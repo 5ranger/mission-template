@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=50;
+		nextID=52;
 	};
 	class Camera
 	{
-		pos[]={4349.9175,8.5504723,6640.0142};
-		dir[]={-0.037913132,-0.4519493,-0.89123762};
-		up[]={-0.019208495,0.89204365,-0.45154098};
-		aside[]={-0.99909645,0,0.042501435};
+		pos[]={4334.52,9.1357307,6625.6826};
+		dir[]={-0.0045579132,-0.58343971,0.81226963};
+		up[]={-0.0032735439,0.81211621,0.58346713};
+		aside[]={1.000083,1.0610406e-06,0.0056110639};
 	};
 };
 binarizationWanted=0;
@@ -1567,7 +1567,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[[[[""UK3CB_BAF_AT4_CS_AP_Launcher""],[3]],[[""SmokeShell"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"",""rhs_mag_m67"",""SmokeShellYellow"",""SmokeShellPurple""],[6,10,3,3,3]],[[""ACE_splint"",""ACE_adenosine"",""ACE_salineIV"",""ACE_salineIV_500"",""ACE_tourniquet"",""ACE_plasmaIV"",""ACE_plasmaIV_500"",""ACM_IGel"",""ACM_PulseOximeter"",""ACM_PressureBandage"",""ACM_EmergencyTraumaDressing"",""ACM_ElasticWrap"",""ACM_SAMSplint"",""ACM_IV_16g"",""ACM_IO_FAST"",""ACM_IO_EZ"",""ACM_Syringe_10"",""ACM_Syringe_5"",""ACM_Syringe_3"",""ACM_Syringe_1"",""ACM_Vial_Morphine"",""ACM_Vial_Ketamine"",""ACM_Vial_TXA"",""ACM_Vial_Amiodarone"",""ACM_Vial_Ondansetron"",""ACM_Vial_CalciumChloride"",""ACM_Spray_Naloxone"",""ACM_BloodBag_ON_1000"",""ACM_BloodBag_ON_500"",""ACE_EntrenchingTool"",""ACE_surgicalKit"",""ACM_ACCUVAC"",""ACM_Stethoscope"",""ACM_BVM"",""ACM_AED"",""ACM_IV_14g"",""ACM_Vial_Epinephrine"",""ACM_Vial_Lidocaine"",""ACM_Vial_Atropine"",""ACM_Vial_Fentanyl"",""ACE_bodyBag"",""ACM_CricKit""],[2,2,3,5,20,4,6,10,5,50,50,25,10,10,6,12,3,3,3,3,10,20,20,20,20,20,5,6,10,2,1,1,1,1,1,10,10,10,6,10,3,5]],[[],[]]],false]";
+									value="[[[[],[]],[[""SmokeShell"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"",""rhs_mag_m67"",""SmokeShellYellow"",""SmokeShellPurple""],[6,10,3,3,3]],[[""ACE_splint"",""ACE_adenosine"",""ACE_salineIV"",""ACE_salineIV_500"",""ACE_tourniquet"",""ACE_plasmaIV"",""ACE_plasmaIV_500"",""ACM_IGel"",""ACM_PulseOximeter"",""ACM_PressureBandage"",""ACM_EmergencyTraumaDressing"",""ACM_ElasticWrap"",""ACM_SAMSplint"",""ACM_IV_16g"",""ACM_IO_FAST"",""ACM_IO_EZ"",""ACM_Syringe_10"",""ACM_Syringe_5"",""ACM_Syringe_3"",""ACM_Syringe_1"",""ACM_Vial_Morphine"",""ACM_Vial_Ketamine"",""ACM_Vial_TXA"",""ACM_Vial_Amiodarone"",""ACM_Vial_Ondansetron"",""ACM_Vial_CalciumChloride"",""ACM_Spray_Naloxone"",""ACM_BloodBag_ON_1000"",""ACM_BloodBag_ON_500"",""ACE_EntrenchingTool"",""ACE_surgicalKit"",""ACM_ACCUVAC"",""ACM_Stethoscope"",""ACM_BVM"",""ACM_AED"",""ACM_IV_14g"",""ACM_Vial_Epinephrine"",""ACM_Vial_Lidocaine"",""ACM_Vial_Atropine"",""ACM_Vial_Fentanyl"",""ACE_bodyBag"",""ACM_CricKit""],[2,2,3,5,20,4,6,10,5,50,50,25,10,10,6,12,3,3,3,3,10,20,20,20,20,20,5,6,10,2,1,1,1,1,1,10,10,10,6,10,3,5]],[[],[]]],false]";
 								};
 							};
 						};

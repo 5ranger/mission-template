@@ -137,7 +137,12 @@ x5r_config_groundWoodlandArray =
         },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;  
         _this setFuel 0.33; 
         ["ACE_Track", _this] call ace_cargo_fnc_loadItem;  
-      },[],28]
+      },[],28],
+      ["B_APC_Wheeled_01_cannon_F","Badger IFV",{
+        [_this,["Olive",1],["showSLATTurret",1,"showSLATHull",1,"showCamonetHull",1,"showCamonetTurret",1]] call BIS_fnc_initVehicle;
+        ["fillSection",_this,true] call x5r_logistics_fnc_initCargo;
+        _this setFuel 0.33;
+      },[],22]
     ]]
   ]], 
   ["#Manoeuvre Support Vehicles (MSV) (FST)",[ 
@@ -390,7 +395,12 @@ x5r_config_groundSandArray =
         },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;  
         _this setFuel 0.33; 
         ["ACE_Track", _this] call ace_cargo_fnc_loadItem;  
-      },[],28]
+      },[],28],
+      ["B_APC_Wheeled_01_cannon_F","Badger IFV",{
+        [_this,["Sand",1],["showSLATTurret",1,"showSLATHull",1,"showCamonetHull",1,"showCamonetTurret",1]] call BIS_fnc_initVehicle;
+        ["fillSection",_this,true] call x5r_logistics_fnc_initCargo;
+        _this setFuel 0.33;
+      },[],22]
     ]]
   ]], 
     ["#Manoeuvre Support Vehicles (MSV) (FST)",[ 

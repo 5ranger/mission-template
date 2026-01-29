@@ -142,6 +142,7 @@ x5r_config_groundWoodlandArray =
         [_this,["Olive",1],["showSLATTurret",1,"showSLATHull",1,"showCamonetHull",1,"showCamonetTurret",1]] call BIS_fnc_initVehicle;
         ["fillSection",_this,true] call x5r_logistics_fnc_initCargo;
         _this setFuel 0.33;
+        _this setVariable ["ace_hunterkiller", true];
       },[],22]
     ]]
   ]], 
@@ -400,9 +401,10 @@ x5r_config_groundSandArray =
         [_this,["Sand",1],["showSLATTurret",1,"showSLATHull",1,"showCamonetHull",1,"showCamonetTurret",1]] call BIS_fnc_initVehicle;
         ["fillSection",_this,true] call x5r_logistics_fnc_initCargo;
         _this setFuel 0.33;
+        _this setVariable ["ace_hunterkiller", true];
       },[],22]
     ]]
-  ]], 
+  ]],
     ["#Manoeuvre Support Vehicles (MSV) (FST)",[ 
       ["UK3CB_BAF_LandRover_WMIK_GPMG_FFR_Sand_A","",{ 
         [_this,["Sand",1],["AerialAtuL_Hide",0,"AerialAtuR_Hide",0,"AerialFL_Hide",0,"AerialFR_Hide",0,"AirIntakeSnorkel_Hide",0,"CamoNet_Hide",1,"Gear_Hide",0,"Flag_Hide",0,"Mudguards_Hide",1,"SideLockers_Hide",0]] call BIS_fnc_initVehicle;

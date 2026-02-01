@@ -150,7 +150,7 @@ x5r_config_groundWoodlandArray =
     ["UK3CB_BAF_LandRover_WMIK_GPMG_FFR_Green_A","",{ 
       [_this,["Green",1],["AerialFL_Hide",0,"AerialFR_Hide",0,"AirIntakeSnorkel_Hide",0,"CamoNet_Hide",1,"Gear_Hide",0,"AerialAtuL_Hide",0,"AerialAtuR_Hide",0,"Flag_Hide",0,"Mudguards_Hide",0,"SideLockers_Hide",0]] call BIS_fnc_initVehicle;
       ["fillFST",_this,true] call x5r_logistics_fnc_initCargo; 
-      [_this, 8] call ace_cargo_fnc_setSpace;
+      [_this, 3] call ace_cargo_fnc_setSpace;
       [{_this getVariable "x5r_tags_inventoryReady" == true}, {
         _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",7]; 
       },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
@@ -159,7 +159,7 @@ x5r_config_groundWoodlandArray =
     ["UK3CB_BAF_LandRover_WMIK_HMG_FFR_Green_A","",{ 
       [_this,["Green",1],["AerialFL_Hide",0,"AirIntakeSnorkel_Hide",0,"CamoNet_Hide",1,"Gear_Hide",0,"AerialAtuL_Hide",0,"AerialAtuR_Hide",0,"AerialFR_Hide",0,"Flag_Hide",0,"Mudguards_Hide",0,"SideLockers_Hide",0]] call BIS_fnc_initVehicle;
       ["fillFST",_this,true] call x5r_logistics_fnc_initCargo; 
-      [_this, 8] call ace_cargo_fnc_setSpace;
+      [_this, 3] call ace_cargo_fnc_setSpace;
       [{_this getVariable "x5r_tags_inventoryReady" == true}, {
         _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3]; 
         _this addMagazineCargoGlobal ["UK3CB_BAF_127_100Rnd",3]; 
@@ -169,7 +169,7 @@ x5r_config_groundWoodlandArray =
     ["UK3CB_BAF_LandRover_WMIK_Milan_FFR_Green_A","",{ 
       [_this,["Green",1],["AerialFL_Hide",0,"AerialFR_Hide",0,"AirIntakeSnorkel_Hide",0,"CamoNet_Hide",1,"Gear_Hide",0,"AerialAtuL_Hide",0,"AerialAtuR_Hide",0,"Flag_Hide",0,"Mudguards_Hide",0,"SideLockers_Hide",0]] call BIS_fnc_initVehicle;
       ["fillFST",_this,true] call x5r_logistics_fnc_initCargo;
-      [_this, 8] call ace_cargo_fnc_setSpace; 
+      [_this, 3] call ace_cargo_fnc_setSpace; 
       [{_this getVariable "x5r_tags_inventoryReady" == true}, {
         _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3];
         _this addMagazineCargoGlobal ["UK3CB_BAF_1Rnd_Milan", 2];
@@ -179,12 +179,22 @@ x5r_config_groundWoodlandArray =
     ["UK3CB_BAF_Jackal2_L111A1_G","",{ 
       [_this,["Green",1],["Angled_Bar_Hide",0,"Curved_Bar_Hide",1]] call BIS_fnc_initVehicle;
       ["fillFST",_this,true] call x5r_logistics_fnc_initCargo; 
+      [_this, 5] call ace_cargo_fnc_setSpace; 
       [{_this getVariable "x5r_tags_inventoryReady" == true}, {
         _this addMagazineCargoGlobal ["UK3CB_BAF_127_100Rnd",6]; 
         _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",5]; 
       },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
       _this setFuel 0.33; 
-    },[],18]
+    },[],18],
+    ["UK3CB_BAF_Coyote_Logistics_L111A1_G","",{ 
+      ["fillFST",_this,true] call x5r_logistics_fnc_initCargo;
+      [_this, 11] call ace_cargo_fnc_setSpace;
+      [{_this getVariable "x5r_tags_inventoryReady" == true}, {
+        _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3];
+        _this addMagazineCargoGlobal ["UK3CB_BAF_127_100Rnd",6];w
+      },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute; 
+      _this setFuel 0.50; 
+    },[],22]
   ]], 
   ["#Logistic Support Vehicles (LSV) (ELS)",[
     ["#Demining",[
@@ -409,7 +419,7 @@ x5r_config_groundSandArray =
       ["UK3CB_BAF_LandRover_WMIK_GPMG_FFR_Sand_A","",{ 
         [_this,["Sand",1],["AerialAtuL_Hide",0,"AerialAtuR_Hide",0,"AerialFL_Hide",0,"AerialFR_Hide",0,"AirIntakeSnorkel_Hide",0,"CamoNet_Hide",1,"Gear_Hide",0,"Flag_Hide",0,"Mudguards_Hide",1,"SideLockers_Hide",0]] call BIS_fnc_initVehicle;
         ["fillFST",_this,true] call x5r_logistics_fnc_initCargo; 
-        [_this, 8] call ace_cargo_fnc_setSpace;
+        [_this, 3] call ace_cargo_fnc_setSpace;
         [{_this getVariable "x5r_tags_inventoryReady" == true}, {
           _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",7]; 
       },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
@@ -418,7 +428,7 @@ x5r_config_groundSandArray =
     ["UK3CB_BAF_LandRover_WMIK_HMG_FFR_Sand_A","",{ 
       [_this,["Sand",1],["AerialAtuL_Hide",0,"AerialAtuR_Hide",0,"AerialFL_Hide",0,"AerialFR_Hide",0,"AirIntakeSnorkel_Hide",0,"CamoNet_Hide",1,"Gear_Hide",0,"Flag_Hide",0,"Mudguards_Hide",0,"SideLockers_Hide",0]] call BIS_fnc_initVehicle;
       ["fillFST",_this,true] call x5r_logistics_fnc_initCargo; 
-      [_this, 8] call ace_cargo_fnc_setSpace;
+      [_this, 3] call ace_cargo_fnc_setSpace;
       [{_this getVariable "x5r_tags_inventoryReady" == true}, {
         _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3]; 
         _this addMagazineCargoGlobal ["UK3CB_BAF_127_100Rnd",3]; 
@@ -428,7 +438,7 @@ x5r_config_groundSandArray =
     ["UK3CB_BAF_LandRover_WMIK_Milan_FFR_Sand_A","",{ 
       [_this,["Sand",1],["AerialAtuL_Hide",0,"AerialAtuR_Hide",0,"AerialFL_Hide",0,"AerialFR_Hide",0,"AirIntakeSnorkel_Hide",0,"CamoNet_Hide",1,"Gear_Hide",0,"Flag_Hide",0,"Mudguards_Hide",0,"SideLockers_Hide",0]] call BIS_fnc_initVehicle;
       ["fillFST",_this,true] call x5r_logistics_fnc_initCargo; 
-      [_this, 8] call ace_cargo_fnc_setSpace;
+      [_this, 3] call ace_cargo_fnc_setSpace;
       [{_this getVariable "x5r_tags_inventoryReady" == true}, {
         _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3];
         _this addMagazineCargoGlobal ["UK3CB_BAF_1Rnd_Milan", 2];
@@ -438,12 +448,22 @@ x5r_config_groundSandArray =
     ["UK3CB_BAF_Jackal2_L111A1_D","",{ 
       [_this,["Desert",1],["Angled_Bar_Hide",0,"Curved_Bar_Hide",1]] call BIS_fnc_initVehicle;
       ["fillFST",_this,true] call x5r_logistics_fnc_initCargo; 
+      [_this, 5] call ace_cargo_fnc_setSpace;
       [{_this getVariable "x5r_tags_inventoryReady" == true}, {
         _this addMagazineCargoGlobal ["UK3CB_BAF_127_100Rnd",6]; 
         _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",5]; 
       },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
       _this setFuel 0.33; 
-    },[],18]
+    },[],18],
+    ["UK3CB_BAF_Coyote_Logistics_L111A1_D","",{ 
+      [_this, 11] call ace_cargo_fnc_setSpace;
+      ["fillFST",_this,true] call x5r_logistics_fnc_initCargo; 
+      [{_this getVariable "x5r_tags_inventoryReady" == true}, {
+        _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3];
+        _this addMagazineCargoGlobal ["UK3CB_BAF_127_100Rnd",6];
+      },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
+      _this setFuel 0.50; 
+    },[],22] 
   ]], 
   ["#Logistic Support Vehicles (LSV) (ELS)",[
     ["#Demining",[

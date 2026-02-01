@@ -8,18 +8,18 @@ class EditorData
 	toggles=549;
 	class ItemIDProvider
 	{
-		nextID=215;
+		nextID=217;
 	};
 	class LayerIndexProvider
 	{
-		nextID=55;
+		nextID=56;
 	};
 	class Camera
 	{
-		pos[]={4349.7627,13.635757,6620.5352};
-		dir[]={0.01505372,-0.69629884,0.71759516};
-		up[]={0.014603759,0.71775156,0.69614691};
-		aside[]={0.99978226,-6.5010681e-09,-0.02097344};
+		pos[]={4350.3892,10.408588,6618.0659};
+		dir[]={0.74516898,-0.66659808,0.019641524};
+		up[]={0.66637409,0.74540967,0.017564978};
+		aside[]={0.026349356,1.7206912e-07,-0.99966103};
 	};
 };
 binarizationWanted=0;
@@ -458,7 +458,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -5834,7 +5834,7 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=17;
+				items=18;
 				class Item0
 				{
 					dataType="Object";
@@ -10886,6 +10886,451 @@ class Mission
 								{
 									singleType="SCALAR";
 									value=0.98000002;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="hideObject";
+							expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=5;
+					};
+				};
+				class Item17
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4355,5.0014391,6617.0498};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						skill=0.40000001;
+						name="loadoutMedicComd";
+						disableSimulation=1;
+						ignoreByDynSimulGrid=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="MCC_KS1_FDE_SLK";
+								optics="rhsusf_acc_su230_mrds_c";
+								firemode="MCC_KS1_FDE_SLK:Single";
+								class primaryMuzzleMag
+								{
+									name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
+									ammoLeft=30;
+								};
+							};
+							class uniform
+							{
+								typeName="UK3CB_BAF_U_CombatUniform_MTP";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="ACM_Paracetamol";
+										count=2;
+										ammoLeft=10;
+									};
+									class Item1
+									{
+										name="ACM_Inhaler_Penthrox";
+										count=2;
+										ammoLeft=8;
+									};
+								};
+								class ItemCargo
+								{
+									items=12;
+									class Item0
+									{
+										name="ACM_IV_16g";
+										count=2;
+									};
+									class Item1
+									{
+										name="ACM_Vial_CalciumChloride";
+										count=1;
+									};
+									class Item2
+									{
+										name="ACM_ElasticWrap";
+										count=5;
+									};
+									class Item3
+									{
+										name="ACM_SuctionBag";
+										count=1;
+									};
+									class Item4
+									{
+										name="ACM_EmergencyTraumaDressing";
+										count=2;
+									};
+									class Item5
+									{
+										name="ACE_epinephrine";
+										count=1;
+									};
+									class Item6
+									{
+										name="ACM_NPA";
+										count=2;
+									};
+									class Item7
+									{
+										name="ACM_PressureBandage";
+										count=20;
+									};
+									class Item8
+									{
+										name="ACM_PulseOximeter";
+										count=1;
+									};
+									class Item9
+									{
+										name="ACM_SAMSplint";
+										count=2;
+									};
+									class Item10
+									{
+										name="ACE_tourniquet";
+										count=4;
+									};
+									class Item11
+									{
+										name="ACM_Vial_TXA";
+										count=2;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="5r_vests_virtus_G";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=4;
+									class Item0
+									{
+										name="SmokeShell";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item1
+									{
+										name="Chemlight_yellow";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red";
+										count=5;
+										ammoLeft=30;
+									};
+									class Item3
+									{
+										name="SmokeShellYellow";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=4;
+									class Item0
+									{
+										name="ACE_CableTie";
+										count=1;
+									};
+									class Item1
+									{
+										name="ACE_MapTools";
+										count=1;
+									};
+									class Item2
+									{
+										name="ItemAndroidMisc";
+										count=1;
+									};
+									class Item3
+									{
+										name="ItemcTabHCam";
+										count=1;
+									};
+								};
+							};
+							class backpack
+							{
+								typeName="5r_backpacks_daysack_mic";
+								isBackpack=1;
+								class MagazineCargo
+								{
+									items=3;
+									class Item0
+									{
+										name="ACM_AmmoniaInhalant";
+										count=2;
+										ammoLeft=8;
+									};
+									class Item1
+									{
+										name="ACM_Paracetamol";
+										count=2;
+										ammoLeft=10;
+									};
+									class Item2
+									{
+										name="ACM_Inhaler_Penthrox";
+										count=2;
+										ammoLeft=8;
+									};
+								};
+								class ItemCargo
+								{
+									items=33;
+									class Item0
+									{
+										name="ACE_EntrenchingTool";
+										count=1;
+									};
+									class Item1
+									{
+										name="ACM_IV_14g";
+										count=5;
+									};
+									class Item2
+									{
+										name="ACM_ACCUVAC";
+										count=1;
+									};
+									class Item3
+									{
+										name="ACM_Vial_Amiodarone";
+										count=6;
+									};
+									class Item4
+									{
+										name="ACM_AED";
+										count=1;
+									};
+									class Item5
+									{
+										name="ACM_BVM";
+										count=1;
+									};
+									class Item6
+									{
+										name="ACM_BloodBag_ON_1000";
+										count=2;
+									};
+									class Item7
+									{
+										name="ACM_BloodBag_ON_500";
+										count=8;
+									};
+									class Item8
+									{
+										name="ACM_Vial_CalciumChloride";
+										count=10;
+									};
+									class Item9
+									{
+										name="ACM_ElasticWrap";
+										count=10;
+									};
+									class Item10
+									{
+										name="ACM_EmergencyTraumaDressing";
+										count=20;
+									};
+									class Item11
+									{
+										name="ACM_Vial_Epinephrine";
+										count=3;
+									};
+									class Item12
+									{
+										name="ACM_IO_EZ";
+										count=5;
+									};
+									class Item13
+									{
+										name="ACM_IO_FAST";
+										count=2;
+									};
+									class Item14
+									{
+										name="ACM_IGel";
+										count=6;
+									};
+									class Item15
+									{
+										name="ACM_Vial_Ketamine";
+										count=5;
+									};
+									class Item16
+									{
+										name="ACM_Vial_Morphine";
+										count=8;
+									};
+									class Item17
+									{
+										name="ACM_Spray_Naloxone";
+										count=2;
+									};
+									class Item18
+									{
+										name="ACM_Vial_Ondansetron";
+										count=5;
+									};
+									class Item19
+									{
+										name="ACE_plasmaIV";
+										count=2;
+									};
+									class Item20
+									{
+										name="ACM_PressureBandage";
+										count=20;
+									};
+									class Item21
+									{
+										name="ACM_PulseOximeter";
+										count=1;
+									};
+									class Item22
+									{
+										name="ACE_salineIV";
+										count=2;
+									};
+									class Item23
+									{
+										name="ACM_SAMSplint";
+										count=5;
+									};
+									class Item24
+									{
+										name="ACM_Stethoscope";
+										count=1;
+									};
+									class Item25
+									{
+										name="ACE_surgicalKit";
+										count=1;
+									};
+									class Item26
+									{
+										name="ACM_Syringe_10";
+										count=1;
+									};
+									class Item27
+									{
+										name="ACM_Syringe_1";
+										count=1;
+									};
+									class Item28
+									{
+										name="ACM_Syringe_3";
+										count=1;
+									};
+									class Item29
+									{
+										name="ACM_Syringe_5";
+										count=1;
+									};
+									class Item30
+									{
+										name="ACE_tourniquet";
+										count=6;
+									};
+									class Item31
+									{
+										name="ACM_Vial_TXA";
+										count=8;
+									};
+									class Item32
+									{
+										name="ACM_CricKit";
+										count=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ACE_Altimeter";
+							radio="TFAR_anprc152";
+							headgear="5r_headgear_virtus_K";
+						};
+					};
+					id=216;
+					type="B_medic_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Male10ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="SCALAR";
+									value=0.95999998;
 								};
 							};
 						};

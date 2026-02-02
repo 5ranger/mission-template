@@ -8,18 +8,18 @@ class EditorData
 	toggles=549;
 	class ItemIDProvider
 	{
-		nextID=231;
+		nextID=237;
 	};
 	class LayerIndexProvider
 	{
-		nextID=57;
+		nextID=59;
 	};
 	class Camera
 	{
-		pos[]={4346.7891,10.325705,6615.5127};
-		dir[]={0.91840947,-0.39551574,-0.012145895};
-		up[]={0.39550894,0.91844773,-0.0052299588};
-		aside[]={-0.013222888,6.7577389e-08,-0.99994707};
+		pos[]={4349.5977,10.819703,6615.4868};
+		dir[]={0.82214743,-0.56436986,-0.07467597};
+		up[]={0.56205958,0.82552034,-0.051052094};
+		aside[]={-0.090458624,3.061723e-08,-0.99590832};
 	};
 };
 binarizationWanted=0;
@@ -528,7 +528,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -581,7 +581,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=15;
+		items=10;
 		class Item0
 		{
 			dataType="Group";
@@ -5904,7 +5904,7 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=18;
+				items=23;
 				class Item0
 				{
 					dataType="Object";
@@ -11433,39 +11433,7 @@ class Mission
 						nAttributes=5;
 					};
 				};
-			};
-			class Attributes
-			{
-				name="loadoutGroup";
-				garbageCollect=1;
-			};
-			id=179;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_map_hideBlueForceMarker";
-					expression="if (_value) then {[{(_this select 0) setVariable ['ace_map_hideBlueForceMarker', _this select 1, true];}, [_this, _value]] call CBA_fnc_execNextFrame};";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item10
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
+				class Item18
 				{
 					dataType="Object";
 					class PositionInfo
@@ -11473,7 +11441,7 @@ class Mission
 						position[]={4355,5.0014391,6616.0498};
 					};
 					side="West";
-					flags=7;
+					flags=5;
 					class Attributes
 					{
 						skill=0.44999999;
@@ -11687,7 +11655,7 @@ class Mission
 							headgear="5r_headgear_virtus_K";
 						};
 					};
-					id=218;
+					id=232;
 					type="B_soldier_AR_F";
 					class CustomAttributes
 					{
@@ -11759,39 +11727,7 @@ class Mission
 						nAttributes=5;
 					};
 				};
-			};
-			class Attributes
-			{
-				name="loadoutGroup_1";
-				garbageCollect=1;
-			};
-			id=217;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_map_hideBlueForceMarker";
-					expression="if (_value) then {[{(_this select 0) setVariable ['ace_map_hideBlueForceMarker', _this select 1, true];}, [_this, _value]] call CBA_fnc_execNextFrame};";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item11
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
+				class Item19
 				{
 					dataType="Object";
 					class PositionInfo
@@ -11799,7 +11735,7 @@ class Mission
 						position[]={4355,5.0014391,6614.0498};
 					};
 					side="West";
-					flags=7;
+					flags=5;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -12086,7 +12022,7 @@ class Mission
 							headgear="5r_headgear_virtus_K";
 						};
 					};
-					id=222;
+					id=233;
 					type="B_Soldier_SL_F";
 					class CustomAttributes
 					{
@@ -12158,39 +12094,7 @@ class Mission
 						nAttributes=5;
 					};
 				};
-			};
-			class Attributes
-			{
-				name="loadoutGroup_3";
-				garbageCollect=1;
-			};
-			id=221;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_map_hideBlueForceMarker";
-					expression="if (_value) then {[{(_this select 0) setVariable ['ace_map_hideBlueForceMarker', _this select 1, true];}, [_this, _value]] call CBA_fnc_execNextFrame};";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item12
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
+				class Item20
 				{
 					dataType="Object";
 					class PositionInfo
@@ -12198,11 +12102,11 @@ class Mission
 						position[]={4355,5.0014391,6613.0498};
 					};
 					side="West";
-					flags=7;
+					flags=5;
 					class Attributes
 					{
 						skill=0.40000001;
-						name="loadoutWeaponsTroop";
+						name="loadoutWepsTroop";
 						disableSimulation=1;
 						ignoreByDynSimulGrid=1;
 						class Inventory
@@ -12413,7 +12317,7 @@ class Mission
 							headgear="5r_headgear_virtus_K";
 						};
 					};
-					id=224;
+					id=234;
 					type="B_Soldier_F";
 					class CustomAttributes
 					{
@@ -12485,39 +12389,7 @@ class Mission
 						nAttributes=5;
 					};
 				};
-			};
-			class Attributes
-			{
-				name="loadoutGroup_4";
-				garbageCollect=1;
-			};
-			id=223;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_map_hideBlueForceMarker";
-					expression="if (_value) then {[{(_this select 0) setVariable ['ace_map_hideBlueForceMarker', _this select 1, true];}, [_this, _value]] call CBA_fnc_execNextFrame};";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item13
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
+				class Item21
 				{
 					dataType="Object";
 					class PositionInfo
@@ -12525,7 +12397,7 @@ class Mission
 						position[]={4354.9502,5.0014391,6615.104};
 					};
 					side="West";
-					flags=7;
+					flags=5;
 					class Attributes
 					{
 						skill=0.40000001;
@@ -12749,7 +12621,7 @@ class Mission
 							headgear="5r_headgear_virtus_K";
 						};
 					};
-					id=226;
+					id=235;
 					type="B_Soldier_F";
 					class CustomAttributes
 					{
@@ -12821,39 +12693,7 @@ class Mission
 						nAttributes=5;
 					};
 				};
-			};
-			class Attributes
-			{
-				name="loadoutGroup_5";
-				garbageCollect=1;
-			};
-			id=225;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_map_hideBlueForceMarker";
-					expression="if (_value) then {[{(_this select 0) setVariable ['ace_map_hideBlueForceMarker', _this select 1, true];}, [_this, _value]] call CBA_fnc_execNextFrame};";
-					class Value
-					{
-						class data
-						{
-							singleType="BOOL";
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item14
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
+				class Item22
 				{
 					dataType="Object";
 					class PositionInfo
@@ -12861,7 +12701,7 @@ class Mission
 						position[]={4355,5.0014391,6612.0498};
 					};
 					side="West";
-					flags=7;
+					flags=5;
 					class Attributes
 					{
 						rank="SERGEANT";
@@ -13142,7 +12982,7 @@ class Mission
 							headgear="5r_headgear_virtus_K";
 						};
 					};
-					id=230;
+					id=236;
 					type="B_Soldier_SL_F";
 					class CustomAttributes
 					{
@@ -13217,10 +13057,10 @@ class Mission
 			};
 			class Attributes
 			{
-				name="loadoutGroup_6";
+				name="loadoutGroup";
 				garbageCollect=1;
 			};
-			id=229;
+			id=179;
 			class CustomAttributes
 			{
 				class Attribute0

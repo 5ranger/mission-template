@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2778;
+		nextID=2810;
 	};
 	class Camera
 	{
-		pos[]={117.78648,21.025023,21.463079};
-		dir[]={0.018238235,-0.8090719,0.58745694};
-		up[]={0.025107276,0.58770126,0.80868727};
-		aside[]={0.99953586,-5.0437666e-07,-0.031031916};
+		pos[]={112.44718,23.760492,19.70731};
+		dir[]={-0.24386312,-0.54375565,0.80310285};
+		up[]={-0.15799779,0.83921713,0.52033144};
+		aside[]={0.9569121,1.15484e-07,0.29056686};
 	};
 };
 binarizationWanted=0;
@@ -6610,7 +6610,7 @@ class Mission
 									class Attributes
 									{
 										rank="SERGEANT";
-										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutSectComd"" ,true];" \n "};";
+										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutFSTComd"" ,true];" \n "};";
 										name="p31ic";
 										description="Sect Comd@3-1";
 										isPlayable=1;
@@ -6721,7 +6721,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutGunner"" ,true];" \n "};";
+										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutMortarman"" ,true];" \n "};";
 										name="p31mortar";
 										description="Mortarman";
 										isPlayable=1;
@@ -6820,7 +6820,7 @@ class Mission
 									class Attributes
 									{
 										rank="CORPORAL";
-										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutSectComd"" ,true];" \n "};";
+										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutJFO"" ,true];" \n "};";
 										name="p312ic";
 										description="Sect 2IC";
 										isPlayable=1;
@@ -7098,7 +7098,7 @@ class Mission
 									class Attributes
 									{
 										rank="SERGEANT";
-										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutSectComd"" ,true];" \n "};";
+										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutFSTComd"" ,true];" \n "};";
 										name="p32FTL";
 										description="Fireteam Lead@3-2";
 										isPlayable=1;
@@ -7209,7 +7209,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutGunner"" ,true];" \n "};";
+										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutFSTGunner"" ,true];" \n "};";
 										name="p32gunner";
 										description="Gunner";
 										isPlayable=1;
@@ -7307,7 +7307,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutGunner"" ,true];" \n "};";
+										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutFSTGunner"" ,true];" \n "};";
 										name="p32gunner_1";
 										description="Gunner";
 										isPlayable=1;
@@ -7437,7 +7437,7 @@ class Mission
 									class Attributes
 									{
 										rank="SERGEANT";
-										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutSectComd"" ,true];" \n "};";
+										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutFSTComd"" ,true];" \n "};";
 										name="p33ftl";
 										description="Fireteam Lead@3-3";
 										isPlayable=1;
@@ -7548,7 +7548,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutGunner"" ,true];" \n "};";
+										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutFSTGunner"" ,true];" \n "};";
 										name="p33gunner";
 										description="Gunner";
 										isPlayable=1;
@@ -7646,7 +7646,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutGunner"" ,true];" \n "};";
+										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutFSTGunner"" ,true];" \n "};";
 										name="p33gunner_1";
 										description="Gunner";
 										isPlayable=1;
@@ -7776,7 +7776,7 @@ class Mission
 									class Attributes
 									{
 										rank="SERGEANT";
-										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutSectComd"" ,true];" \n "};";
+										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutFSTComd"" ,true];" \n "};";
 										name="p34ftl";
 										description="Fireteam Lead@3-4";
 										isPlayable=1;
@@ -7887,7 +7887,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutRifleman"" ,true];" \n "};";
+										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutWepsTroop"" ,true];" \n "};";
 										name="p34at";
 										description="AT";
 										isPlayable=1;
@@ -7947,7 +7947,7 @@ class Mission
 									flags=5;
 									class Attributes
 									{
-										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutRifleman"" ,true];" \n "};";
+										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutWepsTroop"" ,true];" \n "};";
 										name="p34at_1";
 										description="AT";
 										isPlayable=1;

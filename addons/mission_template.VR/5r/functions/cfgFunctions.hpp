@@ -48,7 +48,9 @@ class x5r_logistics
 		class addRadioRelayActions {};
 		class createEmptyVehicle {};
 		class createEmptyVehicleActions {};
-		class createViVLoadingActions {};
+		class createViVLoadingActions {
+			postInit = 1;
+		};
 	};
 	class server 
 	{

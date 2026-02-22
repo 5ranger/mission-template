@@ -146,7 +146,7 @@ x5r_config_groundWoodlandArray =
       },[],22]
     ]]
   ]], 
-  ["#Manoeuvre Support Vehicles (MSV) (FST)",[ 
+  ["#Manoeuvre Support Vehicles (MSV) (FSG)",[ 
     ["UK3CB_BAF_LandRover_WMIK_GPMG_FFR_Green_A","",{ 
       [_this,["Green",1],["AerialFL_Hide",0,"AerialFR_Hide",0,"AirIntakeSnorkel_Hide",0,"CamoNet_Hide",1,"Gear_Hide",0,"AerialAtuL_Hide",0,"AerialAtuR_Hide",0,"Flag_Hide",0,"Mudguards_Hide",0,"SideLockers_Hide",0]] call BIS_fnc_initVehicle;
       ["fillFST",_this,true] call x5r_logistics_fnc_initCargo; 
@@ -420,7 +420,7 @@ x5r_config_groundSandArray =
       },[],22]
     ]]
   ]],
-    ["#Manoeuvre Support Vehicles (MSV) (FST)",[ 
+    ["#Manoeuvre Support Vehicles (MSV) (FSG)",[ 
       ["UK3CB_BAF_LandRover_WMIK_GPMG_FFR_Sand_A","",{ 
         [_this,["Sand",1],["AerialAtuL_Hide",0,"AerialAtuR_Hide",0,"AerialFL_Hide",0,"AerialFR_Hide",0,"AirIntakeSnorkel_Hide",0,"CamoNet_Hide",1,"Gear_Hide",0,"Flag_Hide",0,"Mudguards_Hide",1,"SideLockers_Hide",0]] call BIS_fnc_initVehicle;
         ["fillFST",_this,true] call x5r_logistics_fnc_initCargo; 

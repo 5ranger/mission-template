@@ -196,7 +196,7 @@ x5r_config_groundWoodlandArray =
       [_this, 11] call ace_cargo_fnc_setSpace;
       [{_this getVariable "x5r_tags_inventoryReady" == true}, {
         _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3];
-        _this addMagazineCargoGlobal ["UK3CB_BAF_127_100Rnd",6];w
+        _this addMagazineCargoGlobal ["UK3CB_BAF_127_100Rnd",6];
       },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute; 
       _this setFuel 0.50; 
     },[],22]
@@ -214,10 +214,8 @@ x5r_config_groundWoodlandArray =
         _this setFuel 0.50; 
       },[],12],
       ["rhsusf_stryker_m1132_m2_wd","",{ 
-        ["fillTeam",_this,true] call x5r_logistics_fnc_initCargo; 
-        [{_this getVariable "x5r_tags_inventoryReady" == true}, {
-          _this addItemCargoGlobal ["ACE_Fortify",1];
-        },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
+        [_this, ["Olive",1], ["SMP",1,"SMP_L",1,"SMP_R",1,"hide_SMP",0,"Hide_CIP",1,"Dispenser_Fold",0,"Hatch_Commander",0,"Hatch_Front",0,"Hatch_Left",0,"Hatch_Right",0,"Ramp",0,"Hide_Antenna_1",0,"Hide_Antenna_2",0,"Hide_Antenna_3",0,"Hide_DEK",0,"Hide_DUKE",0,"Hide_ExDiff",0,"Hide_FCans",0,"Hide_WCans",0,"Hide_GPS",0,"Hide_PioKit",0,"Hide_StgBar",0,"Hide_STORM",0,"Hide_SuspCov",0,"Hide_Towbar",0,"Extend_Mirrors",0,"Hatch_Driver",0]] call BIS_fnc_initVehicle; 
+        ["fillLogi",_this,true] call x5r_logistics_fnc_initCargo; 
         _this setFuel 0.50; 
         ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;   
         ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;   
@@ -226,39 +224,28 @@ x5r_config_groundWoodlandArray =
       },[],30] 
     ]],  
     ["UK3CB_BAF_LandRover_WMIK_HMG_FFR_Green_B","",{ 
-      ["fillTeam",_this,true] call x5r_logistics_fnc_initCargo; 
+      ["fillLogi",_this,true] call x5r_logistics_fnc_initCargo; 
       [{_this getVariable "x5r_tags_inventoryReady" == true}, {
         _this addMagazineCargoGlobal ["UK3CB_BAF_127_100Rnd",3];
         _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",4]; 
-        _this addItemCargoGlobal ["ACE_Fortify",1];
       },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
       [_this] remoteExec ["x5r_common_fnc_attachRespawnActions", 0, true];
       _this setFuel 0.33; 
     },[],12], 
-    ["rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_wd","",{ 
-      [_this, ["rhs_woodland",1], ["hide_ogpkover",0,"hide_ogpknet",1,"hide_ogpkst",0,"hide_spare",0,"FlagPole_pos",0]] call BIS_fnc_initVehicle;
-      ["fillTeam",_this,true] call x5r_logistics_fnc_initCargo; 
-      [{_this getVariable "x5r_tags_inventoryReady" == true}, {
-        _this addItemCargoGlobal ["ACE_Fortify",1];
-      },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
+    ["UK3CB_BAF_MAN_HX58_Repair_Green","",{ 
+      [_this, ["Green",1], ["ClanLogo_Hide",1]] call BIS_fnc_initVehicle;
+      ["fillLogi",_this,true] call x5r_logistics_fnc_initCargo; 
       [_this, 24] call ace_cargo_fnc_setSpace;  
-      [_this, 1200] remoteExec ["ace_refuel_fnc_makeSource",2];
+      [_this, 200] remoteExec ["ace_refuel_fnc_makeSource",2];
       _this setFuel 0.50; 
     },[],32], 
-    ["rhsusf_M978A4_BKIT_usarmy_wd","",{ 
-      [_this, ["rhs_woodland",1], ["hide_ogpkover",0,"hide_ogpknet",1,"hide_ogpkbust",0,"hide_spare",0,"FlagPole_pos",0]] call BIS_fnc_initVehicle;
-      ["fillTeam",_this,true] call x5r_logistics_fnc_initCargo; 
-      [{_this getVariable "x5r_tags_inventoryReady" == true}, {
-        _this addItemCargoGlobal ["ACE_Fortify",1];
-      },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
-      [_this, 2] call ace_cargo_fnc_setSpace;
-      _this setFuel 0.50; 
+    ["UK3CB_BAF_MAN_HX58_Fuel_Green","",{ 
+      [_this, ["Green",1], ["ClanLogo_Hide",1]] call BIS_fnc_initVehicle;
+      ["fillLogi",_this,true] call x5r_logistics_fnc_initCargo; 
+      [_this, 2] call ace_cargo_fnc_setSpace; 
     },[],32], 
     ["UK3CB_BAF_MAN_HX58_Cargo_Green_A","",{ 
-      ["fillTeam",_this,true] call x5r_logistics_fnc_initCargo; 
-      [{_this getVariable "x5r_tags_inventoryReady" == true}, {
-        _this addItemCargoGlobal ["ACE_Fortify",1];
-      },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
+      ["fillLogi",_this,true] call x5r_logistics_fnc_initCargo; 
       [_this, 2] call ace_cargo_fnc_setSpace;
       _this setFuel 0.50; 
     },[],32], 
@@ -268,28 +255,26 @@ x5r_config_groundWoodlandArray =
       [{_this getVariable "x5r_tags_inventoryReady" == true}, {
         _this addItemCargoGlobal ["ACE_Fortify",1];
       },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
-      [_this, 10] call ace_cargo_fnc_setSpace;  
+      [_this, 9] call ace_cargo_fnc_setSpace;  
       _this setFuel 0.50; 
-      [_this] remoteExec ["x5r_common_fnc_attachRespawnActions", 0, true]; 
-    },[],26], 
+      [_this] remoteExec ["x5r_common_fnc_attachRespawnActions",0,true]; 
+    },[],32], 
     ["x5r_UK3CB_BAF_FV432_Mk3_RWS_Green_ELS","",{ 
-      ["fillSection",_this,true] call x5r_logistics_fnc_initCargo;
+      ["fillLogi",_this,true] call x5r_logistics_fnc_initCargo;
       [_this, 10] call ace_cargo_fnc_setSpace; 
-      _this setVariable ["ACE_isRepairVehicle", 1,  true];
-      [_this, 1200] call ace_rearm_fnc_makeSource;
+      _this setVariable ["ACE_isRepairVehicle",1,true];
+      [_this, 400] remoteExec ["ace_rearm_fnc_makeSource",2];
       [{_this getVariable "x5r_tags_inventoryReady" == true}, {
         _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3];
-        _this addItemCargoGlobal ["ACE_Fortify",1]; 
       },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
       _this setFuel 0.50; 
       ["ACE_Track", _this] call ace_cargo_fnc_loadItem; 
     },[],24], 
     ["UK3CB_BAF_Coyote_Logistics_L111A1_G","",{ 
-      ["fillTeam",_this,true] call x5r_logistics_fnc_initCargo;
+      ["fillLogi",_this,true] call x5r_logistics_fnc_initCargo;
       [{_this getVariable "x5r_tags_inventoryReady" == true}, {
         _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3];
         _this addMagazineCargoGlobal ["UK3CB_BAF_127_100Rnd",6];
-        _this addItemCargoGlobal ["ACE_Fortify",1];
       },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute; 
       _this setFuel 0.50; 
       [_this] remoteExec ["x5r_common_fnc_attachRespawnActions", 0, true];
@@ -302,7 +287,7 @@ x5r_config_groundWoodlandArray =
         _this addItemCargoGlobal ["ACE_Fortify",1];
       },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
       _this setFuel 0.50; 
-      _this setVariable ["ace_repair_canRepair", 1, true];
+      _this setVariable ["ACE_isRepairVehicle",1,true];
       [_this] remoteExec ["x5r_common_fnc_attachRespawnActions", 0, true];
       [_this, 15] call ace_cargo_fnc_setSpace;
     },[],22], 
@@ -323,12 +308,7 @@ x5r_config_groundWoodlandArray =
       ["fillRAMC",_this,true] call x5r_logistics_fnc_initCargo; 
       [{_this getVariable "x5r_tags_inventoryReady" == true}, { 
       },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
-    },[],22],
-    ["UK3CB_BAF_MAN_HX58_Fuel_Green","",{ 
-      ["fillTeam",_this,true] call x5r_logistics_fnc_initCargo; 
-      [_this, 2] call ace_cargo_fnc_setSpace; 
-      _this setFuel 0.50; 
-    },[],32]
+    },[],22]
   ]],
   ["rhsusf_m109_usarmy","",{
     [_this,["standard",1],["IFF_Panels_Hide",1,"showCanisters",0,"showCamonetTurret",0,"showAmmobox",0,"showCamonetHull",0]] call BIS_fnc_initVehicle;
@@ -478,7 +458,7 @@ x5r_config_groundSandArray =
   ["#Logistic Support Vehicles (LSV) (ELS)",[
     ["#Demining",[
       ["UK3CB_BAF_LandRover_Panama_Sand_A","",{ 
-        [_this,	["Green",1], ["CamoNetMain_Hide",0,"AirIntakeSnorkel_Hide",0,"Mudguards_Hide",0]] call BIS_fnc_initVehicle;
+        [_this,	["Sand",1], ["CamoNetMain_Hide",0,"AirIntakeSnorkel_Hide",0,"Mudguards_Hide",0]] call BIS_fnc_initVehicle;
         createVehicleCrew _this;
         clearWeaponCargoGlobal _this; 
         clearBackpackCargoGlobal _this; 
@@ -489,10 +469,7 @@ x5r_config_groundSandArray =
       },[],12],
       ["rhsusf_stryker_m1132_m2_d","",{ 
         [_this, ["Tan",1], ["SMP",1,"SMP_L",1,"SMP_R",1,"hide_SMP",0,"Hide_CIP",1,"Dispenser_Fold",0,"Hatch_Commander",0,"Hatch_Front",0,"Hatch_Left",0,"Hatch_Right",0,"Ramp",0,"Hide_Antenna_1",0,"Hide_Antenna_2",0,"Hide_Antenna_3",0,"Hide_DEK",0,"Hide_DUKE",0,"Hide_ExDiff",0,"Hide_FCans",0,"Hide_WCans",0,"Hide_GPS",0,"Hide_PioKit",0,"Hide_StgBar",0,"Hide_STORM",0,"Hide_SuspCov",0,"Hide_Towbar",0,"Extend_Mirrors",0,"Hatch_Driver",0]] call BIS_fnc_initVehicle; 
-        ["fillTeam",_this,true] call x5r_logistics_fnc_initCargo; 
-        [{_this getVariable "x5r_tags_inventoryReady" == true}, {
-          _this addItemCargoGlobal ["ACE_Fortify",1]; 
-        },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
+        ["fillLogi",_this,true] call x5r_logistics_fnc_initCargo; 
         _this setFuel 0.50; 
         ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;   
         ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;   
@@ -501,39 +478,28 @@ x5r_config_groundSandArray =
       },[],30] 
     ]], 
     ["UK3CB_BAF_LandRover_WMIK_HMG_FFR_Sand_A","",{ 
-      ["fillTeam",_this,true] call x5r_logistics_fnc_initCargo; 
+      ["fillLogi",_this,true] call x5r_logistics_fnc_initCargo; 
       [{_this getVariable "x5r_tags_inventoryReady" == true}, {
         _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3]; 
         _this addMagazineCargoGlobal ["UK3CB_BAF_127_100Rnd",3]; 
-        _this addItemCargoGlobal ["ACE_Fortify",1]; 
       },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
       [_this] remoteExec ["x5r_common_fnc_attachRespawnActions", 0, true];
       _this setFuel 0.33; 
     },[],12], 
-    ["rhsusf_M977A4_REPAIR_BKIT_M2_usarmy_d","",{ 
-      [_this, nil, ["hide_ogpkover",0,"hide_ogpknet",1,"hide_ogpkbust",0,"hide_spare",0,"FlagPole_pos",0]] call BIS_fnc_initVehicle;
-      ["fillTeam",_this,true] call x5r_logistics_fnc_initCargo; 
-      [{_this getVariable "x5r_tags_inventoryReady" == true}, {
-        _this addItemCargoGlobal ["ACE_Fortify",1]; 
-      },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
+    ["UK3CB_BAF_MAN_HX58_Repair_Sand","",{ 
+      [_this, ["Sand",1], ["ClanLogo_Hide",1]] call BIS_fnc_initVehicle;
+      ["fillLogi",_this,true] call x5r_logistics_fnc_initCargo; 
       [_this, 24] call ace_cargo_fnc_setSpace;  
-      [_this, 1200] remoteExec ["ace_refuel_fnc_makeSource",2];
+      [_this, 200] remoteExec ["ace_refuel_fnc_makeSource",2];
       _this setFuel 0.50; 
     },[],32], 
-    ["rhsusf_M978A4_BKIT_usarmy_d","",{ 
+    ["UK3CB_BAF_MAN_HX58_Fuel_Sand","",{ 
       [_this, ["Sand",1], ["ClanLogo_Hide",1]] call BIS_fnc_initVehicle;
-      ["fillTeam",_this,true] call x5r_logistics_fnc_initCargo; 
-      [{_this getVariable "x5r_tags_inventoryReady" == true}, {
-        _this addItemCargoGlobal ["ACE_Fortify",1]; 
-      },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
+      ["fillLogi",_this,true] call x5r_logistics_fnc_initCargo; 
       [_this, 2] call ace_cargo_fnc_setSpace;
-      _this setFuel 0.50; 
     },[],32],  
     ["UK3CB_BAF_MAN_HX58_Cargo_Sand_A","",{ 
-      ["fillTeam",_this,true] call x5r_logistics_fnc_initCargo; 
-      [{_this getVariable "x5r_tags_inventoryReady" == true}, {
-        _this addItemCargoGlobal ["ACE_Fortify",1]; 
-      },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
+      ["fillLogi",_this,true] call x5r_logistics_fnc_initCargo; 
       [_this, 2] call ace_cargo_fnc_setSpace;
       _this setFuel 0.50; 
     },[],32], 
@@ -543,28 +509,26 @@ x5r_config_groundSandArray =
       [{_this getVariable "x5r_tags_inventoryReady" == true}, {
         _this addItemCargoGlobal ["ACE_Fortify",1]; 
       },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
-      [_this, 10] call ace_cargo_fnc_setSpace;  
+      [_this, 9] call ace_cargo_fnc_setSpace;  
       _this setFuel 0.50; 
-      [_this] remoteExec ["x5r_common_fnc_attachRespawnActions", 0, true]; 
-    },[],26], 
+      [_this] remoteExec ["x5r_common_fnc_attachRespawnActions",0,true]; 
+    },[],32], 
     ["x5r_UK3CB_BAF_FV432_Mk3_RWS_Sand_ELS","",{ 
-      ["fillSection",_this,true] call x5r_logistics_fnc_initCargo;
-      [_this, 6] call ace_cargo_fnc_setSpace;
-      _this setVariable ["ACE_isRepairVehicle", 1,  true];
-      [_this, 1200] call ace_rearm_fnc_makeSource;
+      ["fillLogi",_this,true] call x5r_logistics_fnc_initCargo;
+      [_this, 10] call ace_cargo_fnc_setSpace;
+      _this setVariable ["ACE_isRepairVehicle",1,true];
+      [_this, 400] remoteExec ["ace_rearm_fnc_makeSource",2];
       [{_this getVariable "x5r_tags_inventoryReady" == true}, {
         _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3]; 
-        _this addItemCargoGlobal ["ACE_Fortify",1]; 
       },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute; 
       _this setFuel 0.50; 
       ["ACE_Track", _this] call ace_cargo_fnc_loadItem; 
     },[],24], 
     ["UK3CB_BAF_Coyote_Logistics_L111A1_D","",{ 
-      ["fillTeam",_this,true] call x5r_logistics_fnc_initCargo; 
+      ["fillLogi",_this,true] call x5r_logistics_fnc_initCargo; 
       [{_this getVariable "x5r_tags_inventoryReady" == true}, {
         _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3];
         _this addMagazineCargoGlobal ["UK3CB_BAF_127_100Rnd",6];
-        _this addItemCargoGlobal ["ACE_Fortify",1]; 
       },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
       _this setFuel 0.50; 
       [_this] remoteExec ["x5r_common_fnc_attachRespawnActions", 0, true];
@@ -577,7 +541,7 @@ x5r_config_groundSandArray =
         _this addItemCargoGlobal ["ACE_Fortify",1]; 
       },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
       _this setFuel 0.50; 
-      _this setVariable ["ace_repair_canRepair", 1, true];
+      _this setVariable ["ACE_isRepairVehicle",1,true];
       [_this] remoteExec ["x5r_common_fnc_attachRespawnActions", 0, true];
       [_this, 15] call ace_cargo_fnc_setSpace;
     },[],22], 
@@ -598,12 +562,7 @@ x5r_config_groundSandArray =
       ["fillRAMC",_this,true] call x5r_logistics_fnc_initCargo; 
       [{_this getVariable "x5r_tags_inventoryReady" == true}, { 
       },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
-    },[],22],
-    ["UK3CB_BAF_MAN_HX58_Fuel_Sand","",{ 
-      ["fillTeam",_this,true] call x5r_logistics_fnc_initCargo; 
-      [_this, 2] call ace_cargo_fnc_setSpace; 
-      _this setFuel 0.50; 
-    },[],32]
+    },[],22]
   ]],
   ["rhsusf_m109d_usarmy","",{
     [_this,["Desert",1],["IFF_Panels_Hide",0,"showCanisters",0,"showCamonetTurret",0,"showAmmobox",0,"showCamonetHull",0]] call BIS_fnc_initVehicle;

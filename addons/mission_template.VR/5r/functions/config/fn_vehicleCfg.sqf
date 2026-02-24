@@ -42,6 +42,11 @@ x5r_config_airArray =
       ["RHS_AH64D","RHS Apache AH-64",{
         ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
         _this remoteExec ["DAPS_fnc_Nemesis",2];
+      },[],1],
+      ["fza_ah64d_b2e","AH-64D Apache Longbow",{
+        [_this, ["UK_AAC_weathered",1], ["fcr_enable",1,"magazine_set_1200",0,"pdoor",1,"gdoor",1]] call BIS_fnc_initVehicle;
+        ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
+        _this remoteExec ["DAPS_fnc_Nemesis",2];
       },[],1] 
     ]] 
   ]], 

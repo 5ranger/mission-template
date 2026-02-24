@@ -15,7 +15,6 @@ if (hasInterface) then {
         "76561199088931729",    // Eclipsy
         "76561198082623259"     // Mann
     ]] call x5r_common_fnc_createJ9Suite;
-    call x5r_common_fnc_brushCutter;
     // Add ability to create empty crates to following vehicle classnames
     [[
         "UK3CB_BAF_LandRover_WMIK_HMG_FFR_Green_B",
@@ -41,5 +40,4 @@ if (hasInterface) then {
         player connectTerminalToUAV objNull;
     }];
     call x5r_common_fnc_pontoonBridgeObjectEH;
-    call x5r_common_fnc_toggleVehSectionFlagActions;
 };

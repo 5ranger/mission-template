@@ -25,9 +25,15 @@ class x5r_common
 		class pontoonBridgeAttachActions {};
 		class pontoonBridgeObjectEH {};
 		class respawnObjectsEH {};
-		class brushCutter {};
+		class brushCutter 
+		{
+			postInit = 1;
+		};
 		class suckNuts {};
-		class toggleVehSectionFlagActions {};
+		class toggleVehSectionFlagActions 
+		{
+			postInit = 1;
+		};
 	};
 	class server 
 	{
@@ -48,7 +54,8 @@ class x5r_logistics
 		class addRadioRelayActions {};
 		class createEmptyVehicle {};
 		class createEmptyVehicleActions {};
-		class createViVLoadingActions {
+		class createViVLoadingActions 
+		{
 			postInit = 1;
 		};
 	};

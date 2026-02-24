@@ -35,9 +35,5 @@ if (hasInterface) then {
         "Land_MedicalTent_01_MTP_closed_F",
         "Land_MedicalTent_01_wdl_closed_F"
     ]] call x5r_common_fnc_respawnObjectsEH;
-    // Disconnect UAV on death
-    player addEventHandler ["Killed", {
-        player connectTerminalToUAV objNull;
-    }];
     call x5r_common_fnc_pontoonBridgeObjectEH;
 };

@@ -34,6 +34,10 @@ class x5r_common
 		{
 			postInit = 1;
 		};
+		class fixUAVPlayerDeathHandler
+		{
+			postInit = 1;
+		};
 	};
 	class server 
 	{

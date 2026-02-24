@@ -59,7 +59,7 @@ x5r_config_airArray =
     ]]
   ]],
   ["B_helicrew_F","Heli Crewman",{ 
-    _this setUnitLoadout (x5r_config_loadoutMap get loadoutHeliCrew);
+    _this setUnitLoadout (x5r_config_loadoutMap get "loadoutHeliCrew");
     _this setSkill 1; 
   },[],1] 
 ]];
@@ -317,7 +317,7 @@ x5r_config_groundWoodlandArray =
     ["ACE_Track", _this] call ace_cargo_fnc_loadItem;  
     },[],36],
   ["B_crew_F","Vehicle Crewman",{ 
-    _this setUnitLoadout (x5r_config_loadoutMap get loadoutVehicleCrew) 
+    _this setUnitLoadout (x5r_config_loadoutMap get "loadoutVehicleCrew") 
   },[],1] 
 ]];
 x5r_config_groundSandArray = 
@@ -571,7 +571,7 @@ x5r_config_groundSandArray =
     ["ACE_Track", _this] call ace_cargo_fnc_loadItem;  
   },[],36],
   ["B_crew_F","Vehicle Crewman",{ 
-    _this setUnitLoadout (x5r_config_loadoutMap get loadoutVehicleCrew);
+    _this setUnitLoadout (x5r_config_loadoutMap get "loadoutVehicleCrew");
     _this setSkill 1; 
   },[],1] 
 ]];

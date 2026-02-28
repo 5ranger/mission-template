@@ -4,12 +4,12 @@ call x5r_common_fnc_freezeLayer; // Used by in training missions to create large
 call x5r_common_fnc_dynamicSimulation; // Postpone dynamic simulation to let AI settle in positions
 // Register ACE Fortify objects 
 // [side,budget,[[classname, cost, category], [classname, cost, category]]] call ace_fortify_fnc_registerObjects;		
-[west, 2500, [ 
+[west, 3200, [ 
 	["Land_BagFence_Short_F", 6, "Sandbag - Tan"], 
 	["Land_BagFence_Long_F", 10, "Sandbag - Tan"], 
 	["Land_BagFence_Round_F", 10, "Sandbag - Tan"], 
 	["UK3CB_Nest", 40, "Sandbag - Tan"], 
-	["Land_BagBunker_01_small_green_F", 50, "Sandbag - Tan"], 
+	["Land_BagBunker_Small_F", 50, "Sandbag - Tan"], 
 	["Land_BagBunker_Large_F", 100, "Sandbag - Tan"], 
 
 	["Land_BagFence_01_short_green_F", 6, "Sandbag - Woodland"], 
@@ -19,25 +19,25 @@ call x5r_common_fnc_dynamicSimulation; // Postpone dynamic simulation to let AI 
 	["Land_BagBunker_01_small_green_F", 50, "Sandbag - Woodland"], 
 	["Land_BagBunker_01_large_green_F", 100, "Sandbag - Woodland"],
 	
-	["Land_HBarrier_1_F", 12, "H-Barrier - Tan"], 
-	["Land_HBarrier_3_F", 18, "H-Barrier - Tan"], 
+	["Land_HBarrier_1_F", 10, "H-Barrier - Tan"], 
+	["Land_HBarrier_3_F", 15, "H-Barrier - Tan"], 
 	["Land_HBarrier_5_F", 20, "H-Barrier - Tan"], 
 	["Land_HBarrierWall_corridor_F", 30, "H-Barrier - Tan"], 
-	["Land_HBarrierWall_corner_F", 50, "H-Barrier - Tan"], 
-	["Land_HBarrierWall4_F", 50, "H-Barrier - Tan"],
-	["Land_HBarrierWall6_F", 75, "H-Barrier - Tan"], 
-	["Land_HBarrierTower_F", 120, "H-Barrier - Tan"],
-	["Land_Fort_Watchtower_EP1", 150, "H-Barrier - Tan"],
+	["Land_HBarrierWall_corner_F", 45, "H-Barrier - Tan"], 
+	["Land_HBarrierWall4_F", 40, "H-Barrier - Tan"],
+	["Land_HBarrierWall6_F", 60, "H-Barrier - Tan"], 
+	["Land_HBarrierTower_F", 90, "H-Barrier - Tan"],
+	["Land_Fort_Watchtower_EP1", 120, "H-Barrier - Tan"],
 
-	["Land_HBarrier_01_line_1_green_F", 12, "H-Barrier - Woodland"], 
-	["Land_HBarrier_01_line_3_green_F", 18, "H-Barrier - Woodland"], 
+	["Land_HBarrier_01_line_1_green_F", 10, "H-Barrier - Woodland"], 
+	["Land_HBarrier_01_line_3_green_F", 15, "H-Barrier - Woodland"], 
 	["Land_HBarrier_01_line_5_green_F", 20, "H-Barrier - Woodland"], 
 	["Land_HBarrier_01_wall_corridor_green_F", 30, "H-Barrier - Woodland"], 
-	["Land_HBarrier_01_wall_corner_green_F", 50, "H-Barrier - Woodland"], 
-	["Land_HBarrier_01_wall_4_green_F", 50, "H-Barrier - Woodland"],
-	["Land_HBarrier_01_wall_6_green_F", 75, "H-Barrier - Woodland"], 
-	["Land_HBarrier_01_big_tower_green_F", 120, "H-Barrier - Woodland"],
-	["Land_HBarrier_01_tower_green_F", 150, "H-Barrier - Woodland"],
+	["Land_HBarrier_01_wall_corner_green_F", 45, "H-Barrier - Woodland"], 
+	["Land_HBarrier_01_wall_4_green_F", 40, "H-Barrier - Woodland"],
+	["Land_HBarrier_01_wall_6_green_F", 60, "H-Barrier - Woodland"], 
+	["Land_HBarrier_01_big_tower_green_F", 90, "H-Barrier - Woodland"],
+	["Land_HBarrier_01_tower_green_F", 120, "H-Barrier - Woodland"],
 	
 
 	["Land_MedicalTent_01_wdl_closed_F", 50, "Misc"],

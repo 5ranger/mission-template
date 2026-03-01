@@ -265,7 +265,7 @@ x5r_config_groundWoodlandArray =
       _this setVariable ["ACE_isRepairVehicle",1,true];
       [_this, 400] remoteExec ["ace_rearm_fnc_makeSource",2];
       [{_this getVariable "x5r_tags_inventoryReady" == true}, {
-        _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3];
+        _this addMagazineCargoGlobal ["UK3CB_BAF_127_100Rnd",3];
       },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
       _this setFuel 0.50; 
       ["ACE_Track", _this] call ace_cargo_fnc_loadItem; 
@@ -519,7 +519,7 @@ x5r_config_groundSandArray =
       _this setVariable ["ACE_isRepairVehicle",1,true];
       [_this, 400] remoteExec ["ace_rearm_fnc_makeSource",2];
       [{_this getVariable "x5r_tags_inventoryReady" == true}, {
-        _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3]; 
+        _this addMagazineCargoGlobal ["UK3CB_BAF_127_100Rnd",3]; 
       },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute; 
       _this setFuel 0.50; 
       ["ACE_Track", _this] call ace_cargo_fnc_loadItem; 

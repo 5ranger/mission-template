@@ -8455,7 +8455,7 @@ class Mission
 							};
 							class Attributes
 							{
-								init="if (isServer) then { " \n "this setGroupIdGlobal [""4-1B""]; " \n "};" \n "this setVariable [""x5r_grpFlag"",""\5r_shoulder_patches\assets\flag_4-1.jpg""]; " \n "this setVariable [""x5r_grpTRF"",""\5r_shoulder_patches\assets\4-1.paa""]; ";
+								init="if (isServer) then { " \n "this setGroupIdGlobal [""4-1C""]; " \n "};" \n "this setVariable [""x5r_grpFlag"",""\5r_shoulder_patches\assets\flag_4-1.jpg""]; " \n "this setVariable [""x5r_grpTRF"",""\5r_shoulder_patches\assets\4-1.paa""]; ";
 							};
 							id=6041;
 							class CustomAttributes
@@ -8469,7 +8469,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="4-1B";
+											value="4-1C";
 										};
 									};
 								};
@@ -9231,7 +9231,7 @@ class Mission
 							};
 							class Attributes
 							{
-								init="if (isServer) then { " \n "this setGroupIdGlobal [""4-2B""]; " \n "};" \n "this setVariable [""x5r_grpFlag"",""\5r_shoulder_patches\assets\flag_4-1.jpg""]; " \n "this setVariable [""x5r_grpTRF"",""\5r_shoulder_patches\assets\4-1.paa""]; ";
+								init="if (isServer) then { " \n "this setGroupIdGlobal [""4-2C""]; " \n "};" \n "this setVariable [""x5r_grpFlag"",""\5r_shoulder_patches\assets\flag_4-1.jpg""]; " \n "this setVariable [""x5r_grpTRF"",""\5r_shoulder_patches\assets\4-1.paa""]; ";
 							};
 							id=6048;
 							class CustomAttributes
@@ -9245,7 +9245,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="4-2B";
+											value="4-2C";
 										};
 									};
 								};

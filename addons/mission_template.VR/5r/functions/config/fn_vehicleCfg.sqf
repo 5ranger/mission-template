@@ -2,35 +2,49 @@ x5r_config_airArray =
 ["#Air",[
   ["#Rotary",[ 
     ["#Transport",[ 
-      ["RHS_MELB_MH6M","",{
+      ["RHS_MELB_MH6M",["","","Seats:2+7, ACE-C:2"],{
+        [_this, 2] call ace_cargo_fnc_setSpace;
         ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
         _this remoteExec ["DAPS_fnc_Nemesis",2];
       },[],1], 
-      ["UK3CB_BAF_Wildcat_AH1_TRN_8A","",{
-        ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
-        _this remoteExec ["DAPS_fnc_Nemesis",2];
-      },[],1], 
-      ["UK3CB_BAF_Merlin_HC3_32","",{
+      ["UK3CB_BAF_Wildcat_AH1_TRN_8A",["","","Seats:2+8, ACE-C:4"],{
         [_this, 4] call ace_cargo_fnc_setSpace;
         ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
         _this remoteExec ["DAPS_fnc_Nemesis",2];
       },[],1], 
-      ["UK3CB_BAF_Chinook_HC2_cargo","",{
+      ["UK3CB_BAF_Merlin_HC3_18_GPMG",["","","Seats:2+3+18, ACE-C:4"],{
+        [_this, 4] call ace_cargo_fnc_setSpace;
         ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
         _this remoteExec ["DAPS_fnc_Nemesis",2];
+      },[],1], 
+      ["UK3CB_BAF_Merlin_HC3_32",["","","Seats:2+32, ACE-C:4"],{
+        [_this, 4] call ace_cargo_fnc_setSpace;
+        ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
+        _this remoteExec ["DAPS_fnc_Nemesis",2];
+      },[],1], 
+      ["UK3CB_BAF_Chinook_HC2",["","","Seats:2+2+24, ACE-C:4"],{
+        ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
+        _this remoteExec ["DAPS_fnc_Nemesis",2];
+        [_this, 4] call ace_cargo_fnc_setSpace;
+      },[],1], 
+      ["UK3CB_BAF_Chinook_HC2_cargo",["","","Seats:2+2, ACE-C:50"],{
+        ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
+        _this remoteExec ["DAPS_fnc_Nemesis",2];
+        [_this, 50] call ace_cargo_fnc_setSpace;
       },[],1] 
     ]], 
     ["#Attack",[ 
-      ["RHS_MELB_AH6M","",{
+      ["RHS_MELB_AH6M",["","","Seats:2+1, ACE-C:2"],{
         [_this, 2] call ace_cargo_fnc_setSpace; 
         ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
         _this remoteExec ["DAPS_fnc_Nemesis",2];
       },[],1], 
-      ["UK3CB_BAF_Wildcat_AH1_6_Generic","",{
+      ["UK3CB_BAF_Wildcat_AH1_6_Generic",["","","Seats:2+6, ACE-C:4"],{
+        [_this, 4] call ace_cargo_fnc_setSpace; 
         ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
         _this remoteExec ["DAPS_fnc_Nemesis",2];
       },[],1], 
-      ["UK3CB_BAF_Apache_AH1_JS","BAF Apache AH1",{
+      ["UK3CB_BAF_Apache_AH1_JS",["BAF Apache AH1","","Seats:2+2"],{
         ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
         _this remoteExec ["DAPS_fnc_Nemesis",2];
         _this addWeaponTurret ["Missile_AA_04_Plane_CAS_01_F", [0]];   
@@ -39,21 +53,28 @@ x5r_config_airArray =
         _this addMagazineTurret ["PylonRack_1Rnd_Missile_AA_04_F",[0]];
         _this setVariable ["ace_rearm_scriptedLoadout", true, true];
       },[],1], 
-      ["RHS_AH64D","RHS Apache AH-64",{
+      ["RHS_AH64D",["RHS Apache AH-64","",""],{
         ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
         _this remoteExec ["DAPS_fnc_Nemesis",2];
       },[],1],
-      ["fza_ah64d_b2e","AH-64D Apache Longbow",{
+      ["fza_ah64d_b2e",["AH-64D Apache Longbow","",""],{
         [_this, ["UK_AAC_weathered",1], ["fcr_enable",1,"magazine_set_1200",0,"pdoor",1,"gdoor",1]] call BIS_fnc_initVehicle;
         ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
+        [_this, 0] call ace_cargo_fnc_setSpace;
         _this remoteExec ["DAPS_fnc_Nemesis",2];
       },[],1] 
     ]] 
   ]], 
   ["#Fixed-wing",[ 
     ["#Transport",[ 
-      ["UK3CB_BAF_Hercules_C4","",{ 
-        [_this, 32] call ace_cargo_fnc_setSpace; 
+      ["UK3CB_BAF_Hercules_C4",["","","Seats:2+25, ACE-C:8"],{ 
+        _this remoteExec ["DAPS_fnc_Nemesis",2];
+        [_this, 8] call ace_cargo_fnc_setSpace; 
+        ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
+      },[],1],
+      ["UK3CB_BAF_Hercules_C4_cargo",["","","Seats:2+1, ACE-C:50"],{ 
+        _this remoteExec ["DAPS_fnc_Nemesis",2];
+        [_this, 50] call ace_cargo_fnc_setSpace; 
         ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
       },[],1]
     ]]
@@ -298,7 +319,7 @@ x5r_config_groundWoodlandArray =
       clearItemCargoGlobal _this;
       clearBackpackCargoGlobal _this;
       [_this,0] remoteExec ["setMaxLoad",2];
-      [_this, 2] call ace_cargo_fnc_setSpace; 
+      [_this, 5] call ace_cargo_fnc_setSpace; 
     },[],10],
     ["UK3CB_BAF_LandRover_Amb_Green_A","",{ 
       clearWeaponCargoGlobal _this; 
@@ -552,7 +573,7 @@ x5r_config_groundSandArray =
       clearItemCargoGlobal _this;
       clearBackpackCargoGlobal _this;
       [_this,0] remoteExec ["setMaxLoad",2];
-      [_this, 2] call ace_cargo_fnc_setSpace; 
+      [_this, 5] call ace_cargo_fnc_setSpace; 
     },[],10],
     ["UK3CB_BAF_LandRover_Amb_Sand_A","",{ 
       clearWeaponCargoGlobal _this;

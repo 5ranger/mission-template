@@ -5,6 +5,7 @@ if (hasInterface) then {
     setMissionOptions createHashMapFromArray [["AIThinkOnlyLocal", true]];
     // J9Suite whitelist
     [[
+        "_SP_PLAYER_",          // DEBUG USER
         "76561197965400858",    // Cathode
         "76561198141409958",    // Max
         "76561198993593130",    // Rx

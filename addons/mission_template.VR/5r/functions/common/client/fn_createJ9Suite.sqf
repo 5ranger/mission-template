@@ -8,11 +8,9 @@ if (_uid in _spectWhitelist) then
 	with uiNamespace do {
 		waitUntil {!isNull findDisplay 12};
 		disableSerialization;
-		_ctrl = findDisplay 12 ctrlCreate ["RscStructuredText", -1];
-		_ctrl ctrlSetPosition [safeZoneX + 0.51 * safeZoneW, safeZoneY, 0.02 * safeZoneW, 0.02 * safeZoneH];
-		_ctrl ctrlSetStructuredText parseText "<img size='1.2' image='\A3\Ui_f\data\GUI\Rsc\RscDisplayEGSpectator\FreeSelected.paa'/>";
-		_ctrl ctrlSetTextColor [0.9, 0.9, 0.9, 1];
-		_ctrl ctrlSetBackgroundColor [0.1, 0.1, 0.1, 0.9];
+		_ctrl = findDisplay 12 ctrlCreate ["x5r_iconButton", -1];
+		_ctrl ctrlSetPosition [safeZoneX + 0.51 * safeZoneW, safeZoneY];
+		_ctrl ctrlSetText "\A3\Ui_f\data\GUI\Rsc\RscDisplayEGSpectator\FreeSelected.paa";
 		_ctrl ctrlAddEventHandler ["MouseButtonClick", {
 			["Initialize", [player, [], false, true, false, false, false, true, false, false]] call BIS_fnc_EGSpectator;
 			[] spawn {
@@ -26,11 +24,9 @@ _ctrl ctrlCommit 0;
 	with uiNamespace do {
 		waitUntil {!isNull findDisplay 12};
 		disableSerialization;
-		_ctrl2 = findDisplay 12 ctrlCreate ["RscStructuredText", -1];
-		_ctrl2 ctrlSetPosition [safeZoneX + 0.49 * safeZoneW, safeZoneY, 0.02 * safeZoneW, 0.02 * safeZoneH];
-		_ctrl2 ctrlSetStructuredText parseText "<img size='1.2' image='\a3\modules_f_curator\data\portraitcuratorsetcamera_ca.paa'/>";
-		_ctrl2 ctrlSetTextColor [0.9, 0.9, 0.9, 1];
-		_ctrl2 ctrlSetBackgroundColor [0.1, 0.1, 0.1, 0.9];
+		_ctrl2 = findDisplay 12 ctrlCreate ["x5r_iconButton", -1];
+		_ctrl2 ctrlSetPosition [safeZoneX + 0.49 * safeZoneW, safeZoneY];
+		_ctrl2 ctrlSetText "\a3\modules_f_curator\data\portraitcuratorsetcamera_ca.paa";
 		_ctrl2 ctrlAddEventHandler ["MouseButtonClick", {
  			showChat false;
 			execVM "gcam\gcam.sqf"; 

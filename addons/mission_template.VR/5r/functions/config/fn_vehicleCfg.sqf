@@ -363,7 +363,7 @@ x5r_config_groundSandArray =
       _this setFuel 0.33; 
     },[],16],
     ["blx_ridgback_HMG_D","",{ 
-      ["fillPlt",_this,true] call C5R_ItemCfg_fnc_initInventory;  
+      ["fillPlt",_this,true] call x5r_logistics_fnc_initCargo;  
       _this setFuel 0.33;    
     },[],16]
   ]], 

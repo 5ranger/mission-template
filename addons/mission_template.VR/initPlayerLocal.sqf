@@ -36,4 +36,5 @@ if (hasInterface) then {
         "Land_MedicalTent_01_wdl_closed_F"
     ]] call x5r_common_fnc_respawnObjectsEH;
     call x5r_common_fnc_pontoonBridgeObjectEH;
+    call x5r_common_fnc_missionSwitchInit;
 };

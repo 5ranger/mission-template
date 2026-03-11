@@ -38,6 +38,7 @@ class x5r_common
 		{
 			postInit = 1;
 		};
+		class missionSwitchInit {};
 	};
 	class server 
 	{

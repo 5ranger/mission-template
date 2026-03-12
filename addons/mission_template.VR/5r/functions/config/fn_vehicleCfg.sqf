@@ -214,6 +214,9 @@ x5r_config_groundWoodlandArray =
     },[],18],
     ["UK3CB_BAF_Coyote_Logistics_L111A1_G","",{ 
       ["fillFST",_this,true] call x5r_logistics_fnc_initCargo;
+      _this setVariable ["ACE_isRepairVehicle", 0, true];
+      _this setVariable ["ace_refuel_capacity", 0, true];
+      [_this, -1] remoteExec ["ace_rearm_fnc_makeSource",2];
       [_this, 11] call ace_cargo_fnc_setSpace;
       [{_this getVariable "x5r_tags_inventoryReady" == true}, {
         _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3];
@@ -468,6 +471,9 @@ x5r_config_groundSandArray =
     },[],18],
     ["UK3CB_BAF_Coyote_Logistics_L111A1_D","",{ 
       [_this, 11] call ace_cargo_fnc_setSpace;
+      _this setVariable ["ACE_isRepairVehicle", 0, true];
+      _this setVariable ["ace_refuel_capacity", 0, true];
+      [_this, -1] remoteExec ["ace_rearm_fnc_makeSource",2];
       ["fillFST",_this,true] call x5r_logistics_fnc_initCargo; 
       [{_this getVariable "x5r_tags_inventoryReady" == true}, {
         _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3];

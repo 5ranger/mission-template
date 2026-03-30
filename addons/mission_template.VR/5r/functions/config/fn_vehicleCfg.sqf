@@ -867,5 +867,10 @@ x5r_config_navyArray =
     ["rhsusf_mkvsoc","",{
       ["fillSection",_this,true] call x5r_logistics_fnc_initCargo;
     },[],100]
+  ]],
+  ["#Landing Crafts",[
+    ["Burnes_LCAC_1","",{
+      ["fillSection",_this,true] call x5r_logistics_fnc_initCargo;
+    },[],100]
   ]]
 ]];

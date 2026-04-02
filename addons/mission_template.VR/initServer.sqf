@@ -50,3 +50,4 @@ call x5r_common_fnc_dynamicSimulation; // Postpone dynamic simulation to let AI 
 	["rhs_pontoon_end_static",0, "Misc"],
 	["Land_HelipadSquare_F", 0, "Misc"]
 ]] call ace_fortify_fnc_registerObjects;
+["j7olCY0C","#monitords 10"] remoteExec ["serverCommand",2]; // Enable monitoring output in server console

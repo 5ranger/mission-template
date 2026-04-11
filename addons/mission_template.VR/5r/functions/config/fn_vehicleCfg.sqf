@@ -292,6 +292,7 @@ x5r_config_groundWoodlandArray =
         _this addMagazineCargoGlobal ["UK3CB_BAF_127_100Rnd",3];
       },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
       _this setFuel 0.50; 
+      [_this] remoteExec ["x5r_common_fnc_attachRespawnActions", 0, true];
       ["ACE_Track", _this] call ace_cargo_fnc_loadItem; 
     },[],24], 
     ["UK3CB_BAF_Coyote_Logistics_L111A1_G","",{ 
@@ -549,6 +550,7 @@ x5r_config_groundSandArray =
         _this addMagazineCargoGlobal ["UK3CB_BAF_127_100Rnd",3]; 
       },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute; 
       _this setFuel 0.50; 
+      [_this] remoteExec ["x5r_common_fnc_attachRespawnActions", 0, true];
       ["ACE_Track", _this] call ace_cargo_fnc_loadItem; 
     },[],24], 
     ["UK3CB_BAF_Coyote_Logistics_L111A1_D","",{ 

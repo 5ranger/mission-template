@@ -1,6 +1,6 @@
 params ["_target"];
 // create a relay ID if the object doesn't have one
-if (_target isNil "x5r_tags_relayId") then {
+if (isNil {_target getVariable "x5r_tags_relayId"}) then {
 	if (isNil "x5r_tags_radioRelayCounter") then {x5r_tags_radioRelayCounter = 1} else {x5r_tags_radioRelayCounter = x5r_tags_radioRelayCounter + 1};
 	_target setVariable ["x5r_tags_relayId",x5r_tags_radioRelayCounter,true];
 };

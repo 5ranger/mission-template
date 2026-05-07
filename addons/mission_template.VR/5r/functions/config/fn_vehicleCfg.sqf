@@ -76,6 +76,19 @@ x5r_config_airArray =
         _this remoteExec ["DAPS_fnc_Nemesis",2];
         [_this, 50] call ace_cargo_fnc_setSpace; 
         ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
+      },[],1],
+      ["B_A400M_F",["","","Seats:3+54, ACE-C:75"],{ 
+        _this remoteExec ["DAPS_fnc_Nemesis",2];
+        [_this, 75] call ace_cargo_fnc_setSpace; 
+        ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
+      },[],1]
+    ]],
+    ["#Attack",[ 
+      ["JS_JC_FA18E",["","","Seats:1, ACE-C:0"],{ 
+        ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
+      },[],1],
+      ["JS_JC_FA18F",["","","Seats:2, ACE-C:0"],{ 
+        ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
       },[],1]
     ]]
   ]],

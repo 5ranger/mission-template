@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=0.1;
 	autoGroupingDist=10;
-	toggles=677;
+	toggles=549;
 	class ItemIDProvider
 	{
-		nextID=6224;
+		nextID=6237;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2982;
+		nextID=3006;
 	};
 	class Camera
 	{
 		pos[]={349.29376,61.019188,124.39086};
-		dir[]={0.14817314,-0.68447512,0.71381968};
-		up[]={0.1391163,0.72903615,0.67018867};
-		aside[]={0.97912782,7.4505806e-09,-0.20324522};
+		dir[]={0.14817318,-0.68447483,0.71381992};
+		up[]={0.13911624,0.72903657,0.67018843};
+		aside[]={0.97912794,7.4505806e-09,-0.20324522};
 	};
 };
 binarizationWanted=0;
@@ -514,7 +514,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=32;
+		items=33;
 		class Item0
 		{
 			dataType="Layer";
@@ -13032,7 +13032,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[""15#1#20264251155688"",""99#2#202642505858609"",""69#3#202642505858609"",""30#4#202642505858609"",""76#5#202642505858609"",""81#10#202642505916252"",""42#11#202642505916252"",""38#12#202642505916252"",""68#13#202642505916252"",""71#14#202642505916252"",""64#15#202642505916252"",""44#16#202642505916252"",""53#17#202642505916252"",""25#26#2026425102898"",""68#28#2026425107162"",""75#30#20264251011294""]";
+											value="[""34#1#2026521211340828"",""99#2#202642505858609"",""69#3#202642505858609"",""30#4#202642505858609"",""76#5#202642505858609"",""81#10#202642505916252"",""42#11#202642505916252"",""38#12#202642505916252"",""68#13#202642505916252"",""71#14#202642505916252"",""64#15#202642505916252"",""44#16#202642505916252"",""53#17#202642505916252"",""25#26#2026425102898"",""68#28#2026425107162"",""75#30#20264251011294""]";
 										};
 									};
 								};
@@ -13487,7 +13487,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[""15#1#20264251155688"",""99#2#202642505858609"",""69#3#202642505858609"",""30#4#202642505858609"",""76#5#202642505858609"",""81#10#202642505916252"",""42#11#202642505916252"",""38#12#202642505916252"",""68#13#202642505916252"",""71#14#202642505916252"",""64#15#202642505916252"",""44#16#202642505916252"",""53#17#202642505916252"",""25#26#2026425102898"",""68#28#2026425107162"",""75#30#20264251011294""]";
+											value="[""34#1#2026521211340828"",""99#2#202642505858609"",""69#3#202642505858609"",""30#4#202642505858609"",""76#5#202642505858609"",""81#10#202642505916252"",""42#11#202642505916252"",""38#12#202642505916252"",""68#13#202642505916252"",""71#14#202642505916252"",""64#15#202642505916252"",""44#16#202642505916252"",""53#17#202642505916252"",""25#26#2026425102898"",""68#28#2026425107162"",""75#30#20264251011294""]";
 										};
 									};
 								};
@@ -13865,7 +13865,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[""15#1#20264251155688"",""99#2#202642505858609"",""69#3#202642505858609"",""30#4#202642505858609"",""76#5#202642505858609"",""81#10#202642505916252"",""42#11#202642505916252"",""38#12#202642505916252"",""68#13#202642505916252"",""71#14#202642505916252"",""64#15#202642505916252"",""44#16#202642505916252"",""53#17#202642505916252"",""25#26#2026425102898"",""68#28#2026425107162"",""75#30#20264251011294""]";
+											value="[""34#1#2026521211340828"",""99#2#202642505858609"",""69#3#202642505858609"",""30#4#202642505858609"",""76#5#202642505858609"",""81#10#202642505916252"",""42#11#202642505916252"",""38#12#202642505916252"",""68#13#202642505916252"",""71#14#202642505916252"",""64#15#202642505916252"",""44#16#202642505916252"",""53#17#202642505916252"",""25#26#2026425102898"",""68#28#2026425107162"",""75#30#20264251011294""]";
 										};
 									};
 								};
@@ -14042,7 +14042,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[""15#1#20264251155688"",""99#2#202642505858609"",""69#3#202642505858609"",""30#4#202642505858609"",""76#5#202642505858609"",""81#10#202642505916252"",""42#11#202642505916252"",""38#12#202642505916252"",""68#13#202642505916252"",""71#14#202642505916252"",""64#15#202642505916252"",""44#16#202642505916252"",""53#17#202642505916252"",""25#26#2026425102898"",""68#28#2026425107162"",""75#30#20264251011294""]";
+											value="[""34#1#2026521211340828"",""99#2#202642505858609"",""69#3#202642505858609"",""30#4#202642505858609"",""76#5#202642505858609"",""81#10#202642505916252"",""42#11#202642505916252"",""38#12#202642505916252"",""68#13#202642505916252"",""71#14#202642505916252"",""64#15#202642505916252"",""44#16#202642505916252"",""53#17#202642505916252"",""25#26#2026425102898"",""68#28#2026425107162"",""75#30#20264251011294""]";
 										};
 									};
 								};
@@ -14311,7 +14311,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[""15#1#20264251155688"",""99#2#202642505858609"",""69#3#202642505858609"",""30#4#202642505858609"",""76#5#202642505858609"",""81#10#202642505916252"",""42#11#202642505916252"",""38#12#202642505916252"",""68#13#202642505916252"",""71#14#202642505916252"",""64#15#202642505916252"",""44#16#202642505916252"",""53#17#202642505916252"",""25#26#2026425102898"",""68#28#2026425107162"",""75#30#20264251011294""]";
+											value="[""34#1#2026521211340828"",""99#2#202642505858609"",""69#3#202642505858609"",""30#4#202642505858609"",""76#5#202642505858609"",""81#10#202642505916252"",""42#11#202642505916252"",""38#12#202642505916252"",""68#13#202642505916252"",""71#14#202642505916252"",""64#15#202642505916252"",""44#16#202642505916252"",""53#17#202642505916252"",""25#26#2026425102898"",""68#28#2026425107162"",""75#30#20264251011294""]";
 										};
 									};
 								};
@@ -14580,7 +14580,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[""15#1#20264251155688"",""99#2#202642505858609"",""69#3#202642505858609"",""30#4#202642505858609"",""76#5#202642505858609"",""81#10#202642505916252"",""42#11#202642505916252"",""38#12#202642505916252"",""68#13#202642505916252"",""71#14#202642505916252"",""64#15#202642505916252"",""44#16#202642505916252"",""53#17#202642505916252"",""25#26#2026425102898"",""68#28#2026425107162"",""75#30#20264251011294""]";
+											value="[""34#1#2026521211340828"",""99#2#202642505858609"",""69#3#202642505858609"",""30#4#202642505858609"",""76#5#202642505858609"",""81#10#202642505916252"",""42#11#202642505916252"",""38#12#202642505916252"",""68#13#202642505916252"",""71#14#202642505916252"",""64#15#202642505916252"",""44#16#202642505916252"",""53#17#202642505916252"",""25#26#2026425102898"",""68#28#2026425107162"",""75#30#20264251011294""]";
 										};
 									};
 								};
@@ -15024,7 +15024,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[""15#1#20264251155688"",""99#2#202642505858609"",""69#3#202642505858609"",""30#4#202642505858609"",""76#5#202642505858609"",""81#10#202642505916252"",""42#11#202642505916252"",""38#12#202642505916252"",""68#13#202642505916252"",""71#14#202642505916252"",""64#15#202642505916252"",""44#16#202642505916252"",""53#17#202642505916252"",""25#26#2026425102898"",""68#28#2026425107162"",""75#30#20264251011294""]";
+											value="[""34#1#2026521211340828"",""99#2#202642505858609"",""69#3#202642505858609"",""30#4#202642505858609"",""76#5#202642505858609"",""81#10#202642505916252"",""42#11#202642505916252"",""38#12#202642505916252"",""68#13#202642505916252"",""71#14#202642505916252"",""64#15#202642505916252"",""44#16#202642505916252"",""53#17#202642505916252"",""25#26#2026425102898"",""68#28#2026425107162"",""75#30#20264251011294""]";
 										};
 									};
 								};
@@ -15358,7 +15358,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[""15#1#20264251155688"",""99#2#202642505858609"",""69#3#202642505858609"",""30#4#202642505858609"",""76#5#202642505858609"",""81#10#202642505916252"",""42#11#202642505916252"",""38#12#202642505916252"",""68#13#202642505916252"",""71#14#202642505916252"",""64#15#202642505916252"",""44#16#202642505916252"",""53#17#202642505916252"",""25#26#2026425102898"",""68#28#2026425107162"",""75#30#20264251011294""]";
+											value="[""34#1#2026521211340828"",""99#2#202642505858609"",""69#3#202642505858609"",""30#4#202642505858609"",""76#5#202642505858609"",""81#10#202642505916252"",""42#11#202642505916252"",""38#12#202642505916252"",""68#13#202642505916252"",""71#14#202642505916252"",""64#15#202642505916252"",""44#16#202642505916252"",""53#17#202642505916252"",""25#26#2026425102898"",""68#28#2026425107162"",""75#30#20264251011294""]";
 										};
 									};
 								};
@@ -15705,7 +15705,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[""15#1#20264251155688"",""99#2#202642505858609"",""69#3#202642505858609"",""30#4#202642505858609"",""76#5#202642505858609"",""81#10#202642505916252"",""42#11#202642505916252"",""38#12#202642505916252"",""68#13#202642505916252"",""71#14#202642505916252"",""64#15#202642505916252"",""44#16#202642505916252"",""53#17#202642505916252"",""25#26#2026425102898"",""68#28#2026425107162"",""75#30#20264251011294""]";
+											value="[""34#1#2026521211340828"",""99#2#202642505858609"",""69#3#202642505858609"",""30#4#202642505858609"",""76#5#202642505858609"",""81#10#202642505916252"",""42#11#202642505916252"",""38#12#202642505916252"",""68#13#202642505916252"",""71#14#202642505916252"",""64#15#202642505916252"",""44#16#202642505916252"",""53#17#202642505916252"",""25#26#2026425102898"",""68#28#2026425107162"",""75#30#20264251011294""]";
 										};
 									};
 								};
@@ -17391,7 +17391,7 @@ class Mission
 										class data
 										{
 											singleType="STRING";
-											value="[""15#1#20264251155688"",""99#2#202642505858609"",""69#3#202642505858609"",""30#4#202642505858609"",""76#5#202642505858609"",""81#10#202642505916252"",""42#11#202642505916252"",""38#12#202642505916252"",""68#13#202642505916252"",""71#14#202642505916252"",""64#15#202642505916252"",""44#16#202642505916252"",""53#17#202642505916252"",""25#26#2026425102898"",""68#28#2026425107162"",""75#30#20264251011294""]";
+											value="[""34#1#2026521211340828"",""99#2#202642505858609"",""69#3#202642505858609"",""30#4#202642505858609"",""76#5#202642505858609"",""81#10#202642505916252"",""42#11#202642505916252"",""38#12#202642505916252"",""68#13#202642505916252"",""71#14#202642505916252"",""64#15#202642505916252"",""44#16#202642505916252"",""53#17#202642505916252"",""25#26#2026425102898"",""68#28#2026425107162"",""75#30#20264251011294""]";
 										};
 									};
 								};
@@ -23107,12 +23107,11 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				init="this addAction [""Teleport to IUTR"",{(_this select 1) setPos (getPos tele_iutr)}];   " \n "this addAction [""Teleport to Contact Drills"",{(_this select 1) setPos (getPos tele_contactdrills)}];   " \n "this addAction [""Teleport to Obstacles Xing"",{(_this select 1) setPos (getPos tele_obstxing)}];   " \n "this addAction [""Teleport to Ambushes"",{(_this select 1) setPos (getPos tele_ambushes)}];   " \n "this addAction [""Teleport to Parachute Training"",{(_this select 1) setPos (getPos tele_parachute)}];";
+				init="this addAction [""Teleport to IUTR"",{(_this select 1) setPos (getPos tele_iutr)}];   " \n "this addAction [""Teleport to Contact Drills"",{(_this select 1) setPos (getPos tele_contactdrills)}];   " \n "this addAction [""Teleport to Obstacles Xing"",{(_this select 1) setPos (getPos tele_obstxing)}];   " \n "this addAction [""Teleport to Ambushes"",{(_this select 1) setPos (getPos tele_ambushes)}];   " \n "this addAction [""Teleport to Parachute Training"",{(_this select 1) setPos (getPos tele_parachute)}];" \n "this addAction [""Teleport to Parachute Flight Training"", {player moveInCargo vehParaPlane; hint ""You can change the plane altitude and speed from the Passenger 30 seat"";}];" \n "";
 				name="tele_spawn";
 			};
 			id=4613;
 			type="Flag_UK_F";
-			atlOffset=9.5367432e-07;
 		};
 		class Item19
 		{
@@ -57697,6 +57696,323 @@ class Mission
 			};
 			id=4703;
 			atlOffset=0.39541626;
+		};
+		class Item32
+		{
+			dataType="Layer";
+			name="Parachute Flight Training";
+			class Entities
+			{
+				items=6;
+				class Item0
+				{
+					dataType="Marker";
+					position[]={19094.748,0.013,6315.561};
+					name="marker_1";
+					text="Parachute training flight path";
+					type="mil_dot";
+					id=6233;
+					atlOffset=46.510815;
+				};
+				class Item1
+				{
+					dataType="Marker";
+					position[]={2287,26,13332};
+					name="marker_2";
+					text="Parachute training flight path";
+					type="mil_dot";
+					id=6234;
+					atlOffset=46.206371;
+				};
+				class Item2
+				{
+					dataType="Marker";
+					position[]={10684.424,130.68671,9824.3867};
+					name="marker_3";
+					markerType="RECTANGLE";
+					type="";
+					a=9129.6689;
+					b=30.788965;
+					angle=22.662504;
+					id=6235;
+					atlOffset=4.5809402;
+				};
+				class Item3
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={19421,0,4627};
+					};
+					name="paraFlightLogic";
+					init="comment ""Parachute Flight training actions""; " \n " " \n "if (hasInterface) then { " \n " 0 spawn { " \n "  waitUntil {alive player && !isNull player}; " \n " " \n "        vehParaPlane addAction " \n "        [ " \n "         ""Set flight altitude to 2000m ASL"", " \n "         { " \n "          [grpParaPlane, ""AWARE""] remoteExec [""setBehaviour"",2] " \n "         }, " \n "         nil, " \n "         1.5, " \n "         true, " \n "         true, " \n "         """", " \n "         ""(vehParaPlane getCargoIndex player == 29) && ((assignedVehicleRole player select 0) == 'cargo')"" " \n "        ]; " \n " " \n "        vehParaPlane addAction " \n "        [ " \n "         ""Set flight altitude to 500m ASL"", " \n "         { " \n "          [grpParaPlane, ""STEALTH""] remoteExec [""setBehaviour"",2]; " \n "         }, " \n "         nil, " \n "         1.5, " \n "         true, " \n "         true, " \n "         """", " \n "         ""(vehParaPlane getCargoIndex player == 29) && ((assignedVehicleRole player select 0) == 'cargo')"" " \n "        ]; " \n " " \n "        vehParaPlane addAction " \n "        [ " \n "         ""Set flight altitude to 200m ASL"", " \n "         { " \n "          [grpParaPlane, ""COMBAT""] remoteExec [""setBehaviour"",2]; " \n "         }, " \n "         nil, " \n "         1.5, " \n "         true, " \n "         true, " \n "         """", " \n "         ""(vehParaPlane getCargoIndex player == 29) && ((assignedVehicleRole player select 0) == 'cargo')"" " \n "        ];vehParaPlane addAction " \n "        [ " \n "         ""Set flight speed to HIGH"", " \n "         { " \n "          [grpParaPlane, ""FULL""] remoteExec [""setSpeedMode"",2]; " \n "         }, " \n "         nil, " \n "         1.5, " \n "         true, " \n "         true, " \n "         """", " \n "         ""(vehParaPlane getCargoIndex player == 29) && ((assignedVehicleRole player select 0) == 'cargo')"" " \n "        ]; " \n " " \n "        vehParaPlane addAction " \n "        [ " \n "         ""Set flight speed to DEFAULT"", " \n "         { " \n "          [grpParaPlane, ""NORMAL""] remoteExec [""setSpeedMode"",2];  " \n "         }, " \n "         nil, " \n "         1.5, " \n "         true, " \n "         true, " \n "         """", " \n "         ""(vehParaPlane getCargoIndex player == 29) && ((assignedVehicleRole player select 0) == 'cargo')"" " \n "        ]; " \n " " \n "        vehParaPlane addAction " \n "        [ " \n "         ""Set flight speed to LOW"", " \n "         { " \n "          [grpParaPlane, ""LIMITED""] remoteExec [""setSpeedMode"",2]; " \n "         }, " \n "         nil, " \n "         1.5, " \n "         true, " \n "         true, " \n "         """", " \n "         ""(vehParaPlane getCargoIndex player == 29) && ((assignedVehicleRole player select 0) == 'cargo')"" " \n "        ]; " \n "    }; " \n "};";
+					id=6232;
+					type="Logic";
+					atlOffset=90.534035;
+				};
+				class Item4
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=5;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={18972.637,1947.874,4613.7407};
+							};
+							side="West";
+							flags=2;
+							class Attributes
+							{
+								skill=1;
+							};
+							id=6225;
+							type="B_Helipilot_F";
+							atlOffset=1983.713;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=0;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="Male08ENG";
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=1.05;
+										};
+									};
+								};
+								nAttributes=3;
+							};
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={18972.637,1947.874,4613.7407};
+							};
+							side="West";
+							class Attributes
+							{
+								skill=1;
+							};
+							id=6226;
+							type="B_Helipilot_F";
+							atlOffset=1983.713;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=0;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="Male08ENG";
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=1.05;
+										};
+									};
+								};
+								nAttributes=3;
+							};
+						};
+						class Item2
+						{
+							dataType="Waypoint";
+							loiterAltitude=-3.4028235e+38;
+							position[]={18981.082,497.16116,6353.3579};
+							class Effects
+							{
+							};
+							showWP="NEVER";
+							id=6227;
+							type="Move";
+							atlOffset=534;
+						};
+						class Item3
+						{
+							dataType="Waypoint";
+							loiterAltitude=-3.4028235e+38;
+							position[]={2166.9419,499.07391,13381.46};
+							class Effects
+							{
+							};
+							showWP="NEVER";
+							id=6228;
+							type="Move";
+							atlOffset=521;
+						};
+						class Item4
+						{
+							dataType="Waypoint";
+							loiterAltitude=-3.4028235e+38;
+							position[]={2070.6768,500.00092,13429.844};
+							class Effects
+							{
+							};
+							showWP="NEVER";
+							id=6229;
+							type="Cycle";
+							atlOffset=521.41498;
+						};
+					};
+					class Attributes
+					{
+						name="grpParaPlane";
+						init="if (isServer) then { " \n "this setGroupIdGlobal [""Parachute Flight Training""]; " \n "};" \n "";
+						speedMode="LIMITED";
+					};
+					class CrewLinks
+					{
+						class LinkIDProvider
+						{
+							nextID=2;
+						};
+						class Links
+						{
+							items=2;
+							class Item0
+							{
+								linkID=0;
+								item0=6225;
+								item1=6230;
+								class CustomData
+								{
+									role=1;
+								};
+							};
+							class Item1
+							{
+								linkID=1;
+								item0=6226;
+								item1=6230;
+								class CustomData
+								{
+									role=2;
+									turretPath[]={0};
+								};
+							};
+						};
+					};
+					id=6224;
+					atlOffset=1983.713;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="groupID";
+							expression="                            if (isNil 'CBA_fnc_setCallsign') then {                                _this setGroupID [_value];                            } else {                                [_this, _value] call CBA_fnc_setCallsign;                            };";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="Parachute Flight Training";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={18973.879,1953.7319,4614.0425};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						init="if isServer then {" \n "{_x setUnitLoadout (x5r_config_loadoutMap get ""loadoutHeliPilot""); _x allowDamage false;} forEach crew this;" \n "this flyInHeight 100;" \n "this flyInHeightASL [2000, 200, 500];" \n "this lockDriver true;" \n "this lockTurret [[0], true];" \n "};";
+						name="vehParaPlane";
+						reportOwnPosition=1;
+					};
+					id=6230;
+					type="UK3CB_BAF_Hercules_C4";
+					atlOffset=1983.713;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			id=6236;
+			atlOffset=1465.6866;
 		};
 	};
 	class Connections

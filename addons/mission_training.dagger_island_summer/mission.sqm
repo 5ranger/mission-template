@@ -8,7 +8,7 @@ class EditorData
 	toggles=45;
 	class ItemIDProvider
 	{
-		nextID=18486;
+		nextID=18498;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=8556;
+		nextID=8654;
 	};
 	class Camera
 	{
-		pos[]={339.07977,52.568203,131.81198};
-		dir[]={-0.013307318,-0.64323646,0.76555377};
-		up[]={-0.011179477,0.76566762,0.64314026};
-		aside[]={0.99985027,4.7602953e-09,0.017380053};
+		pos[]={7493.0127,179.15718,11386.379};
+		dir[]={-0.096179016,-0.45498794,0.88528842};
+		up[]={-0.049141392,0.89049757,0.45232636};
+		aside[]={0.99415022,0,0.10800593};
 	};
 };
 binarizationWanted=0;
@@ -796,7 +796,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=32;
+		items=33;
 		class Item0
 		{
 			dataType="Layer";
@@ -2600,8 +2600,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4120.4204,12.874023,10226.383};
-						angles[]={0,0.0094138887,0};
+						position[]={4120.4199,12.874218,10226.383};
 					};
 					side="Empty";
 					flags=1;
@@ -2613,7 +2612,7 @@ class Mission
 					};
 					id=14316;
 					type="Land_Mil_WiredFence_Gate_F";
-					atlOffset=0.5888052;
+					atlOffset=0.58899975;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2669,7 +2668,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4094.302,13.976805,10068.102};
+						position[]={4096,13.967039,10069};
 						angles[]={0,0.019757126,0};
 					};
 					side="Empty";
@@ -2682,15 +2681,15 @@ class Mission
 					};
 					id=14432;
 					type="Flag_UK_F";
-					atlOffset=0.010000229;
+					atlOffset=0.00023460388;
 				};
 				class Item72
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4120.2573,14.04028,10226.36};
-						angles[]={0,3.1576631,0};
+						position[]={4120.5596,14.04028,10226.36};
+						angles[]={0,3.1415927,0};
 					};
 					side="Empty";
 					flags=5;
@@ -3564,13 +3563,13 @@ class Mission
 				{
 					dataType="Trigger";
 					position[]={4120.0308,9.9899998,10218.758};
-					angle=3.1576662;
+					angle=3.1415927;
 					class Attributes
 					{
 						onActivation="{_x animate [""Door_1_rot"", 1, false];_x animate [""Door_2_rot"", 1, false];} forEach (synchronizedObjects thisTrigger); ";
 						onDeactivation="{_x animate [""Door_1_rot"", 0, false];_x animate [""Door_2_rot"", 0, false];} forEach (synchronizedObjects thisTrigger); ";
-						sizeA=7.8193088;
-						sizeB=14.291081;
+						sizeA=7.8189998;
+						sizeB=14.291;
 						sizeC=5;
 						repeatable=1;
 						activationBy="ANY";
@@ -5380,15 +5379,17 @@ class Mission
 				class Item126
 				{
 					dataType="Marker";
-					position[]={4120.7598,9.9899998,10115.619};
+					position[]={4096,9.9902344,10069};
 					name="marker_10";
-					text="KRH Area";
+					text="RAC Area";
 					type="mil_dot";
 					colorName="ColorGreen";
 					id=14505;
+					atlOffset=0.00023460388;
 				};
 			};
 			id=14170;
+			atlOffset=0.00011730194;
 		};
 		class Item2
 		{
@@ -16833,11 +16834,12 @@ class Mission
 					text="Open Terrain LFX (Large)";
 					markerType="RECTANGLE";
 					type="";
-					colorName="ColorGrey";
-					fillName="SolidFull";
+					colorName="ColorRed";
+					fillName="Border";
 					a=404.271;
 					b=222.14999;
 					angle=74.999977;
+					drawBorder=1;
 					id=16120;
 					atlOffset=-0.00025939941;
 				};
@@ -18947,7 +18949,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="this addAction [""Teleport to Open Terrain LFX Range"",{(_this select 1) setPos (getPos tele_lfx_openterrain)}]; " \n "this addAction [""Teleport to OBUA LFX Range"",{(_this select 1) setPos (getPos tele_lfx_obua)}]; " \n "this addAction [""Teleport to CQB Lanes"",{(_this select 1) setPos (getPos tele_cqb)}]; " \n "this addAction [""Teleport to Battle Run"",{(_this select 1) setPos (getPos tele_battlerun)}]; " \n "this addAction [""Teleport to Vehicle Range"",{(_this select 1) setPos (getPos tele_vehicle_range)}]; " \n "this addAction [""Teleport to MG"",{(_this select 1) setPos (getPos tele_mg)}]; " \n "this addAction [""Teleport to AT Lane"",{(_this select 1) setPos (getPos tele_at)}]; " \n "this addAction [""Teleport to Mortar Range"",{(_this select 1) setPos (getPos tele_mortar)}]; " \n "this addAction [""Teleport to DMR Assessment Range"",{(_this select 1) setPos (getPos tele_dmrass)}]; " \n "this addAction [""Teleport to Victory Airbase"",{(_this select 1) setPos (getPos tele_airbase)}]; " \n "this addAction [""Teleport to Parachute Training"",{(_this select 1) setPos (getPos tele_parachute)}]; " \n "this addAction [""Teleport to the ship"",{(_this select 1) setPosATL (getPosATL tele_boat)}]; " \n "this addAction [""Teleport to KRH Area"",{(_this select 1) setPos (getPos tele_krh)}]; " \n "this addAction [""Teleport to Mobility Driving Course"",{(_this select 1) setPos (getPos tele_driving_trench)}]; " \n "this addAction [""Teleport to Mobility Armour Range"",{(_this select 1) setPos (getPos tele_armour_range)}]; " \n "";
+						init="this addAction [""Teleport to Open Terrain LFX Range"",{(_this select 1) setPos (getPos tele_lfx_openterrain)}]; " \n "this addAction [""Teleport to OBUA LFX Range"",{(_this select 1) setPos (getPos tele_lfx_obua)}]; " \n "this addAction [""Teleport to CQB Lanes"",{(_this select 1) setPos (getPos tele_cqb)}]; " \n "this addAction [""Teleport to Battle Run"",{(_this select 1) setPos (getPos tele_battlerun)}]; " \n "this addAction [""Teleport to Vehicle Range"",{(_this select 1) setPos (getPos tele_vehicle_range)}]; " \n "this addAction [""Teleport to MG"",{(_this select 1) setPos (getPos tele_mg)}]; " \n "this addAction [""Teleport to AT Lane"",{(_this select 1) setPos (getPos tele_at)}]; " \n "this addAction [""Teleport to Mortar Range"",{(_this select 1) setPos (getPos tele_mortar)}]; " \n "this addAction [""Teleport to DMR Assessment Range"",{(_this select 1) setPos (getPos tele_dmrass)}]; " \n "this addAction [""Teleport to Victory Airbase"",{(_this select 1) setPos (getPos tele_airbase)}]; " \n "this addAction [""Teleport to Parachute Training"",{(_this select 1) setPos (getPos tele_parachute)}]; " \n "this addAction [""Teleport to Parachute Flight Training"", {player moveInCargo vehParaPlane; hint ""You can change the flight altitude and speed from the Passenger 1 seat"";}];" \n "this addAction [""Teleport to the ship"",{(_this select 1) setPosATL (getPosATL tele_boat)}]; " \n "this addAction [""Teleport to RAC Area"",{(_this select 1) setPos (getPos tele_krh)}]; " \n "this addAction [""Teleport to Mobility Driving Course"",{(_this select 1) setPos (getPos tele_driving_trench)}]; " \n "this addAction [""Teleport to Mobility Armour Range"",{(_this select 1) setPos (getPos tele_armour_range)}]; " \n "";
 						name="tele_spawn";
 					};
 					id=2354;
@@ -20326,7 +20328,7 @@ class Mission
 		class Item21
 		{
 			dataType="Layer";
-			name="CQB Intruction Area";
+			name="CQB Instruction Area";
 			class Entities
 			{
 				items=166;
@@ -26396,12 +26398,11 @@ class Mission
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={7554.5791,116.54376,11616.402};
+								position[]={7554,116.548,11616.5};
 								angles[]={0.0080009829,4.4505897,6.2731905};
 							};
 							id=17426;
 							type="sss_transport_moduleAddLand";
-							atlOffset=0.00077819824;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -26666,12 +26667,11 @@ class Mission
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={7562.8613,116.59077,11585.493};
-								angles[]={0,4.4505897,0};
+								position[]={7560.5,116.59,11588.5};
+								angles[]={-0,4.4505897,0};
 							};
 							id=17427;
 							type="sss_transport_moduleAddLand";
-							atlOffset=0.00077056885;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -28711,7 +28711,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7554.3345,118.66553,11616.657};
+								position[]={7554.0215,118.68284,11616.515};
 								angles[]={0.0080009829,4.4505897,6.2731905};
 							};
 							side="West";
@@ -28722,7 +28722,6 @@ class Mission
 							};
 							id=17449;
 							type="UK3CB_BAF_LandRover_Soft_Green_A";
-							atlOffset=-0.013038635;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -28746,8 +28745,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7559.9854,117.92867,11588.3};
-								angles[]={0.0019834081,4.4505897,6.2812018};
+								position[]={7560.5,119.45457,11588.5};
+								angles[]={-0,4.4505897,0};
 							};
 							side="West";
 							flags=6;
@@ -28757,7 +28756,6 @@ class Mission
 							};
 							id=17450;
 							type="UK3CB_BAF_MAN_HX58_Transport_Green";
-							atlOffset=-1.5258942;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -28903,7 +28901,6 @@ class Mission
 								};
 							};
 							id=17453;
-							atlOffset=-0.013038635;
 						};
 						class Item20
 						{
@@ -28918,7 +28915,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={83.328644,5.0734262,407.50723};
-										angles[]={0.0019834081,4.4505897,6.2812018};
+										angles[]={-0,4.4505897,0};
 									};
 									side="West";
 									flags=2;
@@ -28986,7 +28983,6 @@ class Mission
 								};
 							};
 							id=17455;
-							atlOffset=-1.5258942;
 						};
 						class Item21
 						{
@@ -29992,7 +29988,7 @@ class Mission
 						};
 					};
 					id=17420;
-					atlOffset=11.807454;
+					atlOffset=11.807857;
 				};
 				class Item4
 				{
@@ -31494,7 +31490,7 @@ class Mission
 				};
 			};
 			id=17310;
-			atlOffset=7.3803096;
+			atlOffset=7.3803344;
 		};
 		class Item23
 		{
@@ -43028,6 +43024,306 @@ class Mission
 			description="There is now a scripted fix applied to these via a button on the map screen. Don't mess with the variable names.";
 			id=18477;
 			atlOffset=1.7068992;
+		};
+		class Item32
+		{
+			dataType="Layer";
+			name="Parachute Flight Training";
+			class Entities
+			{
+				items=6;
+				class Item0
+				{
+					dataType="Marker";
+					position[]={19094.748,0.013000488,6315.561};
+					name="marker_2";
+					text="Parachute training flight path";
+					type="mil_dot";
+					id=18487;
+					atlOffset=46.510815;
+				};
+				class Item1
+				{
+					dataType="Marker";
+					position[]={2287,26,13332};
+					name="marker_3";
+					text="Parachute training flight path";
+					type="mil_dot";
+					id=18488;
+					atlOffset=46.206371;
+				};
+				class Item2
+				{
+					dataType="Marker";
+					position[]={10684.424,130.68671,9824.3867};
+					name="marker_4";
+					markerType="RECTANGLE";
+					type="";
+					a=9129.6689;
+					b=30.788965;
+					angle=22.662504;
+					id=18489;
+					atlOffset=4.5809402;
+				};
+				class Item3
+				{
+					dataType="Logic";
+					class PositionInfo
+					{
+						position[]={19421,-3.8146973e-05,4627};
+					};
+					name="paraFlightLogic";
+					init="comment ""Parachute Flight training actions"";  " \n "  " \n "if (hasInterface) then {  " \n " 0 spawn {  " \n "  waitUntil {alive player && !isNull player};  " \n "  " \n "        vehParaPlane addAction  " \n "        [  " \n "         ""Set flight altitude to 2000m ASL"",  " \n "         {  " \n "          [grpParaPlane, ""AWARE""] remoteExec [""setBehaviour"",2]  " \n "         },  " \n "         nil,  " \n "         1.5,  " \n "         true,  " \n "         true,  " \n "         """",  " \n "         ""(vehParaPlane getCargoIndex player == 0) && ((assignedVehicleRole player select 0) == 'cargo')""  " \n "        ];  " \n "  " \n "        vehParaPlane addAction  " \n "        [  " \n "         ""Set flight altitude to 500m ASL"",  " \n "         {  " \n "          [grpParaPlane, ""STEALTH""] remoteExec [""setBehaviour"",2];  " \n "         },  " \n "         nil,  " \n "         1.5,  " \n "         true,  " \n "         true,  " \n "         """",  " \n "         ""(vehParaPlane getCargoIndex player == 0) && ((assignedVehicleRole player select 0) == 'cargo')""  " \n "        ];  " \n "  " \n "        vehParaPlane addAction  " \n "        [  " \n "         ""Set flight altitude to 200m ASL"",  " \n "         {  " \n "          [grpParaPlane, ""COMBAT""] remoteExec [""setBehaviour"",2];  " \n "         },  " \n "         nil,  " \n "         1.5,  " \n "         true,  " \n "         true,  " \n "         """",  " \n "         ""(vehParaPlane getCargoIndex player == 0) && ((assignedVehicleRole player select 0) == 'cargo')""  " \n "        ];vehParaPlane addAction  " \n "        [  " \n "         ""Set flight speed to HIGH"",  " \n "         {  " \n "          [grpParaPlane, ""FULL""] remoteExec [""setSpeedMode"",2];  " \n "         },  " \n "         nil,  " \n "         1.5,  " \n "         true,  " \n "         true,  " \n "         """",  " \n "         ""(vehParaPlane getCargoIndex player == 0) && ((assignedVehicleRole player select 0) == 'cargo')""  " \n "        ];  " \n "  " \n "        vehParaPlane addAction  " \n "        [  " \n "         ""Set flight speed to DEFAULT"",  " \n "         {  " \n "          [grpParaPlane, ""NORMAL""] remoteExec [""setSpeedMode"",2];   " \n "         },  " \n "         nil,  " \n "         1.5,  " \n "         true,  " \n "         true,  " \n "         """",  " \n "         ""(vehParaPlane getCargoIndex player == 0) && ((assignedVehicleRole player select 0) == 'cargo')""  " \n "        ];  " \n "  " \n "        vehParaPlane addAction  " \n "        [  " \n "         ""Set flight speed to LOW"",  " \n "         {  " \n "          [grpParaPlane, ""LIMITED""] remoteExec [""setSpeedMode"",2];  " \n "         },  " \n "         nil,  " \n "         1.5,  " \n "         true,  " \n "         true,  " \n "         """",  " \n "         ""(vehParaPlane getCargoIndex player == 0) && ((assignedVehicleRole player select 0) == 'cargo')""  " \n "        ];  " \n "    };  " \n "};";
+					id=18490;
+					type="Logic";
+					atlOffset=90.533997;
+				};
+				class Item4
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=5;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={18972.637,1947.874,4613.7407};
+							};
+							side="West";
+							flags=2;
+							class Attributes
+							{
+								skill=1;
+							};
+							id=18492;
+							type="B_Helipilot_F";
+							atlOffset=1983.713;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=0;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="Male08ENG";
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=1.05;
+										};
+									};
+								};
+								nAttributes=3;
+							};
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={18972.637,1947.874,4613.7407};
+							};
+							side="West";
+							class Attributes
+							{
+								skill=1;
+							};
+							id=18493;
+							type="B_Helipilot_F";
+							atlOffset=1983.713;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="BOOL";
+											value=0;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="STRING";
+											value="Male08ENG";
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											singleType="SCALAR";
+											value=1.05;
+										};
+									};
+								};
+								nAttributes=3;
+							};
+						};
+						class Item2
+						{
+							dataType="Waypoint";
+							loiterAltitude=-3.4028235e+38;
+							position[]={18981.082,497.16116,6353.3579};
+							class Effects
+							{
+							};
+							showWP="NEVER";
+							id=18494;
+							type="Move";
+							atlOffset=534;
+						};
+						class Item3
+						{
+							dataType="Waypoint";
+							loiterAltitude=-3.4028235e+38;
+							position[]={2166.9414,499.07391,13381.46};
+							class Effects
+							{
+							};
+							showWP="NEVER";
+							id=18495;
+							type="Move";
+							atlOffset=521;
+						};
+						class Item4
+						{
+							dataType="Waypoint";
+							loiterAltitude=-3.4028235e+38;
+							position[]={2070.6768,500.00092,13429.844};
+							class Effects
+							{
+							};
+							showWP="NEVER";
+							id=18496;
+							type="Cycle";
+							atlOffset=521.41498;
+						};
+					};
+					class Attributes
+					{
+						name="grpParaPlane";
+						init="if (isServer) then { " \n "this setGroupIdGlobal [""Parachute Flight Training""]; " \n "};" \n "";
+						speedMode="LIMITED";
+					};
+					class CrewLinks
+					{
+						class LinkIDProvider
+						{
+							nextID=2;
+						};
+						class Links
+						{
+							items=2;
+							class Item0
+							{
+								linkID=0;
+								item0=18492;
+								item1=18497;
+								class CustomData
+								{
+									role=1;
+								};
+							};
+							class Item1
+							{
+								linkID=1;
+								item0=18493;
+								item1=18497;
+								class CustomData
+								{
+									role=2;
+									turretPath[]={0};
+								};
+							};
+						};
+					};
+					id=18491;
+					atlOffset=1983.713;
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={18973.879,1953.7319,4614.0425};
+					};
+					side="West";
+					flags=2;
+					class Attributes
+					{
+						init="if isServer then {" \n "{_x setUnitLoadout (x5r_config_loadoutMap get ""loadoutHeliPilot""); _x allowDamage false;} forEach crew this;" \n "this flyInHeight 100;" \n "this flyInHeightASL [2000, 200, 500];" \n "this lockDriver true;" \n "this lockTurret [[0], true];" \n "};";
+						name="vehParaPlane";
+						reportOwnPosition=1;
+					};
+					id=18497;
+					type="UK3CB_BAF_Hercules_C4";
+					atlOffset=1983.713;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			id=18486;
+			atlOffset=1465.6866;
 		};
 	};
 	class Connections

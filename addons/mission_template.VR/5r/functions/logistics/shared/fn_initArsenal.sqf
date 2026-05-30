@@ -10,6 +10,7 @@ diag_log "Default Loadouts added to arsenals";
 {
 	private _arsenal = _x;
 	[_arsenal, x5r_config_itemArray, true] call ace_arsenal_fnc_initBox;
+	_x setVariable ["x5r_tags_vivDisabled",true,true];
 } forEach x5r_obj_arsenalArray;
 
 diag_log "Arsenals created";

@@ -9,8 +9,7 @@ jobs:
             - uses: actions/checkout@v2
             - name: Install HEMTT
               run: |
-                curl -L https://github.com/BrettMayson/HEMTT/releases/latest/download/hemtt-x86_64-unknown-linux-gnu.tar.gz -o hemtt.tar.gz
-                tar -xzf hemtt.tar.gz
+                curl -L https://github.com/BrettMayson/HEMTT/releases/latest/download/linux-x64 -o hemtt
                 chmod +x hemtt
                 sudo mv hemtt /usr/local/bin/hemtt
                 hemtt --version

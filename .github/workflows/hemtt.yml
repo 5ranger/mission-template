@@ -9,6 +9,11 @@ jobs:
             - uses: actions/checkout@v2
             - name: Setup HEMTT
               uses: arma-actions/hemtt@v1
+            - name: Check HEMTT
+              run: |
+                echo "$PATH"
+                which hemtt || true
+                hemtt --version || true
             - name: Initialize Changelog
               run: |
                 echo "Changelog" > CHANGELOG.md

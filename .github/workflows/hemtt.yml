@@ -7,13 +7,13 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
-            - name: Setup HEMTT
-              uses: arma-actions/hemtt@v1
-            - name: Check HEMTT
+            - name: Install HEMTT
               run: |
-                echo "$PATH"
-                which hemtt || true
-                hemtt --version || true
+                curl -L https://github.com/BrettMayson/HEMTT/releases/latest/download/hemtt-x86_64-unknown-linux-gnu.tar.gz -o hemtt.tar.gz
+                tar -xzf hemtt.tar.gz
+                chmod +x hemtt
+                sudo mv hemtt /usr/local/bin/hemtt
+                hemtt --version
             - name: Initialize Changelog
               run: |
                 echo "Changelog" > CHANGELOG.md

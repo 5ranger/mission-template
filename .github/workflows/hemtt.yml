@@ -12,7 +12,6 @@ jobs:
                 curl -L https://github.com/BrettMayson/HEMTT/releases/latest/download/linux-x64 -o hemtt
                 chmod +x hemtt
                 sudo mv hemtt /usr/local/bin/hemtt
-                hemtt --version
             - name: Initialize Changelog
               run: |
                 echo "Changelog" > CHANGELOG.md

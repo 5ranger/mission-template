@@ -860,7 +860,7 @@ class GCam_Dialog_Quit
 			w = 0.0560;
 			text = "OK";
 			toolTip = "Quit GCam";
-			onButtonClick = "GCam_BId = ""quit""; GCam_B = true; showChat true";
+			onButtonClick = "GCam_BId = ""quit""; GCam_B = true;";
 		};
 		class Button_QuitCancel : GCam_DialogBase_Button
 		{

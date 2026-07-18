@@ -66,6 +66,12 @@ x5r_fnc_closeGcam = {
     [] spawn {sleep 1; GCamKill = false;}; // Cleanup the flag since we manipulate it outside the normal gcam sqf
 };
 
+// Handle respawns while in camera
+player addEventHandler ["Killed", {
+    x5r_tags_camMode = "";
+    showChat true;
+}];
+
 // Close cameras when you wake up since you might not notice that you did
 ["ace_medical_wakeUp", {
     params ["_unit"];
@@ -87,7 +93,7 @@ x5r_fnc_closeGcam = {
     // Create buttons while Uncon: re-attached every time ACE's input-block dialog (re)appears
     [] spawn {
         while {x5r_tags_unconActive} do {
-            waitUntil {sleep 0.1; !x5r_tags_unconActive || {!isNull (uiNamespace getVariable ["ace_common_dlgDisableMouse", displayNull])}};
+            waitUntil {sleep 0.2; !x5r_tags_unconActive || {!isNull (uiNamespace getVariable ["ace_common_dlgDisableMouse", displayNull])}};
             if (!x5r_tags_unconActive) exitWith {};
             disableSerialization;
             private _dlg = uiNamespace getVariable ["ace_common_dlgDisableMouse", displayNull];
@@ -107,7 +113,7 @@ x5r_fnc_closeGcam = {
             _ctrl2 ctrlAddEventHandler ["MouseButtonClick", { call x5r_fnc_openGcam; }];
             _ctrl2 ctrlCommit 0;
 
-            waitUntil {sleep 0.1; !x5r_tags_unconActive || isNull (uiNamespace getVariable ["ace_common_dlgDisableMouse", displayNull])};
+            waitUntil {sleep 0.2; !x5r_tags_unconActive || isNull (uiNamespace getVariable ["ace_common_dlgDisableMouse", displayNull])};
         };
     };
 }] call CBA_fnc_addEventHandler;

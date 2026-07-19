@@ -21,6 +21,5 @@ enableTeamSwitch = 0;
 zeusCompositionScriptLevel = 2;
 enableDebugConsole[] = {
 	"76561197965400858", // Cathode
-	"76561198361914331", // Deadly
 	"76561198107304737"  // Preston
 };

@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3066;
+		nextID=3082;
 	};
 	class Camera
 	{
-		pos[]={61.361061,20.645023,37.510422};
-		dir[]={0.70817739,-0.63200498,-0.31481165};
-		up[]={0.57752782,0.77495253,-0.256733};
-		aside[]={-0.40621787,-2.7311035e-07,-0.91380286};
+		pos[]={90.263191,22.831348,1.2106931};
+		dir[]={0.01736995,-0.69077057,0.72292805};
+		up[]={0.016592655,0.72305679,0.69058555};
+		aside[]={0.99974775,-1.017157e-06,-0.024017569};
 	};
 };
 binarizationWanted=0;
@@ -367,9 +367,6 @@ class ScenarioData
 {
 	author="Cathode";
 	wreckRemovalMaxTime=3600;
-};
-class CustomAttributes
-{
 };
 class Mission
 {
@@ -1868,7 +1865,7 @@ class Mission
 									class Attributes
 									{
 										rank="CAPTAIN";
-										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutPlComd"" ,true];" \n "};";
+										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutPlComd"" ,true];" \n "this setVariable [""x5r_tags_canToggleVehRespawn"",true ,true];" \n "};";
 										name="pccoycomd";
 										description="C Coy OC@C COY";
 										isPlayer=1;
@@ -1981,7 +1978,7 @@ class Mission
 									class Attributes
 									{
 										rank="LIEUTENANT";
-										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutPlComd"" ,true];" \n "};";
+										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutPlComd"" ,true];" \n "this setVariable [""x5r_tags_canToggleVehRespawn"",true ,true];" \n "};";
 										name="pccoy2ic";
 										description="C Coy 2IC";
 										isPlayable=1;
@@ -2094,7 +2091,7 @@ class Mission
 									class Attributes
 									{
 										rank="SERGEANT";
-										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutPlComd"" ,true];" \n "};";
+										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutPlComd"" ,true];" \n "this setVariable [""x5r_tags_canToggleVehRespawn"",true ,true];" \n "};";
 										name="pccoycsm";
 										description="CSM";
 										isPlayable=1;
@@ -2194,7 +2191,7 @@ class Mission
 									class Attributes
 									{
 										rank="SERGEANT";
-										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutPlComd"" ,true];" \n "};";
+										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutPlComd"" ,true];" \n "this setVariable [""x5r_tags_canToggleVehRespawn"",true ,true];" \n "};";
 										name="pccoyjtac";
 										description="JTAC";
 										isPlayable=1;
@@ -2306,7 +2303,7 @@ class Mission
 									flags=4;
 									class Attributes
 									{
-										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutRifleman"" ,true];" \n "};";
+										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutRifleman"" ,true];" \n "this setVariable [""x5r_tags_canToggleVehRespawn"",true ,true];" \n "};";
 										name="pccoysapper_2";
 										description="Sapper";
 										isPlayable=1;
@@ -2444,7 +2441,7 @@ class Mission
 									flags=4;
 									class Attributes
 									{
-										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutRifleman"" ,true];" \n "};";
+										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutRifleman"" ,true];" \n "this setVariable [""x5r_tags_canToggleVehRespawn"",true ,true];" \n "};";
 										name="pccoysapper_1";
 										description="Sapper";
 										isPlayable=1;
@@ -2583,7 +2580,7 @@ class Mission
 									class Attributes
 									{
 										rank="SERGEANT";
-										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutRifleman"" ,true];" \n "};";
+										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutRifleman"" ,true];" \n "this setVariable [""x5r_tags_canToggleVehRespawn"",true ,true];" \n "};";
 										name="pccoycqms";
 										description="CQMS";
 										isPlayable=1;

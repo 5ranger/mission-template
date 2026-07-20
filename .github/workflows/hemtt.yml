@@ -2,11 +2,14 @@ name: Build
 
 on: [push]
 
+permissions:
+  contents: write
+
 jobs:
     build:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v2
+            - uses: actions/checkout@v4
             - name: Install HEMTT
               run: |
                 curl -L https://github.com/BrettMayson/HEMTT/releases/latest/download/linux-x64 -o hemtt
@@ -20,9 +23,9 @@ jobs:
 #                echo "List of recent commits:" >> CHANGELOG.md
 #                git log -10 --pretty=format:"- %h %s (%an, %ad)" --date=short >> CHANGELOG.md
             - name: Generate Changelog
-              uses: janheinrichmerker/action-github-changelog-generator@v2.3
+              uses: janheinrichmerker/action-github-changelog-generator@v2.4
               with:
-                  token: ${{ secrets.CUSTOM_GITHUB_TOKEN }} 
+                  token: ${{ secrets.GITHUB_TOKEN }} 
                   output: CHANGELOG.md
             - name: Run HEMTT build
               run: hemtt release
@@ -45,7 +48,7 @@ jobs:
                     .hemttout/release/addons/5r_mission_training.dagger_island_summer.pbo
                     .hemttout/release/addons/5r_mission_generator.VR.pbo
                     .hemttout/release/addons/5r_mission_iutr_medical_amb_xing.dagger_island_summer.pbo  
-                  token: ${{ secrets.CUSTOM_GITHUB_TOKEN }}
+                  token: ${{ secrets.GITHUB_TOKEN }}
                   repository: 5ranger/mission-template
                   body_path: CHANGELOG.md
                   make_latest: "true"

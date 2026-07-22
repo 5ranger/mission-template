@@ -20,7 +20,6 @@ x5r_fnc_openSpectator = {
     if (player getVariable ["ACE_isUnconscious", false]) then {
         [false] call ace_common_fnc_disableUserInput;
     };
-    showChat false;
     ["Initialize", [player, [], false, true, false, false, false, true, false, false]] call BIS_fnc_EGSpectator;
     // wait for escape menu or camMode to switch
     [] spawn {
@@ -33,7 +32,6 @@ x5r_fnc_openSpectator = {
 
 x5r_fnc_closeSpectator = {
     x5r_tags_camMode = ""; // watcher's waitUntil sees this and skips its own Terminate
-    showChat true;
     ["Terminate"] call BIS_fnc_EGSpectator;
     if (player getVariable ["ACE_isUnconscious", false]) then {
         [true] call ace_common_fnc_disableUserInput;

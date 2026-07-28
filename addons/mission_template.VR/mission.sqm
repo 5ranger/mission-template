@@ -8,7 +8,7 @@ class EditorData
 	toggles=517;
 	class ItemIDProvider
 	{
-		nextID=6302;
+		nextID=6308;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={404.17621,30.518867,726.29816};
-		dir[]={-0.09616904,-0.70453066,0.70321608};
-		up[]={-0.09546221,0.7096566,0.69804698};
-		aside[]={0.99082327,-1.2614182e-06,0.13550496};
+		pos[]={85.293686,23.596645,28.245274};
+		dir[]={0.26350448,-0.93065363,0.25427514};
+		up[]={0.66966343,0.36600611,0.64620805};
+		aside[]={0.69445175,-2.1484448e-06,-0.71965665};
 	};
 };
 binarizationWanted=0;
@@ -367,6 +367,9 @@ class ScenarioData
 {
 	author="Cathode";
 	wreckRemovalMaxTime=3600;
+};
+class CustomAttributes
+{
 };
 class Mission
 {
@@ -2750,7 +2753,7 @@ class Mission
 							side="West";
 							class Entities
 							{
-								items=3;
+								items=4;
 								class Item0
 								{
 									dataType="Object";
@@ -2868,15 +2871,15 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={90,5.0014391,37.049999};
+										position[]={90,5.0014391,38.049999};
 									};
 									side="West";
 									flags=4;
 									class Attributes
 									{
-										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutMedic"" ,true];" \n "};";
-										name="p70plmedic_1";
-										description="PL Medic";
+										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutPlComd"" ,true];" \n "};";
+										name="p70plsgt";
+										description="PL Sgt";
 										isPlayable=1;
 										class Inventory
 										{
@@ -2890,7 +2893,7 @@ class Mission
 											watch="ItemWatch";
 										};
 									};
-									id=6180;
+									id=6181;
 									type="B_Soldier_F";
 									class CustomAttributes
 									{
@@ -2980,15 +2983,15 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={90,5.0014391,38.049999};
+										position[]={90,5.0014391,37.049999};
 									};
 									side="West";
 									flags=4;
 									class Attributes
 									{
-										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutPlComd"" ,true];" \n "};";
-										name="p70plsgt";
-										description="PL Sgt";
+										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutMedic"" ,true];" \n "};";
+										name="p70plmedic_1";
+										description="PL Medic";
 										isPlayable=1;
 										class Inventory
 										{
@@ -3002,8 +3005,120 @@ class Mission
 											watch="ItemWatch";
 										};
 									};
-									id=6181;
-									type="B_Soldier_F";
+									id=6303;
+									type="B_medic_F";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="ace_isMedic";
+											expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=1;
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										class Attribute2
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male05ENG";
+												};
+											};
+										};
+										class Attribute3
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=1.03;
+												};
+											};
+										};
+										class Attribute4
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										class Attribute5
+										{
+											property="enableStamina";
+											expression="_this enablestamina _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=6;
+									};
+								};
+								class Item3
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={90,5.0014391,36.049999};
+									};
+									side="West";
+									flags=4;
+									class Attributes
+									{
+										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutMedic"" ,true];" \n "};";
+										name="p70plmedic_2";
+										description="PL Medic";
+										isPlayable=1;
+										class Inventory
+										{
+											class uniform
+											{
+												typeName="UK3CB_BAF_U_CombatUniform_MTP_RM";
+												isBackpack=0;
+											};
+											map="ItemMap";
+											compass="ItemCompass";
+											watch="ItemWatch";
+										};
+									};
+									id=6302;
+									type="B_medic_F";
 									class CustomAttributes
 									{
 										class Attribute0
@@ -3117,7 +3232,7 @@ class Mission
 							side="West";
 							class Entities
 							{
-								items=3;
+								items=4;
 								class Item0
 								{
 									dataType="Object";
@@ -3235,118 +3350,6 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={92,5.0014391,37.049999};
-									};
-									side="West";
-									flags=4;
-									class Attributes
-									{
-										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutMedic"" ,true];" \n "};";
-										name="p80plmedic";
-										description="PL Medic";
-										isPlayable=1;
-										class Inventory
-										{
-											class uniform
-											{
-												typeName="UK3CB_BAF_U_CombatUniform_MTP_RM";
-												isBackpack=0;
-											};
-											map="ItemMap";
-											compass="ItemCompass";
-											watch="ItemWatch";
-										};
-									};
-									id=6184;
-									type="B_Soldier_F";
-									class CustomAttributes
-									{
-										class Attribute0
-										{
-											property="ace_isMedic";
-											expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1;
-												};
-											};
-										};
-										class Attribute1
-										{
-											property="allowDamage";
-											expression="_this allowdamage _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="BOOL";
-													value=1;
-												};
-											};
-										};
-										class Attribute2
-										{
-											property="speaker";
-											expression="_this setspeaker _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Male05ENG";
-												};
-											};
-										};
-										class Attribute3
-										{
-											property="pitch";
-											expression="_this setpitch _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="SCALAR";
-													value=1.03;
-												};
-											};
-										};
-										class Attribute4
-										{
-											property="hideObject";
-											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
-											class Value
-											{
-												class data
-												{
-													singleType="BOOL";
-													value=0;
-												};
-											};
-										};
-										class Attribute5
-										{
-											property="enableStamina";
-											expression="_this enablestamina _value;";
-											class Value
-											{
-												class data
-												{
-													singleType="BOOL";
-													value=1;
-												};
-											};
-										};
-										nAttributes=6;
-									};
-								};
-								class Item2
-								{
-									dataType="Object";
-									class PositionInfo
-									{
 										position[]={92,5.0014391,38.049999};
 									};
 									side="West";
@@ -3439,6 +3442,230 @@ class Mission
 											};
 										};
 										nAttributes=5;
+									};
+								};
+								class Item2
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={92,5.0014391,36.049999};
+									};
+									side="West";
+									flags=4;
+									class Attributes
+									{
+										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutMedic"" ,true];" \n "};";
+										name="p80plmedic_2";
+										description="PL Medic";
+										isPlayable=1;
+										class Inventory
+										{
+											class uniform
+											{
+												typeName="UK3CB_BAF_U_CombatUniform_MTP_RM";
+												isBackpack=0;
+											};
+											map="ItemMap";
+											compass="ItemCompass";
+											watch="ItemWatch";
+										};
+									};
+									id=6306;
+									type="B_medic_F";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="ace_isMedic";
+											expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=1;
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										class Attribute2
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male05ENG";
+												};
+											};
+										};
+										class Attribute3
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=1.03;
+												};
+											};
+										};
+										class Attribute4
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										class Attribute5
+										{
+											property="enableStamina";
+											expression="_this enablestamina _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=6;
+									};
+								};
+								class Item3
+								{
+									dataType="Object";
+									class PositionInfo
+									{
+										position[]={92,5.0014391,37.049999};
+									};
+									side="West";
+									flags=4;
+									class Attributes
+									{
+										init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutMedic"" ,true];" \n "};";
+										name="p80plmedic_1";
+										description="PL Medic";
+										isPlayable=1;
+										class Inventory
+										{
+											class uniform
+											{
+												typeName="UK3CB_BAF_U_CombatUniform_MTP_RM";
+												isBackpack=0;
+											};
+											map="ItemMap";
+											compass="ItemCompass";
+											watch="ItemWatch";
+										};
+									};
+									id=6307;
+									type="B_medic_F";
+									class CustomAttributes
+									{
+										class Attribute0
+										{
+											property="ace_isMedic";
+											expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=1;
+												};
+											};
+										};
+										class Attribute1
+										{
+											property="allowDamage";
+											expression="_this allowdamage _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										class Attribute2
+										{
+											property="speaker";
+											expression="_this setspeaker _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Male05ENG";
+												};
+											};
+										};
+										class Attribute3
+										{
+											property="pitch";
+											expression="_this setpitch _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="SCALAR";
+													value=1.03;
+												};
+											};
+										};
+										class Attribute4
+										{
+											property="hideObject";
+											expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=0;
+												};
+											};
+										};
+										class Attribute5
+										{
+											property="enableStamina";
+											expression="_this enablestamina _value;";
+											class Value
+											{
+												class data
+												{
+													singleType="BOOL";
+													value=1;
+												};
+											};
+										};
+										nAttributes=6;
 									};
 								};
 							};
@@ -26573,137 +26800,22 @@ class Mission
 		{
 			dataType="Group";
 			side="West";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={90,5.0014391,36.049999};
-					};
-					side="West";
-					flags=6;
-					class Attributes
-					{
-						init="if isServer then {" \n "this setVariable [""x5r_loadoutName"",""loadoutMedic"" ,true];" \n "};";
-						name="p70plmedic_2";
-						description="PL Medic";
-						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="UK3CB_BAF_U_CombatUniform_MTP_RM";
-								isBackpack=0;
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-						};
-					};
-					id=6286;
-					type="B_Soldier_F";
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ace_isMedic";
-							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=1;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="allowDamage";
-							expression="_this allowdamage _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=1;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="STRING";
-									value="Male05ENG";
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="SCALAR";
-									value=1.03;
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="hideObject";
-							expression="if !(is3DEN) then {_this hideobjectglobal _value;};";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=0;
-								};
-							};
-						};
-						class Attribute5
-						{
-							property="enableStamina";
-							expression="_this enablestamina _value;";
-							class Value
-							{
-								class data
-								{
-									singleType="BOOL";
-									value=1;
-								};
-							};
-						};
-						nAttributes=6;
-					};
-				};
-			};
 			class Attributes
 			{
 			};
 			id=6287;
+			atlOffset=-5;
 		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=140;
+			nextID=141;
 		};
 		class Links
 		{
-			items=140;
+			items=141;
 			class Item0
 			{
 				linkID=0;
@@ -27377,7 +27489,7 @@ class Mission
 			class Item67
 			{
 				linkID=67;
-				item0=6180;
+				item0=6303;
 				item1=66;
 				class CustomData
 				{
@@ -27407,7 +27519,7 @@ class Mission
 			class Item70
 			{
 				linkID=70;
-				item0=6184;
+				item0=6307;
 				item1=66;
 				class CustomData
 				{
@@ -28027,7 +28139,7 @@ class Mission
 			class Item132
 			{
 				linkID=132;
-				item0=6286;
+				item0=6302;
 				item1=66;
 				class CustomData
 				{
@@ -28098,6 +28210,16 @@ class Mission
 			{
 				linkID=139;
 				item0=6298;
+				item1=66;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item140
+			{
+				linkID=140;
+				item0=6306;
 				item1=66;
 				class CustomData
 				{

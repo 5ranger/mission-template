@@ -4,7 +4,8 @@
 comment "Adds this object to the reinsert request system";
 if (isServer) then { 
  if (isNil "x5r_obj_reinsertRequestArray") then {x5r_obj_reinsertRequestArray = [];};
- x5r_obj_reinsertRequestArray pushBack this; 
+ x5r_obj_reinsertRequestArray pushBack this;
+ publicVariable "x5r_obj_reinsertRequestArray";
 };
 -----------------*/
 

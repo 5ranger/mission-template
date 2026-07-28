@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=3098;
+		nextID=3114;
 	};
 	class Camera
 	{
-		pos[]={85.293686,23.596645,28.245274};
-		dir[]={0.26350448,-0.93065363,0.25427514};
-		up[]={0.66966343,0.36600611,0.64620805};
-		aside[]={0.69445175,-2.1484448e-06,-0.71965665};
+		pos[]={410.59195,35.854538,780.77026};
+		dir[]={-0.23092772,-0.68894678,-0.687213};
+		up[]={-0.21946429,0.7247746,-0.65310019};
+		aside[]={-0.94800216,-1.2167729e-06,0.31856063};
 	};
 };
 binarizationWanted=0;
@@ -368,9 +368,6 @@ class ScenarioData
 	author="Cathode";
 	wreckRemovalMaxTime=3600;
 };
-class CustomAttributes
-{
-};
 class Mission
 {
 	class Intel
@@ -394,7 +391,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=10;
+		items=9;
 		class Item0
 		{
 			dataType="Layer";
@@ -15708,7 +15705,7 @@ class Mission
 									flags=4;
 									class Attributes
 									{
-										init="comment ""Adds this object to the reinsert request system""; " \n "if (isServer) then {  " \n " if (isNil ""x5r_obj_reinsertRequestArray"") then {x5r_obj_reinsertRequestArray = [];}; " \n " x5r_obj_reinsertRequestArray pushBack this;  " \n "};";
+										init="comment ""Adds this object to the reinsert request system""; " \n "if (isServer) then {  " \n " if (isNil ""x5r_obj_reinsertRequestArray"") then {x5r_obj_reinsertRequestArray = [];}; " \n " x5r_obj_reinsertRequestArray pushBack this;  " \n " publicVariable ""x5r_obj_reinsertRequestArray"";" \n "};";
 										disableSimulation=1;
 									};
 									id=1237;
@@ -23017,7 +23014,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="comment ""Adds this object to the reinsert request system""; " \n "if (isServer) then {  " \n " if (isNil ""x5r_obj_reinsertRequestArray"") then {x5r_obj_reinsertRequestArray = [];}; " \n " x5r_obj_reinsertRequestArray pushBack this;  " \n "};";
+						init="comment ""Adds this object to the reinsert request system""; " \n "if (isServer) then {  " \n " if (isNil ""x5r_obj_reinsertRequestArray"") then {x5r_obj_reinsertRequestArray = [];}; " \n " x5r_obj_reinsertRequestArray pushBack this;  " \n " publicVariable ""x5r_obj_reinsertRequestArray"";" \n "};";
 						disableSimulation=1;
 					};
 					id=1229;
@@ -23052,7 +23049,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="comment ""Adds this object to the reinsert request system""; " \n "if (isServer) then {  " \n " if (isNil ""x5r_obj_reinsertRequestArray"") then {x5r_obj_reinsertRequestArray = [];}; " \n " x5r_obj_reinsertRequestArray pushBack this;  " \n "};";
+						init="comment ""Adds this object to the reinsert request system""; " \n "if (isServer) then {  " \n " if (isNil ""x5r_obj_reinsertRequestArray"") then {x5r_obj_reinsertRequestArray = [];}; " \n " x5r_obj_reinsertRequestArray pushBack this;  " \n " publicVariable ""x5r_obj_reinsertRequestArray"";" \n "};";
 						disableSimulation=1;
 					};
 					id=1230;
@@ -26795,16 +26792,6 @@ class Mission
 				};
 			};
 			id=1845;
-		};
-		class Item9
-		{
-			dataType="Group";
-			side="West";
-			class Attributes
-			{
-			};
-			id=6287;
-			atlOffset=-5;
 		};
 	};
 	class Connections

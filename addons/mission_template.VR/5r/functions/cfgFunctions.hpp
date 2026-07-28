@@ -63,13 +63,20 @@ class x5r_logistics
 		{
 			postInit = 1;
 		};
+		class requestReinsertInit 
+		{
+			postInit = 1;
+		};
+		class requestReinsertMessage {};
+		class requestReinsertStatusHint {};
 	};
 	class server 
 	{
 		file = "5r\functions\logistics\server";
 		class deployRadioRelay {};
 		class packRadioRelay {};
-		
+		class requestReinsertAddReciever {};
+		class requestReinsertRemoveReciever {};
 	};
 	class shared
 	{

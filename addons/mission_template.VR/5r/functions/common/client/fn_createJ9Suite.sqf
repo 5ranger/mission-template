@@ -3,7 +3,11 @@ params ["_spectWhitelist"];
 diag_log format ["Loaded spectator whitelist: %1", _spectWhitelist];
 private _uid = getPlayerUID player;
 if !(_uid in _spectWhitelist) exitWith {};
-
+// Display Combatibility warning if ACEView is loaded
+if (isClass (configFile >> "CfgPatches" >> "ACEView")) then {
+    diag_log "[J9Suite]: ACEView detected. Uncon buttons may not be properly displayed.";
+    systemChat "[J9Suite]: ACEView detected. Uncon buttons may not be properly displayed.";
+};
 // Should only run once, but soft-set just in case
 if (isNil "x5r_tags_camMode") then { x5r_tags_camMode = ""; }; // "" | "spectator" | "gcam"
 if (isNil "x5r_tags_unconActive") then { x5r_tags_unconActive = false; };

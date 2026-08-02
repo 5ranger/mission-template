@@ -8,16 +8,12 @@ if (hasInterface) then {
         "_SP_PLAYER_",          // DEBUG USER
         "76561197965400858",    // Cathode
         "76561198141409958",    // Max
-        "76561198993593130",    // Rx
-        "76561198153501805",    // Crow
         "76561198108273886",    // Wast3d
         "76561198047545378",    // Gibs
         "76561198155238046",    // Bobi
         "76561199088931729",    // Eclipsy
-        "76561198082623259",     // Mann
-        "76561198147444609", // j
-        "76561198297895726", // bart
-        "76561199494316516"  // zeroefius
+        "76561198082623259",    // Mann
+        "76561198297895726" // Bart
     ]] spawn x5r_common_fnc_createJ9Suite;
     // Add ability to create empty crates to following vehicle classnames
     [[

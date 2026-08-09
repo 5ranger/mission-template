@@ -28,7 +28,6 @@ if (hasInterface) then {
     call x5r_logistics_fnc_addRadioRelayActions; // Create Relay Container actions
     ["ace_arsenal_displayClosed", x5r_common_fnc_fixSlingHelmetExploit] call CBA_fnc_addEventHandler;
     enableEngineArtillery false; // Disable Artillery Computer
-    enableSentences false; // Disable Voices
     call x5r_common_fnc_movePlayerToSpawn; // Move player to spawn location when connected
     call x5r_common_fnc_createSpawnMarkerLocal;
     //ACE Fortify respawn objects. Objects also needs to be in ACE Fortify array (initServer.sqf)

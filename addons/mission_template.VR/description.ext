@@ -16,6 +16,7 @@ respawnTemplates[] = { "MenuPosition" };
 respawnonstart = 0;
 respawnDelay = 5;
 respawnDialog = 1;
+respawnButton = 0;
 disabledAI=1;
 enableTeamSwitch = 0;
 zeusCompositionScriptLevel = 2;

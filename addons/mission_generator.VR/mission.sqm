@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=59;
+		nextID=60;
 	};
 	class Camera
 	{
-		pos[]={4349.5977,10.819703,6615.4868};
-		dir[]={0.82214743,-0.56436986,-0.07467597};
-		up[]={0.56205958,0.82552034,-0.051052094};
-		aside[]={-0.090458624,3.061723e-08,-0.99590832};
+		pos[]={4350.5864,8.0300083,6640.291};
+		dir[]={-0.11620462,-0.13079713,-0.98457533};
+		up[]={-0.015330938,0.99140918,-0.12989555};
+		aside[]={-0.99310696,9.3132257e-10,0.11721157};
 	};
 };
 binarizationWanted=0;
@@ -73,6 +73,7 @@ addons[]=
 	"rhs_c_weapons",
 	"ace_compat_rhs_afrf3_explosives",
 	"ace_vector",
+	"Chemlight_WeightReduction",
 	"ace_attach",
 	"ace_chemlights",
 	"AMP_Breaching_Charge",
@@ -96,7 +97,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=61;
+		items=62;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -387,121 +388,126 @@ class AddonsMetaData
 		};
 		class Item43
 		{
+			className="Chemlight_WeightReduction";
+			name="Chemlight_WeightReduction";
+		};
+		class Item44
+		{
 			className="ace_attach";
 			name="ACE3 - Attach";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item44
+		class Item45
 		{
 			className="ace_chemlights";
 			name="ACE3 - Chemlights";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item45
+		class Item46
 		{
 			className="AMP_Breaching_Charge";
 			name="bcdw - main";
 			author="Ampersand";
 		};
-		class Item46
+		class Item47
 		{
 			className="ace_microdagr";
 			name="ACE3 - MicroDAGR";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item47
+		class Item48
 		{
 			className="UK3CB_BAF_Weapons_L7";
 			name="3CB BAF Weapons - L7";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item48
+		class Item49
 		{
 			className="ace_field_rations";
 			name="ACE3 - Field Rations";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item49
+		class Item50
 		{
 			className="ace_hearing";
 			name="ACE3 - Hearing";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item50
+		class Item51
 		{
 			className="UK3CB_BAF_Weapons_L129";
 			name="3CB BAF Weapons - L129";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item51
+		class Item52
 		{
 			className="UK3CB_BAF_Weapons_Accessories";
 			name="3CB BAF Weapons - Accessories";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item52
+		class Item53
 		{
 			className="ace_flashsuppressors";
 			name="ACE3 - Flash Suppressors";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item53
+		class Item54
 		{
 			className="ace_overheating";
 			name="ACE3 - Overheating";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item54
+		class Item55
 		{
 			className="ace_laser";
 			name="ACE3 - Laser";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item55
+		class Item56
 		{
 			className="MCC_RD";
 			name="MCC_RD";
 			author="Brucey";
 		};
-		class Item56
+		class Item57
 		{
 			className="ace_irlight";
 			name="ACE3 - IR Lights";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item57
+		class Item58
 		{
 			className="MCC_Grips";
 			name="MCC_Grips";
 			author="Brucey";
 		};
-		class Item58
+		class Item59
 		{
 			className="UK3CB_Factions_Equipment2";
 			name="3CB Factions - Equipment2";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item59
+		class Item60
 		{
 			className="UK3CB_BAF_Weapons_ACE";
 			name="3CB BAF Weapons - Ace3";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item60
+		class Item61
 		{
 			className="ace_artillerytables";
 			name="ACE3 - ArtilleryTables";
@@ -680,7 +686,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[[[[""UK3CB_BAF_AT4_CS_AP_Launcher"",""UK3CB_BAF_AT4_CS_AT_Launcher""],[3,3]],[[""SmokeShell"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"",""rhs_mag_m67"",""rhs_mag_M433_HEDP"",""rhs_mag_m713_Red"",""rhs_mag_m714_White"",""UK3CB_BAF_762_100Rnd"",""UK3CB_BAF_762_L42A1_20Rnd_T"",""ACE_M84"",""rhs_ec75_mag"",""ACE_HuntIR_M203"",""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""UK3CB_BAF_762_100Rnd_T"",""AMP_Breaching_Charge_Mag""],[20,30,20,12,6,6,16,16,8,6,10,10,4,12]],[[""ACE_wirecutter"",""ACE_splint"",""ACE_adenosine"",""ACE_CableTie"",""ACE_Canteen"",""ACE_tourniquet"",""ACM_NPA"",""ACM_PulseOximeter"",""ACM_PocketBVM"",""ACM_PressureBandage"",""ACM_EmergencyTraumaDressing"",""ACM_ElasticWrap"",""ACM_SAMSplint"",""ACM_IV_16g"",""ACM_Vial_TXA"",""ACM_BloodBag_ON_1000"",""ACM_BloodBag_ON_500"",""ACE_EntrenchingTool""],[1,10,2,20,4,20,20,20,5,50,50,25,20,10,20,20,20,1]],[[],[]]],false]";
+									value="[[[[""UK3CB_BAF_AT4_CS_AP_Launcher"",""UK3CB_BAF_AT4_CS_AT_Launcher""],[3,3]],[[""SmokeShell"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"",""rhs_mag_m67"",""rhs_mag_M433_HEDP"",""rhs_mag_m713_Red"",""rhs_mag_m714_White"",""UK3CB_BAF_762_100Rnd"",""UK3CB_BAF_762_L42A1_20Rnd_T"",""ACE_M84"",""rhs_ec75_mag"",""ACE_HuntIR_M203"",""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""UK3CB_BAF_762_100Rnd_T"",""AMP_Breaching_Charge_Mag""],[20,30,20,12,6,6,16,16,8,6,10,10,4,12]],[[""ACE_wirecutter"",""ACE_splint"",""ACE_adenosine"",""ACE_CableTie"",""ACE_Canteen"",""ACE_tourniquet"",""ACM_NPA"",""ACM_PulseOximeter"",""ACM_PocketBVM"",""ACM_PressureBandage"",""ACM_EmergencyTraumaDressing"",""ACM_ElasticWrap"",""ACM_SAMSplint"",""ACM_IV_16g"",""ACM_Vial_TXA"",""ACM_BloodBag_ON_1000"",""ACM_BloodBag_ON_500"",""ACE_EntrenchingTool"",""ACM_ChestSeal"",""ACM_ChestTubeKit""],[1,10,2,20,4,20,20,20,5,50,50,25,20,10,20,20,20,1,40,8]],[[],[]]],false]";
 								};
 							};
 						};
@@ -801,7 +807,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[[[[""UK3CB_BAF_AT4_CS_AT_Launcher""],[1]],[[""SmokeShell"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"",""rhs_mag_m67"",""rhs_mag_M433_HEDP"",""UK3CB_BAF_762_100Rnd"",""UK3CB_BAF_762_L42A1_20Rnd_T"",""AMP_Breaching_Charge_Mag""],[3,6,2,3,2,2,2]],[[""ACE_splint"",""ACE_epinephrine"",""ACE_adenosine"",""ACE_CableTie"",""ACE_salineIV"",""ACE_salineIV_500"",""ACE_Canteen"",""ACE_wirecutter"",""ACE_WaterBottle"",""ACE_tourniquet"",""ACE_plasmaIV"",""ACE_plasmaIV_500"",""ACM_IGel"",""ACM_NPA"",""ACM_SuctionBag"",""ACM_PulseOximeter"",""ACM_PocketBVM"",""ACM_PressureBandage"",""ACM_EmergencyTraumaDressing"",""ACM_ElasticWrap"",""ACM_SAMSplint"",""ACM_IV_16g"",""ACM_IO_FAST"",""ACM_IO_EZ"",""ACM_Syringe_10"",""ACM_Syringe_5"",""ACM_Syringe_3"",""ACM_Syringe_1"",""ACM_Vial_Morphine"",""ACM_Vial_Ketamine"",""ACM_Vial_TXA"",""ACM_Vial_Amiodarone"",""ACM_Vial_Ondansetron"",""ACM_Vial_CalciumChloride"",""ACM_Spray_Naloxone"",""ACM_BloodBag_ON_1000"",""ACM_BloodBag_ON_500""],[1,3,1,5,2,4,1,1,2,5,2,4,3,4,2,3,1,1,30,10,10,3,5,3,3,1,1,1,1,3,3,3,3,3,5,3,3,5]],[[],[]]],false]";
+									value="[[[[""UK3CB_BAF_AT4_CS_AT_Launcher""],[1]],[[""SmokeShell"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"",""rhs_mag_m67"",""rhs_mag_M433_HEDP"",""UK3CB_BAF_762_100Rnd"",""UK3CB_BAF_762_L42A1_20Rnd_T"",""AMP_Breaching_Charge_Mag""],[3,6,2,3,2,2,2]],[[""ACE_splint"",""ACE_epinephrine"",""ACE_adenosine"",""ACE_CableTie"",""ACE_salineIV"",""ACE_salineIV_500"",""ACE_Canteen"",""ACE_wirecutter"",""ACE_WaterBottle"",""ACE_tourniquet"",""ACE_plasmaIV"",""ACE_plasmaIV_500"",""ACM_IGel"",""ACM_NPA"",""ACM_SuctionBag"",""ACM_PulseOximeter"",""ACM_PocketBVM"",""ACM_PressureBandage"",""ACM_EmergencyTraumaDressing"",""ACM_ElasticWrap"",""ACM_SAMSplint"",""ACM_IV_16g"",""ACM_IO_FAST"",""ACM_IO_EZ"",""ACM_Syringe_10"",""ACM_Syringe_5"",""ACM_Syringe_3"",""ACM_Syringe_1"",""ACM_Vial_Morphine"",""ACM_Vial_Ketamine"",""ACM_Vial_TXA"",""ACM_Vial_Amiodarone"",""ACM_Vial_Ondansetron"",""ACM_Vial_CalciumChloride"",""ACM_Spray_Naloxone"",""ACM_BloodBag_ON_1000"",""ACM_BloodBag_ON_500"",""ACM_ChestSeal"",""ACM_NCDKit"",""ACM_ChestTubeKit""],[1,3,1,5,2,4,1,1,2,5,2,4,3,4,2,3,1,1,30,10,10,3,5,3,3,1,1,1,1,3,3,3,3,3,5,3,3,10,2,2]],[[],[]]],false]";
 								};
 							};
 						};
@@ -1105,7 +1111,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[[[[""UK3CB_BAF_AT4_CS_AT_Launcher"",""UK3CB_BAF_AT4_CS_AP_Launcher""],[1,1]],[[""SmokeShell"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"",""rhs_mag_m67"",""rhs_mag_M433_HEDP"",""UK3CB_BAF_762_100Rnd"",""UK3CB_BAF_762_L42A1_20Rnd_T"",""AMP_Breaching_Charge_Mag""],[5,12,4,6,4,2,4]],[[""ACE_splint"",""ACE_epinephrine"",""ACE_adenosine"",""ACE_CableTie"",""ACE_salineIV"",""ACE_salineIV_500"",""ACE_Canteen"",""ACE_wirecutter"",""ACE_WaterBottle"",""ACE_tourniquet"",""ACE_plasmaIV"",""ACE_plasmaIV_500"",""ACM_IGel"",""ACM_NPA"",""ACM_SuctionBag"",""ACM_PulseOximeter"",""ACM_PocketBVM"",""ACM_PressureBandage"",""ACM_EmergencyTraumaDressing"",""ACM_ElasticWrap"",""ACM_SAMSplint"",""ACM_IV_16g"",""ACM_IO_FAST"",""ACM_IO_EZ"",""ACM_Syringe_10"",""ACM_Syringe_5"",""ACM_Syringe_3"",""ACM_Syringe_1"",""ACM_Vial_Morphine"",""ACM_Vial_Ketamine"",""ACM_Vial_TXA"",""ACM_Vial_Amiodarone"",""ACM_Vial_Ondansetron"",""ACM_Vial_CalciumChloride"",""ACM_Spray_Naloxone"",""ACM_BloodBag_ON_1000"",""ACM_BloodBag_ON_500""],[2,5,2,10,4,8,1,1,2,10,4,8,5,8,3,5,2,2,50,20,20,5,10,6,6,1,1,1,1,5,5,5,5,5,10,5,5,10]],[[],[]]],false]";
+									value="[[[[""UK3CB_BAF_AT4_CS_AT_Launcher"",""UK3CB_BAF_AT4_CS_AP_Launcher""],[1,1]],[[""SmokeShell"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"",""rhs_mag_m67"",""rhs_mag_M433_HEDP"",""UK3CB_BAF_762_100Rnd"",""UK3CB_BAF_762_L42A1_20Rnd_T"",""AMP_Breaching_Charge_Mag""],[5,12,4,6,4,2,4]],[[""ACE_splint"",""ACE_epinephrine"",""ACE_adenosine"",""ACE_CableTie"",""ACE_salineIV"",""ACE_salineIV_500"",""ACE_Canteen"",""ACE_wirecutter"",""ACE_WaterBottle"",""ACE_tourniquet"",""ACE_plasmaIV"",""ACE_plasmaIV_500"",""ACM_IGel"",""ACM_NPA"",""ACM_SuctionBag"",""ACM_PulseOximeter"",""ACM_PocketBVM"",""ACM_PressureBandage"",""ACM_EmergencyTraumaDressing"",""ACM_ElasticWrap"",""ACM_SAMSplint"",""ACM_IV_16g"",""ACM_IO_FAST"",""ACM_IO_EZ"",""ACM_Syringe_10"",""ACM_Syringe_5"",""ACM_Syringe_3"",""ACM_Syringe_1"",""ACM_Vial_Morphine"",""ACM_Vial_Ketamine"",""ACM_Vial_TXA"",""ACM_Vial_Amiodarone"",""ACM_Vial_Ondansetron"",""ACM_Vial_CalciumChloride"",""ACM_Spray_Naloxone"",""ACM_BloodBag_ON_1000"",""ACM_BloodBag_ON_500"",""ACM_ChestSeal"",""ACM_NCDKit"",""ACM_ChestTubeKit""],[2,5,2,10,4,8,1,1,2,10,4,8,5,8,3,5,2,2,50,20,20,5,10,6,6,1,1,1,1,5,5,5,5,5,10,5,5,10,3,2]],[[],[]]],false]";
 								};
 							};
 						};
@@ -1167,7 +1173,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[[[[""UK3CB_BAF_AT4_CS_AT_Launcher"",""UK3CB_BAF_AT4_CS_AP_Launcher""],[1,1]],[[""SmokeShell"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"",""rhs_mag_m67"",""rhs_mag_M433_HEDP"",""UK3CB_BAF_762_100Rnd"",""UK3CB_BAF_762_L42A1_20Rnd_T"",""ACE_HuntIR_M203"",""AMP_Breaching_Charge_Mag""],[5,8,6,8,2,2,4,4]],[[""ACE_splint"",""ACE_epinephrine"",""ACE_adenosine"",""ACE_CableTie"",""ACE_wirecutter"",""ACE_tourniquet"",""ACE_plasmaIV"",""ACE_plasmaIV_500"",""ACE_salineIV"",""ACE_salineIV_500"",""ACM_IGel"",""ACM_NPA"",""ACM_SuctionBag"",""ACM_PulseOximeter"",""ACM_PressureBandage"",""ACM_EmergencyTraumaDressing"",""ACM_ElasticWrap"",""ACM_SAMSplint"",""ACM_IO_FAST"",""ACM_IO_EZ"",""ACM_Vial_TXA"",""ACM_Vial_CalciumChloride"",""ACM_BloodBag_ON_1000"",""ACM_BloodBag_ON_500""],[5,5,2,10,1,6,4,4,4,4,5,5,2,5,2,40,10,10,4,5,5,5,10,5,5]],[[],[]]],false]";
+									value="[[[[""UK3CB_BAF_AT4_CS_AT_Launcher"",""UK3CB_BAF_AT4_CS_AP_Launcher""],[1,1]],[[""SmokeShell"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"",""rhs_mag_m67"",""rhs_mag_M433_HEDP"",""UK3CB_BAF_762_100Rnd"",""UK3CB_BAF_762_L42A1_20Rnd_T"",""ACE_HuntIR_M203"",""AMP_Breaching_Charge_Mag""],[5,8,6,8,2,2,4,4]],[[""ACE_splint"",""ACE_epinephrine"",""ACE_adenosine"",""ACE_CableTie"",""ACE_wirecutter"",""ACE_tourniquet"",""ACE_plasmaIV"",""ACE_plasmaIV_500"",""ACE_salineIV"",""ACE_salineIV_500"",""ACM_IGel"",""ACM_NPA"",""ACM_SuctionBag"",""ACM_PulseOximeter"",""ACM_PressureBandage"",""ACM_EmergencyTraumaDressing"",""ACM_ElasticWrap"",""ACM_SAMSplint"",""ACM_IO_FAST"",""ACM_IO_EZ"",""ACM_Vial_TXA"",""ACM_Vial_CalciumChloride"",""ACM_BloodBag_ON_1000"",""ACM_BloodBag_ON_500"",""ACM_ChestSeal"",""ACM_NCDKit"",""ACM_ChestTubeKit""],[5,5,2,10,1,6,4,4,4,4,5,5,2,5,2,40,10,10,4,5,5,5,10,5,10,3,2]],[[],[]]],false]";
 								};
 							};
 						};
@@ -1396,7 +1402,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[[[[],[]],[[""ACM_Paracetamol"",""ACM_AmmoniaInhalant"",""ACM_Inhaler_Penthrox"",""ACM_OxygenTank_425""],[8,8,8,2]],[[""ACM_PressureBandage"",""ACM_EmergencyTraumaDressing"",""ACM_ElasticWrap"",""ACE_tourniquet"",""ACM_IGel"",""ACM_ACCUVAC"",""ACM_NPA"",""ACM_Stethoscope"",""ACM_BVM"",""ACM_PulseOximeter"",""ACM_AED"",""ACM_PressureCuff"",""ACM_IV_16g"",""ACM_IV_14g"",""ACM_Syringe_1"",""ACM_Syringe_3"",""ACM_Syringe_5"",""ACM_Syringe_10"",""ACM_IO_FAST"",""ACM_IO_EZ"",""ACM_Vial_Epinephrine"",""ACM_Vial_Esmolol"",""ACM_Vial_TXA"",""ACM_Vial_Amiodarone"",""ACM_Vial_Atropine"",""ACM_BloodBag_ON_1000"",""ACM_BloodBag_ON_500"",""ACE_plasmaIV"",""ACE_plasmaIV_500"",""ACE_salineIV"",""ACE_salineIV_500"",""ACM_Vial_CalciumChloride"",""ACM_Vial_Morphine"",""ACM_Vial_Ketamine"",""ACM_Vial_Fentanyl"",""ACM_Vial_Lidocaine"",""ACM_Vial_Ondansetron"",""ACM_SAMSplint"",""ACM_Spray_Naloxone"",""ACE_surgicalKit"",""ACE_bodyBag""],[100,75,50,20,25,2,25,1,4,5,2,2,25,25,10,10,10,10,10,25,25,2,25,25,20,20,20,20,20,10,10,40,25,25,25,25,25,20,10,2,3]],[[],[]]],false]";
+									value="[[[[],[]],[[""ACM_Paracetamol"",""ACM_AmmoniaInhalant"",""ACM_Inhaler_Penthrox"",""ACM_OxygenTank_425""],[8,8,8,2]],[[""ACM_PressureBandage"",""ACM_EmergencyTraumaDressing"",""ACM_ElasticWrap"",""ACE_tourniquet"",""ACM_IGel"",""ACM_ACCUVAC"",""ACM_NPA"",""ACM_Stethoscope"",""ACM_BVM"",""ACM_PulseOximeter"",""ACM_AED"",""ACM_PressureCuff"",""ACM_IV_16g"",""ACM_IV_14g"",""ACM_Syringe_1"",""ACM_Syringe_3"",""ACM_Syringe_5"",""ACM_Syringe_10"",""ACM_IO_FAST"",""ACM_IO_EZ"",""ACM_Vial_Epinephrine"",""ACM_Vial_Esmolol"",""ACM_Vial_TXA"",""ACM_Vial_Amiodarone"",""ACM_Vial_Atropine"",""ACM_BloodBag_ON_1000"",""ACM_BloodBag_ON_500"",""ACE_plasmaIV"",""ACE_plasmaIV_500"",""ACE_salineIV"",""ACE_salineIV_500"",""ACM_Vial_CalciumChloride"",""ACM_Vial_Morphine"",""ACM_Vial_Ketamine"",""ACM_Vial_Fentanyl"",""ACM_Vial_Lidocaine"",""ACM_Vial_Ondansetron"",""ACM_SAMSplint"",""ACM_Spray_Naloxone"",""ACE_surgicalKit"",""ACE_bodyBag"",""ACM_ChestSeal"",""ACM_NCDKit"",""ACM_ChestTubeKit""],[100,75,50,20,25,2,25,1,4,5,2,2,25,25,10,10,10,10,10,25,25,2,25,25,20,20,20,20,20,10,10,40,25,25,25,25,25,20,10,2,3,50,16,20]],[[],[]]],false]";
 								};
 							};
 						};
@@ -1444,7 +1450,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[[[[],[]],[[""SmokeShell"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"",""rhs_mag_m67"",""rhs_mag_M433_HEDP"",""UK3CB_BAF_762_100Rnd"",""UK3CB_BAF_762_L42A1_20Rnd_T"",""AMP_Breaching_Charge_Mag"",""ACE_HuntIR_M203"",""rhs_mag_m713_Red"",""rhs_mag_m714_White"",""rhs_mag_m715_Green""],[5,10,4,6,6,4,4,5,3,4,2]],[[""ACE_splint"",""ACE_epinephrine"",""ACE_adenosine"",""ACE_CableTie"",""ACE_salineIV"",""ACE_salineIV_500"",""ACE_Canteen"",""ACE_wirecutter"",""ACE_WaterBottle"",""ACE_tourniquet"",""ACE_plasmaIV"",""ACE_plasmaIV_500"",""ACM_IGel"",""ACM_NPA"",""ACM_SuctionBag"",""ACM_PulseOximeter"",""ACM_PocketBVM"",""ACM_PressureBandage"",""ACM_EmergencyTraumaDressing"",""ACM_ElasticWrap"",""ACM_SAMSplint"",""ACM_IV_16g"",""ACM_IO_FAST"",""ACM_IO_EZ"",""ACM_Syringe_10"",""ACM_Syringe_5"",""ACM_Syringe_3"",""ACM_Syringe_1"",""ACM_Vial_Morphine"",""ACM_Vial_Ketamine"",""ACM_Vial_TXA"",""ACM_Vial_Amiodarone"",""ACM_Vial_Ondansetron"",""ACM_Vial_CalciumChloride"",""ACM_Spray_Naloxone"",""ACM_BloodBag_ON_1000"",""ACM_BloodBag_ON_500""],[2,5,2,10,4,8,1,1,2,10,4,8,5,8,3,5,2,2,20,10,20,5,10,6,6,1,1,1,1,5,5,5,5,5,10,5,5,6]],[[],[]]],false]";
+									value="[[[[],[]],[[""SmokeShell"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"",""rhs_mag_m67"",""rhs_mag_M433_HEDP"",""UK3CB_BAF_762_100Rnd"",""UK3CB_BAF_762_L42A1_20Rnd_T"",""AMP_Breaching_Charge_Mag"",""ACE_HuntIR_M203"",""rhs_mag_m713_Red"",""rhs_mag_m714_White"",""rhs_mag_m715_Green""],[5,10,4,6,6,4,4,5,3,4,2]],[[""ACE_splint"",""ACE_epinephrine"",""ACE_adenosine"",""ACE_CableTie"",""ACE_salineIV"",""ACE_salineIV_500"",""ACE_Canteen"",""ACE_wirecutter"",""ACE_WaterBottle"",""ACE_tourniquet"",""ACE_plasmaIV"",""ACE_plasmaIV_500"",""ACM_IGel"",""ACM_NPA"",""ACM_SuctionBag"",""ACM_PulseOximeter"",""ACM_PocketBVM"",""ACM_PressureBandage"",""ACM_EmergencyTraumaDressing"",""ACM_ElasticWrap"",""ACM_SAMSplint"",""ACM_IV_16g"",""ACM_IO_FAST"",""ACM_IO_EZ"",""ACM_Syringe_10"",""ACM_Syringe_5"",""ACM_Syringe_3"",""ACM_Syringe_1"",""ACM_Vial_Morphine"",""ACM_Vial_Ketamine"",""ACM_Vial_TXA"",""ACM_Vial_Amiodarone"",""ACM_Vial_Ondansetron"",""ACM_Vial_CalciumChloride"",""ACM_Spray_Naloxone"",""ACM_BloodBag_ON_1000"",""ACM_BloodBag_ON_500"",""ACM_ChestSeal"",""ACM_NCDKit"",""ACM_ChestTubeKit""],[2,5,2,10,4,8,1,1,2,10,4,8,5,8,3,5,2,2,20,10,20,5,10,6,6,1,1,1,1,5,5,5,5,5,10,5,5,10,4,2]],[[],[]]],false]";
 								};
 							};
 						};
@@ -1646,7 +1652,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[[[[],[]],[[""SmokeShell"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"",""rhs_mag_m67"",""SmokeShellYellow"",""SmokeShellPurple""],[6,10,3,3,3]],[[""ACE_splint"",""ACE_adenosine"",""ACE_salineIV"",""ACE_salineIV_500"",""ACE_tourniquet"",""ACE_plasmaIV"",""ACE_plasmaIV_500"",""ACM_IGel"",""ACM_PulseOximeter"",""ACM_PressureBandage"",""ACM_EmergencyTraumaDressing"",""ACM_ElasticWrap"",""ACM_SAMSplint"",""ACM_IV_16g"",""ACM_IO_FAST"",""ACM_IO_EZ"",""ACM_Syringe_10"",""ACM_Syringe_5"",""ACM_Syringe_3"",""ACM_Syringe_1"",""ACM_Vial_Morphine"",""ACM_Vial_Ketamine"",""ACM_Vial_TXA"",""ACM_Vial_Amiodarone"",""ACM_Vial_Ondansetron"",""ACM_Vial_CalciumChloride"",""ACM_Spray_Naloxone"",""ACM_BloodBag_ON_1000"",""ACM_BloodBag_ON_500"",""ACE_EntrenchingTool"",""ACE_surgicalKit"",""ACM_ACCUVAC"",""ACM_Stethoscope"",""ACM_BVM"",""ACM_AED"",""ACM_IV_14g"",""ACM_Vial_Epinephrine"",""ACM_Vial_Lidocaine"",""ACM_Vial_Atropine"",""ACM_Vial_Fentanyl"",""ACE_bodyBag"",""ACM_CricKit""],[2,2,3,5,20,4,6,10,5,50,50,25,10,10,6,12,3,3,3,3,10,20,20,20,20,20,5,6,10,2,1,1,1,1,1,10,10,10,6,10,3,5]],[[],[]]],false]";
+									value="[[[[],[]],[[""SmokeShell"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"",""rhs_mag_m67"",""SmokeShellYellow"",""SmokeShellPurple""],[6,10,3,3,3]],[[""ACE_splint"",""ACE_adenosine"",""ACE_salineIV"",""ACE_salineIV_500"",""ACE_tourniquet"",""ACE_plasmaIV"",""ACE_plasmaIV_500"",""ACM_IGel"",""ACM_PulseOximeter"",""ACM_PressureBandage"",""ACM_EmergencyTraumaDressing"",""ACM_ElasticWrap"",""ACM_SAMSplint"",""ACM_IV_16g"",""ACM_IO_FAST"",""ACM_IO_EZ"",""ACM_Syringe_10"",""ACM_Syringe_5"",""ACM_Syringe_3"",""ACM_Syringe_1"",""ACM_Vial_Morphine"",""ACM_Vial_Ketamine"",""ACM_Vial_TXA"",""ACM_Vial_Amiodarone"",""ACM_Vial_Ondansetron"",""ACM_Vial_CalciumChloride"",""ACM_Spray_Naloxone"",""ACM_BloodBag_ON_1000"",""ACM_BloodBag_ON_500"",""ACE_EntrenchingTool"",""ACE_surgicalKit"",""ACM_ACCUVAC"",""ACM_Stethoscope"",""ACM_BVM"",""ACM_AED"",""ACM_IV_14g"",""ACM_Vial_Epinephrine"",""ACM_Vial_Lidocaine"",""ACM_Vial_Atropine"",""ACM_Vial_Fentanyl"",""ACE_bodyBag"",""ACM_CricKit"",""ACM_ChestSeal"",""ACM_NCDKit"",""ACM_ChestTubeKit""],[2,2,3,5,20,4,6,10,5,50,50,25,10,10,6,12,3,3,3,3,10,20,20,20,20,20,5,6,10,2,1,1,1,1,1,10,10,10,6,10,3,5,20,5,4]],[[],[]]],false]";
 								};
 							};
 						};
@@ -6096,7 +6102,7 @@ class Mission
 								};
 								class ItemCargo
 								{
-									items=3;
+									items=5;
 									class Item0
 									{
 										name="ACE_EntrenchingTool";
@@ -6111,6 +6117,16 @@ class Mission
 									{
 										name="ACM_BloodBag_ON_500";
 										count=2;
+									};
+									class Item3
+									{
+										name="ACM_ChestSeal";
+										count=4;
+									};
+									class Item4
+									{
+										name="ACM_ChestTubeKit";
+										count=1;
 									};
 								};
 							};
@@ -6396,7 +6412,7 @@ class Mission
 								};
 								class ItemCargo
 								{
-									items=2;
+									items=4;
 									class Item0
 									{
 										name="ACM_BloodBag_ON_500";
@@ -6405,6 +6421,16 @@ class Mission
 									class Item1
 									{
 										name="ACM_PocketBVM";
+										count=1;
+									};
+									class Item2
+									{
+										name="ACM_ChestSeal";
+										count=4;
+									};
+									class Item3
+									{
+										name="ACM_ChestTubeKit";
 										count=1;
 									};
 								};
@@ -6669,7 +6695,7 @@ class Mission
 								isBackpack=1;
 								class ItemCargo
 								{
-									items=2;
+									items=4;
 									class Item0
 									{
 										name="ACM_BloodBag_ON_500";
@@ -6678,6 +6704,16 @@ class Mission
 									class Item1
 									{
 										name="ACM_PocketBVM";
+										count=1;
+									};
+									class Item2
+									{
+										name="ACM_ChestSeal";
+										count=4;
+									};
+									class Item3
+									{
+										name="ACM_ChestTubeKit";
 										count=1;
 									};
 								};
@@ -6940,7 +6976,7 @@ class Mission
 								isBackpack=1;
 								class ItemCargo
 								{
-									items=3;
+									items=5;
 									class Item0
 									{
 										name="ACM_BloodBag_ON_500";
@@ -6954,6 +6990,16 @@ class Mission
 									class Item2
 									{
 										name="ACE_EntrenchingTool";
+										count=1;
+									};
+									class Item3
+									{
+										name="ACM_ChestSeal";
+										count=4;
+									};
+									class Item4
+									{
+										name="ACM_ChestTubeKit";
 										count=1;
 									};
 								};
@@ -7217,7 +7263,7 @@ class Mission
 								isBackpack=1;
 								class ItemCargo
 								{
-									items=2;
+									items=4;
 									class Item0
 									{
 										name="ACM_BloodBag_ON_500";
@@ -7226,6 +7272,16 @@ class Mission
 									class Item1
 									{
 										name="ACM_PocketBVM";
+										count=1;
+									};
+									class Item2
+									{
+										name="ACM_ChestSeal";
+										count=4;
+									};
+									class Item3
+									{
+										name="ACM_ChestTubeKit";
 										count=1;
 									};
 								};
@@ -7358,7 +7414,7 @@ class Mission
 								};
 								class ItemCargo
 								{
-									items=12;
+									items=13;
 									class Item0
 									{
 										name="ACM_IV_16g";
@@ -7419,6 +7475,11 @@ class Mission
 										name="ACM_Vial_TXA";
 										count=2;
 									};
+									class Item12
+									{
+										name="ACM_ChestSeal";
+										count=4;
+									};
 								};
 							};
 							class vest
@@ -7449,7 +7510,7 @@ class Mission
 								};
 								class ItemCargo
 								{
-									items=6;
+									items=7;
 									class Item0
 									{
 										name="ACE_CableTie";
@@ -7478,6 +7539,11 @@ class Mission
 									class Item5
 									{
 										name="ACM_PocketBVM";
+										count=1;
+									};
+									class Item6
+									{
+										name="ACM_ChestTubeKit";
 										count=1;
 									};
 								};
@@ -7731,7 +7797,7 @@ class Mission
 								isBackpack=1;
 								class ItemCargo
 								{
-									items=2;
+									items=4;
 									class Item0
 									{
 										name="ACM_BloodBag_ON_500";
@@ -7740,6 +7806,16 @@ class Mission
 									class Item1
 									{
 										name="ACM_PocketBVM";
+										count=1;
+									};
+									class Item2
+									{
+										name="ACM_ChestSeal";
+										count=4;
+									};
+									class Item3
+									{
+										name="ACM_ChestTubeKit";
 										count=1;
 									};
 								};
@@ -7984,7 +8060,7 @@ class Mission
 								isBackpack=1;
 								class ItemCargo
 								{
-									items=2;
+									items=4;
 									class Item0
 									{
 										name="ACM_BloodBag_ON_500";
@@ -7993,6 +8069,16 @@ class Mission
 									class Item1
 									{
 										name="ACM_PocketBVM";
+										count=1;
+									};
+									class Item2
+									{
+										name="ACM_ChestSeal";
+										count=4;
+									};
+									class Item3
+									{
+										name="ACM_ChestTubeKit";
 										count=1;
 									};
 								};
@@ -8288,7 +8374,7 @@ class Mission
 								};
 								class ItemCargo
 								{
-									items=2;
+									items=4;
 									class Item0
 									{
 										name="ACM_BloodBag_ON_500";
@@ -8297,6 +8383,16 @@ class Mission
 									class Item1
 									{
 										name="ACM_PocketBVM";
+										count=1;
+									};
+									class Item2
+									{
+										name="ACM_ChestSeal";
+										count=4;
+									};
+									class Item3
+									{
+										name="ACM_ChestTubeKit";
 										count=1;
 									};
 								};
@@ -8587,7 +8683,7 @@ class Mission
 								};
 								class ItemCargo
 								{
-									items=4;
+									items=6;
 									class Item0
 									{
 										name="ACE_EntrenchingTool";
@@ -8606,6 +8702,16 @@ class Mission
 									class Item3
 									{
 										name="ACM_PocketBVM";
+										count=1;
+									};
+									class Item4
+									{
+										name="ACM_ChestSeal";
+										count=4;
+									};
+									class Item5
+									{
+										name="ACM_ChestTubeKit";
 										count=1;
 									};
 								};
@@ -8906,7 +9012,7 @@ class Mission
 								};
 								class ItemCargo
 								{
-									items=5;
+									items=7;
 									class Item0
 									{
 										name="ACE_EntrenchingTool";
@@ -8930,6 +9036,16 @@ class Mission
 									class Item4
 									{
 										name="ACM_PocketBVM";
+										count=1;
+									};
+									class Item5
+									{
+										name="ACM_ChestSeal";
+										count=4;
+									};
+									class Item6
+									{
+										name="ACM_ChestTubeKit";
 										count=1;
 									};
 								};
@@ -9262,7 +9378,7 @@ class Mission
 								};
 								class ItemCargo
 								{
-									items=3;
+									items=5;
 									class Item0
 									{
 										name="ACE_microDAGR";
@@ -9277,6 +9393,16 @@ class Mission
 									{
 										name="ACM_PocketBVM";
 										count=1;
+									};
+									class Item3
+									{
+										name="ACM_ChestTubeKit";
+										count=1;
+									};
+									class Item4
+									{
+										name="ACM_ChestSeal";
+										count=4;
 									};
 								};
 							};
@@ -9409,7 +9535,7 @@ class Mission
 								};
 								class ItemCargo
 								{
-									items=12;
+									items=14;
 									class Item0
 									{
 										name="ACM_IV_16g";
@@ -9468,6 +9594,16 @@ class Mission
 									class Item11
 									{
 										name="ACM_Vial_TXA";
+										count=2;
+									};
+									class Item12
+									{
+										name="ACM_ChestTubeKit";
+										count=1;
+									};
+									class Item13
+									{
+										name="ACM_ChestSeal";
 										count=2;
 									};
 								};
@@ -9549,7 +9685,7 @@ class Mission
 								};
 								class ItemCargo
 								{
-									items=3;
+									items=4;
 									class Item0
 									{
 										name="ACE_EntrenchingTool";
@@ -9564,6 +9700,11 @@ class Mission
 									{
 										name="ACM_PocketBVM";
 										count=1;
+									};
+									class Item3
+									{
+										name="ACM_ChestSeal";
+										count=2;
 									};
 								};
 							};
@@ -9841,7 +9982,7 @@ class Mission
 								};
 								class ItemCargo
 								{
-									items=3;
+									items=5;
 									class Item0
 									{
 										name="ACE_EntrenchingTool";
@@ -9855,6 +9996,16 @@ class Mission
 									class Item2
 									{
 										name="ACM_PocketBVM";
+										count=1;
+									};
+									class Item3
+									{
+										name="ACM_ChestSeal";
+										count=4;
+									};
+									class Item4
+									{
+										name="ACM_ChestTubeKit";
 										count=1;
 									};
 								};
@@ -10136,7 +10287,7 @@ class Mission
 								};
 								class ItemCargo
 								{
-									items=33;
+									items=36;
 									class Item0
 									{
 										name="ACE_EntrenchingTool";
@@ -10301,6 +10452,21 @@ class Mission
 									{
 										name="ACM_CricKit";
 										count=1;
+									};
+									class Item33
+									{
+										name="ACM_ChestTubeKit";
+										count=3;
+									};
+									class Item34
+									{
+										name="ACM_ChestSeal";
+										count=10;
+									};
+									class Item35
+									{
+										name="ACM_NCDKit";
+										count=3;
 									};
 								};
 							};
@@ -10581,7 +10747,7 @@ class Mission
 								};
 								class ItemCargo
 								{
-									items=3;
+									items=5;
 									class Item0
 									{
 										name="ACE_EntrenchingTool";
@@ -10595,6 +10761,16 @@ class Mission
 									class Item2
 									{
 										name="ACM_PocketBVM";
+										count=1;
+									};
+									class Item3
+									{
+										name="ACM_ChestSeal";
+										count=4;
+									};
+									class Item4
+									{
+										name="ACM_ChestTubeKit";
 										count=1;
 									};
 								};
@@ -10891,7 +11067,7 @@ class Mission
 								};
 								class ItemCargo
 								{
-									items=3;
+									items=5;
 									class Item0
 									{
 										name="ACE_EntrenchingTool";
@@ -10905,6 +11081,16 @@ class Mission
 									class Item2
 									{
 										name="ACM_PocketBVM";
+										count=1;
+									};
+									class Item3
+									{
+										name="ACM_ChestSeal";
+										count=4;
+									};
+									class Item4
+									{
+										name="ACM_ChestTubeKit";
 										count=1;
 									};
 								};
@@ -11186,7 +11372,7 @@ class Mission
 								};
 								class ItemCargo
 								{
-									items=33;
+									items=35;
 									class Item0
 									{
 										name="ACE_EntrenchingTool";
@@ -11350,6 +11536,16 @@ class Mission
 									class Item32
 									{
 										name="ACM_CricKit";
+										count=1;
+									};
+									class Item33
+									{
+										name="ACM_ChestSeal";
+										count=4;
+									};
+									class Item34
+									{
+										name="ACM_ChestTubeKit";
 										count=1;
 									};
 								};
@@ -11630,7 +11826,7 @@ class Mission
 								};
 								class ItemCargo
 								{
-									items=3;
+									items=5;
 									class Item0
 									{
 										name="ACM_PocketBVM";
@@ -11644,6 +11840,16 @@ class Mission
 									class Item2
 									{
 										name="ACE_Canteen";
+										count=1;
+									};
+									class Item3
+									{
+										name="ACM_ChestSeal";
+										count=4;
+									};
+									class Item4
+									{
+										name="ACM_ChestTubeKit";
 										count=1;
 									};
 								};
@@ -11993,7 +12199,7 @@ class Mission
 								};
 								class ItemCargo
 								{
-									items=4;
+									items=6;
 									class Item0
 									{
 										name="ACE_EntrenchingTool";
@@ -12012,6 +12218,16 @@ class Mission
 									class Item3
 									{
 										name="ACE_microDAGR";
+										count=1;
+									};
+									class Item4
+									{
+										name="ACM_ChestSeal";
+										count=4;
+									};
+									class Item5
+									{
+										name="ACM_ChestTubeKit";
 										count=1;
 									};
 								};
@@ -12292,7 +12508,7 @@ class Mission
 								};
 								class ItemCargo
 								{
-									items=3;
+									items=5;
 									class Item0
 									{
 										name="ACE_EntrenchingTool";
@@ -12307,6 +12523,16 @@ class Mission
 									{
 										name="ACM_PocketBVM";
 										count=1;
+									};
+									class Item3
+									{
+										name="ACM_ChestTubeKit";
+										count=1;
+									};
+									class Item4
+									{
+										name="ACM_ChestSeal";
+										count=4;
 									};
 								};
 							};
@@ -12591,7 +12817,7 @@ class Mission
 								};
 								class ItemCargo
 								{
-									items=4;
+									items=6;
 									class Item0
 									{
 										name="ACE_EntrenchingTool";
@@ -12611,6 +12837,16 @@ class Mission
 									{
 										name="ACE_microDAGR";
 										count=1;
+									};
+									class Item4
+									{
+										name="ACM_ChestTubeKit";
+										count=1;
+									};
+									class Item5
+									{
+										name="ACM_ChestSeal";
+										count=3;
 									};
 								};
 							};
@@ -12946,7 +13182,7 @@ class Mission
 								};
 								class ItemCargo
 								{
-									items=5;
+									items=7;
 									class Item0
 									{
 										name="ACE_EntrenchingTool";
@@ -12971,6 +13207,16 @@ class Mission
 									{
 										name="ACE_artilleryTable";
 										count=1;
+									};
+									class Item5
+									{
+										name="ACM_ChestTubeKit";
+										count=1;
+									};
+									class Item6
+									{
+										name="ACM_ChestSeal";
+										count=4;
 									};
 								};
 							};

@@ -13,7 +13,10 @@ if (hasInterface) then {
         "76561198155238046",    // Bobi
         "76561199088931729",    // Eclipsy
         "76561198082623259",    // Mann
-        "76561198297895726" // Bart
+        "76561198297895726",    // Bart
+        "76561198002451746",    // Gibby
+        "76561198278066209",    // Duck
+        "76561198119274525" // Princess
     ]] spawn x5r_common_fnc_createJ9Suite;
     // Add ability to create empty crates to following vehicle classnames
     [[

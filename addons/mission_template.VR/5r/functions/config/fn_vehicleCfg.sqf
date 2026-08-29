@@ -647,14 +647,19 @@ x5r_config_suppliesArray =
     ["UK3CB_BAF_Box_L7A2_Ammo",["7.62mm Belts Box","@resupply",""],{
       _this setVariable ["ace_cargo_customname", "7.62mm Belts Box", true];
       clearMagazineCargoGlobal _this;
-      _this addMagazineCargoGlobal ["UK3CB_BAF_762_100Rnd", 18];
-      _this addMagazineCargoGlobal ["UK3CB_BAF_762_100Rnd_T", 6];
-    },[],2], 
+      _this addMagazineCargoGlobal ["UK3CB_BAF_762_100Rnd", 6];
+      _this addMagazineCargoGlobal ["UK3CB_BAF_762_100Rnd_T", 18];
+    },[],2],
+    ["UK3CB_BAF_Box_L7A2_Ammo",["7.62mm Belts Night Box","@resupply",""],{
+      _this setVariable ["ace_cargo_customname", "7.62mm Belts Night Box", true];
+      clearMagazineCargoGlobal _this;
+      _this addMagazineCargoGlobal ["UK3CB_BAF_762_100Rnd", 24];
+    },[],2],
     ["UK3CB_BAF_Box_762_Ammo",["7.62mm Magazines Box","@resupply",""],{
       _this setVariable ["ace_cargo_customname", "7.62mm Magazines Box", true];
       clearMagazineCargoGlobal _this;
       _this addMagazineCargoGlobal ["UK3CB_BAF_762_L42A1_20Rnd_T", 28];
-    },[],2], 
+    },[],2],
     ["ACE_medicalSupplyCrate_advanced","Medical Supply Box",{ 
       _this setVariable ["ace_cargo_customname", "Medical Supply Box", true];
       ["resupplymedic",_this,true] call x5r_logistics_fnc_initCargo; 

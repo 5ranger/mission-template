@@ -623,7 +623,8 @@ x5r_config_suppliesArray =
     ["B_CargoNet_01_ammo_F",["Infantry Resupply Crate","@resupply",""],{ 
       _this setVariable ["ace_cargo_customname", "Infantry Resupply Crate", true];
       ["resupplycrate",_this,true] call x5r_logistics_fnc_initCargo; 
-      [_this, 6] call ace_cargo_fnc_setSize;  
+      [_this, 6] call ace_cargo_fnc_setSize; 
+      [_this, true, [0,2.5,1], 0, true, true] call ace_dragging_fnc_setCarryable; 
     },[],4], 
     ["B_Slingload_01_Cargo_F",["Large Infantry Resupply Container","@resupply",""],{
       ["resupplycrate",_this,true] call x5r_logistics_fnc_initCargo;

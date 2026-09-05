@@ -629,8 +629,9 @@ x5r_config_suppliesArray =
       ["resupplycrate",_this,true] call x5r_logistics_fnc_initCargo;
       ["resupplycrate",_this,false] call x5r_logistics_fnc_initCargo;
       ["resupplycrate",_this,false] call x5r_logistics_fnc_initCargo;
-      [_this, 0] call ace_cargo_fnc_setSpace;   
-      [_this, -1] call ace_cargo_fnc_setSize;   
+      [_this, 0] call ace_cargo_fnc_setSpace;
+      [_this, -1] call ace_cargo_fnc_setSize;
+      [_this, true, [0,5,1], 90, true, true] call ace_dragging_fnc_setCarryable;
     },[],28], 
     ["UK3CB_BAF_Box_556_Ammo",["5.56mm Magazines Box","@resupply",""],{ 
       _this setVariable ["ace_cargo_customname", "5.56mm Magazines Box", true];
@@ -755,6 +756,7 @@ x5r_config_suppliesArray =
       clearItemCargoGlobal _this;
       [_this,0] remoteExec ["setMaxLoad",2];
       [_this,5] call ace_cargo_fnc_setSize;
+      [_this, true, [0,2.5,1], 0, true, true] call ace_dragging_fnc_setCarryable;
     },[],5], 
     ["UK3CB_BAF_Box_L7A2_Ammo","Vehicle L7A2 7.62mm Ammo Box",{
       _this setVariable ["ace_cargo_customname", "Vehicle L7A2 7.62mm Ammo Box", true]; 
@@ -775,8 +777,9 @@ x5r_config_suppliesArray =
       clearMagazineCargoGlobal _this;   
       clearItemCargoGlobal _this;
       clearBackpackCargoGlobal _this;   
-      [_this, 8] call ace_cargo_fnc_setSpace;   
-      [_this, 6] call ace_cargo_fnc_setSize;   
+      [_this, 8] call ace_cargo_fnc_setSpace;
+      [_this, 6] call ace_cargo_fnc_setSize;
+      [_this, true, [0,2.5,1], 0, true, true] call ace_dragging_fnc_setCarryable;
       ["ACE_Wheel", _this, true] call ace_cargo_fnc_loadItem;   
       ["ACE_Wheel", _this, true] call ace_cargo_fnc_loadItem;   
       ["ACE_Wheel", _this, true] call ace_cargo_fnc_loadItem;   
@@ -792,8 +795,9 @@ x5r_config_suppliesArray =
       clearMagazineCargoGlobal _this;   
       clearItemCargoGlobal _this;
       clearBackpackCargoGlobal _this;
-      [_this, 8] call ace_cargo_fnc_setSpace;   
-      [_this, 6] call ace_cargo_fnc_setSize;   
+      [_this, 8] call ace_cargo_fnc_setSpace;
+      [_this, 6] call ace_cargo_fnc_setSize;
+      [_this, true, [0,2.5,1], 0, true, true] call ace_dragging_fnc_setCarryable;
       ["ACE_Track", _this, true] call ace_cargo_fnc_loadItem;   
       ["ACE_Track", _this, true] call ace_cargo_fnc_loadItem;   
       ["ACE_Track", _this, true] call ace_cargo_fnc_loadItem;   
@@ -802,18 +806,21 @@ x5r_config_suppliesArray =
     ["FlexibleTank_01_forest_F","",{},[],3], 
     ["B_Slingload_01_Fuel_F","",{
       [_this, 0] call ace_cargo_fnc_setSpace;
-      [_this, -1] call ace_cargo_fnc_setSize;   
+      [_this, -1] call ace_cargo_fnc_setSize; 
+      [_this, true, [0,5,1], 90, true, true] call ace_dragging_fnc_setCarryable;
     },[],28], 
     ["B_Slingload_01_Repair_F","",{
       [_this, 0] call ace_cargo_fnc_setSpace;
-      [_this, -1] call ace_cargo_fnc_setSize;   
+      [_this, -1] call ace_cargo_fnc_setSize; 
+      [_this, true, [0,5,1], 90, true, true] call ace_dragging_fnc_setCarryable;  
     },[],28], 
     ["B_Slingload_01_Ammo_F",["Large Vehicle Rearm","@resupply","ACE Rearm + vehicle ammo"],{
       _this addItemCargoGlobal ["UK3CB_BAF_1Rnd_Milan",14];
       _this addItemCargoGlobal ["UK3CB_BAF_127_100Rnd",21];
       _this addItemCargoGlobal ["UK3CB_BAF_762_200Rnd",24];
       [_this, 0] call ace_cargo_fnc_setSpace;
-      [_this, -1] call ace_cargo_fnc_setSize;   
+      [_this, -1] call ace_cargo_fnc_setSize; 
+      [_this, true, [0,5,1], 90, true, true] call ace_dragging_fnc_setCarryable;  
     },[],28]
   ]], 
   ["#Static Weapon Platforms",[ 

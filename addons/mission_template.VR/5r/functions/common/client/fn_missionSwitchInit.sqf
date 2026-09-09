@@ -31,7 +31,9 @@ private _switchWhitelist =
 	// J7
     "76561198147444609", // J
 	"76561198145649863", // Lucy
-	"76561199494316516"  // Zeroefius
+	"76561199494316516", // Zeroefius
+	"76561198073898962"  // Darkling
+
 ];
 private _uid = (getPlayerUID player);
 if ((_uid in _switchWhitelist) && (missionName in _allowedMissions)) then 

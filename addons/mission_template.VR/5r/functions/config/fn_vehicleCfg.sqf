@@ -53,7 +53,7 @@ x5r_config_airArray =
         _this addMagazineTurret ["PylonRack_1Rnd_Missile_AA_04_F",[0]];
         _this setVariable ["ace_rearm_scriptedLoadout", true, true];
       },[],1], 
-      ["RHS_AH64D",["RHS Apache AH-64","",""],{
+      ["RHS_AH64D",["RHS Apache AH-64","","Seats:2"],{
         ["fillJAC",_this,true] call x5r_logistics_fnc_initCargo; 
         _this remoteExec ["DAPS_fnc_Nemesis",2];
       },[],1],
@@ -153,10 +153,16 @@ x5r_config_groundWoodlandArray =
       ["fillAFV",_this,true] call x5r_logistics_fnc_initCargo;
       _this setFuel 0.33;
       ["ACE_Track", _this] call ace_cargo_fnc_loadItem;
+      },[],22],
+      ["VVE_APC_Wheeled_01_shorad_QAV","",{
+      [_this,["Olive",1],["storage_front",0,"storage_lr",0,"storage_lf",0,"storage_rf",0,"storage_rr",0,"storage_rear",0,"storage_side",1,"id_mount",0,"id",0,"fuel_rear",0,"armor_comp",0,"armor_driverhatch",0,"towshackles",0,"towcable",0,"sparewheel",0,"nethull",0]] call BIS_fnc_initVehicle;
+      ["fillAFV",_this,true] call x5r_logistics_fnc_initCargo;
+      _this setFuel 0.33;
+      ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;
       },[],22]
     ]],
     ["#Transport",[
-      ["UK3CB_BAF_FV432_Mk3_GPMG_Green","",{ 
+      ["UK3CB_BAF_FV432_Mk3_GPMG_Green",["","","Seats:2+8, ACE-C:4"],{ 
         ["fillSection",_this,true] call x5r_logistics_fnc_initCargo; 
         [{_this getVariable "x5r_tags_inventoryReady" == true}, {
           _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3]; 
@@ -164,11 +170,11 @@ x5r_config_groundWoodlandArray =
         _this setFuel 0.33;
         ["ACE_Track", _this] call ace_cargo_fnc_loadItem; 
       },[],24],
-      ["UK3CB_B_AAV_US_WDL","",{ 
+      ["UK3CB_B_AAV_US_WDL",["","","Seats:3+18, ACE-C:4"],{ 
         ["fillSection",_this,true] call x5r_logistics_fnc_initCargo; 
         _this setFuel 0.33; 
       },[],28],
-      ["UK3CB_BAF_Warrior_A3_W_Cage_Camo","FV510 Warrior",{
+      ["UK3CB_BAF_Warrior_A3_W_Cage_Camo",["FV510 Warrior","","Seats:3+7, ACE-C:6"],{
         [_this,["BAF_01",1],["showBags",1,"showBags2",1,"showCamonetHull",1,"showCamonetTurret",1,"showTools",1,"showSLATHull",1,"showSLATTurret",1]] call BIS_fnc_initVehicle;
         ["fillSection",_this,true] call x5r_logistics_fnc_initCargo;
         [{_this getVariable "x5r_tags_inventoryReady" == true}, {
@@ -177,9 +183,38 @@ x5r_config_groundWoodlandArray =
         _this setFuel 0.33; 
         ["ACE_Track", _this] call ace_cargo_fnc_loadItem;  
       },[],28],
-      ["B_APC_Wheeled_01_cannon_F","Badger IFV",{
-        [_this,["Olive",1],["showSLATTurret",1,"showSLATHull",1,"showCamonetHull",1,"showCamonetTurret",1]] call BIS_fnc_initVehicle;
+      ["VVE_APC_Wheeled_01_apc_QAV",["","","Seats:3+8, ACE-C:4"],{
+        [_this,["Olive",1],["smokelaunchers_hull",1,"titanrack",0,"sparewheel",0,"storage_front",0,"storage_lr",0,"storage_lf",0,"storage_rf",0,"storage_rr",0,"storage_rear",0,"storage_side",0,"id_mount",0,"id",0,"fuel_rear",0,"armor_comp",0,"armor_driverhatch",1,"towshackles",0,"towcable",0,"nethull",0]] call BIS_fnc_initVehicle;
         ["fillSection",_this,true] call x5r_logistics_fnc_initCargo;
+        {_this removeMagazineTurret [_x,[0]];}
+          forEach ["vve_1Rnd_GAT_missiles","vve_1Rnd_GAT_missiles","vve_1Rnd_GAA_missiles","vve_1Rnd_GAP_missiles","vve_1Rnd_GAP_missiles","vve_1Rnd_GAP_missiles"];
+        _this setVariable ["ace_rearm_scriptedLoadout", true, true];
+        _this setFuel 0.33;
+      },[],22],
+      ["B_APC_Wheeled_01_cannon_F",["","","Seats:3+8, ACE-C:4"],{
+        [_this,["Sand",1],["showSLATTurret",1,"showSLATHull",1,"showCamonetHull",1,"showCamonetTurret",1]] call BIS_fnc_initVehicle;
+        ["fillSection",_this,true] call x5r_logistics_fnc_initCargo;
+        _this setFuel 0.33;
+        _this setVariable ["ace_hunterkiller", true];
+      },[],22],
+      ["VVE_APC_Wheeled_01_mgs_QAV",["","","Seats:3, ACE-C:4"],{
+        [_this,["Olive",1],["storage_front",0,"storage_lr",0,"storage_lf",0,"storage_rf",0,"storage_rr",0,"storage_rear",0,"storage_side",0,"id_mount",0,"id",0,"fuel_rear",0,"armor_comp",0,"armor_driverhatch",1,"towshackles",0,"towcable",0,"sparewheel",0,"nethull",1]] call BIS_fnc_initVehicle;
+        ["fillAFV",_this,true] call x5r_logistics_fnc_initCargo;
+        {_this removeMagazineTurret [_x,[0]]}
+          forEach ["200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","20Rnd_105mm_HEAT_MP_T_Red","20Rnd_105mm_HEAT_MP_T_Red"];
+        _this addMagazineTurret ["1000Rnd_762x51_Belt_Red",[0]];
+        _this setVariable ["ace_rearm_scriptedLoadout", true, true];
+        _this setFuel 0.33;
+        _this setVariable ["ace_hunterkiller", true];
+      },[],22],
+      ["VVE_APC_Wheeled_01_mgs_up_QAV",["","","Seats:3, ACE-C:4"],{
+        [_this,["Olive",1],["storage_front",0,"storage_lr",0,"storage_lf",0,"storage_rf",0,"storage_rr",0,"storage_rear",0,"storage_side",0,"id_mount",0,"id",0,"fuel_rear",0,"armor_comp",1,"armor_driverhatch",1,"towshackles",0,"towcable",0,"sparewheel",0,"nethull",1]] call BIS_fnc_initVehicle;
+        ["fillAFV",_this,true] call x5r_logistics_fnc_initCargo;
+        {_this removeMagazineTurret [_x,[0]]}
+          forEach ["200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","20Rnd_105mm_HEAT_MP_T_Red","20Rnd_105mm_HEAT_MP_T_Red"];
+        _this removeMagazineTurret ["vve_250Rnd_127x99_mag_Tracer_Red",[0,0]];
+        _this addMagazineTurret ["1000Rnd_762x51_Belt_Red",[0]];
+        _this setVariable ["ace_rearm_scriptedLoadout", true, true];
         _this setFuel 0.33;
         _this setVariable ["ace_hunterkiller", true];
       },[],22]
@@ -411,10 +446,16 @@ x5r_config_groundSandArray =
         ["fillAFV",_this,true] call x5r_logistics_fnc_initCargo;
         _this setFuel 0.33;
         ["ACE_Track", _this] call ace_cargo_fnc_loadItem;
+      },[],22],
+      ["VVE_APC_Wheeled_01_shorad_QAV",["","","Seats:3, ACE-C:4"],{
+        [_this,["Sand",1],["storage_front",0,"storage_lr",0,"storage_lf",0,"storage_rf",0,"storage_rr",0,"storage_rear",0,"storage_side",1,"id_mount",0,"id",0,"fuel_rear",0,"armor_comp",0,"armor_driverhatch",0,"towshackles",0,"towcable",0,"sparewheel",0,"nethull",0]] call BIS_fnc_initVehicle;
+        ["fillAFV",_this,true] call x5r_logistics_fnc_initCargo;
+        _this setFuel 0.33;
+        ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;
       },[],22]
     ]],
     ["#Transport",[
-      ["UK3CB_BAF_FV432_Mk3_GPMG_Sand","",{ 
+      ["UK3CB_BAF_FV432_Mk3_GPMG_Sand",["","","Seats:2+8, ACE-C:4"],{ 
         ["fillSection",_this,true] call x5r_logistics_fnc_initCargo;
         [{_this getVariable "x5r_tags_inventoryReady" == true}, {
           _this addMagazineCargoGlobal ["UK3CB_BAF_762_200Rnd",3];
@@ -422,11 +463,11 @@ x5r_config_groundSandArray =
         _this setFuel 0.33; 
         ["ACE_Track", _this] call ace_cargo_fnc_loadItem; 
       },[],24],
-      ["UK3CB_B_AAV_US_DES","",{
+      ["UK3CB_B_AAV_US_DES",["","","Seats:3+18, ACE-C:4"],{
         ["fillSection",_this,true] call x5r_logistics_fnc_initCargo; 
         _this setFuel 0.33; 
       },[],28],
-      ["UK3CB_BAF_Warrior_A3_D_Cage_Camo","FV510 Warrior",{
+      ["UK3CB_BAF_Warrior_A3_D_Cage_Camo",["FV510 Warrior","","Seats:3+7, ACE-C:6"],{
         [_this,["BAF_02",1],["showBags",1,"showBags2",1,"showCamonetHull",1,"showCamonetTurret",1,"showTools",1,"showSLATHull",1,"showSLATTurret",1]] call BIS_fnc_initVehicle;
         ["fillSection",_this,true] call x5r_logistics_fnc_initCargo; 
         [{_this getVariable "x5r_tags_inventoryReady" == true}, {
@@ -435,9 +476,38 @@ x5r_config_groundSandArray =
         _this setFuel 0.33; 
         ["ACE_Track", _this] call ace_cargo_fnc_loadItem;  
       },[],28],
-      ["B_APC_Wheeled_01_cannon_F","Badger IFV",{
+      ["VVE_APC_Wheeled_01_apc_QAV",["","","Seats:3+8, ACE-C:4"],{
+        [_this,["Sand",1],["smokelaunchers_hull",1,"titanrack",0,"sparewheel",0,"storage_front",0,"storage_lr",0,"storage_lf",0,"storage_rf",0,"storage_rr",0,"storage_rear",0,"storage_side",0,"id_mount",0,"id",0,"fuel_rear",0,"armor_comp",0,"armor_driverhatch",1,"towshackles",0,"towcable",0,"nethull",0]] call BIS_fnc_initVehicle;
+        ["fillSection",_this,true] call x5r_logistics_fnc_initCargo;
+        {_this removeMagazineTurret [_x,[0]];}
+          forEach ["vve_1Rnd_GAT_missiles","vve_1Rnd_GAT_missiles","vve_1Rnd_GAA_missiles","vve_1Rnd_GAP_missiles","vve_1Rnd_GAP_missiles","vve_1Rnd_GAP_missiles"];
+        _this setVariable ["ace_rearm_scriptedLoadout", true, true];
+        _this setFuel 0.33;
+      },[],22],
+      ["B_APC_Wheeled_01_cannon_F",["","","Seats:3, ACE-C:4"],{
         [_this,["Sand",1],["showSLATTurret",1,"showSLATHull",1,"showCamonetHull",1,"showCamonetTurret",1]] call BIS_fnc_initVehicle;
         ["fillSection",_this,true] call x5r_logistics_fnc_initCargo;
+        _this setFuel 0.33;
+        _this setVariable ["ace_hunterkiller", true];
+      },[],22],
+      ["VVE_APC_Wheeled_01_mgs_QAV",["","","Seats:3, ACE-C:4"],{
+        [_this,["Sand",1],["storage_front",0,"storage_lr",0,"storage_lf",0,"storage_rf",0,"storage_rr",0,"storage_rear",0,"storage_side",0,"id_mount",0,"id",0,"fuel_rear",0,"armor_comp",0,"armor_driverhatch",1,"towshackles",0,"towcable",0,"sparewheel",0,"nethull",1]] call BIS_fnc_initVehicle;
+        ["fillAFV",_this,true] call x5r_logistics_fnc_initCargo;
+        {_this removeMagazineTurret [_x,[0]]}
+          forEach ["200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","20Rnd_105mm_HEAT_MP_T_Red","20Rnd_105mm_HEAT_MP_T_Red"];
+        _this addMagazineTurret ["1000Rnd_762x51_Belt_Red",[0]];
+        _this setVariable ["ace_rearm_scriptedLoadout", true, true];
+        _this setFuel 0.33;
+        _this setVariable ["ace_hunterkiller", true];
+      },[],22],
+      ["VVE_APC_Wheeled_01_mgs_up_QAV",["","","Seats:3, ACE-C:4"],{
+        [_this,["Sand",1],["storage_front",0,"storage_lr",0,"storage_lf",0,"storage_rf",0,"storage_rr",0,"storage_rear",0,"storage_side",0,"id_mount",0,"id",0,"fuel_rear",0,"armor_comp",1,"armor_driverhatch",1,"towshackles",0,"towcable",0,"sparewheel",0,"nethull",1]] call BIS_fnc_initVehicle;
+        ["fillAFV",_this,true] call x5r_logistics_fnc_initCargo;
+        {_this removeMagazineTurret [_x,[0]]}
+          forEach ["200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","200Rnd_762x51_Belt_Red","20Rnd_105mm_HEAT_MP_T_Red","20Rnd_105mm_HEAT_MP_T_Red"];
+        _this removeMagazineTurret ["vve_250Rnd_127x99_mag_Tracer_Red",[0,0]];
+        _this addMagazineTurret ["1000Rnd_762x51_Belt_Red",[0]];
+        _this setVariable ["ace_rearm_scriptedLoadout", true, true];
         _this setFuel 0.33;
         _this setVariable ["ace_hunterkiller", true];
       },[],22]

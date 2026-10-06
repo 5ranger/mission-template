@@ -29,7 +29,6 @@ class x5r_common
 		{
 			postInit = 1;
 		};
-		class suckNuts {};
 		class toggleVehSectionFlagActions 
 		{
 			postInit = 1;

@@ -7,3 +7,6 @@ releases/
 
 # Changelog file
 CHANGELOG.md
+
+# 3den temp folders
+addons/~*/

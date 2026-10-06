@@ -5862,6 +5862,22 @@ class Mission
 													value="B_AssaultPack_mcamo";
 												};
 											};
+											class Item521
+											{
+												class data
+												{
+													singleType="STRING";
+													value="TOMH_Stencil_Medical";
+												};
+											};
+											class Item522
+											{
+												class data
+												{
+													singleType="STRING";
+													value="TOMH_Stencil_Eod";
+												};
+											};
 										};
 									};
 								};

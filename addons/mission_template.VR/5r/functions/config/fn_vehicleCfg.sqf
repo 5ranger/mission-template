@@ -134,6 +134,7 @@ x5r_config_groundWoodlandArray =
 
         },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
         _this setFuel 0.60;
+        _this setVariable ["ace_hunterkiller", true, true];
         ["ACE_Track", _this] call ace_cargo_fnc_loadItem;  
       },[],36],
       ["qav_challenger2_e","FV4034 Challenger 2E",{
@@ -144,22 +145,26 @@ x5r_config_groundWoodlandArray =
 
         },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
         _this setFuel 0.60;
+        _this setVariable ["ace_hunterkiller", true, true];
         ["ACE_Track", _this] call ace_cargo_fnc_loadItem;  
       },[],36]
     ]],
     ["#Anti-Air",[
       ["B_T_APC_Tracked_01_AA_F","",{
-      [_this,["Olive",1],["showCamonetTurret",0,"showCamonetHull",0,"showBags",1]] call BIS_fnc_initVehicle;
-      ["fillAFV",_this,true] call x5r_logistics_fnc_initCargo;
-      _this setFuel 0.33;
-      ["ACE_Track", _this] call ace_cargo_fnc_loadItem;
-      },[],22],
+        [_this,["Olive",1],["showCamonetTurret",0,"showCamonetHull",0,"showBags",1]] call BIS_fnc_initVehicle;
+        ["fillAFV",_this,true] call x5r_logistics_fnc_initCargo;
+        _this setFuel 0.33;
+        _this setVariable ["ace_hunterkiller", true, true];
+        ["ACE_Track", _this] call ace_cargo_fnc_loadItem;
+      },[],32],
       ["VVE_APC_Wheeled_01_shorad_QAV","",{
-      [_this,["Olive",1],["storage_front",0,"storage_lr",0,"storage_lf",0,"storage_rf",0,"storage_rr",0,"storage_rear",0,"storage_side",1,"id_mount",0,"id",0,"fuel_rear",0,"armor_comp",0,"armor_driverhatch",0,"towshackles",0,"towcable",0,"sparewheel",0,"nethull",0]] call BIS_fnc_initVehicle;
-      ["fillAFV",_this,true] call x5r_logistics_fnc_initCargo;
-      _this setFuel 0.33;
-      ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;
-      },[],22]
+        [_this,["Olive",1],["storage_front",0,"storage_lr",0,"storage_lf",0,"storage_rf",0,"storage_rr",0,"storage_rear",0,"storage_side",1,"id_mount",0,"id",0,"fuel_rear",0,"armor_comp",0,"armor_driverhatch",0,"towshackles",0,"towcable",0,"sparewheel",0,"nethull",0]] call BIS_fnc_initVehicle;
+        ["fillAFV",_this,true] call x5r_logistics_fnc_initCargo;
+        _this setFuel 0.33;
+        _this setVariable ["ace_hunterkiller", true, true];
+        {[_x, _this] call ace_cargo_fnc_loadItem;}
+          forEach ["ACE_Wheel","ACE_Wheel","ACE_Wheel"];
+      },[],26]
     ]],
     ["#Transport",[
       ["UK3CB_BAF_FV432_Mk3_GPMG_Green",["","","Seats:2+8, ACE-C:4"],{ 
@@ -172,7 +177,9 @@ x5r_config_groundWoodlandArray =
       },[],24],
       ["UK3CB_B_AAV_US_WDL",["","","Seats:3+18, ACE-C:4"],{ 
         ["fillSection",_this,true] call x5r_logistics_fnc_initCargo; 
-        _this setFuel 0.33; 
+        _this setFuel 0.33;
+        _this setVariable ["ace_hunterkiller", true, true];
+        ["ACE_Track", _this] call ace_cargo_fnc_loadItem; 
       },[],28],
       ["UK3CB_BAF_Warrior_A3_W_Cage_Camo",["FV510 Warrior","","Seats:3+7, ACE-C:6"],{
         [_this,["BAF_01",1],["showBags",1,"showBags2",1,"showCamonetHull",1,"showCamonetTurret",1,"showTools",1,"showSLATHull",1,"showSLATTurret",1]] call BIS_fnc_initVehicle;
@@ -181,6 +188,7 @@ x5r_config_groundWoodlandArray =
           _this addMagazineCargoGlobal ["UK3CB_BAF_1Rnd_Milan", 2]; 
         },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;  
         _this setFuel 0.33; 
+        _this setVariable ["ace_hunterkiller", true, true];
         ["ACE_Track", _this] call ace_cargo_fnc_loadItem;  
       },[],28],
       ["VVE_APC_Wheeled_01_apc_QAV",["","","Seats:3+8, ACE-C:4"],{
@@ -190,12 +198,17 @@ x5r_config_groundWoodlandArray =
           forEach ["vve_1Rnd_GAT_missiles","vve_1Rnd_GAT_missiles","vve_1Rnd_GAA_missiles","vve_1Rnd_GAP_missiles","vve_1Rnd_GAP_missiles","vve_1Rnd_GAP_missiles"];
         _this setVariable ["ace_rearm_scriptedLoadout", true, true];
         _this setFuel 0.33;
+        _this setVariable ["ace_hunterkiller", true, true];
+        {[_x, _this] call ace_cargo_fnc_loadItem;}
+           forEach ["ACE_Wheel","ACE_Wheel","ACE_Wheel"];
       },[],22],
       ["B_APC_Wheeled_01_cannon_F",["","","Seats:3+8, ACE-C:4"],{
         [_this,["Sand",1],["showSLATTurret",1,"showSLATHull",1,"showCamonetHull",1,"showCamonetTurret",1]] call BIS_fnc_initVehicle;
         ["fillSection",_this,true] call x5r_logistics_fnc_initCargo;
         _this setFuel 0.33;
-        _this setVariable ["ace_hunterkiller", true];
+        _this setVariable ["ace_hunterkiller", true, true];
+        {[_x, _this] call ace_cargo_fnc_loadItem;}
+           forEach ["ACE_Wheel","ACE_Wheel","ACE_Wheel"];
       },[],22],
       ["VVE_APC_Wheeled_01_mgs_QAV",["","","Seats:3, ACE-C:4"],{
         [_this,["Olive",1],["storage_front",0,"storage_lr",0,"storage_lf",0,"storage_rf",0,"storage_rr",0,"storage_rear",0,"storage_side",0,"id_mount",0,"id",0,"fuel_rear",0,"armor_comp",0,"armor_driverhatch",1,"towshackles",0,"towcable",0,"sparewheel",0,"nethull",1]] call BIS_fnc_initVehicle;
@@ -205,7 +218,9 @@ x5r_config_groundWoodlandArray =
         _this addMagazineTurret ["1000Rnd_762x51_Belt_Red",[0]];
         _this setVariable ["ace_rearm_scriptedLoadout", true, true];
         _this setFuel 0.33;
-        _this setVariable ["ace_hunterkiller", true];
+        _this setVariable ["ace_hunterkiller", true, true];
+        {[_x, _this] call ace_cargo_fnc_loadItem;}
+           forEach ["ACE_Wheel","ACE_Wheel","ACE_Wheel"];
       },[],22],
       ["VVE_APC_Wheeled_01_mgs_up_QAV",["","","Seats:3, ACE-C:4"],{
         [_this,["Olive",1],["storage_front",0,"storage_lr",0,"storage_lf",0,"storage_rf",0,"storage_rr",0,"storage_rear",0,"storage_side",0,"id_mount",0,"id",0,"fuel_rear",0,"armor_comp",1,"armor_driverhatch",1,"towshackles",0,"towcable",0,"sparewheel",0,"nethull",1]] call BIS_fnc_initVehicle;
@@ -216,7 +231,9 @@ x5r_config_groundWoodlandArray =
         _this addMagazineTurret ["1000Rnd_762x51_Belt_Red",[0]];
         _this setVariable ["ace_rearm_scriptedLoadout", true, true];
         _this setFuel 0.33;
-        _this setVariable ["ace_hunterkiller", true];
+        _this setVariable ["ace_hunterkiller", true, true];
+        {[_x, _this] call ace_cargo_fnc_loadItem;}
+           forEach ["ACE_Wheel","ACE_Wheel","ACE_Wheel"];
       },[],22]
     ]]
   ]], 
@@ -428,6 +445,7 @@ x5r_config_groundSandArray =
         [{_this getVariable "x5r_tags_inventoryReady" == true}, {
         },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
         _this setFuel 0.60;
+        _this setVariable ["ace_hunterkiller", true, true];
         ["ACE_Track", _this] call ace_cargo_fnc_loadItem;  
       },[],36],
       ["qav_B_challenger2_e","FV4034 Challenger 2E",{
@@ -437,6 +455,7 @@ x5r_config_groundSandArray =
         [{_this getVariable "x5r_tags_inventoryReady" == true}, {
         },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
         _this setFuel 0.60;
+        _this setVariable ["ace_hunterkiller", true, true];
         ["ACE_Track", _this] call ace_cargo_fnc_loadItem;  
       },[],36]
     ]],
@@ -445,14 +464,17 @@ x5r_config_groundSandArray =
         [_this,["Sand",1],["showCamonetTurret",0,"showCamonetHull",0,"showBags",1]] call BIS_fnc_initVehicle;
         ["fillAFV",_this,true] call x5r_logistics_fnc_initCargo;
         _this setFuel 0.33;
+        _this setVariable ["ace_hunterkiller", true, true];
         ["ACE_Track", _this] call ace_cargo_fnc_loadItem;
-      },[],22],
+      },[],32],
       ["VVE_APC_Wheeled_01_shorad_QAV",["","","Seats:3, ACE-C:4"],{
         [_this,["Sand",1],["storage_front",0,"storage_lr",0,"storage_lf",0,"storage_rf",0,"storage_rr",0,"storage_rear",0,"storage_side",1,"id_mount",0,"id",0,"fuel_rear",0,"armor_comp",0,"armor_driverhatch",0,"towshackles",0,"towcable",0,"sparewheel",0,"nethull",0]] call BIS_fnc_initVehicle;
         ["fillAFV",_this,true] call x5r_logistics_fnc_initCargo;
         _this setFuel 0.33;
-        ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;
-      },[],22]
+        _this setVariable ["ace_hunterkiller", true, true];
+        {[_x, _this] call ace_cargo_fnc_loadItem;}
+           forEach ["ACE_Wheel","ACE_Wheel","ACE_Wheel"];
+      },[],26]
     ]],
     ["#Transport",[
       ["UK3CB_BAF_FV432_Mk3_GPMG_Sand",["","","Seats:2+8, ACE-C:4"],{ 
@@ -465,7 +487,8 @@ x5r_config_groundSandArray =
       },[],24],
       ["UK3CB_B_AAV_US_DES",["","","Seats:3+18, ACE-C:4"],{
         ["fillSection",_this,true] call x5r_logistics_fnc_initCargo; 
-        _this setFuel 0.33; 
+        _this setFuel 0.33;
+        _this setVariable ["ace_hunterkiller", true, true]; 
       },[],28],
       ["UK3CB_BAF_Warrior_A3_D_Cage_Camo",["FV510 Warrior","","Seats:3+7, ACE-C:6"],{
         [_this,["BAF_02",1],["showBags",1,"showBags2",1,"showCamonetHull",1,"showCamonetTurret",1,"showTools",1,"showSLATHull",1,"showSLATTurret",1]] call BIS_fnc_initVehicle;
@@ -474,6 +497,7 @@ x5r_config_groundSandArray =
           _this addMagazineCargoGlobal ["UK3CB_BAF_1Rnd_Milan", 2];
         },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;  
         _this setFuel 0.33; 
+        _this setVariable ["ace_hunterkiller", true, true];
         ["ACE_Track", _this] call ace_cargo_fnc_loadItem;  
       },[],28],
       ["VVE_APC_Wheeled_01_apc_QAV",["","","Seats:3+8, ACE-C:4"],{
@@ -483,13 +507,17 @@ x5r_config_groundSandArray =
           forEach ["vve_1Rnd_GAT_missiles","vve_1Rnd_GAT_missiles","vve_1Rnd_GAA_missiles","vve_1Rnd_GAP_missiles","vve_1Rnd_GAP_missiles","vve_1Rnd_GAP_missiles"];
         _this setVariable ["ace_rearm_scriptedLoadout", true, true];
         _this setFuel 0.33;
+        {[_x, _this] call ace_cargo_fnc_loadItem;}
+           forEach ["ACE_Wheel","ACE_Wheel","ACE_Wheel"];
       },[],22],
       ["B_APC_Wheeled_01_cannon_F",["","","Seats:3, ACE-C:4"],{
         [_this,["Sand",1],["showSLATTurret",1,"showSLATHull",1,"showCamonetHull",1,"showCamonetTurret",1]] call BIS_fnc_initVehicle;
         ["fillSection",_this,true] call x5r_logistics_fnc_initCargo;
         _this setFuel 0.33;
-        _this setVariable ["ace_hunterkiller", true];
-      },[],22],
+        _this setVariable ["ace_hunterkiller", true, true];
+        {[_x, _this] call ace_cargo_fnc_loadItem;}
+           forEach ["ACE_Wheel","ACE_Wheel","ACE_Wheel"];
+      },[],24],
       ["VVE_APC_Wheeled_01_mgs_QAV",["","","Seats:3, ACE-C:4"],{
         [_this,["Sand",1],["storage_front",0,"storage_lr",0,"storage_lf",0,"storage_rf",0,"storage_rr",0,"storage_rear",0,"storage_side",0,"id_mount",0,"id",0,"fuel_rear",0,"armor_comp",0,"armor_driverhatch",1,"towshackles",0,"towcable",0,"sparewheel",0,"nethull",1]] call BIS_fnc_initVehicle;
         ["fillAFV",_this,true] call x5r_logistics_fnc_initCargo;
@@ -498,8 +526,10 @@ x5r_config_groundSandArray =
         _this addMagazineTurret ["1000Rnd_762x51_Belt_Red",[0]];
         _this setVariable ["ace_rearm_scriptedLoadout", true, true];
         _this setFuel 0.33;
-        _this setVariable ["ace_hunterkiller", true];
-      },[],22],
+        _this setVariable ["ace_hunterkiller", true, true];
+        {[_x, _this] call ace_cargo_fnc_loadItem;}
+           forEach ["ACE_Wheel","ACE_Wheel","ACE_Wheel"];
+      },[],24],
       ["VVE_APC_Wheeled_01_mgs_up_QAV",["","","Seats:3, ACE-C:4"],{
         [_this,["Sand",1],["storage_front",0,"storage_lr",0,"storage_lf",0,"storage_rf",0,"storage_rr",0,"storage_rear",0,"storage_side",0,"id_mount",0,"id",0,"fuel_rear",0,"armor_comp",1,"armor_driverhatch",1,"towshackles",0,"towcable",0,"sparewheel",0,"nethull",1]] call BIS_fnc_initVehicle;
         ["fillAFV",_this,true] call x5r_logistics_fnc_initCargo;
@@ -509,8 +539,10 @@ x5r_config_groundSandArray =
         _this addMagazineTurret ["1000Rnd_762x51_Belt_Red",[0]];
         _this setVariable ["ace_rearm_scriptedLoadout", true, true];
         _this setFuel 0.33;
-        _this setVariable ["ace_hunterkiller", true];
-      },[],22]
+        _this setVariable ["ace_hunterkiller", true, true];
+        {[_x, _this] call ace_cargo_fnc_loadItem;}
+           forEach ["ACE_Wheel","ACE_Wheel","ACE_Wheel"];
+      },[],26]
     ]]
   ]],
     ["#Manoeuvre Support Vehicles (MSV) (FSG)",[ 
@@ -582,10 +614,8 @@ x5r_config_groundSandArray =
         [_this, ["Tan",1], ["SMP",1,"SMP_L",1,"SMP_R",1,"hide_SMP",0,"Hide_CIP",1,"Dispenser_Fold",0,"Hatch_Commander",0,"Hatch_Front",0,"Hatch_Left",0,"Hatch_Right",0,"Ramp",0,"Hide_Antenna_1",0,"Hide_Antenna_2",0,"Hide_Antenna_3",0,"Hide_DEK",0,"Hide_DUKE",0,"Hide_ExDiff",0,"Hide_FCans",0,"Hide_WCans",0,"Hide_GPS",0,"Hide_PioKit",0,"Hide_StgBar",0,"Hide_STORM",0,"Hide_SuspCov",0,"Hide_Towbar",0,"Extend_Mirrors",0,"Hatch_Driver",0]] call BIS_fnc_initVehicle; 
         ["fillLogi",_this,true] call x5r_logistics_fnc_initCargo; 
         _this setFuel 0.50; 
-        ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;   
-        ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;   
-        ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem;   
-        ["ACE_Wheel", _this] call ace_cargo_fnc_loadItem; 
+        {[_x, _this] call ace_cargo_fnc_loadItem;}
+           forEach ["ACE_Wheel","ACE_Wheel","ACE_Wheel"];
       },[],30] 
     ]], 
     ["UK3CB_BAF_LandRover_WMIK_HMG_FFR_Sand_A","",{ 
@@ -667,10 +697,6 @@ x5r_config_groundSandArray =
       [_this, 5] call ace_cargo_fnc_setSpace; 
     },[],10],
     ["UK3CB_BAF_LandRover_Amb_Sand_A","",{ 
-      clearWeaponCargoGlobal _this;
-      clearBackpackCargoGlobal _this; 
-      clearMagazineCargoGlobal _this;
-      clearItemCargoGlobal _this;
       ["fillRAMC",_this,true] call x5r_logistics_fnc_initCargo; 
       [{_this getVariable "x5r_tags_inventoryReady" == true}, { 
       },_this,10,{diag_log format ["Failed to add additional items to %1",_this];}] call CBA_fnc_waitUntilAndExecute;
@@ -851,14 +877,8 @@ x5r_config_suppliesArray =
       [_this, 8] call ace_cargo_fnc_setSpace;
       [_this, 6] call ace_cargo_fnc_setSize;
       [_this, true, [0,2.5,1], 0, true, true] call ace_dragging_fnc_setCarryable;
-      ["ACE_Wheel", _this, true] call ace_cargo_fnc_loadItem;   
-      ["ACE_Wheel", _this, true] call ace_cargo_fnc_loadItem;   
-      ["ACE_Wheel", _this, true] call ace_cargo_fnc_loadItem;   
-      ["ACE_Wheel", _this, true] call ace_cargo_fnc_loadItem;   
-      ["ACE_Wheel", _this, true] call ace_cargo_fnc_loadItem;   
-      ["ACE_Wheel", _this, true] call ace_cargo_fnc_loadItem;   
-      ["ACE_Wheel", _this, true] call ace_cargo_fnc_loadItem;   
-      ["ACE_Wheel", _this, true] call ace_cargo_fnc_loadItem;   
+      {[_x, _this] call ace_cargo_fnc_loadItem;}
+        forEach ["ACE_Wheel","ACE_Wheel","ACE_Wheel","ACE_Wheel","ACE_Wheel","ACE_Wheel","ACE_Wheel","ACE_Wheel"];
     },[],6], 
     ["C_IDAP_supplyCrate_F","Track pack 4x",{ 
       _this setVariable ["ace_cargo_customname", "Track pack", true];
@@ -870,9 +890,8 @@ x5r_config_suppliesArray =
       [_this, 6] call ace_cargo_fnc_setSize;
       [_this, true, [0,2.5,1], 0, true, true] call ace_dragging_fnc_setCarryable;
       ["ACE_Track", _this, true] call ace_cargo_fnc_loadItem;   
-      ["ACE_Track", _this, true] call ace_cargo_fnc_loadItem;   
-      ["ACE_Track", _this, true] call ace_cargo_fnc_loadItem;   
-      ["ACE_Track", _this, true] call ace_cargo_fnc_loadItem;   
+      {[_x, _this] call ace_cargo_fnc_loadItem;}
+        forEach ["ACE_Track","ACE_Track","ACE_Track","ACE_Track"];
     },[],6], 
     ["FlexibleTank_01_forest_F","",{},[],3], 
     ["B_Slingload_01_Fuel_F","",{
@@ -950,14 +969,18 @@ x5r_config_suppliesArray =
 
 x5r_config_navyArray = 
 ["#Navy",[ 
+  ["B_Boat_Transport_01_F",["","","Seats:1+4"],{
+    _this setMaxLoad 600;
+    ["fillTeam",_this,true] call x5r_logistics_fnc_initCargo;
+  },[],7],
   ["#Raiding Craft",[
-    ["UK3CB_BAF_RHIB_HMG","",{
+    ["UK3CB_BAF_RHIB_HMG",["","","Seats:2+10 ACE-C:8"],{
       ["fillSection",_this,true] call x5r_logistics_fnc_initCargo;
     },[],26],
-    ["UK3CB_BAF_RHIB_GPMG","",{
+    ["UK3CB_BAF_RHIB_GPMG",["","","Seats:2+10 ACE-C:8"],{
       ["fillSection",_this,true] call x5r_logistics_fnc_initCargo;
     },[],26],
-    ["UK3CB_MDF_B_RHIB_Gunboat","",{
+    ["UK3CB_MDF_B_RHIB_Gunboat",["","","Seats:3+7 ACE-C:8"],{
       ["fillSection",_this,true] call x5r_logistics_fnc_initCargo;
     },[],26]
   ]],
@@ -967,7 +990,7 @@ x5r_config_navyArray =
     },[],100]
   ]],
   ["#Landing Crafts",[
-    ["Burnes_LCAC_1","",{
+    ["Peral_LCAC","",{
       ["fillSection",_this,true] call x5r_logistics_fnc_initCargo;
     },[],100]
   ]]

@@ -5878,6 +5878,54 @@ class Mission
 													value="TOMH_Stencil_Eod";
 												};
 											};
+											class Item523
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UKAF_L7A2";
+												};
+											};
+											class Item524
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Scotts_L85A3";
+												};
+											};
+											class Item525
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Scotts_L85A3_AFG";
+												};
+											};
+											class Item526
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Scotts_L85A3_GP";
+												};
+											};
+											class Item527
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Scotts_L85A3_UGL";
+												};
+											};
+											class Item528
+											{
+												class data
+												{
+													singleType="STRING";
+													value="Scotts_L85A3_UGL_D";
+												};
+											};
 										};
 									};
 								};

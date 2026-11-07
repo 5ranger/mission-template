@@ -8,18 +8,18 @@ class EditorData
 	toggles=549;
 	class ItemIDProvider
 	{
-		nextID=249;
+		nextID=251;
 	};
 	class LayerIndexProvider
 	{
-		nextID=65;
+		nextID=67;
 	};
 	class Camera
 	{
-		pos[]={4354.3711,6.9927964,6645.2803};
-		dir[]={-0.12890352,-0.14936148,-0.98046976};
-		up[]={-0.019485956,0.98873138,-0.14822635};
-		aside[]={-0.99155748,-9.4133975e-07,0.13036714};
+		pos[]={4341.3516,21.090033,6652.3037};
+		dir[]={0.098225862,-0.53971142,-0.83621639};
+		up[]={0.062987015,0.84172791,-0.53621095};
+		aside[]={-0.99326146,2.0128209e-07,-0.11667501};
 	};
 };
 binarizationWanted=0;
@@ -41,14 +41,15 @@ addons[]=
 	"ace_parachute",
 	"tfar_handhelds",
 	"A3_Drones_F_Weapons_F_Gamma_Items",
-	"TRF_UKAF_CUSTOM",
-	"TRF_UKAF",
+	"TRF_UKAF_REVISION",
+	"TRF_UKAF_UNIFORMS",
 	"ACM_circulation",
 	"ACM_damage",
 	"ACM_airway",
 	"ace_medical_treatment",
 	"ACM_breathing",
 	"ACM_disability",
+	"TRF_UKAF_VIRTUS",
 	"ace_realisticnames",
 	"ace_captives",
 	"cTab",
@@ -58,6 +59,7 @@ addons[]=
 	"UK3CB_BAF_Vehicles_Weapons",
 	"UK3CB_BAF_Weapons_SmallArms",
 	"A3_Weapons_F_Mark",
+	"TRF_UKAF_SFSG",
 	"ace_flashlights",
 	"A3_Weapons_F_Items",
 	"ace_arsenal",
@@ -88,7 +90,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=52;
+		items=54;
 		class Item0
 		{
 			className="A3_Characters_F";
@@ -186,13 +188,15 @@ class AddonsMetaData
 		};
 		class Item14
 		{
-			className="TRF_UKAF_CUSTOM";
-			name="TRF_UKAF_CUSTOM";
+			className="TRF_UKAF_REVISION";
+			name="[UKAF] Batlskin Revision helmets";
+			author="TheRealFordy";
 		};
 		class Item15
 		{
-			className="TRF_UKAF";
-			name="TRF_UKAF";
+			className="TRF_UKAF_UNIFORMS";
+			name="[UKAF] Uniforms";
+			author="TheRealFordy";
 		};
 		class Item16
 		{
@@ -233,204 +237,215 @@ class AddonsMetaData
 		};
 		class Item22
 		{
+			className="TRF_UKAF_VIRTUS";
+			name="[UKAF] Virtus vests";
+			author="TheRealFordy";
+		};
+		class Item23
+		{
 			className="ace_captives";
 			name="ACE3 - Captives";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item23
+		class Item24
 		{
 			className="cTab";
 			name="cTab";
 			author="cTab";
 		};
-		class Item24
+		class Item25
 		{
 			className="ace_maptools";
 			name="ACE3 - Map Tools";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item25
+		class Item26
 		{
 			className="ace_huntir";
 			name="ACE3 - HuntIR";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item26
+		class Item27
 		{
 			className="ace_trenches";
 			name="ACE3 - Trenches";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item27
+		class Item28
 		{
 			className="UK3CB_BAF_Vehicles_Weapons";
 			name="3CB BAF Vehicles - Weapons";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item28
+		class Item29
 		{
 			className="UK3CB_BAF_Weapons_SmallArms";
 			name="3CB BAF Weapons - Small Arms";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item29
+		class Item30
 		{
 			className="A3_Weapons_F_Mark";
 			name="Arma 3 Marksmen - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item30
+		class Item31
+		{
+			className="TRF_UKAF_SFSG";
+			name="TRF_UKAF_SFSG";
+		};
+		class Item32
 		{
 			className="ace_flashlights";
 			name="ACE3 - Flashlights";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item31
+		class Item33
 		{
 			className="ace_arsenal";
 			name="ACE3 - Arsenal";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item32
+		class Item34
 		{
 			className="UK3CB_BAF_Weapons_L131A1";
 			name="3CB BAF Weapons - L131A1";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item33
+		class Item35
 		{
 			className="rhsusf_c_troops";
 			name="RHSUSF Infantry & Equipment";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item34
+		class Item36
 		{
 			className="ace_compat_rhs_usf3";
 			name="ACE3 - RHS USAF Compatibility";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item35
+		class Item37
 		{
 			className="TRF_PILOT";
 			name="TRF_PILOT";
 		};
-		class Item36
+		class Item38
 		{
 			className="ace_grenades";
 			name="ACE3 - Grenades";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item37
+		class Item39
 		{
 			className="ace_minedetector";
 			name="ACE3 - Mine Detector";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item38
+		class Item40
 		{
 			className="ace_tagging";
 			name="ACE3 - Tagging";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item39
+		class Item41
 		{
 			className="ace_logistics_wirecutter";
 			name="ACE3 - Logistics Wire Cutter";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item40
+		class Item42
 		{
 			className="rhs_c_weapons";
 			name="AFRF Weapons Pack";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item41
+		class Item43
 		{
 			className="ace_compat_rhs_afrf3_explosives";
 			name="ACE3 - RHS AFRF Compatibility - Explosives";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item42
+		class Item44
 		{
 			className="ace_vector";
 			name="ACE3 - Vector";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item43
+		class Item45
 		{
 			className="ace_attach";
 			name="ACE3 - Attach";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item44
+		class Item46
 		{
 			className="ace_chemlights";
 			name="ACE3 - Chemlights";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item45
+		class Item47
 		{
 			className="AMP_Breaching_Charge";
 			name="bcdw - main";
 			author="Ampersand";
 		};
-		class Item46
+		class Item48
 		{
 			className="ace_microdagr";
 			name="ACE3 - MicroDAGR";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item47
+		class Item49
 		{
 			className="UK3CB_BAF_Weapons_L7";
 			name="3CB BAF Weapons - L7";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item48
+		class Item50
 		{
 			className="ace_field_rations";
 			name="ACE3 - Field Rations";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item49
+		class Item51
 		{
 			className="ace_hearing";
 			name="ACE3 - Hearing";
 			author="ACE-Team";
 			url="https://ace3.acemod.org/";
 		};
-		class Item50
+		class Item52
 		{
 			className="UK3CB_BAF_Weapons_L129";
 			name="3CB BAF Weapons - L129";
 			author="3 Commando Brigade";
 			url="www.3commandobrigade.com";
 		};
-		class Item51
+		class Item53
 		{
 			className="UK3CB_BAF_Weapons_Accessories";
 			name="3CB BAF Weapons - Accessories";
@@ -509,7 +524,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=11;
+		items=10;
 		class Item0
 		{
 			dataType="Group";
@@ -566,7 +581,7 @@ class Mission
 			name="CrateLayer";
 			class Entities
 			{
-				items=18;
+				items=19;
 				class Item0
 				{
 					dataType="Object";
@@ -1324,7 +1339,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[[[[],[]],[[""ACM_Paracetamol"",""ACM_AmmoniaInhalant"",""ACM_Inhaler_Penthrox"",""ACM_OxygenTank_425""],[8,8,8,2]],[[""ACM_PressureBandage"",""ACM_EmergencyTraumaDressing"",""ACM_ElasticWrap"",""ACE_tourniquet"",""ACM_IGel"",""ACM_ACCUVAC"",""ACM_NPA"",""ACM_Stethoscope"",""ACM_BVM"",""ACM_PulseOximeter"",""ACM_AED"",""ACM_PressureCuff"",""ACM_IV_16g"",""ACM_IV_14g"",""ACM_Syringe_1"",""ACM_Syringe_3"",""ACM_Syringe_5"",""ACM_Syringe_10"",""ACM_IO_FAST"",""ACM_IO_EZ"",""ACM_Vial_Epinephrine"",""ACM_Vial_Esmolol"",""ACM_Vial_TXA"",""ACM_Vial_Amiodarone"",""ACM_Vial_Atropine"",""ACM_BloodBag_ON_1000"",""ACM_BloodBag_ON_500"",""ACE_plasmaIV"",""ACE_plasmaIV_500"",""ACE_salineIV"",""ACE_salineIV_500"",""ACM_Vial_CalciumChloride"",""ACM_Vial_Morphine"",""ACM_Vial_Ketamine"",""ACM_Vial_Fentanyl"",""ACM_Vial_Lidocaine"",""ACM_Vial_Ondansetron"",""ACM_SAMSplint"",""ACM_Spray_Naloxone"",""ACE_surgicalKit"",""ACE_bodyBag"",""ACM_ChestSeal"",""ACM_NCDKit"",""ACM_ChestTubeKit""],[100,75,50,20,25,2,25,1,4,5,2,2,25,25,10,10,10,10,10,25,25,2,25,25,20,20,20,20,20,10,10,40,25,25,25,25,25,20,10,2,3,50,16,20]],[[],[]]],false]";
+									value="[[[[],[]],[[""ACM_Paracetamol"",""ACM_AmmoniaInhalant"",""ACM_Inhaler_Penthrox"",""ACM_OxygenTank_425""],[8,8,8,2]],[[""ACM_PressureBandage"",""ACM_EmergencyTraumaDressing"",""ACM_ElasticWrap"",""ACE_tourniquet"",""ACM_IGel"",""ACM_ACCUVAC"",""ACM_Stethoscope"",""ACM_BVM"",""ACM_PulseOximeter"",""ACM_AED"",""ACM_PressureCuff"",""ACM_IV_16g"",""ACM_IV_14g"",""ACM_Syringe_1"",""ACM_Syringe_3"",""ACM_Syringe_5"",""ACM_Syringe_10"",""ACM_IO_FAST"",""ACM_IO_EZ"",""ACM_Vial_Epinephrine"",""ACM_Vial_Esmolol"",""ACM_Vial_TXA"",""ACM_Vial_Amiodarone"",""ACM_Vial_Atropine"",""ACM_BloodBag_ON_1000"",""ACM_BloodBag_ON_500"",""ACE_plasmaIV"",""ACE_plasmaIV_500"",""ACE_salineIV"",""ACE_salineIV_500"",""ACM_Vial_CalciumChloride"",""ACM_Vial_Morphine"",""ACM_Vial_Ketamine"",""ACM_Vial_Fentanyl"",""ACM_Vial_Lidocaine"",""ACM_Vial_Ondansetron"",""ACM_SAMSplint"",""ACM_Spray_Naloxone"",""ACE_surgicalKit"",""ACE_bodyBag"",""ACM_ChestSeal"",""ACM_NCDKit"",""ACM_ChestTubeKit""],[100,75,50,20,60,2,1,2,5,2,2,25,25,10,10,10,10,10,25,25,2,25,25,20,20,20,12,10,5,4,40,25,25,25,25,25,20,10,2,3,50,16,20]],[[],[]]],false]";
 								};
 							};
 						};
@@ -1592,6 +1607,39 @@ class Mission
 							};
 						};
 						nAttributes=3;
+					};
+				};
+				class Item18
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={4342,5.2840548,6615};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						name="resupply_mines";
+					};
+					id=250;
+					type="Box_NATO_AmmoOrd_F";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ammoBox";
+							expression="[_this,_value] call bis_fnc_initAmmoBox;";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="[[[[],[]],[[""ATMine_Range_Mag"",""SLAMDirectionalMine_Wire_Mag""],[5,35]],[[],[]],[[],[]]],false]";
+								};
+							};
+						};
+						nAttributes=1;
 					};
 				};
 			};
@@ -5860,70 +5908,6 @@ class Mission
 												{
 													singleType="STRING";
 													value="B_AssaultPack_mcamo";
-												};
-											};
-											class Item521
-											{
-												class data
-												{
-													singleType="STRING";
-													value="TOMH_Stencil_Medical";
-												};
-											};
-											class Item522
-											{
-												class data
-												{
-													singleType="STRING";
-													value="TOMH_Stencil_Eod";
-												};
-											};
-											class Item523
-											{
-												class data
-												{
-													singleType="STRING";
-													value="UKAF_L7A2";
-												};
-											};
-											class Item524
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Scotts_L85A3";
-												};
-											};
-											class Item525
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Scotts_L85A3_AFG";
-												};
-											};
-											class Item526
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Scotts_L85A3_GP";
-												};
-											};
-											class Item527
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Scotts_L85A3_UGL";
-												};
-											};
-											class Item528
-											{
-												class data
-												{
-													singleType="STRING";
-													value="Scotts_L85A3_UGL_D";
 												};
 											};
 										};
@@ -11772,21 +11756,6 @@ class Mission
 				};
 				nAttributes=1;
 			};
-		};
-		class Item10
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={4342,5.2840548,6615};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=238;
-			type="UK3CB_BAF_Box_762_Ammo";
 		};
 	};
 };

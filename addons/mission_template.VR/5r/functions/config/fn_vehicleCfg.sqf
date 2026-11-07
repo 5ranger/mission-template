@@ -771,6 +771,11 @@ x5r_config_suppliesArray =
       ["resupplydemo",_this,true] call x5r_logistics_fnc_initCargo;  
       [_this, 2] call ace_cargo_fnc_setSize;  
     },[],2],
+    ["Box_NATO_AmmoOrd_F",["Mines Crate","",""],{ 
+      _this setVariable ["ace_cargo_customname", "Mines Crate", true];
+      ["resupply_mines",_this,true] call x5r_logistics_fnc_initCargo;  
+      [_this, 2] call ace_cargo_fnc_setSize;
+    },[],2],
     ["Box_NATO_AmmoOrd_F",["M6 Light Mortar Ammo Box","@resupply",""],{ 
       _this setVariable ["ace_cargo_customname", "M6 Light Mortar Ammo Box", true];
       ["resupply60mm",_this,true] call x5r_logistics_fnc_initCargo;  

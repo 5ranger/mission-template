@@ -10,6 +10,16 @@ class CfgFunctions
 {
 	#include "5r\functions\cfgFunctions.hpp"
 }; 
+class CfgRemoteExec {
+    class Functions {
+        mode = 2;
+        jip = 1;
+    };
+    class Commands {
+        mode = 2;
+        jip = 1;
+    };
+};
 briefing = 0;
 respawn = 3;
 respawnTemplates[] = { "MenuPosition" };

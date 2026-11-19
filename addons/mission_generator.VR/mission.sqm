@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=69;
+		nextID=70;
 	};
 	class Camera
 	{
-		pos[]={4347.3374,13.879951,6631.356};
-		dir[]={0.74905562,-0.58304363,-0.31460446};
-		up[]={0.53755558,0.81244081,-0.22577412};
-		aside[]={-0.38723367,0,-0.92198169};
+		pos[]={4349.2466,13.879951,6652.8042};
+		dir[]={0.048119221,-0.21653929,-0.97508734};
+		up[]={0.010672928,0.97627383,-0.21627609};
+		aside[]={-0.99878454,0,-0.049288642};
 	};
 };
 binarizationWanted=0;
@@ -1741,7 +1741,7 @@ class Mission
 										singleType="ARRAY";
 										class value
 										{
-											items=525;
+											items=526;
 											class Item0
 											{
 												class data
@@ -5940,6 +5940,14 @@ class Mission
 												{
 													singleType="STRING";
 													value="UK3CB_BAF_Silencer_L110";
+												};
+											};
+											class Item525
+											{
+												class data
+												{
+													singleType="STRING";
+													value="launch_NLAW_F";
 												};
 											};
 										};

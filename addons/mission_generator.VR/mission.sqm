@@ -12,14 +12,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=67;
+		nextID=69;
 	};
 	class Camera
 	{
-		pos[]={4341.3516,21.090033,6652.3037};
-		dir[]={0.098225862,-0.53971142,-0.83621639};
-		up[]={0.062987015,0.84172791,-0.53621095};
-		aside[]={-0.99326146,2.0128209e-07,-0.11667501};
+		pos[]={4347.3374,13.879951,6631.356};
+		dir[]={0.74905562,-0.58304363,-0.31460446};
+		up[]={0.53755558,0.81244081,-0.22577412};
+		aside[]={-0.38723367,0,-0.92198169};
 	};
 };
 binarizationWanted=0;
@@ -623,7 +623,7 @@ class Mission
 								class data
 								{
 									singleType="STRING";
-									value="[[[[""UK3CB_BAF_AT4_CS_AP_Launcher"",""UK3CB_BAF_AT4_CS_AT_Launcher""],[3,3]],[[""SmokeShell"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"",""rhs_mag_m67"",""rhs_mag_M433_HEDP"",""rhs_mag_m713_Red"",""rhs_mag_m714_White"",""UK3CB_BAF_762_100Rnd"",""UK3CB_BAF_762_L42A1_20Rnd_T"",""ACE_M84"",""rhs_ec75_mag"",""ACE_HuntIR_M203"",""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""UK3CB_BAF_762_100Rnd_T"",""AMP_Breaching_Charge_Mag"",""SmokeShellYellow"",""SmokeShellGreen"",""SmokeShellRed"",""SmokeShellPurple"",""SmokeShellBlue""],[20,30,20,20,6,6,4,15,8,6,10,10,16,12,5,5,5,5,5]],[[""ACE_wirecutter"",""ACE_splint"",""ACE_adenosine"",""ACE_CableTie"",""ACE_Canteen"",""ACE_tourniquet"",""ACM_NPA"",""ACM_PulseOximeter"",""ACM_PocketBVM"",""ACM_PressureBandage"",""ACM_EmergencyTraumaDressing"",""ACM_ElasticWrap"",""ACM_SAMSplint"",""ACM_IV_16g"",""ACM_Vial_TXA"",""ACM_BloodBag_ON_1000"",""ACM_BloodBag_ON_500"",""ACE_EntrenchingTool"",""ACM_ChestSeal"",""ACM_ChestTubeKit""],[1,10,2,20,4,20,20,20,5,50,50,25,20,10,20,20,20,1,40,8]],[[],[]]],false]";
+									value="[[[[""UK3CB_BAF_AT4_CS_AP_Launcher"",""UK3CB_BAF_AT4_CS_AT_Launcher""],[3,3]],[[""SmokeShell"",""rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red"",""rhs_mag_m67"",""rhs_mag_M433_HEDP"",""rhs_mag_m713_Red"",""rhs_mag_m714_White"",""UK3CB_BAF_762_100Rnd"",""UK3CB_BAF_762_L42A1_20Rnd_T"",""ACE_M84"",""rhs_ec75_mag"",""ACE_HuntIR_M203"",""rhs_mag_30Rnd_556x45_M855A1_Stanag"",""UK3CB_BAF_762_100Rnd_T"",""AMP_Breaching_Charge_Mag"",""SmokeShellYellow"",""SmokeShellGreen"",""SmokeShellRed"",""SmokeShellPurple"",""SmokeShellBlue""],[20,30,20,20,6,6,4,15,8,6,10,10,16,12,5,5,5,5,5]],[[""ACE_wirecutter"",""ACE_splint"",""ACE_adenosine"",""ACE_CableTie"",""ACE_Canteen"",""ACE_tourniquet"",""ACM_NPA"",""ACM_PulseOximeter"",""ACM_PocketBVM"",""ACM_PressureBandage"",""ACM_EmergencyTraumaDressing"",""ACM_ElasticWrap"",""ACM_SAMSplint"",""ACM_IV_16g"",""ACM_Vial_TXA"",""ACM_BloodBag_ON_1000"",""ACM_BloodBag_ON_500"",""ACE_EntrenchingTool"",""ACM_ChestSeal"",""ACM_ChestTubeKit"",""ACM_SuctionBag""],[1,10,2,20,4,20,20,20,5,50,50,25,20,10,20,20,20,1,40,8,12]],[[],[]]],false]";
 								};
 							};
 						};
@@ -1741,7 +1741,7 @@ class Mission
 										singleType="ARRAY";
 										class value
 										{
-											items=521;
+											items=525;
 											class Item0
 											{
 												class data
@@ -5908,6 +5908,38 @@ class Mission
 												{
 													singleType="STRING";
 													value="B_AssaultPack_mcamo";
+												};
+											};
+											class Item521
+											{
+												class data
+												{
+													singleType="STRING";
+													value="TOMH_Stencil_Eod";
+												};
+											};
+											class Item522
+											{
+												class data
+												{
+													singleType="STRING";
+													value="TOMH_Stencil_Medical";
+												};
+											};
+											class Item523
+											{
+												class data
+												{
+													singleType="STRING";
+													value="TOMH_UNICAN";
+												};
+											};
+											class Item524
+											{
+												class data
+												{
+													singleType="STRING";
+													value="UK3CB_BAF_Silencer_L110";
 												};
 											};
 										};
@@ -10368,7 +10400,7 @@ class Mission
 								isBackpack=1;
 								class MagazineCargo
 								{
-									items=3;
+									items=4;
 									class Item0
 									{
 										name="ACM_AmmoniaInhalant";
@@ -10386,6 +10418,12 @@ class Mission
 										name="ACM_Inhaler_Penthrox";
 										count=2;
 										ammoLeft=8;
+									};
+									class Item3
+									{
+										name="ACM_OxygenTank_425";
+										count=1;
+										ammoLeft=283;
 									};
 								};
 								class ItemCargo

@@ -16,6 +16,7 @@ class x5r_common
 	class client 
 	{
 		file = "5r\functions\common\client";
+		class addForceRespawnActions {};
 		class attachMarkerGlobal {};
 		class attachRespawnActions {};
 		class createJ9Suite {};

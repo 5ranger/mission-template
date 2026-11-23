@@ -1,6 +1,11 @@
+// Creates a forceRespawn ACE interaction on a object. Normally called through init_arsenals.sqf on arsenal objects.
+// USAGE:
+// Local: [_this] call x5r_common_fnc_addForceRespawnActions;
+// Global: [_this] remoteExec ["x5r_common_fnc_addForceRespawnActions", [0, -2] select isDedicated, _this];
+
 params [["_obj", objNull, [objNull]]];
 
-if (!hasInterface || {isNull _obj}) exitWith {};
+if (!hasInterface || {isNull _obj}) exitWith {diag_log "Skipped adding forceRespawn: no interface or objNull";};
 
 private _respawn = [
     "x5r_forceRespawn",

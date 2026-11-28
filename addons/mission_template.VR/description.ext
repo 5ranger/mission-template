@@ -32,5 +32,6 @@ enableTeamSwitch = 0;
 zeusCompositionScriptLevel = 2;
 enableDebugConsole[] = {
 	"76561197965400858", // Cathode
-	"76561198107304737"  // Preston
+	"76561198107304737",  // Preston
+	"76561198009490537"  // Jib
 };
